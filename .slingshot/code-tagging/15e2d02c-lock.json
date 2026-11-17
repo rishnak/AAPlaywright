@@ -1,0 +1,126 @@
+{
+  "docker-compose.yml": {
+    "filename": "docker-compose.yml",
+    "path": "docker-compose.yml",
+    "version": "1.2",
+    "contextFile": "15e2d02c-context.json",
+    "chunks": {
+      "aea867": {
+        "user": "Rishna K",
+        "model": "gpt-4.1",
+        "timestamp": 1794907266,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "9cb306c2"
+        },
+        "hash": "25d5e249",
+        "messageId": "system_c9abe2b0-e267-11f1-bc97-c58b44212be4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 2:51:06 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "aea867",
+        "hash": "f089e2bc",
+        "encoded": "version:%20'3.8'",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "aea867",
+        "hash": "751b5859",
+        "encoded": "services:",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "aea867",
+        "hash": "caca5471",
+        "encoded": "playwright-tests:",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "aea867",
+        "hash": "2e8d6d54",
+        "encoded": "build:",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "aea867",
+        "hash": "195d3e83",
+        "encoded": "context:%20.",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "aea867",
+        "hash": "15ece903",
+        "encoded": "dockerfile:%20Dockerfile",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "aea867",
+        "hash": "1a67aac5",
+        "encoded": "environment:",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "aea867",
+        "hash": "463bd05b",
+        "encoded": "-%20BASE_URL=https://www.theaa.com",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "aea867",
+        "hash": "7bb5691c",
+        "encoded": "-%20CI=true",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "aea867",
+        "hash": "31a24976",
+        "encoded": "-%20HEADLESS=true",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "aea867",
+        "hash": "737316fc",
+        "encoded": "-%20WORKERS=4",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "aea867",
+        "hash": "5bdbafe4",
+        "encoded": "volumes:",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "aea867",
+        "hash": "ad23c161",
+        "encoded": "-%20./playwright-report:/app/playwright-report",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "aea867",
+        "hash": "57599df1",
+        "encoded": "-%20./test-results:/app/test-results",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "aea867",
+        "hash": "a23ba10d",
+        "encoded": "-%20./screenshots:/app/screenshots",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "aea867",
+        "hash": "03e5badd",
+        "encoded": "command:%20npm%20test",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

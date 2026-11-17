@@ -1,0 +1,150 @@
+{
+  ".env.example": {
+    "filename": ".env.example",
+    "path": ".env.example",
+    "version": "1.2",
+    "contextFile": "59a10eff-context.json",
+    "chunks": {
+      "628860": {
+        "user": "Rishna K",
+        "model": "gpt-4.1",
+        "timestamp": 1794905416,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "b5407788"
+        },
+        "hash": "da548224",
+        "messageId": "system_2f94cf70-e262-11f1-bc97-c58b44212be4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 2:20:16 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "628860",
+        "hash": "beb03ed9",
+        "encoded": "#%20Base%20URL%20for%20the%20application",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "628860",
+        "hash": "0870bf22",
+        "encoded": "BASE_URL=https://example.com",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "628860",
+        "hash": "adae2477",
+        "encoded": "#%20Test%20user%20credentials",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "628860",
+        "hash": "59a3398e",
+        "encoded": "TEST_USERNAME=testuser@example.com",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "628860",
+        "hash": "2453379a",
+        "encoded": "TEST_PASSWORD=Test@1234",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "628860",
+        "hash": "18144c35",
+        "encoded": "#%20Admin%20user%20credentials",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "628860",
+        "hash": "2eedc47e",
+        "encoded": "ADMIN_USERNAME=admin@example.com",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "628860",
+        "hash": "4f77b57a",
+        "encoded": "ADMIN_PASSWORD=Admin@1234",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "628860",
+        "hash": "073cfeeb",
+        "encoded": "#%20Browser%20settings",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "628860",
+        "hash": "af8fc1c3",
+        "encoded": "HEADLESS=false",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "628860",
+        "hash": "cbf9370f",
+        "encoded": "SLOW_MO=0",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "628860",
+        "hash": "81a12af1",
+        "encoded": "#%20Timeouts%20(in%20milliseconds)",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "628860",
+        "hash": "4c405d10",
+        "encoded": "DEFAULT_TIMEOUT=30000",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "628860",
+        "hash": "959f36a2",
+        "encoded": "NAVIGATION_TIMEOUT=15000",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "628860",
+        "hash": "e48cb768",
+        "encoded": "#%20Screenshots%20and%20videos",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "628860",
+        "hash": "a149b269",
+        "encoded": "SCREENSHOT_ON_FAILURE=true",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "628860",
+        "hash": "dd90562b",
+        "encoded": "VIDEO_ON_FAILURE=true",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "628860",
+        "hash": "22410335",
+        "encoded": "#%20Test%20execution",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "628860",
+        "hash": "8f7e000d",
+        "encoded": "WORKERS=4",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "628860",
+        "hash": "d9c282f2",
+        "encoded": "RETRIES=2",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

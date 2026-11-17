@@ -1,0 +1,480 @@
+{
+  "src\\page-objects\\HomePage.ts": {
+    "filename": "HomePage.ts",
+    "path": "src\\page-objects\\HomePage.ts",
+    "version": "1.2",
+    "contextFile": "f961f4c6-context.json",
+    "chunks": {
+      "e91ee5": {
+        "user": "Rishna K",
+        "model": "gpt-4.1",
+        "timestamp": 1794905414,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "b5407788"
+        },
+        "hash": "038e4b7e",
+        "messageId": "system_2f94cf70-e262-11f1-bc97-c58b44212be4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 2:20:14 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "e91ee5",
+        "hash": "7afb29b2",
+        "encoded": "import%20%7B%20Page,%20Locator%20%7D%20from%20'@playwright/test';",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "e91ee5",
+        "hash": "79eca717",
+        "encoded": "import%20%7B%20BasePage%20%7D%20from%20'../pages/BasePage';",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "e91ee5",
+        "hash": "62512d72",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "e91ee5",
+        "hash": "9646feb0",
+        "encoded": "*%20Home%20Page%20Object",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "e91ee5",
+        "hash": "d4696885",
+        "encoded": "*%20Encapsulates%20all%20elements%20and%20actions%20for%20the%20home%20page",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "e91ee5",
+        "hash": "f2ad3d4c",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "e91ee5",
+        "hash": "a03c9f3e",
+        "encoded": "export%20class%20HomePage%20extends%20BasePage%20%7B",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "e91ee5",
+        "hash": "74028e00",
+        "encoded": "//%20Locators",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "e91ee5",
+        "hash": "913a2b63",
+        "encoded": "private%20readonly%20welcomeMessage:%20Locator;",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "e91ee5",
+        "hash": "7051b6eb",
+        "encoded": "private%20readonly%20userProfileIcon:%20Locator;",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "e91ee5",
+        "hash": "d2765096",
+        "encoded": "private%20readonly%20logoutButton:%20Locator;",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "e91ee5",
+        "hash": "b1401d6c",
+        "encoded": "private%20readonly%20searchBox:%20Locator;",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "e91ee5",
+        "hash": "89a25f44",
+        "encoded": "private%20readonly%20navigationMenu:%20Locator;",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "e91ee5",
+        "hash": "19a1557b",
+        "encoded": "private%20readonly%20settingsLink:%20Locator;",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "e91ee5",
+        "hash": "d1123ad6",
+        "encoded": "constructor(page:%20Page)%20%7B",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "e91ee5",
+        "hash": "7fc38825",
+        "encoded": "super(page);",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "e91ee5",
+        "hash": "1ed43907",
+        "encoded": "//%20Initialize%20locators",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "e91ee5",
+        "hash": "c3623777",
+        "encoded": "this.welcomeMessage%20=%20page.locator('.welcome-message');",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "e91ee5",
+        "hash": "b170164c",
+        "encoded": "this.userProfileIcon%20=%20page.locator('.user-profile-icon');",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "e91ee5",
+        "hash": "9695d8f7",
+        "encoded": "this.logoutButton%20=%20page.locator('button:has-text(%22Logout%22)');",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "e91ee5",
+        "hash": "f3382287",
+        "encoded": "this.searchBox%20=%20page.locator('input%5Bplaceholder=%22Search...%22%5D');",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "e91ee5",
+        "hash": "2a8662b2",
+        "encoded": "this.navigationMenu%20=%20page.locator('.nav-menu');",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "e91ee5",
+        "hash": "b87f8dc9",
+        "encoded": "this.settingsLink%20=%20page.locator('a%5Bhref=%22/settings%22%5D');",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "e91ee5",
+        "hash": "840004ae",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "e91ee5",
+        "hash": "accdc651",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "e91ee5",
+        "hash": "757a6bfc",
+        "encoded": "*%20Navigate%20to%20home%20page",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "e91ee5",
+        "hash": "fc05b72a",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "e91ee5",
+        "hash": "9113dc12",
+        "encoded": "async%20navigateToHome():%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "e91ee5",
+        "hash": "7c0afdd8",
+        "encoded": "await%20this.navigate('/');",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "e91ee5",
+        "hash": "699fd80f",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "e91ee5",
+        "hash": "af8dad32",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "e91ee5",
+        "hash": "395fe3b9",
+        "encoded": "*%20Get%20welcome%20message%20text",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "e91ee5",
+        "hash": "ea971d18",
+        "encoded": "*%20@returns%20The%20welcome%20message%20displayed",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "e91ee5",
+        "hash": "cfda9889",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "e91ee5",
+        "hash": "49d29cdb",
+        "encoded": "async%20getWelcomeMessage():%20Promise%3Cstring%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "e91ee5",
+        "hash": "e78006da",
+        "encoded": "return%20await%20this.getText(this.welcomeMessage);",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "e91ee5",
+        "hash": "792377b1",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "e91ee5",
+        "hash": "6599f70a",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "e91ee5",
+        "hash": "9d050220",
+        "encoded": "*%20Perform%20logout%20action",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "e91ee5",
+        "hash": "2a068bde",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "e91ee5",
+        "hash": "08b8e453",
+        "encoded": "async%20logout():%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "e91ee5",
+        "hash": "33ab8a0e",
+        "encoded": "await%20this.click(this.userProfileIcon);",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "e91ee5",
+        "hash": "b5e953f5",
+        "encoded": "await%20this.waitForElement(this.logoutButton);",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "e91ee5",
+        "hash": "d5bfb51a",
+        "encoded": "await%20this.click(this.logoutButton);",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "e91ee5",
+        "hash": "0b4804f7",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "e91ee5",
+        "hash": "09dfcb49",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "e91ee5",
+        "hash": "d355c893",
+        "encoded": "*%20Perform%20search%20operation",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "e91ee5",
+        "hash": "a18ea870",
+        "encoded": "*%20@param%20searchTerm%20-%20The%20term%20to%20search%20for",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "e91ee5",
+        "hash": "43449f3f",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "e91ee5",
+        "hash": "29a35458",
+        "encoded": "async%20search(searchTerm:%20string):%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "e91ee5",
+        "hash": "4be2f6ca",
+        "encoded": "await%20this.fill(this.searchBox,%20searchTerm);",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "e91ee5",
+        "hash": "c614d424",
+        "encoded": "await%20this.pressKey('Enter');",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "e91ee5",
+        "hash": "f4e179c9",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "e91ee5",
+        "hash": "af335571",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "e91ee5",
+        "hash": "df571429",
+        "encoded": "*%20Navigate%20to%20settings",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "e91ee5",
+        "hash": "006039ec",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "e91ee5",
+        "hash": "d0e1d1a2",
+        "encoded": "async%20navigateToSettings():%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "e91ee5",
+        "hash": "23c28801",
+        "encoded": "await%20this.click(this.settingsLink);",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "e91ee5",
+        "hash": "912d88e4",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "e91ee5",
+        "hash": "349faf87",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "e91ee5",
+        "hash": "09fd27a2",
+        "encoded": "*%20Verify%20home%20page%20is%20loaded",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "e91ee5",
+        "hash": "b807252d",
+        "encoded": "*%20@returns%20True%20if%20welcome%20message%20is%20visible",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "e91ee5",
+        "hash": "72f2e141",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "e91ee5",
+        "hash": "7d783fa3",
+        "encoded": "async%20isHomePageLoaded():%20Promise%3Cboolean%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "e91ee5",
+        "hash": "78633c38",
+        "encoded": "return%20await%20this.isVisible(this.welcomeMessage);",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "e91ee5",
+        "hash": "3654c6d8",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "e91ee5",
+        "hash": "3646e3b7",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "e91ee5",
+        "hash": "5dfd5a12",
+        "encoded": "*%20Get%20navigation%20menu%20items",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "e91ee5",
+        "hash": "596f33a0",
+        "encoded": "*%20@returns%20Array%20of%20menu%20item%20texts",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "e91ee5",
+        "hash": "9de63012",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "e91ee5",
+        "hash": "1462d3e9",
+        "encoded": "async%20getNavigationMenuItems():%20Promise%3Cstring%5B%5D%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "e91ee5",
+        "hash": "c2a44f19",
+        "encoded": "const%20menuItems%20=%20await%20this.navigationMenu.locator('li').allTextContents();",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "e91ee5",
+        "hash": "a6dc2987",
+        "encoded": "return%20menuItems;",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "e91ee5",
+        "hash": "74977a35",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "e91ee5",
+        "hash": "e4b921c6",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

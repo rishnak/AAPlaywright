@@ -1,0 +1,102 @@
+{
+  ".dockerignore": {
+    "filename": ".dockerignore",
+    "path": ".dockerignore",
+    "version": "1.2",
+    "contextFile": "df9388d4-context.json",
+    "chunks": {
+      "be602c": {
+        "user": "Rishna K",
+        "model": "gpt-4.1",
+        "timestamp": 1794907266,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "9cb306c2"
+        },
+        "hash": "f74f9e86",
+        "messageId": "system_c9abe2b0-e267-11f1-bc97-c58b44212be4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 2:51:06 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "be602c",
+        "hash": "81a85385",
+        "encoded": "node_modules",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "be602c",
+        "hash": "c8c414c3",
+        "encoded": "npm-debug.log",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "be602c",
+        "hash": "49e7c762",
+        "encoded": "test-results",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "be602c",
+        "hash": "9934028f",
+        "encoded": "playwright-report",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "be602c",
+        "hash": "2417fc8d",
+        "encoded": "screenshots",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "be602c",
+        "hash": "edb81f19",
+        "encoded": ".env",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "be602c",
+        "hash": "25470a60",
+        "encoded": ".git",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "be602c",
+        "hash": "db091900",
+        "encoded": ".gitignore",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "be602c",
+        "hash": "97370371",
+        "encoded": "README.md",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "be602c",
+        "hash": "a02a3ba9",
+        "encoded": "*.md",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "be602c",
+        "hash": "5f757d90",
+        "encoded": ".vscode",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "be602c",
+        "hash": "dcfe83e9",
+        "encoded": ".idea",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

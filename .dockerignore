@@ -1,0 +1,12 @@
+node_modules
+npm-debug.log
+test-results
+playwright-report
+screenshots
+.env
+.git
+.gitignore
+README.md
+*.md
+.vscode
+.idea

@@ -1,0 +1,18 @@
+{
+  "filename": "QUICK_START.md",
+  "path": "QUICK_START.md",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "b5407788": {
+      "value": "As a senior test engineer create a playwright framework with page object model. Create a separate folder for the pages, page objects tests data and utilities. "
+    },
+    "d5c921e8": {
+      "value": "How will I add my files from AAPlaywright to  the new reposity created in guthub"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

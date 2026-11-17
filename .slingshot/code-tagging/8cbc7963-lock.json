@@ -1,0 +1,468 @@
+{
+  "src\\utilities\\stringUtils.ts": {
+    "filename": "stringUtils.ts",
+    "path": "src\\utilities\\stringUtils.ts",
+    "version": "1.2",
+    "contextFile": "8cbc7963-context.json",
+    "chunks": {
+      "c7ba8d": {
+        "user": "Rishna K",
+        "model": "gpt-4.1",
+        "timestamp": 1794905415,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "b5407788"
+        },
+        "hash": "7e499079",
+        "messageId": "system_2f94cf70-e262-11f1-bc97-c58b44212be4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 2:20:15 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "c7ba8d",
+        "hash": "48c76aad",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "c7ba8d",
+        "hash": "124a9dab",
+        "encoded": "*%20String%20Utility%20Functions",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "c7ba8d",
+        "hash": "285bca69",
+        "encoded": "*%20Provides%20reusable%20string%20manipulation%20functions",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "c7ba8d",
+        "hash": "7c9e86a6",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "c7ba8d",
+        "hash": "b9fc3b5c",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "c7ba8d",
+        "hash": "f6005182",
+        "encoded": "*%20Generate%20random%20string",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "c7ba8d",
+        "hash": "0403e911",
+        "encoded": "*%20@param%20length%20-%20Length%20of%20the%20string",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "c7ba8d",
+        "hash": "90486e6b",
+        "encoded": "*%20@param%20includeNumbers%20-%20Include%20numbers%20in%20the%20string",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "c7ba8d",
+        "hash": "d7710386",
+        "encoded": "*%20@returns%20Random%20string",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "c7ba8d",
+        "hash": "f398d74c",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "c7ba8d",
+        "hash": "ed6f7644",
+        "encoded": "export%20function%20generateRandomString(length:%20number,%20includeNumbers:%20boolean%20=%20true):%20string%20%7B",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "c7ba8d",
+        "hash": "235c23d0",
+        "encoded": "const%20letters%20=%20'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "c7ba8d",
+        "hash": "b8ebb523",
+        "encoded": "const%20numbers%20=%20'0123456789';",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "c7ba8d",
+        "hash": "b21cae5e",
+        "encoded": "const%20characters%20=%20includeNumbers%20?%20letters%20+%20numbers%20:%20letters;",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "c7ba8d",
+        "hash": "b5490499",
+        "encoded": "let%20result%20=%20'';",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "c7ba8d",
+        "hash": "a3413862",
+        "encoded": "for%20(let%20i%20=%200;%20i%20%3C%20length;%20i++)%20%7B",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "c7ba8d",
+        "hash": "3d947972",
+        "encoded": "result%20+=%20characters.charAt(Math.floor(Math.random()%20*%20characters.length));",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "c7ba8d",
+        "hash": "ee39c532",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "c7ba8d",
+        "hash": "4e7694d3",
+        "encoded": "return%20result;",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "c7ba8d",
+        "hash": "4b5cc20d",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "c7ba8d",
+        "hash": "aaf43556",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "c7ba8d",
+        "hash": "eba762d4",
+        "encoded": "*%20Generate%20random%20email",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "c7ba8d",
+        "hash": "fd635ccb",
+        "encoded": "*%20@param%20domain%20-%20Email%20domain%20(default:%20'test.com')",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "c7ba8d",
+        "hash": "f749d7d7",
+        "encoded": "*%20@returns%20Random%20email%20address",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "c7ba8d",
+        "hash": "d7e56af4",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "c7ba8d",
+        "hash": "282335ef",
+        "encoded": "export%20function%20generateRandomEmail(domain:%20string%20=%20'test.com'):%20string%20%7B",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "c7ba8d",
+        "hash": "37d648b5",
+        "encoded": "const%20username%20=%20generateRandomString(10,%20true).toLowerCase();",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "c7ba8d",
+        "hash": "f53654d9",
+        "encoded": "return%20%60$%7Busername%7D@$%7Bdomain%7D%60;",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "c7ba8d",
+        "hash": "43353d17",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "c7ba8d",
+        "hash": "a2d434cb",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "c7ba8d",
+        "hash": "3ea7699b",
+        "encoded": "*%20Capitalize%20first%20letter%20of%20string",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "c7ba8d",
+        "hash": "f7f0590c",
+        "encoded": "*%20@param%20str%20-%20Input%20string",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "c7ba8d",
+        "hash": "2f055605",
+        "encoded": "*%20@returns%20Capitalized%20string",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "c7ba8d",
+        "hash": "cfda9889",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "c7ba8d",
+        "hash": "763f29b5",
+        "encoded": "export%20function%20capitalizeFirstLetter(str:%20string):%20string%20%7B",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "c7ba8d",
+        "hash": "cc0cdf7a",
+        "encoded": "if%20(!str)%20return%20'';",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "c7ba8d",
+        "hash": "a599a7c2",
+        "encoded": "return%20str.charAt(0).toUpperCase()%20+%20str.slice(1);",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "c7ba8d",
+        "hash": "98f83ab6",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "c7ba8d",
+        "hash": "9d43f7fb",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "c7ba8d",
+        "hash": "b3515206",
+        "encoded": "*%20Remove%20special%20characters%20from%20string",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "c7ba8d",
+        "hash": "41338880",
+        "encoded": "*%20@param%20str%20-%20Input%20string",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "c7ba8d",
+        "hash": "a786e563",
+        "encoded": "*%20@returns%20Cleaned%20string",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "c7ba8d",
+        "hash": "5d4a7073",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "c7ba8d",
+        "hash": "3e5303ec",
+        "encoded": "export%20function%20removeSpecialCharacters(str:%20string):%20string%20%7B",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "c7ba8d",
+        "hash": "efd694f0",
+        "encoded": "return%20str.replace(/%5B%5Ea-zA-Z0-9%20%5D/g,%20'');",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "c7ba8d",
+        "hash": "6a5bdc1a",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "c7ba8d",
+        "hash": "e47331a7",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "c7ba8d",
+        "hash": "6fb64841",
+        "encoded": "*%20Truncate%20string%20to%20specified%20length",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "c7ba8d",
+        "hash": "3da08796",
+        "encoded": "*%20@param%20str%20-%20Input%20string",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "c7ba8d",
+        "hash": "29b6cfdf",
+        "encoded": "*%20@param%20maxLength%20-%20Maximum%20length",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "c7ba8d",
+        "hash": "a4d02512",
+        "encoded": "*%20@param%20suffix%20-%20Suffix%20to%20add%20(default:%20'...')",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "c7ba8d",
+        "hash": "cb9bb417",
+        "encoded": "*%20@returns%20Truncated%20string",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "c7ba8d",
+        "hash": "ad9f0305",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "c7ba8d",
+        "hash": "3dbc4c84",
+        "encoded": "export%20function%20truncateString(str:%20string,%20maxLength:%20number,%20suffix:%20string%20=%20'...'):%20string%20%7B",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "c7ba8d",
+        "hash": "f7888187",
+        "encoded": "if%20(str.length%20%3C=%20maxLength)%20return%20str;",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "c7ba8d",
+        "hash": "5a5ca682",
+        "encoded": "return%20str.substring(0,%20maxLength%20-%20suffix.length)%20+%20suffix;",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "c7ba8d",
+        "hash": "646a8e84",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "c7ba8d",
+        "hash": "3f19ed05",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "c7ba8d",
+        "hash": "f2964221",
+        "encoded": "*%20Check%20if%20string%20is%20valid%20email",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "c7ba8d",
+        "hash": "6865ee59",
+        "encoded": "*%20@param%20email%20-%20Email%20string%20to%20validate",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "c7ba8d",
+        "hash": "15f302bf",
+        "encoded": "*%20@returns%20True%20if%20valid%20email",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "c7ba8d",
+        "hash": "6665b0da",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "c7ba8d",
+        "hash": "46a19f9c",
+        "encoded": "export%20function%20isValidEmail(email:%20string):%20boolean%20%7B",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "c7ba8d",
+        "hash": "dd907882",
+        "encoded": "const%20emailRegex%20=%20/%5E%5B%5E%5Cs@%5D+@%5B%5E%5Cs@%5D+%5C.%5B%5E%5Cs@%5D+$/;",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "c7ba8d",
+        "hash": "59494dc4",
+        "encoded": "return%20emailRegex.test(email);",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "c7ba8d",
+        "hash": "ae47b750",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "c7ba8d",
+        "hash": "ab853a99",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "c7ba8d",
+        "hash": "a170723d",
+        "encoded": "*%20Generate%20unique%20identifier",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "c7ba8d",
+        "hash": "6ac96f8c",
+        "encoded": "*%20@returns%20Unique%20string%20ID",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "c7ba8d",
+        "hash": "3391b297",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "c7ba8d",
+        "hash": "c37511f3",
+        "encoded": "export%20function%20generateUniqueId():%20string%20%7B",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "c7ba8d",
+        "hash": "cea20983",
+        "encoded": "return%20%60id_$%7BDate.now()%7D_$%7BMath.random().toString(36).substr(2,%209)%7D%60;",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "c7ba8d",
+        "hash": "a2f26355",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

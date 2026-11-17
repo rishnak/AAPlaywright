@@ -1,0 +1,162 @@
+{
+  "src\\data\\users.json": {
+    "filename": "users.json",
+    "path": "src\\data\\users.json",
+    "version": "1.2",
+    "contextFile": "9460946f-context.json",
+    "chunks": {
+      "2eaeb5": {
+        "user": "Rishna K",
+        "model": "gpt-4.1",
+        "timestamp": 1794905415,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "b5407788"
+        },
+        "hash": "68c34e8d",
+        "messageId": "system_2f94cf70-e262-11f1-bc97-c58b44212be4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 2:20:15 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "2eaeb5",
+        "hash": "47009686",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "2eaeb5",
+        "hash": "6216cabe",
+        "encoded": "%22validUser%22:%20%7B",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "2eaeb5",
+        "hash": "f7df4d2e",
+        "encoded": "%22username%22:%20%22testuser@example.com%22,",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "2eaeb5",
+        "hash": "63badbe4",
+        "encoded": "%22password%22:%20%22Test@1234%22,",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "2eaeb5",
+        "hash": "a5f229fb",
+        "encoded": "%22firstName%22:%20%22Test%22,",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "2eaeb5",
+        "hash": "d8be3b76",
+        "encoded": "%22lastName%22:%20%22User%22",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "2eaeb5",
+        "hash": "4401be13",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "2eaeb5",
+        "hash": "29a437f8",
+        "encoded": "%22adminUser%22:%20%7B",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "2eaeb5",
+        "hash": "a8ed522d",
+        "encoded": "%22username%22:%20%22admin@example.com%22,",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "2eaeb5",
+        "hash": "ee36e946",
+        "encoded": "%22password%22:%20%22Admin@1234%22,",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "2eaeb5",
+        "hash": "a1ff57a3",
+        "encoded": "%22firstName%22:%20%22Admin%22,",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "2eaeb5",
+        "hash": "34d29cf8",
+        "encoded": "%22lastName%22:%20%22User%22",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "2eaeb5",
+        "hash": "2af362fb",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "2eaeb5",
+        "hash": "4bc1cc93",
+        "encoded": "%22invalidUser%22:%20%7B",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "2eaeb5",
+        "hash": "f16d5844",
+        "encoded": "%22username%22:%20%22invalid@example.com%22,",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "2eaeb5",
+        "hash": "df0dda62",
+        "encoded": "%22password%22:%20%22Invalid@123%22",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "2eaeb5",
+        "hash": "e0024018",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "2eaeb5",
+        "hash": "b79e3d1b",
+        "encoded": "%22emptyCredentials%22:%20%7B",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "2eaeb5",
+        "hash": "3dfaf454",
+        "encoded": "%22username%22:%20%22%22,",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "2eaeb5",
+        "hash": "056dbddc",
+        "encoded": "%22password%22:%20%22%22",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "2eaeb5",
+        "hash": "acbf036f",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "2eaeb5",
+        "hash": "4b5cc20d",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

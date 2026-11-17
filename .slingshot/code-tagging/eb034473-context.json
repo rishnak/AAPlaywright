@@ -1,0 +1,15 @@
+{
+  "filename": "Jenkinsfile",
+  "path": "Jenkinsfile",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "9cb306c2": {
+      "value": "How will run this framework from Jenkins"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

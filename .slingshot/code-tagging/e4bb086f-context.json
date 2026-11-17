@@ -1,0 +1,18 @@
+{
+  "filename": "playwright.config.ts",
+  "path": "playwright.config.ts",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "b5407788": {
+      "value": "As a senior test engineer create a playwright framework with page object model. Create a separate folder for the pages, page objects tests data and utilities. "
+    },
+    "3709b4ef": {
+      "value": "I want to do end to testing of this https://www.theaa.com/ website where will I do this seeting?"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

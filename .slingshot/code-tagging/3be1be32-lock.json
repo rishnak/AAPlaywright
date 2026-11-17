@@ -1,0 +1,450 @@
+{
+  "src\\utilities\\dateUtils.ts": {
+    "filename": "dateUtils.ts",
+    "path": "src\\utilities\\dateUtils.ts",
+    "version": "1.2",
+    "contextFile": "3be1be32-context.json",
+    "chunks": {
+      "979d55": {
+        "user": "Rishna K",
+        "model": "gpt-4.1",
+        "timestamp": 1794905415,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "b5407788"
+        },
+        "hash": "96370085",
+        "messageId": "system_2f94cf70-e262-11f1-bc97-c58b44212be4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 2:20:15 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "979d55",
+        "hash": "48c76aad",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "979d55",
+        "hash": "b02a4458",
+        "encoded": "*%20Date%20Utility%20Functions",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "979d55",
+        "hash": "ce2e9913",
+        "encoded": "*%20Provides%20reusable%20date%20manipulation%20and%20formatting%20functions",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "979d55",
+        "hash": "7c9e86a6",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "979d55",
+        "hash": "b9fc3b5c",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "979d55",
+        "hash": "3d42bcb5",
+        "encoded": "*%20Get%20current%20date%20in%20specified%20format",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "979d55",
+        "hash": "82c2f488",
+        "encoded": "*%20@param%20format%20-%20Date%20format%20(default:%20'YYYY-MM-DD')",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "979d55",
+        "hash": "ecf92e08",
+        "encoded": "*%20@returns%20Formatted%20date%20string",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "979d55",
+        "hash": "7c8b9e0c",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "979d55",
+        "hash": "09a56d9b",
+        "encoded": "export%20function%20getCurrentDate(format:%20string%20=%20'YYYY-MM-DD'):%20string%20%7B",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "979d55",
+        "hash": "0d838d57",
+        "encoded": "const%20now%20=%20new%20Date();",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "979d55",
+        "hash": "2cfe9e7f",
+        "encoded": "const%20year%20=%20now.getFullYear();",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "979d55",
+        "hash": "c2f8ff1a",
+        "encoded": "const%20month%20=%20String(now.getMonth()%20+%201).padStart(2,%20'0');",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "979d55",
+        "hash": "1c3708be",
+        "encoded": "const%20day%20=%20String(now.getDate()).padStart(2,%20'0');",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "979d55",
+        "hash": "c004fef6",
+        "encoded": "switch%20(format)%20%7B",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "979d55",
+        "hash": "524f34ae",
+        "encoded": "case%20'YYYY-MM-DD':",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "979d55",
+        "hash": "f0feaf0b",
+        "encoded": "return%20%60$%7Byear%7D-$%7Bmonth%7D-$%7Bday%7D%60;",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "979d55",
+        "hash": "f7174f5f",
+        "encoded": "case%20'DD-MM-YYYY':",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "979d55",
+        "hash": "02d6221f",
+        "encoded": "return%20%60$%7Bday%7D-$%7Bmonth%7D-$%7Byear%7D%60;",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "979d55",
+        "hash": "456943d2",
+        "encoded": "case%20'MM/DD/YYYY':",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "979d55",
+        "hash": "bd0c029a",
+        "encoded": "return%20%60$%7Bmonth%7D/$%7Bday%7D/$%7Byear%7D%60;",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "979d55",
+        "hash": "a3a8c747",
+        "encoded": "default:",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "979d55",
+        "hash": "d7748760",
+        "encoded": "return%20%60$%7Byear%7D-$%7Bmonth%7D-$%7Bday%7D%60;",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "979d55",
+        "hash": "840004ae",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "979d55",
+        "hash": "e256b81a",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "979d55",
+        "hash": "86e1a908",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "979d55",
+        "hash": "75644ea2",
+        "encoded": "*%20Get%20current%20timestamp",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "979d55",
+        "hash": "b6fb00f7",
+        "encoded": "*%20@returns%20Unix%20timestamp",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "979d55",
+        "hash": "c26d7e8c",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "979d55",
+        "hash": "032c2536",
+        "encoded": "export%20function%20getCurrentTimestamp():%20number%20%7B",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "979d55",
+        "hash": "5e215683",
+        "encoded": "return%20Date.now();",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "979d55",
+        "hash": "b8d59d8e",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "979d55",
+        "hash": "391bbb81",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "979d55",
+        "hash": "1b4abe1c",
+        "encoded": "*%20Add%20days%20to%20a%20date",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "979d55",
+        "hash": "b1112990",
+        "encoded": "*%20@param%20date%20-%20Base%20date",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "979d55",
+        "hash": "f758c940",
+        "encoded": "*%20@param%20days%20-%20Number%20of%20days%20to%20add",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "979d55",
+        "hash": "0a1282c9",
+        "encoded": "*%20@returns%20New%20date",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "979d55",
+        "hash": "ac7fba9c",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "979d55",
+        "hash": "1f9ea24b",
+        "encoded": "export%20function%20addDays(date:%20Date,%20days:%20number):%20Date%20%7B",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "979d55",
+        "hash": "a34aaee1",
+        "encoded": "const%20result%20=%20new%20Date(date);",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "979d55",
+        "hash": "9aa27004",
+        "encoded": "result.setDate(result.getDate()%20+%20days);",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "979d55",
+        "hash": "9ce42762",
+        "encoded": "return%20result;",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "979d55",
+        "hash": "f9b2449c",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "979d55",
+        "hash": "eb0289d4",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "979d55",
+        "hash": "40c357ce",
+        "encoded": "*%20Format%20date%20to%20string",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "979d55",
+        "hash": "62838e8d",
+        "encoded": "*%20@param%20date%20-%20Date%20object",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "979d55",
+        "hash": "1b389ea4",
+        "encoded": "*%20@param%20format%20-%20Desired%20format",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "979d55",
+        "hash": "fba72f3a",
+        "encoded": "*%20@returns%20Formatted%20date%20string",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "979d55",
+        "hash": "b6b41ee9",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "979d55",
+        "hash": "0fd41028",
+        "encoded": "export%20function%20formatDate(date:%20Date,%20format:%20string%20=%20'YYYY-MM-DD'):%20string%20%7B",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "979d55",
+        "hash": "7c510222",
+        "encoded": "const%20year%20=%20date.getFullYear();",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "979d55",
+        "hash": "8f7e605a",
+        "encoded": "const%20month%20=%20String(date.getMonth()%20+%201).padStart(2,%20'0');",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "979d55",
+        "hash": "e12baa71",
+        "encoded": "const%20day%20=%20String(date.getDate()).padStart(2,%20'0');",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "979d55",
+        "hash": "0015132b",
+        "encoded": "return%20format",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "979d55",
+        "hash": "a753489f",
+        "encoded": ".replace('YYYY',%20String(year))",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "979d55",
+        "hash": "d189c416",
+        "encoded": ".replace('MM',%20month)",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "979d55",
+        "hash": "077f0c46",
+        "encoded": ".replace('DD',%20day);",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "979d55",
+        "hash": "78db855a",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "979d55",
+        "hash": "c50c01c3",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "979d55",
+        "hash": "bea929e3",
+        "encoded": "*%20Get%20time%20difference%20in%20days",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "979d55",
+        "hash": "b4bcbad0",
+        "encoded": "*%20@param%20date1%20-%20First%20date",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "979d55",
+        "hash": "e64bb0ce",
+        "encoded": "*%20@param%20date2%20-%20Second%20date",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "979d55",
+        "hash": "3b812638",
+        "encoded": "*%20@returns%20Difference%20in%20days",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "979d55",
+        "hash": "72f2e141",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "979d55",
+        "hash": "4d894691",
+        "encoded": "export%20function%20getDaysDifference(date1:%20Date,%20date2:%20Date):%20number%20%7B",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "979d55",
+        "hash": "4e8ef5f9",
+        "encoded": "const%20msPerDay%20=%201000%20*%2060%20*%2060%20*%2024;",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "979d55",
+        "hash": "82ae8dae",
+        "encoded": "const%20utc1%20=%20Date.UTC(date1.getFullYear(),%20date1.getMonth(),%20date1.getDate());",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "979d55",
+        "hash": "4eaf1c14",
+        "encoded": "const%20utc2%20=%20Date.UTC(date2.getFullYear(),%20date2.getMonth(),%20date2.getDate());",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "979d55",
+        "hash": "dd50567d",
+        "encoded": "return%20Math.floor((utc2%20-%20utc1)%20/%20msPerDay);",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "979d55",
+        "hash": "88f18366",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

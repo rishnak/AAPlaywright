@@ -1,0 +1,504 @@
+{
+  "src\\utilities\\config.ts": {
+    "filename": "config.ts",
+    "path": "src\\utilities\\config.ts",
+    "version": "1.2",
+    "contextFile": "9f9df463-context.json",
+    "chunks": {
+      "27b804": {
+        "user": "Rishna K",
+        "model": "gpt-4.1",
+        "timestamp": 1794905417,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "b5407788"
+        },
+        "hash": "e08a5352",
+        "messageId": "system_2f94cf70-e262-11f1-bc97-c58b44212be4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 2:20:17 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "27b804",
+        "hash": "48c76aad",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "27b804",
+        "hash": "db3b4838",
+        "encoded": "*%20Configuration%20Utility",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "27b804",
+        "hash": "216f16ff",
+        "encoded": "*%20Manages%20environment%20configuration%20and%20provides%20typed%20access%20to%20environment%20variables",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "27b804",
+        "hash": "7c9e86a6",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "27b804",
+        "hash": "4e8bbe46",
+        "encoded": "import%20*%20as%20dotenv%20from%20'dotenv';",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "27b804",
+        "hash": "92c5bec9",
+        "encoded": "//%20Load%20environment%20variables",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "27b804",
+        "hash": "bdbada64",
+        "encoded": "dotenv.config();",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "27b804",
+        "hash": "87707c3e",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "27b804",
+        "hash": "69641ad2",
+        "encoded": "*%20Configuration%20interface",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "27b804",
+        "hash": "caaefa0e",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "27b804",
+        "hash": "18cfa0a3",
+        "encoded": "interface%20Config%20%7B",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "27b804",
+        "hash": "4d99e990",
+        "encoded": "baseUrl:%20string;",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "27b804",
+        "hash": "c081fdbc",
+        "encoded": "testUsername:%20string;",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "27b804",
+        "hash": "a91a5e2a",
+        "encoded": "testPassword:%20string;",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "27b804",
+        "hash": "f285d3a4",
+        "encoded": "adminUsername:%20string;",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "27b804",
+        "hash": "7e1ed384",
+        "encoded": "adminPassword:%20string;",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "27b804",
+        "hash": "f116d310",
+        "encoded": "headless:%20boolean;",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "27b804",
+        "hash": "6e663441",
+        "encoded": "slowMo:%20number;",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "27b804",
+        "hash": "46a87411",
+        "encoded": "defaultTimeout:%20number;",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "27b804",
+        "hash": "b0ab0c4e",
+        "encoded": "navigationTimeout:%20number;",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "27b804",
+        "hash": "2d6af34d",
+        "encoded": "screenshotOnFailure:%20boolean;",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "27b804",
+        "hash": "1fba2fe6",
+        "encoded": "videoOnFailure:%20boolean;",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "27b804",
+        "hash": "590b8061",
+        "encoded": "workers:%20number;",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "27b804",
+        "hash": "f56d9995",
+        "encoded": "retries:%20number;",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "27b804",
+        "hash": "a7947416",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "27b804",
+        "hash": "512a3419",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "27b804",
+        "hash": "31090847",
+        "encoded": "*%20Get%20configuration%20from%20environment%20variables",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "27b804",
+        "hash": "c26d7e8c",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "27b804",
+        "hash": "f950b75f",
+        "encoded": "export%20const%20config:%20Config%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "27b804",
+        "hash": "22a083cc",
+        "encoded": "baseUrl:%20process.env.BASE_URL%20%7C%7C%20'https://example.com',",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "27b804",
+        "hash": "823342ca",
+        "encoded": "testUsername:%20process.env.TEST_USERNAME%20%7C%7C%20'testuser@example.com',",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "27b804",
+        "hash": "963b2657",
+        "encoded": "testPassword:%20process.env.TEST_PASSWORD%20%7C%7C%20'Test@1234',",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "27b804",
+        "hash": "eb9c7f45",
+        "encoded": "adminUsername:%20process.env.ADMIN_USERNAME%20%7C%7C%20'admin@example.com',",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "27b804",
+        "hash": "baae30cc",
+        "encoded": "adminPassword:%20process.env.ADMIN_PASSWORD%20%7C%7C%20'Admin@1234',",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "27b804",
+        "hash": "0f9bfa8f",
+        "encoded": "headless:%20process.env.HEADLESS%20===%20'true',",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "27b804",
+        "hash": "6e65e17b",
+        "encoded": "slowMo:%20parseInt(process.env.SLOW_MO%20%7C%7C%20'0',%2010),",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "27b804",
+        "hash": "fbc008ed",
+        "encoded": "defaultTimeout:%20parseInt(process.env.DEFAULT_TIMEOUT%20%7C%7C%20'30000',%2010),",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "27b804",
+        "hash": "a98cdf0f",
+        "encoded": "navigationTimeout:%20parseInt(process.env.NAVIGATION_TIMEOUT%20%7C%7C%20'15000',%2010),",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "27b804",
+        "hash": "5d96bbeb",
+        "encoded": "screenshotOnFailure:%20process.env.SCREENSHOT_ON_FAILURE%20!==%20'false',",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "27b804",
+        "hash": "b53e3871",
+        "encoded": "videoOnFailure:%20process.env.VIDEO_ON_FAILURE%20!==%20'false',",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "27b804",
+        "hash": "74a18c0e",
+        "encoded": "workers:%20parseInt(process.env.WORKERS%20%7C%7C%20'4',%2010),",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "27b804",
+        "hash": "083854ff",
+        "encoded": "retries:%20parseInt(process.env.RETRIES%20%7C%7C%20'2',%2010)",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "27b804",
+        "hash": "81b17229",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "27b804",
+        "hash": "eb0289d4",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "27b804",
+        "hash": "0e7623b1",
+        "encoded": "*%20Get%20environment%20name",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "27b804",
+        "hash": "2afef828",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "27b804",
+        "hash": "856ccaa2",
+        "encoded": "export%20function%20getEnvironment():%20string%20%7B",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "27b804",
+        "hash": "5858532f",
+        "encoded": "return%20process.env.NODE_ENV%20%7C%7C%20'development';",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "27b804",
+        "hash": "e392f376",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "27b804",
+        "hash": "0941b36b",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "27b804",
+        "hash": "2512dddb",
+        "encoded": "*%20Check%20if%20running%20in%20CI%20environment",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "27b804",
+        "hash": "0b974afb",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "27b804",
+        "hash": "23f4fc6e",
+        "encoded": "export%20function%20isCI():%20boolean%20%7B",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "27b804",
+        "hash": "2d7e0082",
+        "encoded": "return%20!!process.env.CI;",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "27b804",
+        "hash": "42f7c135",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "27b804",
+        "hash": "78315c35",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "27b804",
+        "hash": "149d856b",
+        "encoded": "*%20Get%20configuration%20value%20safely",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "27b804",
+        "hash": "63411be4",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "27b804",
+        "hash": "887d3a1e",
+        "encoded": "export%20function%20getConfigValue(key:%20keyof%20Config):%20any%20%7B",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "27b804",
+        "hash": "38330514",
+        "encoded": "return%20config%5Bkey%5D;",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "27b804",
+        "hash": "bf862585",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "27b804",
+        "hash": "696a5ca4",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "27b804",
+        "hash": "0e2fb2dc",
+        "encoded": "*%20Export%20individual%20config%20values%20for%20convenience",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "27b804",
+        "hash": "848553ec",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "27b804",
+        "hash": "fca946c8",
+        "encoded": "export%20const%20%7B",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "27b804",
+        "hash": "9cc287a0",
+        "encoded": "baseUrl,",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "27b804",
+        "hash": "44605207",
+        "encoded": "testUsername,",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "27b804",
+        "hash": "56b91ff9",
+        "encoded": "testPassword,",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "27b804",
+        "hash": "8a1e0e3f",
+        "encoded": "adminUsername,",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "27b804",
+        "hash": "80851e29",
+        "encoded": "adminPassword,",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "27b804",
+        "hash": "e9d9153c",
+        "encoded": "headless,",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "27b804",
+        "hash": "cfac8ec8",
+        "encoded": "slowMo,",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "27b804",
+        "hash": "28442258",
+        "encoded": "defaultTimeout,",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "27b804",
+        "hash": "b74de474",
+        "encoded": "navigationTimeout,",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "27b804",
+        "hash": "08df5c60",
+        "encoded": "screenshotOnFailure,",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "27b804",
+        "hash": "123906b3",
+        "encoded": "videoOnFailure,",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "27b804",
+        "hash": "4149758f",
+        "encoded": "workers,",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "27b804",
+        "hash": "289aab51",
+        "encoded": "retries",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "27b804",
+        "hash": "8f7a881d",
+        "encoded": "%7D%20=%20config;",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

@@ -1,0 +1,264 @@
+{
+  "tests\\fixtures.ts": {
+    "filename": "fixtures.ts",
+    "path": "tests\\fixtures.ts",
+    "version": "1.2",
+    "contextFile": "3470a3dd-context.json",
+    "chunks": {
+      "b7385c": {
+        "user": "Rishna K",
+        "model": "gpt-4.1",
+        "timestamp": 1794905417,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "b5407788"
+        },
+        "hash": "c93debc1",
+        "messageId": "system_2f94cf70-e262-11f1-bc97-c58b44212be4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 2:20:17 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "b7385c",
+        "hash": "48c76aad",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "b7385c",
+        "hash": "534e06ba",
+        "encoded": "*%20Test%20Fixtures",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "b7385c",
+        "hash": "b5cdc715",
+        "encoded": "*%20Provides%20reusable%20test%20fixtures%20for%20page%20objects%20and%20common%20setup",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "b7385c",
+        "hash": "7c9e86a6",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "b7385c",
+        "hash": "9a7c8a5d",
+        "encoded": "import%20%7B%20test%20as%20base%20%7D%20from%20'@playwright/test';",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "b7385c",
+        "hash": "67948a5a",
+        "encoded": "import%20%7B%20LoginPage%20%7D%20from%20'../src/page-objects/LoginPage';",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "b7385c",
+        "hash": "d9a44175",
+        "encoded": "import%20%7B%20HomePage%20%7D%20from%20'../src/page-objects/HomePage';",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "b7385c",
+        "hash": "c287409a",
+        "encoded": "import%20%7B%20logger%20%7D%20from%20'../src/utilities/logger';",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "b7385c",
+        "hash": "87707c3e",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "b7385c",
+        "hash": "1d118be5",
+        "encoded": "*%20Extend%20base%20test%20with%20custom%20fixtures",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "b7385c",
+        "hash": "caaefa0e",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "b7385c",
+        "hash": "9752e78d",
+        "encoded": "type%20Fixtures%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "b7385c",
+        "hash": "e20e24eb",
+        "encoded": "loginPage:%20LoginPage;",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "b7385c",
+        "hash": "eb6fffe9",
+        "encoded": "homePage:%20HomePage;",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "b7385c",
+        "hash": "fdcc0195",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "b7385c",
+        "hash": "9a54798e",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "b7385c",
+        "hash": "646f5667",
+        "encoded": "*%20Custom%20test%20with%20page%20object%20fixtures",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "b7385c",
+        "hash": "5b817c8d",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "b7385c",
+        "hash": "e36a7f58",
+        "encoded": "export%20const%20test%20=%20base.extend%3CFixtures%3E(%7B",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "b7385c",
+        "hash": "40c95b3f",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "b7385c",
+        "hash": "5f680931",
+        "encoded": "*%20Login%20page%20fixture",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "b7385c",
+        "hash": "7189984f",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "b7385c",
+        "hash": "5e9febd8",
+        "encoded": "loginPage:%20async%20(%7B%20page%20%7D,%20use)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "b7385c",
+        "hash": "88f8bd2b",
+        "encoded": "logger.info('Initializing%20LoginPage%20fixture');",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "b7385c",
+        "hash": "e7a1137a",
+        "encoded": "const%20loginPage%20=%20new%20LoginPage(page);",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "b7385c",
+        "hash": "3b82992d",
+        "encoded": "await%20use(loginPage);",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "b7385c",
+        "hash": "07401789",
+        "encoded": "logger.info('LoginPage%20fixture%20cleanup');",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "b7385c",
+        "hash": "f8124d3b",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "b7385c",
+        "hash": "de2fae64",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "b7385c",
+        "hash": "3cdd8c38",
+        "encoded": "*%20Home%20page%20fixture",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "b7385c",
+        "hash": "9358b5e7",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "b7385c",
+        "hash": "4195867f",
+        "encoded": "homePage:%20async%20(%7B%20page%20%7D,%20use)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "b7385c",
+        "hash": "ffd8c161",
+        "encoded": "logger.info('Initializing%20HomePage%20fixture');",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "b7385c",
+        "hash": "d249a52a",
+        "encoded": "const%20homePage%20=%20new%20HomePage(page);",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "b7385c",
+        "hash": "31991a8a",
+        "encoded": "await%20use(homePage);",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "b7385c",
+        "hash": "43b32b80",
+        "encoded": "logger.info('HomePage%20fixture%20cleanup');",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "b7385c",
+        "hash": "a2f87705",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "b7385c",
+        "hash": "8636d221",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "b7385c",
+        "hash": "64f08cff",
+        "encoded": "export%20%7B%20expect%20%7D%20from%20'@playwright/test';",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

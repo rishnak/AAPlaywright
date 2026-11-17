@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  playwright-tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - BASE_URL=https://www.theaa.com
+      - CI=true
+      - HEADLESS=true
+      - WORKERS=4
+    volumes:
+      - ./playwright-report:/app/playwright-report
+      - ./test-results:/app/test-results
+      - ./screenshots:/app/screenshots
+    command: npm test

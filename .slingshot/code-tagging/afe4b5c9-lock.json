@@ -1,0 +1,3702 @@
+{
+  "FRAMEWORK_STRUCTURE.md": {
+    "filename": "FRAMEWORK_STRUCTURE.md",
+    "path": "FRAMEWORK_STRUCTURE.md",
+    "version": "1.2",
+    "contextFile": "afe4b5c9-context.json",
+    "chunks": {
+      "9db2c6": {
+        "user": "Rishna K",
+        "model": "gpt-4.1",
+        "timestamp": 1794906334,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "0f546578"
+        },
+        "hash": "7afbb600",
+        "messageId": "system_83be7f30-e265-11f1-bc97-c58b44212be4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 2:35:34 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "9db2c6",
+        "hash": "97ad5803",
+        "encoded": "#%20Playwright%20Page%20Object%20Model%20Framework%20Structure",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "9db2c6",
+        "hash": "b7e5fadb",
+        "encoded": "This%20document%20provides%20a%20comprehensive%20explanation%20of%20each%20folder%20and%20file%20in%20the%20framework,%20their%20purpose,%20and%20how%20they%20work%20together.",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "9db2c6",
+        "hash": "15783c36",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "9db2c6",
+        "hash": "13003346",
+        "encoded": "##%20%F0%9F%93%82%20Root%20Directory",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "9db2c6",
+        "hash": "f1a01655",
+        "encoded": "###%20Configuration%20Files",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "9db2c6",
+        "hash": "c4c8d868",
+        "encoded": "####%20%60playwright.config.ts%60",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "9db2c6",
+        "hash": "5a72ea25",
+        "encoded": "**Purpose**:%20Main%20configuration%20file%20for%20Playwright%20test%20runner.",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "9db2c6",
+        "hash": "7de93e6c",
+        "encoded": "**Contains**:",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "9db2c6",
+        "hash": "af48273e",
+        "encoded": "-%20**Test%20Directory**:%20Specifies%20where%20test%20files%20are%20located%20(%60./tests%60)",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "9db2c6",
+        "hash": "a5d28975",
+        "encoded": "-%20**Timeout%20Settings**:%20Default%20timeout%20for%20tests%20(30%20seconds)",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "9db2c6",
+        "hash": "90e142b7",
+        "encoded": "-%20**Execution%20Settings**:%20Parallel%20execution,%20retries,%20workers%20configuration",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "9db2c6",
+        "hash": "0b2453c2",
+        "encoded": "-%20**Browser%20Projects**:%20Configuration%20for%20Chromium,%20Firefox,%20WebKit,%20and%20mobile%20viewports",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "9db2c6",
+        "hash": "9c89eb85",
+        "encoded": "-%20**Reporters**:%20HTML,%20JSON,%20JUnit%20report%20configurations",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "9db2c6",
+        "hash": "b928087a",
+        "encoded": "-%20**Global%20Settings**:%20Screenshots,%20videos,%20traces%20on%20failure",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "9db2c6",
+        "hash": "baa5bce2",
+        "encoded": "-%20**Base%20URL**:%20Application%20URL%20from%20environment%20variables",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "9db2c6",
+        "hash": "ce25e035",
+        "encoded": "**When%20to%20Modify**:",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "9db2c6",
+        "hash": "2d581ae2",
+        "encoded": "-%20Add%20new%20browser%20configurations",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "9db2c6",
+        "hash": "1bf246fe",
+        "encoded": "-%20Change%20timeout%20values",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "9db2c6",
+        "hash": "e41baae2",
+        "encoded": "-%20Add%20new%20reporters",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "9db2c6",
+        "hash": "85574ad2",
+        "encoded": "-%20Configure%20different%20test%20directories",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "9db2c6",
+        "hash": "268a5b9c",
+        "encoded": "-%20Set%20up%20web%20server%20for%20local%20development",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "9db2c6",
+        "hash": "0355d09c",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "9db2c6",
+        "hash": "8d8cb351",
+        "encoded": "####%20%60tsconfig.json%60",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "9db2c6",
+        "hash": "6b4ae6d2",
+        "encoded": "**Purpose**:%20TypeScript%20compiler%20configuration.",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "9db2c6",
+        "hash": "9cd3cf05",
+        "encoded": "**Contains**:",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "9db2c6",
+        "hash": "b043e5eb",
+        "encoded": "-%20**Compiler%20Options**:%20Target%20ES%20version,%20module%20system,%20strictness",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "9db2c6",
+        "hash": "ebd1b879",
+        "encoded": "-%20**Type%20Definitions**:%20Node.js%20and%20Playwright%20types",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "9db2c6",
+        "hash": "5660043b",
+        "encoded": "-%20**Path%20Mappings**:%20Aliases%20for%20clean%20imports",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "9db2c6",
+        "hash": "c1614246",
+        "encoded": "%60%60%60typescript",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "9db2c6",
+        "hash": "c9f53c70",
+        "encoded": "%22@pages/*%22:%20%5B%22src/pages/*%22%5D",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "9db2c6",
+        "hash": "25f782c0",
+        "encoded": "%22@page-objects/*%22:%20%5B%22src/page-objects/*%22%5D",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "9db2c6",
+        "hash": "47fde7c3",
+        "encoded": "%22@utilities/*%22:%20%5B%22src/utilities/*%22%5D",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "9db2c6",
+        "hash": "d305856c",
+        "encoded": "%22@data/*%22:%20%5B%22src/data/*%22%5D",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "9db2c6",
+        "hash": "bac32708",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "9db2c6",
+        "hash": "23510d52",
+        "encoded": "-%20**Include/Exclude**:%20Which%20files%20to%20compile",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "9db2c6",
+        "hash": "65bdee87",
+        "encoded": "**Benefits**:",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "9db2c6",
+        "hash": "3b807b1d",
+        "encoded": "-%20Type%20safety%20across%20the%20framework",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "9db2c6",
+        "hash": "b42b7ef3",
+        "encoded": "-%20Clean%20import%20statements",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "9db2c6",
+        "hash": "fb6f00b2",
+        "encoded": "-%20Better%20IDE%20intellisense",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "9db2c6",
+        "hash": "7ede2ac3",
+        "encoded": "-%20Compile-time%20error%20detection",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "9db2c6",
+        "hash": "e6641b4b",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "9db2c6",
+        "hash": "f815a5cb",
+        "encoded": "####%20%60package.json%60",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "9db2c6",
+        "hash": "b2251740",
+        "encoded": "**Purpose**:%20Project%20metadata%20and%20dependency%20management.",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "9db2c6",
+        "hash": "b44930d6",
+        "encoded": "**Contains**:",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "9db2c6",
+        "hash": "991ef201",
+        "encoded": "-%20**Project%20Information**:%20Name,%20version,%20description,%20author",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "9db2c6",
+        "hash": "feabe909",
+        "encoded": "-%20**Dependencies**:%20Playwright,%20TypeScript,%20Node%20types,%20dotenv",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "9db2c6",
+        "hash": "dc7d4f38",
+        "encoded": "-%20**NPM%20Scripts**:%20Pre-configured%20commands%20for%20running%20tests",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "9db2c6",
+        "hash": "3b4f7c16",
+        "encoded": "-%20%60npm%20test%60%20-%20Run%20all%20tests",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "9db2c6",
+        "hash": "8e5d9672",
+        "encoded": "-%20%60npm%20run%20test:headed%60%20-%20Run%20with%20visible%20browser",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "9db2c6",
+        "hash": "076c3e3c",
+        "encoded": "-%20%60npm%20run%20test:chromium/firefox/webkit%60%20-%20Browser-specific%20tests",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "9db2c6",
+        "hash": "bbcac81d",
+        "encoded": "-%20%60npm%20run%20test:debug%60%20-%20Debug%20mode",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "9db2c6",
+        "hash": "b6f995a9",
+        "encoded": "-%20%60npm%20run%20test:ui%60%20-%20Interactive%20UI%20mode",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "9db2c6",
+        "hash": "1f01b68a",
+        "encoded": "-%20%60npm%20run%20test:report%60%20-%20View%20HTML%20reports",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "9db2c6",
+        "hash": "2b3bfa8b",
+        "encoded": "**Key%20Scripts%20Explained**:",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "9db2c6",
+        "hash": "cfdd9b52",
+        "encoded": "%60%60%60json",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "9db2c6",
+        "hash": "936065f5",
+        "encoded": "%22test%22:%20%22playwright%20test%22%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20//%20Run%20all%20tests%20headless",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "9db2c6",
+        "hash": "c7ad700d",
+        "encoded": "%22test:headed%22:%20%22playwright%20test%20--headed%22%20%20%20%20//%20See%20browser%20while%20running",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "9db2c6",
+        "hash": "b202bd93",
+        "encoded": "%22test:debug%22:%20%22playwright%20test%20--debug%22%20%20%20%20%20%20//%20Step-by-step%20debugging",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "9db2c6",
+        "hash": "ff5fd125",
+        "encoded": "%22test:ui%22:%20%22playwright%20test%20--ui%22%20%20%20%20%20%20%20%20%20%20%20//%20Interactive%20test%20UI",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "9db2c6",
+        "hash": "c8a2a638",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "9db2c6",
+        "hash": "af79d593",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "9db2c6",
+        "hash": "54e174ca",
+        "encoded": "####%20%60.env.example%60",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "9db2c6",
+        "hash": "8078d76b",
+        "encoded": "**Purpose**:%20Template%20for%20environment%20variables.",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "9db2c6",
+        "hash": "822f8990",
+        "encoded": "**Contains**:",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "9db2c6",
+        "hash": "b1e76950",
+        "encoded": "-%20**Application%20URLs**:%20BASE_URL%20for%20different%20environments",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "9db2c6",
+        "hash": "026b3392",
+        "encoded": "-%20**Test%20Credentials**:%20Username%20and%20password%20for%20test%20users",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "9db2c6",
+        "hash": "3315583c",
+        "encoded": "-%20**Browser%20Settings**:%20Headless%20mode,%20slow%20motion",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "9db2c6",
+        "hash": "c5c97063",
+        "encoded": "-%20**Timeouts**:%20Default%20and%20navigation%20timeouts",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "9db2c6",
+        "hash": "bf197016",
+        "encoded": "-%20**Test%20Settings**:%20Screenshot/video%20on%20failure,%20workers,%20retries",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "9db2c6",
+        "hash": "b33b14ea",
+        "encoded": "**Usage**:",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "9db2c6",
+        "hash": "40f1620d",
+        "encoded": "1.%20Copy%20to%20%60.env%60:%20%60cp%20.env.example%20.env%60",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "9db2c6",
+        "hash": "a7b1635c",
+        "encoded": "2.%20Update%20with%20actual%20values",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "9db2c6",
+        "hash": "e6224260",
+        "encoded": "3.%20Never%20commit%20%60.env%60%20to%20version%20control",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "9db2c6",
+        "hash": "a535359d",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "9db2c6",
+        "hash": "4677add5",
+        "encoded": "####%20%60.gitignore%60",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "9db2c6",
+        "hash": "13be3262",
+        "encoded": "**Purpose**:%20Specifies%20files%20and%20folders%20to%20exclude%20from%20version%20control.",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "9db2c6",
+        "hash": "c7a8fb0e",
+        "encoded": "**Excludes**:",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "9db2c6",
+        "hash": "2380fbfc",
+        "encoded": "-%20%60node_modules/%60%20-%20Dependencies",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "9db2c6",
+        "hash": "17903912",
+        "encoded": "-%20%60test-results/%60%20-%20Test%20execution%20results",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "9db2c6",
+        "hash": "731404ec",
+        "encoded": "-%20%60playwright-report/%60%20-%20HTML%20reports",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "9db2c6",
+        "hash": "1d569eb8",
+        "encoded": "-%20%60screenshots/%60%20-%20Test%20screenshots",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "9db2c6",
+        "hash": "c827a9c2",
+        "encoded": "-%20%60.env%60%20-%20Environment%20variables%20(sensitive%20data)",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "9db2c6",
+        "hash": "eb4a9385",
+        "encoded": "-%20%60dist/%60%20-%20Compiled%20TypeScript%20output",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "9db2c6",
+        "hash": "19218d53",
+        "encoded": "-%20IDE-specific%20files",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "9db2c6",
+        "hash": "e646eb99",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "9db2c6",
+        "hash": "928892ec",
+        "encoded": "##%20%F0%9F%93%81%20%60src/%60%20Directory",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "9db2c6",
+        "hash": "a92cdd1f",
+        "encoded": "Main%20source%20code%20directory%20containing%20all%20framework%20components.",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "9db2c6",
+        "hash": "e8a33f8d",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "9db2c6",
+        "hash": "00420327",
+        "encoded": "###%20%F0%9F%93%81%20%60src/pages/%60",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "9db2c6",
+        "hash": "7d044220",
+        "encoded": "**Purpose**:%20Contains%20base%20page%20classes%20with%20common%20functionality.",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "9db2c6",
+        "hash": "2fa75c43",
+        "encoded": "####%20%60BasePage.ts%60",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "9db2c6",
+        "hash": "6cf27062",
+        "encoded": "**Purpose**:%20Parent%20class%20that%20all%20page%20objects%20inherit%20from.",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "9db2c6",
+        "hash": "5ab328af",
+        "encoded": "**Contains**:",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "9db2c6",
+        "hash": "1bf72e69",
+        "encoded": "-%20**Navigation%20Methods**:%20%60navigate()%60,%20%60getCurrentUrl()%60,%20%60getTitle()%60",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "9db2c6",
+        "hash": "d9645da5",
+        "encoded": "-%20**Interaction%20Methods**:%20%60click()%60,%20%60fill()%60,%20%60type()%60,%20%60hover()%60",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "9db2c6",
+        "hash": "d67413f5",
+        "encoded": "-%20**Wait%20Methods**:%20%60waitForElement()%60,%20%60waitForElementHidden()%60,%20%60waitForPageLoad()%60",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "9db2c6",
+        "hash": "4a3ae139",
+        "encoded": "-%20**Validation%20Methods**:%20%60isVisible()%60,%20%60getText()%60",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "9db2c6",
+        "hash": "e96446d9",
+        "encoded": "-%20**Utility%20Methods**:%20%60takeScreenshot()%60,%20%60scrollToElement()%60,%20%60pressKey()%60",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "9db2c6",
+        "hash": "d8b8816a",
+        "encoded": "-%20**Form%20Methods**:%20%60selectDropdown()%60,%20%60check()%60,%20%60uncheck()%60",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "9db2c6",
+        "hash": "2c078931",
+        "encoded": "**Key%20Features**:",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "9db2c6",
+        "hash": "34c04cbe",
+        "encoded": "-%20%E2%9C%85%20Encapsulates%20common%20Playwright%20operations",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "9db2c6",
+        "hash": "7f00df64",
+        "encoded": "-%20%E2%9C%85%20Provides%20consistent%20error%20handling",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "9db2c6",
+        "hash": "962accd0",
+        "encoded": "-%20%E2%9C%85%20Implements%20explicit%20waits%20for%20stability",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "9db2c6",
+        "hash": "c0e10777",
+        "encoded": "-%20%E2%9C%85%20Reduces%20code%20duplication%20(DRY%20principle)",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "9db2c6",
+        "hash": "36464e11",
+        "encoded": "-%20%E2%9C%85%20Easy%20to%20extend%20with%20new%20common%20methods",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "9db2c6",
+        "hash": "9a5e0555",
+        "encoded": "**Example%20Methods**:",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "9db2c6",
+        "hash": "63c97efc",
+        "encoded": "%60%60%60typescript",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "9db2c6",
+        "hash": "7f4c13af",
+        "encoded": "//%20Wait%20for%20element%20and%20click",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "9db2c6",
+        "hash": "b4887b17",
+        "encoded": "async%20click(locator:%20Locator):%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "9db2c6",
+        "hash": "5b1e8172",
+        "encoded": "await%20locator.waitFor(%7B%20state:%20'visible'%20%7D);",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "9db2c6",
+        "hash": "fc2ae1c0",
+        "encoded": "await%20locator.click();",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "9db2c6",
+        "hash": "52c5d6be",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "9db2c6",
+        "hash": "995e9236",
+        "encoded": "//%20Fill%20input%20with%20automatic%20clearing",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "9db2c6",
+        "hash": "73782059",
+        "encoded": "async%20fill(locator:%20Locator,%20text:%20string):%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "9db2c6",
+        "hash": "5324e9bb",
+        "encoded": "await%20locator.waitFor(%7B%20state:%20'visible'%20%7D);",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "9db2c6",
+        "hash": "ccd52b79",
+        "encoded": "await%20locator.clear();",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "9db2c6",
+        "hash": "5e7992b6",
+        "encoded": "await%20locator.fill(text);",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "9db2c6",
+        "hash": "e584d451",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "9db2c6",
+        "hash": "1c6d9c41",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "9db2c6",
+        "hash": "7b8dd366",
+        "encoded": "**When%20to%20Modify**:",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "9db2c6",
+        "hash": "1fa00338",
+        "encoded": "-%20Add%20new%20common%20methods%20used%20across%20multiple%20pages",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "9db2c6",
+        "hash": "85b88a0d",
+        "encoded": "-%20Update%20wait%20strategies",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "9db2c6",
+        "hash": "bfb890cb",
+        "encoded": "-%20Add%20custom%20error%20handling",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "9db2c6",
+        "hash": "71ca35f4",
+        "encoded": "-%20Implement%20framework-wide%20behaviors",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "9db2c6",
+        "hash": "430ee660",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "9db2c6",
+        "hash": "543a9524",
+        "encoded": "###%20%F0%9F%93%81%20%60src/page-objects/%60",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "9db2c6",
+        "hash": "9729a703",
+        "encoded": "**Purpose**:%20Contains%20page-specific%20classes%20implementing%20the%20Page%20Object%20Model%20pattern.",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "9db2c6",
+        "hash": "b85418fa",
+        "encoded": "**What%20is%20Page%20Object%20Model%20(POM)?**",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "9db2c6",
+        "hash": "2f4b15b1",
+        "encoded": "-%20Design%20pattern%20that%20creates%20an%20object%20repository%20for%20web%20elements",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "9db2c6",
+        "hash": "968481e0",
+        "encoded": "-%20Each%20page%20of%20the%20application%20has%20a%20corresponding%20page%20class",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "9db2c6",
+        "hash": "5cb9920a",
+        "encoded": "-%20Separates%20test%20logic%20from%20page-specific%20code",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "9db2c6",
+        "hash": "73ca39a5",
+        "encoded": "-%20Improves%20maintainability%20and%20reduces%20code%20duplication",
+        "prevChunkIds": []
+      },
+      "171": {
+        "chunkId": "9db2c6",
+        "hash": "5e743d52",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "9db2c6",
+        "hash": "68fce88e",
+        "encoded": "####%20%60LoginPage.ts%60",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "9db2c6",
+        "hash": "64fce7ba",
+        "encoded": "**Purpose**:%20Encapsulates%20login%20page%20elements%20and%20actions.",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "9db2c6",
+        "hash": "9270705f",
+        "encoded": "**Structure**:",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "9db2c6",
+        "hash": "f6cfb724",
+        "encoded": "%60%60%60typescript",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "9db2c6",
+        "hash": "88568288",
+        "encoded": "export%20class%20LoginPage%20extends%20BasePage%20%7B",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "9db2c6",
+        "hash": "f1653be8",
+        "encoded": "//%201.%20Locators%20(private)",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "9db2c6",
+        "hash": "3bff8707",
+        "encoded": "private%20readonly%20usernameInput:%20Locator;",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "9db2c6",
+        "hash": "9d5c92e3",
+        "encoded": "private%20readonly%20passwordInput:%20Locator;",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "9db2c6",
+        "hash": "e7bb3ba9",
+        "encoded": "private%20readonly%20loginButton:%20Locator;",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "9db2c6",
+        "hash": "a5ee7937",
+        "encoded": "//%202.%20Constructor%20-%20Initialize%20locators",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "9db2c6",
+        "hash": "d978d483",
+        "encoded": "constructor(page:%20Page)%20%7B",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "9db2c6",
+        "hash": "9cdbfb03",
+        "encoded": "super(page);",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "9db2c6",
+        "hash": "5ac9e430",
+        "encoded": "this.usernameInput%20=%20page.locator('#username');",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "9db2c6",
+        "hash": "0e05cbe1",
+        "encoded": "this.passwordInput%20=%20page.locator('#password');",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "9db2c6",
+        "hash": "0fa4b448",
+        "encoded": "this.loginButton%20=%20page.locator('button%5Btype=%22submit%22%5D');",
+        "prevChunkIds": []
+      },
+      "190": {
+        "chunkId": "9db2c6",
+        "hash": "6e59ae01",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "9db2c6",
+        "hash": "fe67f68b",
+        "encoded": "//%203.%20Page%20Actions%20(public)",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "9db2c6",
+        "hash": "6950ef02",
+        "encoded": "async%20login(username:%20string,%20password:%20string):%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "9db2c6",
+        "hash": "6464a46c",
+        "encoded": "await%20this.fill(this.usernameInput,%20username);",
+        "prevChunkIds": []
+      },
+      "195": {
+        "chunkId": "9db2c6",
+        "hash": "99ebfe87",
+        "encoded": "await%20this.fill(this.passwordInput,%20password);",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "9db2c6",
+        "hash": "585848c9",
+        "encoded": "await%20this.click(this.loginButton);",
+        "prevChunkIds": []
+      },
+      "197": {
+        "chunkId": "9db2c6",
+        "hash": "4ff5cbdc",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "9db2c6",
+        "hash": "78ef20c6",
+        "encoded": "//%204.%20Validation%20Methods",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "9db2c6",
+        "hash": "2503ef54",
+        "encoded": "async%20getErrorMessage():%20Promise%3Cstring%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "201": {
+        "chunkId": "9db2c6",
+        "hash": "06bcab21",
+        "encoded": "return%20await%20this.getText(this.errorMessage);",
+        "prevChunkIds": []
+      },
+      "202": {
+        "chunkId": "9db2c6",
+        "hash": "67e0f58a",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "9db2c6",
+        "hash": "6f7f74d0",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "204": {
+        "chunkId": "9db2c6",
+        "hash": "a422f964",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "206": {
+        "chunkId": "9db2c6",
+        "hash": "912bd324",
+        "encoded": "**Contains**:",
+        "prevChunkIds": []
+      },
+      "207": {
+        "chunkId": "9db2c6",
+        "hash": "9d24feb2",
+        "encoded": "-%20**Locators**:%20All%20element%20selectors%20for%20the%20login%20page",
+        "prevChunkIds": []
+      },
+      "208": {
+        "chunkId": "9db2c6",
+        "hash": "6cfa62b9",
+        "encoded": "-%20**Actions**:%20%60login()%60,%20%60loginWithRememberMe()%60,%20%60clickForgotPassword()%60",
+        "prevChunkIds": []
+      },
+      "209": {
+        "chunkId": "9db2c6",
+        "hash": "584b22ba",
+        "encoded": "-%20**Validations**:%20%60isLoginPageLoaded()%60,%20%60getErrorMessage()%60,%20%60isErrorMessageDisplayed()%60",
+        "prevChunkIds": []
+      },
+      "211": {
+        "chunkId": "9db2c6",
+        "hash": "ede14029",
+        "encoded": "**Best%20Practices**:",
+        "prevChunkIds": []
+      },
+      "212": {
+        "chunkId": "9db2c6",
+        "hash": "4e1939ab",
+        "encoded": "-%20%E2%9C%85%20Locators%20are%20private%20(encapsulation)",
+        "prevChunkIds": []
+      },
+      "213": {
+        "chunkId": "9db2c6",
+        "hash": "45b59c9b",
+        "encoded": "-%20%E2%9C%85%20Methods%20are%20public%20(actions%20and%20validations)",
+        "prevChunkIds": []
+      },
+      "214": {
+        "chunkId": "9db2c6",
+        "hash": "5e8bf989",
+        "encoded": "-%20%E2%9C%85%20No%20assertions%20in%20page%20objects",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "9db2c6",
+        "hash": "36a7bb68",
+        "encoded": "-%20%E2%9C%85%20Methods%20return%20values%20or%20promises",
+        "prevChunkIds": []
+      },
+      "216": {
+        "chunkId": "9db2c6",
+        "hash": "b45490f1",
+        "encoded": "-%20%E2%9C%85%20Descriptive%20method%20names",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "9db2c6",
+        "hash": "d205c2bf",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "220": {
+        "chunkId": "9db2c6",
+        "hash": "c6805b8f",
+        "encoded": "####%20%60HomePage.ts%60",
+        "prevChunkIds": []
+      },
+      "221": {
+        "chunkId": "9db2c6",
+        "hash": "153f0fa0",
+        "encoded": "**Purpose**:%20Encapsulates%20home%20page%20elements%20and%20actions.",
+        "prevChunkIds": []
+      },
+      "223": {
+        "chunkId": "9db2c6",
+        "hash": "b325a095",
+        "encoded": "**Contains**:",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "9db2c6",
+        "hash": "3c49514f",
+        "encoded": "-%20**Locators**:%20Welcome%20message,%20profile%20icon,%20logout%20button,%20search%20box,%20navigation%20menu",
+        "prevChunkIds": []
+      },
+      "225": {
+        "chunkId": "9db2c6",
+        "hash": "770f8885",
+        "encoded": "-%20**Actions**:%20%60logout()%60,%20%60search()%60,%20%60navigateToSettings()%60",
+        "prevChunkIds": []
+      },
+      "226": {
+        "chunkId": "9db2c6",
+        "hash": "668dd901",
+        "encoded": "-%20**Validations**:%20%60getWelcomeMessage()%60,%20%60isHomePageLoaded()%60,%20%60getNavigationMenuItems()%60",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "9db2c6",
+        "hash": "0a4b15ba",
+        "encoded": "**Usage%20in%20Tests**:",
+        "prevChunkIds": []
+      },
+      "229": {
+        "chunkId": "9db2c6",
+        "hash": "88a8bee9",
+        "encoded": "%60%60%60typescript",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "9db2c6",
+        "hash": "0400567e",
+        "encoded": "const%20homePage%20=%20new%20HomePage(page);",
+        "prevChunkIds": []
+      },
+      "231": {
+        "chunkId": "9db2c6",
+        "hash": "a6b13443",
+        "encoded": "await%20homePage.navigateToHome();",
+        "prevChunkIds": []
+      },
+      "232": {
+        "chunkId": "9db2c6",
+        "hash": "6fe92d1f",
+        "encoded": "await%20homePage.search('product');",
+        "prevChunkIds": []
+      },
+      "233": {
+        "chunkId": "9db2c6",
+        "hash": "72e6431c",
+        "encoded": "const%20message%20=%20await%20homePage.getWelcomeMessage();",
+        "prevChunkIds": []
+      },
+      "234": {
+        "chunkId": "9db2c6",
+        "hash": "eeaec860",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "236": {
+        "chunkId": "9db2c6",
+        "hash": "483b2cde",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "238": {
+        "chunkId": "9db2c6",
+        "hash": "d93a89c6",
+        "encoded": "###%20%F0%9F%93%81%20%60src/data/%60",
+        "prevChunkIds": []
+      },
+      "240": {
+        "chunkId": "9db2c6",
+        "hash": "d8a4b72c",
+        "encoded": "**Purpose**:%20Centralized%20test%20data%20management%20for%20data-driven%20testing.",
+        "prevChunkIds": []
+      },
+      "242": {
+        "chunkId": "9db2c6",
+        "hash": "a88b380b",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "244": {
+        "chunkId": "9db2c6",
+        "hash": "98bf5008",
+        "encoded": "####%20%60users.json%60",
+        "prevChunkIds": []
+      },
+      "245": {
+        "chunkId": "9db2c6",
+        "hash": "07feec8e",
+        "encoded": "**Purpose**:%20Store%20test%20user%20data%20in%20JSON%20format.",
+        "prevChunkIds": []
+      },
+      "247": {
+        "chunkId": "9db2c6",
+        "hash": "5caf7dea",
+        "encoded": "**Structure**:",
+        "prevChunkIds": []
+      },
+      "248": {
+        "chunkId": "9db2c6",
+        "hash": "5d6a9866",
+        "encoded": "%60%60%60json",
+        "prevChunkIds": []
+      },
+      "249": {
+        "chunkId": "9db2c6",
+        "hash": "aeb69a83",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "250": {
+        "chunkId": "9db2c6",
+        "hash": "29bf24a1",
+        "encoded": "%22validUser%22:%20%7B",
+        "prevChunkIds": []
+      },
+      "251": {
+        "chunkId": "9db2c6",
+        "hash": "21072227",
+        "encoded": "%22username%22:%20%22testuser@example.com%22,",
+        "prevChunkIds": []
+      },
+      "252": {
+        "chunkId": "9db2c6",
+        "hash": "922c649d",
+        "encoded": "%22password%22:%20%22Test@1234%22,",
+        "prevChunkIds": []
+      },
+      "253": {
+        "chunkId": "9db2c6",
+        "hash": "3ce4df37",
+        "encoded": "%22firstName%22:%20%22Test%22,",
+        "prevChunkIds": []
+      },
+      "254": {
+        "chunkId": "9db2c6",
+        "hash": "a660113c",
+        "encoded": "%22lastName%22:%20%22User%22",
+        "prevChunkIds": []
+      },
+      "255": {
+        "chunkId": "9db2c6",
+        "hash": "460fc98d",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "256": {
+        "chunkId": "9db2c6",
+        "hash": "c8b08d39",
+        "encoded": "%22adminUser%22:%20%7B%20%7D,",
+        "prevChunkIds": []
+      },
+      "257": {
+        "chunkId": "9db2c6",
+        "hash": "931f2f5a",
+        "encoded": "%22invalidUser%22:%20%7B%20%7D",
+        "prevChunkIds": []
+      },
+      "258": {
+        "chunkId": "9db2c6",
+        "hash": "41edc21c",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "259": {
+        "chunkId": "9db2c6",
+        "hash": "8b8f12e3",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "261": {
+        "chunkId": "9db2c6",
+        "hash": "babad82a",
+        "encoded": "**Benefits**:",
+        "prevChunkIds": []
+      },
+      "262": {
+        "chunkId": "9db2c6",
+        "hash": "993e2d18",
+        "encoded": "-%20%E2%9C%85%20Easy%20to%20read%20and%20edit",
+        "prevChunkIds": []
+      },
+      "263": {
+        "chunkId": "9db2c6",
+        "hash": "65047647",
+        "encoded": "-%20%E2%9C%85%20Can%20be%20loaded%20dynamically",
+        "prevChunkIds": []
+      },
+      "264": {
+        "chunkId": "9db2c6",
+        "hash": "eab47ece",
+        "encoded": "-%20%E2%9C%85%20Supports%20multiple%20data%20sets",
+        "prevChunkIds": []
+      },
+      "265": {
+        "chunkId": "9db2c6",
+        "hash": "de83736a",
+        "encoded": "-%20%E2%9C%85%20No%20code%20changes%20needed%20to%20update%20data",
+        "prevChunkIds": []
+      },
+      "267": {
+        "chunkId": "9db2c6",
+        "hash": "cd532f30",
+        "encoded": "**Usage**:",
+        "prevChunkIds": []
+      },
+      "268": {
+        "chunkId": "9db2c6",
+        "hash": "a427a0f2",
+        "encoded": "%60%60%60typescript",
+        "prevChunkIds": []
+      },
+      "269": {
+        "chunkId": "9db2c6",
+        "hash": "78c3bb66",
+        "encoded": "import%20*%20as%20users%20from%20'../data/users.json';",
+        "prevChunkIds": []
+      },
+      "270": {
+        "chunkId": "9db2c6",
+        "hash": "7f58e3c3",
+        "encoded": "const%20user%20=%20users.validUser;",
+        "prevChunkIds": []
+      },
+      "271": {
+        "chunkId": "9db2c6",
+        "hash": "9ea376d1",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "273": {
+        "chunkId": "9db2c6",
+        "hash": "ab474597",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "275": {
+        "chunkId": "9db2c6",
+        "hash": "dc3285d2",
+        "encoded": "####%20%60testData.ts%60",
+        "prevChunkIds": []
+      },
+      "276": {
+        "chunkId": "9db2c6",
+        "hash": "7744fcfd",
+        "encoded": "**Purpose**:%20Type-safe%20test%20data%20with%20TypeScript%20interfaces.",
+        "prevChunkIds": []
+      },
+      "278": {
+        "chunkId": "9db2c6",
+        "hash": "4bfec452",
+        "encoded": "**Contains**:",
+        "prevChunkIds": []
+      },
+      "279": {
+        "chunkId": "9db2c6",
+        "hash": "b9e4d9dc",
+        "encoded": "-%20**Interfaces**:%20%60User%60,%20%60SearchData%60%20for%20type%20safety",
+        "prevChunkIds": []
+      },
+      "280": {
+        "chunkId": "9db2c6",
+        "hash": "531caced",
+        "encoded": "-%20**Test%20Users**:%20Valid,%20admin,%20and%20invalid%20user%20objects",
+        "prevChunkIds": []
+      },
+      "281": {
+        "chunkId": "9db2c6",
+        "hash": "dafcd34b",
+        "encoded": "-%20**Search%20Data**:%20Valid%20and%20invalid%20search%20terms",
+        "prevChunkIds": []
+      },
+      "282": {
+        "chunkId": "9db2c6",
+        "hash": "b26c4aef",
+        "encoded": "-%20**Error%20Messages**:%20Expected%20error%20messages",
+        "prevChunkIds": []
+      },
+      "283": {
+        "chunkId": "9db2c6",
+        "hash": "24d8be12",
+        "encoded": "-%20**URLs**:%20Application%20routes",
+        "prevChunkIds": []
+      },
+      "285": {
+        "chunkId": "9db2c6",
+        "hash": "cbb0dd14",
+        "encoded": "**Benefits**:",
+        "prevChunkIds": []
+      },
+      "286": {
+        "chunkId": "9db2c6",
+        "hash": "8c06f246",
+        "encoded": "-%20%E2%9C%85%20Type%20safety%20with%20IntelliSense",
+        "prevChunkIds": []
+      },
+      "287": {
+        "chunkId": "9db2c6",
+        "hash": "af2ac4fb",
+        "encoded": "-%20%E2%9C%85%20Compile-time%20validation",
+        "prevChunkIds": []
+      },
+      "288": {
+        "chunkId": "9db2c6",
+        "hash": "37d8c190",
+        "encoded": "-%20%E2%9C%85%20Autocomplete%20in%20IDE",
+        "prevChunkIds": []
+      },
+      "289": {
+        "chunkId": "9db2c6",
+        "hash": "d5bea972",
+        "encoded": "-%20%E2%9C%85%20Easier%20refactoring",
+        "prevChunkIds": []
+      },
+      "291": {
+        "chunkId": "9db2c6",
+        "hash": "ea7bc149",
+        "encoded": "**Usage**:",
+        "prevChunkIds": []
+      },
+      "292": {
+        "chunkId": "9db2c6",
+        "hash": "8c880511",
+        "encoded": "%60%60%60typescript",
+        "prevChunkIds": []
+      },
+      "293": {
+        "chunkId": "9db2c6",
+        "hash": "56cfb89c",
+        "encoded": "import%20%7B%20testUsers,%20errorMessages%20%7D%20from%20'../data/testData';",
+        "prevChunkIds": []
+      },
+      "294": {
+        "chunkId": "9db2c6",
+        "hash": "00501ba1",
+        "encoded": "await%20loginPage.login(testUsers.validUser.username,%20testUsers.validUser.password);",
+        "prevChunkIds": []
+      },
+      "295": {
+        "chunkId": "9db2c6",
+        "hash": "ef5dddad",
+        "encoded": "expect(error).toBe(errorMessages.invalidLogin);",
+        "prevChunkIds": []
+      },
+      "296": {
+        "chunkId": "9db2c6",
+        "hash": "3a349f9f",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "298": {
+        "chunkId": "9db2c6",
+        "hash": "7ab2fee9",
+        "encoded": "**When%20to%20Use%20JSON%20vs%20TypeScript**:",
+        "prevChunkIds": []
+      },
+      "299": {
+        "chunkId": "9db2c6",
+        "hash": "c16a2c30",
+        "encoded": "-%20**JSON**:%20External%20data,%20configuration,%20non-technical%20users%20can%20edit",
+        "prevChunkIds": []
+      },
+      "300": {
+        "chunkId": "9db2c6",
+        "hash": "4170477e",
+        "encoded": "-%20**TypeScript**:%20Complex%20data%20structures,%20need%20type%20safety,%20shared%20interfaces",
+        "prevChunkIds": []
+      },
+      "302": {
+        "chunkId": "9db2c6",
+        "hash": "2c3b2036",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "304": {
+        "chunkId": "9db2c6",
+        "hash": "467563d8",
+        "encoded": "###%20%F0%9F%93%81%20%60src/utilities/%60",
+        "prevChunkIds": []
+      },
+      "306": {
+        "chunkId": "9db2c6",
+        "hash": "b53fc0eb",
+        "encoded": "**Purpose**:%20Reusable%20helper%20functions%20and%20utilities%20for%20the%20framework.",
+        "prevChunkIds": []
+      },
+      "308": {
+        "chunkId": "9db2c6",
+        "hash": "87c32b7e",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "310": {
+        "chunkId": "9db2c6",
+        "hash": "564428ec",
+        "encoded": "####%20%60dateUtils.ts%60",
+        "prevChunkIds": []
+      },
+      "311": {
+        "chunkId": "9db2c6",
+        "hash": "081309d8",
+        "encoded": "**Purpose**:%20Date%20manipulation%20and%20formatting%20functions.",
+        "prevChunkIds": []
+      },
+      "313": {
+        "chunkId": "9db2c6",
+        "hash": "c7ff96cd",
+        "encoded": "**Functions**:",
+        "prevChunkIds": []
+      },
+      "314": {
+        "chunkId": "9db2c6",
+        "hash": "b792acd2",
+        "encoded": "-%20%60getCurrentDate(format)%60%20-%20Get%20current%20date%20in%20specified%20format",
+        "prevChunkIds": []
+      },
+      "315": {
+        "chunkId": "9db2c6",
+        "hash": "e8509de8",
+        "encoded": "-%20%60getCurrentTimestamp()%60%20-%20Get%20Unix%20timestamp",
+        "prevChunkIds": []
+      },
+      "316": {
+        "chunkId": "9db2c6",
+        "hash": "7d9d512f",
+        "encoded": "-%20%60addDays(date,%20days)%60%20-%20Add/subtract%20days%20from%20a%20date",
+        "prevChunkIds": []
+      },
+      "317": {
+        "chunkId": "9db2c6",
+        "hash": "913c0e5a",
+        "encoded": "-%20%60formatDate(date,%20format)%60%20-%20Format%20date%20to%20string",
+        "prevChunkIds": []
+      },
+      "318": {
+        "chunkId": "9db2c6",
+        "hash": "e445f94d",
+        "encoded": "-%20%60getDaysDifference(date1,%20date2)%60%20-%20Calculate%20difference%20between%20dates",
+        "prevChunkIds": []
+      },
+      "320": {
+        "chunkId": "9db2c6",
+        "hash": "fd9fd7c0",
+        "encoded": "**Use%20Cases**:",
+        "prevChunkIds": []
+      },
+      "321": {
+        "chunkId": "9db2c6",
+        "hash": "46898d09",
+        "encoded": "-%20Setting%20date%20ranges%20in%20forms",
+        "prevChunkIds": []
+      },
+      "322": {
+        "chunkId": "9db2c6",
+        "hash": "6d168c48",
+        "encoded": "-%20Generating%20dynamic%20test%20data",
+        "prevChunkIds": []
+      },
+      "323": {
+        "chunkId": "9db2c6",
+        "hash": "df22db0a",
+        "encoded": "-%20Validating%20date%20fields",
+        "prevChunkIds": []
+      },
+      "324": {
+        "chunkId": "9db2c6",
+        "hash": "9b5a2f90",
+        "encoded": "-%20Creating%20timestamps%20for%20files/logs",
+        "prevChunkIds": []
+      },
+      "326": {
+        "chunkId": "9db2c6",
+        "hash": "6315c45a",
+        "encoded": "**Example**:",
+        "prevChunkIds": []
+      },
+      "327": {
+        "chunkId": "9db2c6",
+        "hash": "db6f2cc8",
+        "encoded": "%60%60%60typescript",
+        "prevChunkIds": []
+      },
+      "328": {
+        "chunkId": "9db2c6",
+        "hash": "4bd7d17c",
+        "encoded": "import%20%7B%20getCurrentDate,%20addDays%20%7D%20from%20'../utilities/dateUtils';",
+        "prevChunkIds": []
+      },
+      "329": {
+        "chunkId": "9db2c6",
+        "hash": "30e63a73",
+        "encoded": "const%20today%20=%20getCurrentDate('DD-MM-YYYY');",
+        "prevChunkIds": []
+      },
+      "330": {
+        "chunkId": "9db2c6",
+        "hash": "3540f4b1",
+        "encoded": "const%20futureDate%20=%20addDays(new%20Date(),%2030);",
+        "prevChunkIds": []
+      },
+      "331": {
+        "chunkId": "9db2c6",
+        "hash": "efd0a93e",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "333": {
+        "chunkId": "9db2c6",
+        "hash": "134cc655",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "335": {
+        "chunkId": "9db2c6",
+        "hash": "5d1e2236",
+        "encoded": "####%20%60stringUtils.ts%60",
+        "prevChunkIds": []
+      },
+      "336": {
+        "chunkId": "9db2c6",
+        "hash": "cf528567",
+        "encoded": "**Purpose**:%20String%20manipulation%20and%20generation%20utilities.",
+        "prevChunkIds": []
+      },
+      "338": {
+        "chunkId": "9db2c6",
+        "hash": "e8f03171",
+        "encoded": "**Functions**:",
+        "prevChunkIds": []
+      },
+      "339": {
+        "chunkId": "9db2c6",
+        "hash": "51bac5f6",
+        "encoded": "-%20%60generateRandomString(length,%20includeNumbers)%60%20-%20Random%20string%20generation",
+        "prevChunkIds": []
+      },
+      "340": {
+        "chunkId": "9db2c6",
+        "hash": "44648246",
+        "encoded": "-%20%60generateRandomEmail(domain)%60%20-%20Random%20email%20addresses",
+        "prevChunkIds": []
+      },
+      "341": {
+        "chunkId": "9db2c6",
+        "hash": "dd81f1f0",
+        "encoded": "-%20%60capitalizeFirstLetter(str)%60%20-%20Capitalize%20strings",
+        "prevChunkIds": []
+      },
+      "342": {
+        "chunkId": "9db2c6",
+        "hash": "c2c97069",
+        "encoded": "-%20%60removeSpecialCharacters(str)%60%20-%20Clean%20strings",
+        "prevChunkIds": []
+      },
+      "343": {
+        "chunkId": "9db2c6",
+        "hash": "add3a98e",
+        "encoded": "-%20%60truncateString(str,%20maxLength)%60%20-%20Truncate%20with%20ellipsis",
+        "prevChunkIds": []
+      },
+      "344": {
+        "chunkId": "9db2c6",
+        "hash": "137f12e9",
+        "encoded": "-%20%60isValidEmail(email)%60%20-%20Email%20validation",
+        "prevChunkIds": []
+      },
+      "345": {
+        "chunkId": "9db2c6",
+        "hash": "a2a9f92f",
+        "encoded": "-%20%60generateUniqueId()%60%20-%20Unique%20identifiers",
+        "prevChunkIds": []
+      },
+      "347": {
+        "chunkId": "9db2c6",
+        "hash": "391316a6",
+        "encoded": "**Use%20Cases**:",
+        "prevChunkIds": []
+      },
+      "348": {
+        "chunkId": "9db2c6",
+        "hash": "ebb6529a",
+        "encoded": "-%20Creating%20unique%20test%20data",
+        "prevChunkIds": []
+      },
+      "349": {
+        "chunkId": "9db2c6",
+        "hash": "978a88d0",
+        "encoded": "-%20Generating%20random%20usernames/emails",
+        "prevChunkIds": []
+      },
+      "350": {
+        "chunkId": "9db2c6",
+        "hash": "e912b03e",
+        "encoded": "-%20Data%20validation",
+        "prevChunkIds": []
+      },
+      "351": {
+        "chunkId": "9db2c6",
+        "hash": "4d1f2dad",
+        "encoded": "-%20Cleaning%20input%20data",
+        "prevChunkIds": []
+      },
+      "353": {
+        "chunkId": "9db2c6",
+        "hash": "93b2cb01",
+        "encoded": "**Example**:",
+        "prevChunkIds": []
+      },
+      "354": {
+        "chunkId": "9db2c6",
+        "hash": "a3a8badb",
+        "encoded": "%60%60%60typescript",
+        "prevChunkIds": []
+      },
+      "355": {
+        "chunkId": "9db2c6",
+        "hash": "df6a187e",
+        "encoded": "import%20%7B%20generateRandomEmail,%20generateUniqueId%20%7D%20from%20'../utilities/stringUtils';",
+        "prevChunkIds": []
+      },
+      "356": {
+        "chunkId": "9db2c6",
+        "hash": "e334bbee",
+        "encoded": "const%20email%20=%20generateRandomEmail('test.com');%20//%20random123@test.com",
+        "prevChunkIds": []
+      },
+      "357": {
+        "chunkId": "9db2c6",
+        "hash": "b7102597",
+        "encoded": "const%20orderId%20=%20generateUniqueId();%20//%20id_1234567890_abc123def",
+        "prevChunkIds": []
+      },
+      "358": {
+        "chunkId": "9db2c6",
+        "hash": "7b658b97",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "360": {
+        "chunkId": "9db2c6",
+        "hash": "d47a1988",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "362": {
+        "chunkId": "9db2c6",
+        "hash": "645f5f0c",
+        "encoded": "####%20%60testHelpers.ts%60",
+        "prevChunkIds": []
+      },
+      "363": {
+        "chunkId": "9db2c6",
+        "hash": "d5f60a90",
+        "encoded": "**Purpose**:%20Test-specific%20helper%20functions%20and%20custom%20assertions.",
+        "prevChunkIds": []
+      },
+      "365": {
+        "chunkId": "9db2c6",
+        "hash": "aaefd78a",
+        "encoded": "**Functions**:",
+        "prevChunkIds": []
+      },
+      "366": {
+        "chunkId": "9db2c6",
+        "hash": "512c4ff0",
+        "encoded": "-%20%60wait(ms)%60%20-%20Simple%20delay",
+        "prevChunkIds": []
+      },
+      "367": {
+        "chunkId": "9db2c6",
+        "hash": "79f85c59",
+        "encoded": "-%20%60retryUntilSuccess(fn,%20maxRetries,%20delay)%60%20-%20Retry%20logic%20for%20flaky%20operations",
+        "prevChunkIds": []
+      },
+      "368": {
+        "chunkId": "9db2c6",
+        "hash": "fd96f930",
+        "encoded": "-%20%60takeTimestampedScreenshot(page,%20name)%60%20-%20Screenshots%20with%20timestamps",
+        "prevChunkIds": []
+      },
+      "369": {
+        "chunkId": "9db2c6",
+        "hash": "119de12d",
+        "encoded": "-%20%60getRandomNumber(min,%20max)%60%20-%20Random%20number%20generation",
+        "prevChunkIds": []
+      },
+      "370": {
+        "chunkId": "9db2c6",
+        "hash": "fee60f91",
+        "encoded": "-%20%60getRandomElement(array)%60%20-%20Pick%20random%20array%20element",
+        "prevChunkIds": []
+      },
+      "371": {
+        "chunkId": "9db2c6",
+        "hash": "2c3f69b8",
+        "encoded": "-%20%60loadJsonData(filePath)%60%20-%20Load%20JSON%20files",
+        "prevChunkIds": []
+      },
+      "372": {
+        "chunkId": "9db2c6",
+        "hash": "dc333a3f",
+        "encoded": "-%20%60assertUrlContains(page,%20text)%60%20-%20Custom%20URL%20assertion",
+        "prevChunkIds": []
+      },
+      "373": {
+        "chunkId": "9db2c6",
+        "hash": "d58774ae",
+        "encoded": "-%20%60assertPageTitle(page,%20title)%60%20-%20Custom%20title%20assertion",
+        "prevChunkIds": []
+      },
+      "374": {
+        "chunkId": "9db2c6",
+        "hash": "1b4e2bdd",
+        "encoded": "-%20%60elementExists(page,%20selector)%60%20-%20Check%20element%20existence",
+        "prevChunkIds": []
+      },
+      "376": {
+        "chunkId": "9db2c6",
+        "hash": "7be5d3eb",
+        "encoded": "**Use%20Cases**:",
+        "prevChunkIds": []
+      },
+      "377": {
+        "chunkId": "9db2c6",
+        "hash": "da8e13f7",
+        "encoded": "-%20Handling%20flaky%20tests%20with%20retry%20logic",
+        "prevChunkIds": []
+      },
+      "378": {
+        "chunkId": "9db2c6",
+        "hash": "51b5e761",
+        "encoded": "-%20Debugging%20with%20screenshots",
+        "prevChunkIds": []
+      },
+      "379": {
+        "chunkId": "9db2c6",
+        "hash": "5dfb2f17",
+        "encoded": "-%20Data-driven%20testing%20with%20JSON",
+        "prevChunkIds": []
+      },
+      "380": {
+        "chunkId": "9db2c6",
+        "hash": "a6223d49",
+        "encoded": "-%20Custom%20assertions%20for%20better%20readability",
+        "prevChunkIds": []
+      },
+      "382": {
+        "chunkId": "9db2c6",
+        "hash": "d3d294f7",
+        "encoded": "**Example**:",
+        "prevChunkIds": []
+      },
+      "383": {
+        "chunkId": "9db2c6",
+        "hash": "914a8d28",
+        "encoded": "%60%60%60typescript",
+        "prevChunkIds": []
+      },
+      "384": {
+        "chunkId": "9db2c6",
+        "hash": "597971cf",
+        "encoded": "import%20%7B%20retryUntilSuccess,%20assertUrlContains%20%7D%20from%20'../utilities/testHelpers';",
+        "prevChunkIds": []
+      },
+      "386": {
+        "chunkId": "9db2c6",
+        "hash": "87b694ef",
+        "encoded": "//%20Retry%20API%20call%20up%20to%203%20times",
+        "prevChunkIds": []
+      },
+      "387": {
+        "chunkId": "9db2c6",
+        "hash": "5d60cee8",
+        "encoded": "await%20retryUntilSuccess(async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "388": {
+        "chunkId": "9db2c6",
+        "hash": "55da2640",
+        "encoded": "await%20page.waitForSelector('.loaded');",
+        "prevChunkIds": []
+      },
+      "389": {
+        "chunkId": "9db2c6",
+        "hash": "b013e58c",
+        "encoded": "%7D,%203,%201000);",
+        "prevChunkIds": []
+      },
+      "391": {
+        "chunkId": "9db2c6",
+        "hash": "d619bdc7",
+        "encoded": "//%20Custom%20assertion",
+        "prevChunkIds": []
+      },
+      "392": {
+        "chunkId": "9db2c6",
+        "hash": "2417d82e",
+        "encoded": "await%20assertUrlContains(page,%20'/dashboard');",
+        "prevChunkIds": []
+      },
+      "393": {
+        "chunkId": "9db2c6",
+        "hash": "65b86e00",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "395": {
+        "chunkId": "9db2c6",
+        "hash": "92d0c1fb",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "397": {
+        "chunkId": "9db2c6",
+        "hash": "a27b01e3",
+        "encoded": "####%20%60logger.ts%60",
+        "prevChunkIds": []
+      },
+      "398": {
+        "chunkId": "9db2c6",
+        "hash": "533046fa",
+        "encoded": "**Purpose**:%20Centralized%20logging%20utility%20for%20test%20execution.",
+        "prevChunkIds": []
+      },
+      "400": {
+        "chunkId": "9db2c6",
+        "hash": "f278dd3e",
+        "encoded": "**Features**:",
+        "prevChunkIds": []
+      },
+      "401": {
+        "chunkId": "9db2c6",
+        "hash": "74ef3d31",
+        "encoded": "-%20**Singleton%20Pattern**:%20Single%20logger%20instance%20across%20framework",
+        "prevChunkIds": []
+      },
+      "402": {
+        "chunkId": "9db2c6",
+        "hash": "b7af9966",
+        "encoded": "-%20**Log%20Levels**:%20INFO,%20DEBUG,%20WARN,%20ERROR",
+        "prevChunkIds": []
+      },
+      "403": {
+        "chunkId": "9db2c6",
+        "hash": "b3ffbf73",
+        "encoded": "-%20**Timestamps**:%20Automatic%20ISO%20timestamp%20for%20each%20log",
+        "prevChunkIds": []
+      },
+      "404": {
+        "chunkId": "9db2c6",
+        "hash": "3c1c5737",
+        "encoded": "-%20**Formatted%20Output**:%20Consistent%20log%20format",
+        "prevChunkIds": []
+      },
+      "405": {
+        "chunkId": "9db2c6",
+        "hash": "fd9fadea",
+        "encoded": "-%20**Error%20Stack%20Traces**:%20Full%20error%20details%20on%20failures",
+        "prevChunkIds": []
+      },
+      "407": {
+        "chunkId": "9db2c6",
+        "hash": "e10a55a8",
+        "encoded": "**Methods**:",
+        "prevChunkIds": []
+      },
+      "408": {
+        "chunkId": "9db2c6",
+        "hash": "06367948",
+        "encoded": "-%20%60logger.info(message)%60%20-%20Informational%20messages",
+        "prevChunkIds": []
+      },
+      "409": {
+        "chunkId": "9db2c6",
+        "hash": "fcfe0883",
+        "encoded": "-%20%60logger.debug(message)%60%20-%20Debug%20information",
+        "prevChunkIds": []
+      },
+      "410": {
+        "chunkId": "9db2c6",
+        "hash": "3916a876",
+        "encoded": "-%20%60logger.warn(message)%60%20-%20Warning%20messages",
+        "prevChunkIds": []
+      },
+      "411": {
+        "chunkId": "9db2c6",
+        "hash": "44a36884",
+        "encoded": "-%20%60logger.error(message,%20error)%60%20-%20Error%20messages%20with%20stack%20traces",
+        "prevChunkIds": []
+      },
+      "412": {
+        "chunkId": "9db2c6",
+        "hash": "b37d57ef",
+        "encoded": "-%20%60logger.setConsoleLogging(enabled)%60%20-%20Enable/disable%20logging",
+        "prevChunkIds": []
+      },
+      "414": {
+        "chunkId": "9db2c6",
+        "hash": "a9d9d6a7",
+        "encoded": "**Use%20Cases**:",
+        "prevChunkIds": []
+      },
+      "415": {
+        "chunkId": "9db2c6",
+        "hash": "dbb9f565",
+        "encoded": "-%20Tracking%20test%20execution%20flow",
+        "prevChunkIds": []
+      },
+      "416": {
+        "chunkId": "9db2c6",
+        "hash": "01206beb",
+        "encoded": "-%20Debugging%20failures",
+        "prevChunkIds": []
+      },
+      "417": {
+        "chunkId": "9db2c6",
+        "hash": "6f85579c",
+        "encoded": "-%20Performance%20monitoring",
+        "prevChunkIds": []
+      },
+      "418": {
+        "chunkId": "9db2c6",
+        "hash": "192b732c",
+        "encoded": "-%20Audit%20trails",
+        "prevChunkIds": []
+      },
+      "420": {
+        "chunkId": "9db2c6",
+        "hash": "a11342a0",
+        "encoded": "**Example**:",
+        "prevChunkIds": []
+      },
+      "421": {
+        "chunkId": "9db2c6",
+        "hash": "36c9effd",
+        "encoded": "%60%60%60typescript",
+        "prevChunkIds": []
+      },
+      "422": {
+        "chunkId": "9db2c6",
+        "hash": "d8aa3561",
+        "encoded": "import%20%7B%20logger%20%7D%20from%20'../utilities/logger';",
+        "prevChunkIds": []
+      },
+      "424": {
+        "chunkId": "9db2c6",
+        "hash": "e4151333",
+        "encoded": "test('example',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "425": {
+        "chunkId": "9db2c6",
+        "hash": "d4716620",
+        "encoded": "logger.info('Starting%20test%20execution');",
+        "prevChunkIds": []
+      },
+      "426": {
+        "chunkId": "9db2c6",
+        "hash": "bc723ad6",
+        "encoded": "await%20loginPage.login(username,%20password);",
+        "prevChunkIds": []
+      },
+      "427": {
+        "chunkId": "9db2c6",
+        "hash": "1d5c16eb",
+        "encoded": "logger.debug('Login%20successful');",
+        "prevChunkIds": []
+      },
+      "428": {
+        "chunkId": "9db2c6",
+        "hash": "691342bb",
+        "encoded": "logger.error('Test%20failed',%20error);",
+        "prevChunkIds": []
+      },
+      "429": {
+        "chunkId": "9db2c6",
+        "hash": "6e12b9cc",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "430": {
+        "chunkId": "9db2c6",
+        "hash": "d89a8a10",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "432": {
+        "chunkId": "9db2c6",
+        "hash": "387757ab",
+        "encoded": "**Output%20Format**:",
+        "prevChunkIds": []
+      },
+      "433": {
+        "chunkId": "9db2c6",
+        "hash": "c514d55f",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "434": {
+        "chunkId": "9db2c6",
+        "hash": "689d9ded",
+        "encoded": "%5B2026-11-17T12:30:45.123Z%5D%20%5BINFO%5D%20Starting%20test%20execution",
+        "prevChunkIds": []
+      },
+      "435": {
+        "chunkId": "9db2c6",
+        "hash": "1a907fc0",
+        "encoded": "%5B2026-11-17T12:30:46.456Z%5D%20%5BDEBUG%5D%20Login%20successful",
+        "prevChunkIds": []
+      },
+      "436": {
+        "chunkId": "9db2c6",
+        "hash": "ac132dc2",
+        "encoded": "%5B2026-11-17T12:30:47.789Z%5D%20%5BERROR%5D%20Test%20failed",
+        "prevChunkIds": []
+      },
+      "437": {
+        "chunkId": "9db2c6",
+        "hash": "32708255",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "439": {
+        "chunkId": "9db2c6",
+        "hash": "71f3aad1",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "441": {
+        "chunkId": "9db2c6",
+        "hash": "ec28d0bc",
+        "encoded": "####%20%60config.ts%60",
+        "prevChunkIds": []
+      },
+      "442": {
+        "chunkId": "9db2c6",
+        "hash": "756589a0",
+        "encoded": "**Purpose**:%20Environment%20configuration%20management%20with%20type%20safety.",
+        "prevChunkIds": []
+      },
+      "444": {
+        "chunkId": "9db2c6",
+        "hash": "3f5544e5",
+        "encoded": "**Features**:",
+        "prevChunkIds": []
+      },
+      "445": {
+        "chunkId": "9db2c6",
+        "hash": "3388a17f",
+        "encoded": "-%20**Environment%20Variables**:%20Loads%20from%20%60.env%60%20file%20using%20dotenv",
+        "prevChunkIds": []
+      },
+      "446": {
+        "chunkId": "9db2c6",
+        "hash": "6a88d69c",
+        "encoded": "-%20**Type%20Safety**:%20TypeScript%20interface%20for%20all%20config%20values",
+        "prevChunkIds": []
+      },
+      "447": {
+        "chunkId": "9db2c6",
+        "hash": "f6dc82c8",
+        "encoded": "-%20**Default%20Values**:%20Fallback%20values%20if%20env%20vars%20not%20set",
+        "prevChunkIds": []
+      },
+      "448": {
+        "chunkId": "9db2c6",
+        "hash": "8ccc3f36",
+        "encoded": "-%20**Typed%20Access**:%20Autocomplete%20for%20configuration%20keys",
+        "prevChunkIds": []
+      },
+      "450": {
+        "chunkId": "9db2c6",
+        "hash": "f5b5a3a1",
+        "encoded": "**Configuration%20Values**:",
+        "prevChunkIds": []
+      },
+      "451": {
+        "chunkId": "9db2c6",
+        "hash": "ea65fe36",
+        "encoded": "-%20%60baseUrl%60%20-%20Application%20URL",
+        "prevChunkIds": []
+      },
+      "452": {
+        "chunkId": "9db2c6",
+        "hash": "b0df4556",
+        "encoded": "-%20%60testUsername%60,%20%60testPassword%60%20-%20Test%20credentials",
+        "prevChunkIds": []
+      },
+      "453": {
+        "chunkId": "9db2c6",
+        "hash": "3557a9e7",
+        "encoded": "-%20%60adminUsername%60,%20%60adminPassword%60%20-%20Admin%20credentials",
+        "prevChunkIds": []
+      },
+      "454": {
+        "chunkId": "9db2c6",
+        "hash": "f82e737e",
+        "encoded": "-%20%60headless%60%20-%20Browser%20visibility",
+        "prevChunkIds": []
+      },
+      "455": {
+        "chunkId": "9db2c6",
+        "hash": "9257c677",
+        "encoded": "-%20%60slowMo%60%20-%20Slow%20down%20operations",
+        "prevChunkIds": []
+      },
+      "456": {
+        "chunkId": "9db2c6",
+        "hash": "4e33c11d",
+        "encoded": "-%20%60defaultTimeout%60,%20%60navigationTimeout%60%20-%20Timeout%20settings",
+        "prevChunkIds": []
+      },
+      "457": {
+        "chunkId": "9db2c6",
+        "hash": "452415e5",
+        "encoded": "-%20%60screenshotOnFailure%60,%20%60videoOnFailure%60%20-%20Artifact%20settings",
+        "prevChunkIds": []
+      },
+      "458": {
+        "chunkId": "9db2c6",
+        "hash": "9b1667ab",
+        "encoded": "-%20%60workers%60,%20%60retries%60%20-%20Execution%20settings",
+        "prevChunkIds": []
+      },
+      "460": {
+        "chunkId": "9db2c6",
+        "hash": "da5a6a68",
+        "encoded": "**Helper%20Functions**:",
+        "prevChunkIds": []
+      },
+      "461": {
+        "chunkId": "9db2c6",
+        "hash": "29b3ed63",
+        "encoded": "-%20%60getEnvironment()%60%20-%20Get%20current%20environment%20(dev/staging/prod)",
+        "prevChunkIds": []
+      },
+      "462": {
+        "chunkId": "9db2c6",
+        "hash": "cdafede7",
+        "encoded": "-%20%60isCI()%60%20-%20Check%20if%20running%20in%20CI/CD",
+        "prevChunkIds": []
+      },
+      "463": {
+        "chunkId": "9db2c6",
+        "hash": "ed3712fd",
+        "encoded": "-%20%60getConfigValue(key)%60%20-%20Get%20specific%20config%20value",
+        "prevChunkIds": []
+      },
+      "465": {
+        "chunkId": "9db2c6",
+        "hash": "2ed7d573",
+        "encoded": "**Usage**:",
+        "prevChunkIds": []
+      },
+      "466": {
+        "chunkId": "9db2c6",
+        "hash": "5c43083b",
+        "encoded": "%60%60%60typescript",
+        "prevChunkIds": []
+      },
+      "467": {
+        "chunkId": "9db2c6",
+        "hash": "f11c4675",
+        "encoded": "import%20%7B%20config,%20baseUrl,%20isCI%20%7D%20from%20'../utilities/config';",
+        "prevChunkIds": []
+      },
+      "469": {
+        "chunkId": "9db2c6",
+        "hash": "daa09a6c",
+        "encoded": "await%20page.goto(baseUrl);",
+        "prevChunkIds": []
+      },
+      "470": {
+        "chunkId": "9db2c6",
+        "hash": "217cf868",
+        "encoded": "const%20retries%20=%20isCI()%20?%202%20:%200;",
+        "prevChunkIds": []
+      },
+      "471": {
+        "chunkId": "9db2c6",
+        "hash": "646fff74",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "473": {
+        "chunkId": "9db2c6",
+        "hash": "656ff54d",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "475": {
+        "chunkId": "9db2c6",
+        "hash": "42bdceff",
+        "encoded": "##%20%F0%9F%93%81%20%60tests/%60%20Directory",
+        "prevChunkIds": []
+      },
+      "477": {
+        "chunkId": "9db2c6",
+        "hash": "319c1cfd",
+        "encoded": "**Purpose**:%20Contains%20all%20test%20specifications%20and%20test%20fixtures.",
+        "prevChunkIds": []
+      },
+      "479": {
+        "chunkId": "9db2c6",
+        "hash": "f3d95e05",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "481": {
+        "chunkId": "9db2c6",
+        "hash": "9283807a",
+        "encoded": "###%20%60login.spec.ts%60",
+        "prevChunkIds": []
+      },
+      "482": {
+        "chunkId": "9db2c6",
+        "hash": "2d0a76b8",
+        "encoded": "**Purpose**:%20Test%20suite%20for%20login%20functionality.",
+        "prevChunkIds": []
+      },
+      "484": {
+        "chunkId": "9db2c6",
+        "hash": "5d052548",
+        "encoded": "**Test%20Cases**:",
+        "prevChunkIds": []
+      },
+      "485": {
+        "chunkId": "9db2c6",
+        "hash": "666f129d",
+        "encoded": "1.%20%E2%9C%85%20Login%20with%20valid%20credentials",
+        "prevChunkIds": []
+      },
+      "486": {
+        "chunkId": "9db2c6",
+        "hash": "b4462413",
+        "encoded": "2.%20%E2%9C%85%20Show%20error%20message%20with%20invalid%20credentials",
+        "prevChunkIds": []
+      },
+      "487": {
+        "chunkId": "9db2c6",
+        "hash": "6040f99b",
+        "encoded": "3.%20%E2%9C%85%20Login%20with%20remember%20me%20option",
+        "prevChunkIds": []
+      },
+      "488": {
+        "chunkId": "9db2c6",
+        "hash": "ed144814",
+        "encoded": "4.%20%E2%9C%85%20Navigate%20to%20forgot%20password%20page",
+        "prevChunkIds": []
+      },
+      "490": {
+        "chunkId": "9db2c6",
+        "hash": "43126295",
+        "encoded": "**Structure**:",
+        "prevChunkIds": []
+      },
+      "491": {
+        "chunkId": "9db2c6",
+        "hash": "b4ce4b02",
+        "encoded": "%60%60%60typescript",
+        "prevChunkIds": []
+      },
+      "492": {
+        "chunkId": "9db2c6",
+        "hash": "6637e4cb",
+        "encoded": "test.describe('Login%20Tests',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "493": {
+        "chunkId": "9db2c6",
+        "hash": "cacfd209",
+        "encoded": "let%20loginPage:%20LoginPage;",
+        "prevChunkIds": []
+      },
+      "495": {
+        "chunkId": "9db2c6",
+        "hash": "6bf85906",
+        "encoded": "//%20Setup%20before%20each%20test",
+        "prevChunkIds": []
+      },
+      "496": {
+        "chunkId": "9db2c6",
+        "hash": "90551d96",
+        "encoded": "test.beforeEach(async%20(%7B%20page%20%7D)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "497": {
+        "chunkId": "9db2c6",
+        "hash": "026b4e6b",
+        "encoded": "loginPage%20=%20new%20LoginPage(page);",
+        "prevChunkIds": []
+      },
+      "498": {
+        "chunkId": "9db2c6",
+        "hash": "e40093c7",
+        "encoded": "await%20loginPage.navigateToLogin();",
+        "prevChunkIds": []
+      },
+      "499": {
+        "chunkId": "9db2c6",
+        "hash": "e7f78a84",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "501": {
+        "chunkId": "9db2c6",
+        "hash": "d7f2f6f2",
+        "encoded": "//%20Individual%20test%20cases",
+        "prevChunkIds": []
+      },
+      "502": {
+        "chunkId": "9db2c6",
+        "hash": "36a40469",
+        "encoded": "test('should%20login%20successfully',%20async%20(%7B%20page%20%7D)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "503": {
+        "chunkId": "9db2c6",
+        "hash": "6e778c85",
+        "encoded": "await%20loginPage.login(username,%20password);",
+        "prevChunkIds": []
+      },
+      "504": {
+        "chunkId": "9db2c6",
+        "hash": "09aaa562",
+        "encoded": "expect(await%20homePage.isHomePageLoaded()).toBeTruthy();",
+        "prevChunkIds": []
+      },
+      "505": {
+        "chunkId": "9db2c6",
+        "hash": "c6ef5641",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "507": {
+        "chunkId": "9db2c6",
+        "hash": "8eb20669",
+        "encoded": "//%20Cleanup%20after%20each%20test",
+        "prevChunkIds": []
+      },
+      "508": {
+        "chunkId": "9db2c6",
+        "hash": "71a5b12a",
+        "encoded": "test.afterEach(async%20(%7B%20page%20%7D,%20testInfo)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "509": {
+        "chunkId": "9db2c6",
+        "hash": "8b84a1b7",
+        "encoded": "if%20(testInfo.status%20!==%20testInfo.expectedStatus)%20%7B",
+        "prevChunkIds": []
+      },
+      "510": {
+        "chunkId": "9db2c6",
+        "hash": "837f6285",
+        "encoded": "await%20page.screenshot(%7B%20path:%20%60failure-$%7BtestInfo.title%7D.png%60%20%7D);",
+        "prevChunkIds": []
+      },
+      "511": {
+        "chunkId": "9db2c6",
+        "hash": "5f180033",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "512": {
+        "chunkId": "9db2c6",
+        "hash": "f285fe29",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "513": {
+        "chunkId": "9db2c6",
+        "hash": "39c5a643",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "514": {
+        "chunkId": "9db2c6",
+        "hash": "cfe2cd50",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "516": {
+        "chunkId": "9db2c6",
+        "hash": "077b3725",
+        "encoded": "**Key%20Features**:",
+        "prevChunkIds": []
+      },
+      "517": {
+        "chunkId": "9db2c6",
+        "hash": "41a7fe14",
+        "encoded": "-%20Uses%20page%20objects%20(LoginPage,%20HomePage)",
+        "prevChunkIds": []
+      },
+      "518": {
+        "chunkId": "9db2c6",
+        "hash": "34dabd13",
+        "encoded": "-%20Uses%20test%20data%20(testUsers,%20errorMessages)",
+        "prevChunkIds": []
+      },
+      "519": {
+        "chunkId": "9db2c6",
+        "hash": "50d8dbfd",
+        "encoded": "-%20Implements%20logging",
+        "prevChunkIds": []
+      },
+      "520": {
+        "chunkId": "9db2c6",
+        "hash": "9369597a",
+        "encoded": "-%20Screenshots%20on%20failure",
+        "prevChunkIds": []
+      },
+      "521": {
+        "chunkId": "9db2c6",
+        "hash": "d7461e0b",
+        "encoded": "-%20Clear%20test%20descriptions",
+        "prevChunkIds": []
+      },
+      "523": {
+        "chunkId": "9db2c6",
+        "hash": "a2269a96",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "525": {
+        "chunkId": "9db2c6",
+        "hash": "92388930",
+        "encoded": "###%20%60home.spec.ts%60",
+        "prevChunkIds": []
+      },
+      "526": {
+        "chunkId": "9db2c6",
+        "hash": "ab8c41f2",
+        "encoded": "**Purpose**:%20Test%20suite%20for%20home%20page%20functionality.",
+        "prevChunkIds": []
+      },
+      "528": {
+        "chunkId": "9db2c6",
+        "hash": "1ee00e00",
+        "encoded": "**Test%20Cases**:",
+        "prevChunkIds": []
+      },
+      "529": {
+        "chunkId": "9db2c6",
+        "hash": "7cab6d7d",
+        "encoded": "1.%20%E2%9C%85%20Display%20welcome%20message",
+        "prevChunkIds": []
+      },
+      "530": {
+        "chunkId": "9db2c6",
+        "hash": "01cede48",
+        "encoded": "2.%20%E2%9C%85%20Perform%20search%20operation",
+        "prevChunkIds": []
+      },
+      "531": {
+        "chunkId": "9db2c6",
+        "hash": "907f0fd5",
+        "encoded": "3.%20%E2%9C%85%20Navigate%20to%20settings%20page",
+        "prevChunkIds": []
+      },
+      "532": {
+        "chunkId": "9db2c6",
+        "hash": "8778c778",
+        "encoded": "4.%20%E2%9C%85%20Display%20navigation%20menu%20items",
+        "prevChunkIds": []
+      },
+      "533": {
+        "chunkId": "9db2c6",
+        "hash": "251817e8",
+        "encoded": "5.%20%E2%9C%85%20Logout%20successfully",
+        "prevChunkIds": []
+      },
+      "535": {
+        "chunkId": "9db2c6",
+        "hash": "b0463f83",
+        "encoded": "**Features**:",
+        "prevChunkIds": []
+      },
+      "536": {
+        "chunkId": "9db2c6",
+        "hash": "e62fe03c",
+        "encoded": "-%20Login%20in%20%60beforeEach%60%20for%20authenticated%20tests",
+        "prevChunkIds": []
+      },
+      "537": {
+        "chunkId": "9db2c6",
+        "hash": "4e42210c",
+        "encoded": "-%20Uses%20multiple%20page%20objects",
+        "prevChunkIds": []
+      },
+      "538": {
+        "chunkId": "9db2c6",
+        "hash": "bd9ad279",
+        "encoded": "-%20Validates%20navigation%20and%20UI%20elements",
+        "prevChunkIds": []
+      },
+      "539": {
+        "chunkId": "9db2c6",
+        "hash": "0cbe5849",
+        "encoded": "-%20Tests%20user%20workflows",
+        "prevChunkIds": []
+      },
+      "541": {
+        "chunkId": "9db2c6",
+        "hash": "8db68875",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "543": {
+        "chunkId": "9db2c6",
+        "hash": "abb192a8",
+        "encoded": "###%20%60fixtures.ts%60",
+        "prevChunkIds": []
+      },
+      "544": {
+        "chunkId": "9db2c6",
+        "hash": "b31bac98",
+        "encoded": "**Purpose**:%20Custom%20Playwright%20fixtures%20for%20cleaner%20test%20code.",
+        "prevChunkIds": []
+      },
+      "546": {
+        "chunkId": "9db2c6",
+        "hash": "098031f1",
+        "encoded": "**What%20are%20Fixtures?**",
+        "prevChunkIds": []
+      },
+      "547": {
+        "chunkId": "9db2c6",
+        "hash": "000305b4",
+        "encoded": "-%20Reusable%20test%20setup%20and%20teardown",
+        "prevChunkIds": []
+      },
+      "548": {
+        "chunkId": "9db2c6",
+        "hash": "94b3713d",
+        "encoded": "-%20Dependency%20injection%20for%20tests",
+        "prevChunkIds": []
+      },
+      "549": {
+        "chunkId": "9db2c6",
+        "hash": "e85f981d",
+        "encoded": "-%20Automatic%20cleanup%20after%20tests",
+        "prevChunkIds": []
+      },
+      "550": {
+        "chunkId": "9db2c6",
+        "hash": "c879aa70",
+        "encoded": "-%20Type-safe%20test%20context",
+        "prevChunkIds": []
+      },
+      "552": {
+        "chunkId": "9db2c6",
+        "hash": "de1ecdff",
+        "encoded": "**Custom%20Fixtures**:",
+        "prevChunkIds": []
+      },
+      "553": {
+        "chunkId": "9db2c6",
+        "hash": "c4af5b75",
+        "encoded": "%60%60%60typescript",
+        "prevChunkIds": []
+      },
+      "554": {
+        "chunkId": "9db2c6",
+        "hash": "6bd67ceb",
+        "encoded": "export%20const%20test%20=%20base.extend%3CFixtures%3E(%7B",
+        "prevChunkIds": []
+      },
+      "555": {
+        "chunkId": "9db2c6",
+        "hash": "2a127db8",
+        "encoded": "loginPage:%20async%20(%7B%20page%20%7D,%20use)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "556": {
+        "chunkId": "9db2c6",
+        "hash": "1bbeb1d8",
+        "encoded": "const%20loginPage%20=%20new%20LoginPage(page);",
+        "prevChunkIds": []
+      },
+      "557": {
+        "chunkId": "9db2c6",
+        "hash": "d7ec8156",
+        "encoded": "await%20use(loginPage);%20%20//%20Provide%20to%20test",
+        "prevChunkIds": []
+      },
+      "558": {
+        "chunkId": "9db2c6",
+        "hash": "8829d71d",
+        "encoded": "//%20Automatic%20cleanup%20after%20test",
+        "prevChunkIds": []
+      },
+      "559": {
+        "chunkId": "9db2c6",
+        "hash": "cabefe34",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "561": {
+        "chunkId": "9db2c6",
+        "hash": "dca35ed2",
+        "encoded": "homePage:%20async%20(%7B%20page%20%7D,%20use)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "562": {
+        "chunkId": "9db2c6",
+        "hash": "28544a84",
+        "encoded": "const%20homePage%20=%20new%20HomePage(page);",
+        "prevChunkIds": []
+      },
+      "563": {
+        "chunkId": "9db2c6",
+        "hash": "772f4600",
+        "encoded": "await%20use(homePage);",
+        "prevChunkIds": []
+      },
+      "564": {
+        "chunkId": "9db2c6",
+        "hash": "da3dcad7",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "565": {
+        "chunkId": "9db2c6",
+        "hash": "15eafd7a",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "566": {
+        "chunkId": "9db2c6",
+        "hash": "7c374323",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "568": {
+        "chunkId": "9db2c6",
+        "hash": "0b12550b",
+        "encoded": "**Usage%20in%20Tests**:",
+        "prevChunkIds": []
+      },
+      "569": {
+        "chunkId": "9db2c6",
+        "hash": "02054d36",
+        "encoded": "%60%60%60typescript",
+        "prevChunkIds": []
+      },
+      "570": {
+        "chunkId": "9db2c6",
+        "hash": "3eada9f5",
+        "encoded": "import%20%7B%20test,%20expect%20%7D%20from%20'./fixtures';",
+        "prevChunkIds": []
+      },
+      "572": {
+        "chunkId": "9db2c6",
+        "hash": "25910b39",
+        "encoded": "test('example',%20async%20(%7B%20loginPage,%20homePage%20%7D)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "573": {
+        "chunkId": "9db2c6",
+        "hash": "a485d191",
+        "encoded": "//%20Page%20objects%20are%20automatically%20available",
+        "prevChunkIds": []
+      },
+      "574": {
+        "chunkId": "9db2c6",
+        "hash": "fe679b99",
+        "encoded": "await%20loginPage.navigateToLogin();",
+        "prevChunkIds": []
+      },
+      "575": {
+        "chunkId": "9db2c6",
+        "hash": "48e52ba6",
+        "encoded": "await%20homePage.navigateToHome();",
+        "prevChunkIds": []
+      },
+      "576": {
+        "chunkId": "9db2c6",
+        "hash": "fd67fe9e",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "577": {
+        "chunkId": "9db2c6",
+        "hash": "cd2add98",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "579": {
+        "chunkId": "9db2c6",
+        "hash": "8c8f4def",
+        "encoded": "**Benefits**:",
+        "prevChunkIds": []
+      },
+      "580": {
+        "chunkId": "9db2c6",
+        "hash": "06ccad59",
+        "encoded": "-%20%E2%9C%85%20No%20need%20to%20initialize%20page%20objects%20in%20each%20test",
+        "prevChunkIds": []
+      },
+      "581": {
+        "chunkId": "9db2c6",
+        "hash": "a53d7339",
+        "encoded": "-%20%E2%9C%85%20Cleaner%20test%20code",
+        "prevChunkIds": []
+      },
+      "582": {
+        "chunkId": "9db2c6",
+        "hash": "222d1402",
+        "encoded": "-%20%E2%9C%85%20Automatic%20setup%20and%20teardown",
+        "prevChunkIds": []
+      },
+      "583": {
+        "chunkId": "9db2c6",
+        "hash": "9001138b",
+        "encoded": "-%20%E2%9C%85%20Type%20safety",
+        "prevChunkIds": []
+      },
+      "584": {
+        "chunkId": "9db2c6",
+        "hash": "93f531ce",
+        "encoded": "-%20%E2%9C%85%20Easy%20to%20extend%20with%20new%20fixtures",
+        "prevChunkIds": []
+      },
+      "586": {
+        "chunkId": "9db2c6",
+        "hash": "ad420881",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "588": {
+        "chunkId": "9db2c6",
+        "hash": "91a769f4",
+        "encoded": "##%20%F0%9F%93%81%20Generated%20Folders%20(Auto-created)",
+        "prevChunkIds": []
+      },
+      "590": {
+        "chunkId": "9db2c6",
+        "hash": "0c14a941",
+        "encoded": "These%20folders%20are%20created%20automatically%20during%20test%20execution:",
+        "prevChunkIds": []
+      },
+      "592": {
+        "chunkId": "9db2c6",
+        "hash": "cc3e707e",
+        "encoded": "###%20%60node_modules/%60",
+        "prevChunkIds": []
+      },
+      "593": {
+        "chunkId": "9db2c6",
+        "hash": "4b3f5235",
+        "encoded": "-%20Contains%20all%20npm%20dependencies",
+        "prevChunkIds": []
+      },
+      "594": {
+        "chunkId": "9db2c6",
+        "hash": "18def185",
+        "encoded": "-%20Excluded%20from%20version%20control",
+        "prevChunkIds": []
+      },
+      "595": {
+        "chunkId": "9db2c6",
+        "hash": "32058ceb",
+        "encoded": "-%20Generated%20by%20%60npm%20install%60",
+        "prevChunkIds": []
+      },
+      "597": {
+        "chunkId": "9db2c6",
+        "hash": "7f9a02e5",
+        "encoded": "###%20%60test-results/%60",
+        "prevChunkIds": []
+      },
+      "598": {
+        "chunkId": "9db2c6",
+        "hash": "0e473816",
+        "encoded": "-%20Contains%20test%20execution%20results",
+        "prevChunkIds": []
+      },
+      "599": {
+        "chunkId": "9db2c6",
+        "hash": "eb98aeef",
+        "encoded": "-%20JSON%20and%20JUnit%20XML%20reports",
+        "prevChunkIds": []
+      },
+      "600": {
+        "chunkId": "9db2c6",
+        "hash": "41b0f4e1",
+        "encoded": "-%20Traces%20for%20failed%20tests",
+        "prevChunkIds": []
+      },
+      "601": {
+        "chunkId": "9db2c6",
+        "hash": "2693803b",
+        "encoded": "-%20Generated%20after%20test%20runs",
+        "prevChunkIds": []
+      },
+      "603": {
+        "chunkId": "9db2c6",
+        "hash": "a858c538",
+        "encoded": "###%20%60playwright-report/%60",
+        "prevChunkIds": []
+      },
+      "604": {
+        "chunkId": "9db2c6",
+        "hash": "16290276",
+        "encoded": "-%20HTML%20test%20reports",
+        "prevChunkIds": []
+      },
+      "605": {
+        "chunkId": "9db2c6",
+        "hash": "acd9212b",
+        "encoded": "-%20Screenshots%20and%20videos",
+        "prevChunkIds": []
+      },
+      "606": {
+        "chunkId": "9db2c6",
+        "hash": "efe5c704",
+        "encoded": "-%20Test%20execution%20timeline",
+        "prevChunkIds": []
+      },
+      "607": {
+        "chunkId": "9db2c6",
+        "hash": "50779f39",
+        "encoded": "-%20View%20with%20%60npx%20playwright%20show-report%60",
+        "prevChunkIds": []
+      },
+      "609": {
+        "chunkId": "9db2c6",
+        "hash": "2b6cfdd0",
+        "encoded": "###%20%60screenshots/%60",
+        "prevChunkIds": []
+      },
+      "610": {
+        "chunkId": "9db2c6",
+        "hash": "3c1f3c9c",
+        "encoded": "-%20Manual%20screenshots%20from%20tests",
+        "prevChunkIds": []
+      },
+      "611": {
+        "chunkId": "9db2c6",
+        "hash": "05af704a",
+        "encoded": "-%20Failure%20screenshots",
+        "prevChunkIds": []
+      },
+      "612": {
+        "chunkId": "9db2c6",
+        "hash": "41236b53",
+        "encoded": "-%20Debug%20screenshots",
+        "prevChunkIds": []
+      },
+      "613": {
+        "chunkId": "9db2c6",
+        "hash": "bf962b11",
+        "encoded": "-%20Organized%20by%20test%20name%20and%20timestamp",
+        "prevChunkIds": []
+      },
+      "615": {
+        "chunkId": "9db2c6",
+        "hash": "3d6a01c8",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "617": {
+        "chunkId": "9db2c6",
+        "hash": "87dbe029",
+        "encoded": "##%20%F0%9F%94%84%20How%20Everything%20Works%20Together",
+        "prevChunkIds": []
+      },
+      "619": {
+        "chunkId": "9db2c6",
+        "hash": "308258a6",
+        "encoded": "###%20Test%20Execution%20Flow:",
+        "prevChunkIds": []
+      },
+      "621": {
+        "chunkId": "9db2c6",
+        "hash": "02cde915",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "622": {
+        "chunkId": "9db2c6",
+        "hash": "2d59396e",
+        "encoded": "1.%20Test%20File%20(login.spec.ts)",
+        "prevChunkIds": []
+      },
+      "623": {
+        "chunkId": "9db2c6",
+        "hash": "625ecc3a",
+        "encoded": "%E2%86%93",
+        "prevChunkIds": []
+      },
+      "624": {
+        "chunkId": "9db2c6",
+        "hash": "1e185fdc",
+        "encoded": "2.%20Import%20Page%20Objects%20(LoginPage,%20HomePage)",
+        "prevChunkIds": []
+      },
+      "625": {
+        "chunkId": "9db2c6",
+        "hash": "72a2afea",
+        "encoded": "%E2%86%93",
+        "prevChunkIds": []
+      },
+      "626": {
+        "chunkId": "9db2c6",
+        "hash": "1cca28f2",
+        "encoded": "3.%20Page%20Objects%20extend%20BasePage",
+        "prevChunkIds": []
+      },
+      "627": {
+        "chunkId": "9db2c6",
+        "hash": "d1dc012a",
+        "encoded": "%E2%86%93",
+        "prevChunkIds": []
+      },
+      "628": {
+        "chunkId": "9db2c6",
+        "hash": "232cf861",
+        "encoded": "4.%20Use%20Test%20Data%20(testUsers,%20testData)",
+        "prevChunkIds": []
+      },
+      "629": {
+        "chunkId": "9db2c6",
+        "hash": "1e569e2d",
+        "encoded": "%E2%86%93",
+        "prevChunkIds": []
+      },
+      "630": {
+        "chunkId": "9db2c6",
+        "hash": "c137d9bd",
+        "encoded": "5.%20Use%20Utilities%20(logger,%20testHelpers)",
+        "prevChunkIds": []
+      },
+      "631": {
+        "chunkId": "9db2c6",
+        "hash": "7861beac",
+        "encoded": "%E2%86%93",
+        "prevChunkIds": []
+      },
+      "632": {
+        "chunkId": "9db2c6",
+        "hash": "17bc68bf",
+        "encoded": "6.%20Execute%20Test%20Actions",
+        "prevChunkIds": []
+      },
+      "633": {
+        "chunkId": "9db2c6",
+        "hash": "0b6c2964",
+        "encoded": "%E2%86%93",
+        "prevChunkIds": []
+      },
+      "634": {
+        "chunkId": "9db2c6",
+        "hash": "849b21f3",
+        "encoded": "7.%20Assertions%20&%20Validations",
+        "prevChunkIds": []
+      },
+      "635": {
+        "chunkId": "9db2c6",
+        "hash": "daf4dad5",
+        "encoded": "%E2%86%93",
+        "prevChunkIds": []
+      },
+      "636": {
+        "chunkId": "9db2c6",
+        "hash": "0b591178",
+        "encoded": "8.%20Generate%20Reports",
+        "prevChunkIds": []
+      },
+      "637": {
+        "chunkId": "9db2c6",
+        "hash": "ceb46ace",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "639": {
+        "chunkId": "9db2c6",
+        "hash": "b81fd538",
+        "encoded": "###%20Example%20Test%20Flow:",
+        "prevChunkIds": []
+      },
+      "641": {
+        "chunkId": "9db2c6",
+        "hash": "cd269e67",
+        "encoded": "%60%60%60typescript",
+        "prevChunkIds": []
+      },
+      "642": {
+        "chunkId": "9db2c6",
+        "hash": "ebd77998",
+        "encoded": "//%201.%20Import%20dependencies",
+        "prevChunkIds": []
+      },
+      "643": {
+        "chunkId": "9db2c6",
+        "hash": "f9a8a5af",
+        "encoded": "import%20%7B%20test,%20expect%20%7D%20from%20'@playwright/test';",
+        "prevChunkIds": []
+      },
+      "644": {
+        "chunkId": "9db2c6",
+        "hash": "f796db9f",
+        "encoded": "import%20%7B%20LoginPage%20%7D%20from%20'../src/page-objects/LoginPage';%20%20//%20Page%20Object",
+        "prevChunkIds": []
+      },
+      "645": {
+        "chunkId": "9db2c6",
+        "hash": "5709b4cc",
+        "encoded": "import%20%7B%20testUsers%20%7D%20from%20'../src/data/testData';%20%20%20%20%20%20%20%20%20%20%20//%20Test%20Data",
+        "prevChunkIds": []
+      },
+      "646": {
+        "chunkId": "9db2c6",
+        "hash": "60d56bb0",
+        "encoded": "import%20%7B%20logger%20%7D%20from%20'../src/utilities/logger';%20%20%20%20%20%20%20%20%20%20%20//%20Utility",
+        "prevChunkIds": []
+      },
+      "648": {
+        "chunkId": "9db2c6",
+        "hash": "32dd0068",
+        "encoded": "//%202.%20Test%20suite",
+        "prevChunkIds": []
+      },
+      "649": {
+        "chunkId": "9db2c6",
+        "hash": "e2987662",
+        "encoded": "test.describe('Login%20Tests',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "650": {
+        "chunkId": "9db2c6",
+        "hash": "098a1fd9",
+        "encoded": "let%20loginPage:%20LoginPage;",
+        "prevChunkIds": []
+      },
+      "652": {
+        "chunkId": "9db2c6",
+        "hash": "22731dc9",
+        "encoded": "//%203.%20Setup",
+        "prevChunkIds": []
+      },
+      "653": {
+        "chunkId": "9db2c6",
+        "hash": "3d0d7a13",
+        "encoded": "test.beforeEach(async%20(%7B%20page%20%7D)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "654": {
+        "chunkId": "9db2c6",
+        "hash": "3bc2a07b",
+        "encoded": "loginPage%20=%20new%20LoginPage(page);%20%20//%20Uses%20BasePage%20methods",
+        "prevChunkIds": []
+      },
+      "655": {
+        "chunkId": "9db2c6",
+        "hash": "e6b25540",
+        "encoded": "await%20loginPage.navigateToLogin();",
+        "prevChunkIds": []
+      },
+      "656": {
+        "chunkId": "9db2c6",
+        "hash": "dd1b7f3c",
+        "encoded": "logger.info('Navigated%20to%20login%20page');",
+        "prevChunkIds": []
+      },
+      "657": {
+        "chunkId": "9db2c6",
+        "hash": "e8f857a2",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "659": {
+        "chunkId": "9db2c6",
+        "hash": "fc4f8401",
+        "encoded": "//%204.%20Test%20case",
+        "prevChunkIds": []
+      },
+      "660": {
+        "chunkId": "9db2c6",
+        "hash": "6509bc93",
+        "encoded": "test('should%20login%20successfully',%20async%20(%7B%20page%20%7D)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "661": {
+        "chunkId": "9db2c6",
+        "hash": "df4ad26d",
+        "encoded": "//%20Uses%20page%20object%20method",
+        "prevChunkIds": []
+      },
+      "662": {
+        "chunkId": "9db2c6",
+        "hash": "e6cbf89b",
+        "encoded": "await%20loginPage.login(",
+        "prevChunkIds": []
+      },
+      "663": {
+        "chunkId": "9db2c6",
+        "hash": "542f4f51",
+        "encoded": "testUsers.validUser.username,%20%20//%20Uses%20test%20data",
+        "prevChunkIds": []
+      },
+      "664": {
+        "chunkId": "9db2c6",
+        "hash": "30873dd6",
+        "encoded": "testUsers.validUser.password",
+        "prevChunkIds": []
+      },
+      "665": {
+        "chunkId": "9db2c6",
+        "hash": "2fa4a71c",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "667": {
+        "chunkId": "9db2c6",
+        "hash": "a57d5adf",
+        "encoded": "//%20Assertion",
+        "prevChunkIds": []
+      },
+      "668": {
+        "chunkId": "9db2c6",
+        "hash": "a217728d",
+        "encoded": "expect(await%20homePage.isHomePageLoaded()).toBeTruthy();",
+        "prevChunkIds": []
+      },
+      "670": {
+        "chunkId": "9db2c6",
+        "hash": "9b49cd1c",
+        "encoded": "logger.info('Login%20successful');",
+        "prevChunkIds": []
+      },
+      "671": {
+        "chunkId": "9db2c6",
+        "hash": "3d3d020c",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "672": {
+        "chunkId": "9db2c6",
+        "hash": "6d8a9c31",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "673": {
+        "chunkId": "9db2c6",
+        "hash": "2153b269",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "675": {
+        "chunkId": "9db2c6",
+        "hash": "e21ed31b",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "677": {
+        "chunkId": "9db2c6",
+        "hash": "747547f0",
+        "encoded": "##%20%F0%9F%8E%AF%20Best%20Practices%20Summary",
+        "prevChunkIds": []
+      },
+      "679": {
+        "chunkId": "9db2c6",
+        "hash": "726fab48",
+        "encoded": "###%20For%20Each%20Folder:",
+        "prevChunkIds": []
+      },
+      "681": {
+        "chunkId": "9db2c6",
+        "hash": "864cc787",
+        "encoded": "**src/pages/**",
+        "prevChunkIds": []
+      },
+      "682": {
+        "chunkId": "9db2c6",
+        "hash": "c582fa9d",
+        "encoded": "-%20%E2%9C%85%20Keep%20only%20base%20classes",
+        "prevChunkIds": []
+      },
+      "683": {
+        "chunkId": "9db2c6",
+        "hash": "f304b38f",
+        "encoded": "-%20%E2%9C%85%20Add%20methods%20used%20across%20ALL%20pages",
+        "prevChunkIds": []
+      },
+      "684": {
+        "chunkId": "9db2c6",
+        "hash": "f3b8a942",
+        "encoded": "-%20%E2%9C%85%20Don't%20add%20page-specific%20logic",
+        "prevChunkIds": []
+      },
+      "686": {
+        "chunkId": "9db2c6",
+        "hash": "79cc8029",
+        "encoded": "**src/page-objects/**",
+        "prevChunkIds": []
+      },
+      "687": {
+        "chunkId": "9db2c6",
+        "hash": "237f9ef2",
+        "encoded": "-%20%E2%9C%85%20One%20class%20per%20page",
+        "prevChunkIds": []
+      },
+      "688": {
+        "chunkId": "9db2c6",
+        "hash": "18dc78db",
+        "encoded": "-%20%E2%9C%85%20Private%20locators,%20public%20methods",
+        "prevChunkIds": []
+      },
+      "689": {
+        "chunkId": "9db2c6",
+        "hash": "8cd88a5e",
+        "encoded": "-%20%E2%9C%85%20No%20assertions%20in%20page%20objects",
+        "prevChunkIds": []
+      },
+      "690": {
+        "chunkId": "9db2c6",
+        "hash": "43f66e7f",
+        "encoded": "-%20%E2%9C%85%20Return%20values,%20not%20assertions",
+        "prevChunkIds": []
+      },
+      "692": {
+        "chunkId": "9db2c6",
+        "hash": "da1edf86",
+        "encoded": "**src/data/**",
+        "prevChunkIds": []
+      },
+      "693": {
+        "chunkId": "9db2c6",
+        "hash": "b1b40899",
+        "encoded": "-%20%E2%9C%85%20Separate%20concerns%20(users,%20products,%20etc.)",
+        "prevChunkIds": []
+      },
+      "694": {
+        "chunkId": "9db2c6",
+        "hash": "71eab283",
+        "encoded": "-%20%E2%9C%85%20Use%20TypeScript%20for%20complex%20data",
+        "prevChunkIds": []
+      },
+      "695": {
+        "chunkId": "9db2c6",
+        "hash": "28c342d7",
+        "encoded": "-%20%E2%9C%85%20Use%20JSON%20for%20simple%20data",
+        "prevChunkIds": []
+      },
+      "696": {
+        "chunkId": "9db2c6",
+        "hash": "203cb985",
+        "encoded": "-%20%E2%9C%85%20Never%20hardcode%20in%20tests",
+        "prevChunkIds": []
+      },
+      "698": {
+        "chunkId": "9db2c6",
+        "hash": "1fdc84f2",
+        "encoded": "**src/utilities/**",
+        "prevChunkIds": []
+      },
+      "699": {
+        "chunkId": "9db2c6",
+        "hash": "8f35ba3e",
+        "encoded": "-%20%E2%9C%85%20Small,%20focused%20functions",
+        "prevChunkIds": []
+      },
+      "700": {
+        "chunkId": "9db2c6",
+        "hash": "73f71e41",
+        "encoded": "-%20%E2%9C%85%20Reusable%20across%20tests",
+        "prevChunkIds": []
+      },
+      "701": {
+        "chunkId": "9db2c6",
+        "hash": "ad517faf",
+        "encoded": "-%20%E2%9C%85%20Well%20documented",
+        "prevChunkIds": []
+      },
+      "702": {
+        "chunkId": "9db2c6",
+        "hash": "09f80313",
+        "encoded": "-%20%E2%9C%85%20Unit%20testable",
+        "prevChunkIds": []
+      },
+      "704": {
+        "chunkId": "9db2c6",
+        "hash": "f5597e9f",
+        "encoded": "**tests/**",
+        "prevChunkIds": []
+      },
+      "705": {
+        "chunkId": "9db2c6",
+        "hash": "b21b9599",
+        "encoded": "-%20%E2%9C%85%20One%20feature%20per%20file",
+        "prevChunkIds": []
+      },
+      "706": {
+        "chunkId": "9db2c6",
+        "hash": "748ee743",
+        "encoded": "-%20%E2%9C%85%20Descriptive%20test%20names",
+        "prevChunkIds": []
+      },
+      "707": {
+        "chunkId": "9db2c6",
+        "hash": "e75ad8b0",
+        "encoded": "-%20%E2%9C%85%20Independent%20tests",
+        "prevChunkIds": []
+      },
+      "708": {
+        "chunkId": "9db2c6",
+        "hash": "70f8b21c",
+        "encoded": "-%20%E2%9C%85%20Use%20beforeEach/afterEach%20appropriately",
+        "prevChunkIds": []
+      },
+      "710": {
+        "chunkId": "9db2c6",
+        "hash": "bf002248",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "712": {
+        "chunkId": "9db2c6",
+        "hash": "a7207c36",
+        "encoded": "##%20%F0%9F%9A%80%20Getting%20Started%20Guide",
+        "prevChunkIds": []
+      },
+      "714": {
+        "chunkId": "9db2c6",
+        "hash": "884ed479",
+        "encoded": "###%201.%20Add%20a%20New%20Page%20Object",
+        "prevChunkIds": []
+      },
+      "716": {
+        "chunkId": "9db2c6",
+        "hash": "bda0b9ba",
+        "encoded": "%60%60%60typescript",
+        "prevChunkIds": []
+      },
+      "717": {
+        "chunkId": "9db2c6",
+        "hash": "997f3de4",
+        "encoded": "//%20src/page-objects/ProductPage.ts",
+        "prevChunkIds": []
+      },
+      "718": {
+        "chunkId": "9db2c6",
+        "hash": "ed0e9a0e",
+        "encoded": "import%20%7B%20Page,%20Locator%20%7D%20from%20'@playwright/test';",
+        "prevChunkIds": []
+      },
+      "719": {
+        "chunkId": "9db2c6",
+        "hash": "f4d3aae0",
+        "encoded": "import%20%7B%20BasePage%20%7D%20from%20'../pages/BasePage';",
+        "prevChunkIds": []
+      },
+      "721": {
+        "chunkId": "9db2c6",
+        "hash": "95ca9acd",
+        "encoded": "export%20class%20ProductPage%20extends%20BasePage%20%7B",
+        "prevChunkIds": []
+      },
+      "722": {
+        "chunkId": "9db2c6",
+        "hash": "eca88dc7",
+        "encoded": "private%20readonly%20productTitle:%20Locator;",
+        "prevChunkIds": []
+      },
+      "724": {
+        "chunkId": "9db2c6",
+        "hash": "77ccd5a2",
+        "encoded": "constructor(page:%20Page)%20%7B",
+        "prevChunkIds": []
+      },
+      "725": {
+        "chunkId": "9db2c6",
+        "hash": "15fc27e9",
+        "encoded": "super(page);",
+        "prevChunkIds": []
+      },
+      "726": {
+        "chunkId": "9db2c6",
+        "hash": "54efc259",
+        "encoded": "this.productTitle%20=%20page.locator('.product-title');",
+        "prevChunkIds": []
+      },
+      "727": {
+        "chunkId": "9db2c6",
+        "hash": "664d43ce",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "729": {
+        "chunkId": "9db2c6",
+        "hash": "dcdd263a",
+        "encoded": "async%20getProductTitle():%20Promise%3Cstring%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "730": {
+        "chunkId": "9db2c6",
+        "hash": "a8e6a58d",
+        "encoded": "return%20await%20this.getText(this.productTitle);",
+        "prevChunkIds": []
+      },
+      "731": {
+        "chunkId": "9db2c6",
+        "hash": "45f660fa",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "732": {
+        "chunkId": "9db2c6",
+        "hash": "83ea9aaa",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "733": {
+        "chunkId": "9db2c6",
+        "hash": "b7dbff54",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "735": {
+        "chunkId": "9db2c6",
+        "hash": "91d5d9bb",
+        "encoded": "###%202.%20Add%20Test%20Data",
+        "prevChunkIds": []
+      },
+      "737": {
+        "chunkId": "9db2c6",
+        "hash": "e02d8955",
+        "encoded": "%60%60%60typescript",
+        "prevChunkIds": []
+      },
+      "738": {
+        "chunkId": "9db2c6",
+        "hash": "b36db373",
+        "encoded": "//%20src/data/testData.ts",
+        "prevChunkIds": []
+      },
+      "739": {
+        "chunkId": "9db2c6",
+        "hash": "bea26543",
+        "encoded": "export%20const%20productData%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "740": {
+        "chunkId": "9db2c6",
+        "hash": "66440e4c",
+        "encoded": "validProduct:%20%7B",
+        "prevChunkIds": []
+      },
+      "741": {
+        "chunkId": "9db2c6",
+        "hash": "22fabf89",
+        "encoded": "name:%20'Test%20Product',",
+        "prevChunkIds": []
+      },
+      "742": {
+        "chunkId": "9db2c6",
+        "hash": "51032358",
+        "encoded": "price:%2029.99",
+        "prevChunkIds": []
+      },
+      "743": {
+        "chunkId": "9db2c6",
+        "hash": "8d01d879",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "744": {
+        "chunkId": "9db2c6",
+        "hash": "903857af",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "745": {
+        "chunkId": "9db2c6",
+        "hash": "284f0efa",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "747": {
+        "chunkId": "9db2c6",
+        "hash": "14fd2304",
+        "encoded": "###%203.%20Write%20Tests",
+        "prevChunkIds": []
+      },
+      "749": {
+        "chunkId": "9db2c6",
+        "hash": "665c7412",
+        "encoded": "%60%60%60typescript",
+        "prevChunkIds": []
+      },
+      "750": {
+        "chunkId": "9db2c6",
+        "hash": "6187920f",
+        "encoded": "//%20tests/product.spec.ts",
+        "prevChunkIds": []
+      },
+      "751": {
+        "chunkId": "9db2c6",
+        "hash": "3451f523",
+        "encoded": "import%20%7B%20test,%20expect%20%7D%20from%20'@playwright/test';",
+        "prevChunkIds": []
+      },
+      "752": {
+        "chunkId": "9db2c6",
+        "hash": "632c7e1f",
+        "encoded": "import%20%7B%20ProductPage%20%7D%20from%20'../src/page-objects/ProductPage';",
+        "prevChunkIds": []
+      },
+      "753": {
+        "chunkId": "9db2c6",
+        "hash": "c1840254",
+        "encoded": "import%20%7B%20productData%20%7D%20from%20'../src/data/testData';",
+        "prevChunkIds": []
+      },
+      "755": {
+        "chunkId": "9db2c6",
+        "hash": "a9713f43",
+        "encoded": "test.describe('Product%20Tests',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "756": {
+        "chunkId": "9db2c6",
+        "hash": "cf747c2e",
+        "encoded": "test('should%20display%20product%20title',%20async%20(%7B%20page%20%7D)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "757": {
+        "chunkId": "9db2c6",
+        "hash": "703aa325",
+        "encoded": "const%20productPage%20=%20new%20ProductPage(page);",
+        "prevChunkIds": []
+      },
+      "758": {
+        "chunkId": "9db2c6",
+        "hash": "95b5f49f",
+        "encoded": "await%20productPage.navigate('/products/1');",
+        "prevChunkIds": []
+      },
+      "760": {
+        "chunkId": "9db2c6",
+        "hash": "8238f1dc",
+        "encoded": "const%20title%20=%20await%20productPage.getProductTitle();",
+        "prevChunkIds": []
+      },
+      "761": {
+        "chunkId": "9db2c6",
+        "hash": "49fe2b99",
+        "encoded": "expect(title).toBe(productData.validProduct.name);",
+        "prevChunkIds": []
+      },
+      "762": {
+        "chunkId": "9db2c6",
+        "hash": "45a33848",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "763": {
+        "chunkId": "9db2c6",
+        "hash": "2ac42ad9",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "764": {
+        "chunkId": "9db2c6",
+        "hash": "c648c33b",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "766": {
+        "chunkId": "9db2c6",
+        "hash": "c5ddd9bc",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "768": {
+        "chunkId": "9db2c6",
+        "hash": "45737b1c",
+        "encoded": "##%20%F0%9F%93%9A%20Additional%20Resources",
+        "prevChunkIds": []
+      },
+      "770": {
+        "chunkId": "9db2c6",
+        "hash": "59c0b751",
+        "encoded": "-%20**Main%20Documentation**:%20%5BREADME.md%5D(README.md)",
+        "prevChunkIds": []
+      },
+      "771": {
+        "chunkId": "9db2c6",
+        "hash": "54186e19",
+        "encoded": "-%20**Quick%20Start**:%20%5BQUICK_START.md%5D(QUICK_START.md)",
+        "prevChunkIds": []
+      },
+      "772": {
+        "chunkId": "9db2c6",
+        "hash": "de4c5976",
+        "encoded": "-%20**Playwright%20Docs**:%20https://playwright.dev",
+        "prevChunkIds": []
+      },
+      "773": {
+        "chunkId": "9db2c6",
+        "hash": "ad61d475",
+        "encoded": "-%20**TypeScript%20Docs**:%20https://www.typescriptlang.org",
+        "prevChunkIds": []
+      },
+      "775": {
+        "chunkId": "9db2c6",
+        "hash": "88acc0c8",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "777": {
+        "chunkId": "9db2c6",
+        "hash": "2d4c3c07",
+        "encoded": "**Happy%20Testing!%20%F0%9F%8E%AD**",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

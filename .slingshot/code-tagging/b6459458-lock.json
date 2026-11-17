@@ -1,0 +1,246 @@
+{
+  ".gitignore": {
+    "filename": ".gitignore",
+    "path": ".gitignore",
+    "version": "1.2",
+    "contextFile": "b6459458-context.json",
+    "chunks": {
+      "727ba9": {
+        "user": "Rishna K",
+        "model": "gpt-4.1",
+        "timestamp": 1794905416,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "b5407788"
+        },
+        "hash": "cb223752",
+        "messageId": "system_2f94cf70-e262-11f1-bc97-c58b44212be4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 2:20:16 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "727ba9",
+        "hash": "66ac647f",
+        "encoded": "#%20Node%20modules",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "727ba9",
+        "hash": "e645e5bb",
+        "encoded": "node_modules/",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "727ba9",
+        "hash": "54b83bea",
+        "encoded": "#%20Playwright",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "727ba9",
+        "hash": "3a0f6270",
+        "encoded": "test-results/",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "727ba9",
+        "hash": "1583a77a",
+        "encoded": "playwright-report/",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "727ba9",
+        "hash": "1d27fc21",
+        "encoded": "playwright/.cache/",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "727ba9",
+        "hash": "5509f0ed",
+        "encoded": "#%20Screenshots",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "727ba9",
+        "hash": "772f9b1a",
+        "encoded": "screenshots/",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "727ba9",
+        "hash": "9f1fdb3b",
+        "encoded": "#%20Test%20artifacts",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "727ba9",
+        "hash": "be7d0d4b",
+        "encoded": "*.trace",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "727ba9",
+        "hash": "fb8e88fe",
+        "encoded": "*.zip",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "727ba9",
+        "hash": "8e75760a",
+        "encoded": "#%20TypeScript",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "727ba9",
+        "hash": "bfd89b99",
+        "encoded": "dist/",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "727ba9",
+        "hash": "9db729a9",
+        "encoded": "*.tsbuildinfo",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "727ba9",
+        "hash": "72c6d7a0",
+        "encoded": "#%20Environment%20variables",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "727ba9",
+        "hash": "68cdb7a5",
+        "encoded": ".env",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "727ba9",
+        "hash": "3dfae765",
+        "encoded": ".env.local",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "727ba9",
+        "hash": "bc79d3af",
+        "encoded": ".env.*.local",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "727ba9",
+        "hash": "aae545cd",
+        "encoded": "#%20IDE",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "727ba9",
+        "hash": "26946b79",
+        "encoded": ".vscode/",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "727ba9",
+        "hash": "08eef86c",
+        "encoded": ".idea/",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "727ba9",
+        "hash": "ad55772c",
+        "encoded": "*.swp",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "727ba9",
+        "hash": "f9553feb",
+        "encoded": "*.swo",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "727ba9",
+        "hash": "9ad28036",
+        "encoded": "*~",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "727ba9",
+        "hash": "912f5984",
+        "encoded": "#%20OS",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "727ba9",
+        "hash": "3e887f4a",
+        "encoded": ".DS_Store",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "727ba9",
+        "hash": "2ab5c73a",
+        "encoded": "Thumbs.db",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "727ba9",
+        "hash": "dbe455a0",
+        "encoded": "#%20Logs",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "727ba9",
+        "hash": "eadcfe01",
+        "encoded": "logs/",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "727ba9",
+        "hash": "135209bc",
+        "encoded": "*.log",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "727ba9",
+        "hash": "37028d5d",
+        "encoded": "npm-debug.log*",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "727ba9",
+        "hash": "ad92617f",
+        "encoded": "yarn-debug.log*",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "727ba9",
+        "hash": "3e381f77",
+        "encoded": "yarn-error.log*",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "727ba9",
+        "hash": "6e1e2675",
+        "encoded": "#%20Coverage",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "727ba9",
+        "hash": "5ef28414",
+        "encoded": "coverage/",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "727ba9",
+        "hash": "2a197dc2",
+        "encoded": ".nyc_output/",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

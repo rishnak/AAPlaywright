@@ -1,0 +1,480 @@
+{
+  "tests\\login.spec.ts": {
+    "filename": "login.spec.ts",
+    "path": "tests\\login.spec.ts",
+    "version": "1.2",
+    "contextFile": "ca15fe47-context.json",
+    "chunks": {
+      "413932": {
+        "user": "Rishna K",
+        "model": "gpt-4.1",
+        "timestamp": 1794905416,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "b5407788"
+        },
+        "hash": "9f5dda6e",
+        "messageId": "system_2f94cf70-e262-11f1-bc97-c58b44212be4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 2:20:16 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "413932",
+        "hash": "9b22d4ef",
+        "encoded": "import%20%7B%20test,%20expect%20%7D%20from%20'@playwright/test';",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "413932",
+        "hash": "51ab8a66",
+        "encoded": "import%20%7B%20LoginPage%20%7D%20from%20'../src/page-objects/LoginPage';",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "413932",
+        "hash": "31d538ae",
+        "encoded": "import%20%7B%20HomePage%20%7D%20from%20'../src/page-objects/HomePage';",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "413932",
+        "hash": "65049871",
+        "encoded": "import%20%7B%20testUsers,%20errorMessages%20%7D%20from%20'../src/data/testData';",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "413932",
+        "hash": "42c89fda",
+        "encoded": "import%20%7B%20logger%20%7D%20from%20'../src/utilities/logger';",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "413932",
+        "hash": "692dab65",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "413932",
+        "hash": "d82f64b9",
+        "encoded": "*%20Login%20Test%20Suite",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "413932",
+        "hash": "87313b46",
+        "encoded": "*%20Tests%20for%20login%20functionality%20using%20Page%20Object%20Model",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "413932",
+        "hash": "7c8b9e0c",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "413932",
+        "hash": "6fb8dda9",
+        "encoded": "test.describe('Login%20Tests',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "413932",
+        "hash": "0fae3c96",
+        "encoded": "let%20loginPage:%20LoginPage;",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "413932",
+        "hash": "ea2aa801",
+        "encoded": "let%20homePage:%20HomePage;",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "413932",
+        "hash": "06d0466d",
+        "encoded": "test.beforeEach(async%20(%7B%20page%20%7D)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "413932",
+        "hash": "8c22244f",
+        "encoded": "//%20Initialize%20page%20objects",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "413932",
+        "hash": "ec712044",
+        "encoded": "loginPage%20=%20new%20LoginPage(page);",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "413932",
+        "hash": "0ae56897",
+        "encoded": "homePage%20=%20new%20HomePage(page);",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "413932",
+        "hash": "af0f2045",
+        "encoded": "//%20Navigate%20to%20login%20page",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "413932",
+        "hash": "cd4ce048",
+        "encoded": "await%20loginPage.navigateToLogin();",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "413932",
+        "hash": "1132d913",
+        "encoded": "logger.info('Navigated%20to%20login%20page');",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "413932",
+        "hash": "675df099",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "413932",
+        "hash": "d27edcef",
+        "encoded": "test('should%20login%20successfully%20with%20valid%20credentials',%20async%20(%7B%20page%20%7D)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "413932",
+        "hash": "41ea4c46",
+        "encoded": "//%20Test:%20Valid%20user%20login",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "413932",
+        "hash": "15efc399",
+        "encoded": "logger.info('Test:%20Login%20with%20valid%20credentials');",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "413932",
+        "hash": "219ab1eb",
+        "encoded": "await%20loginPage.login(testUsers.validUser.username,%20testUsers.validUser.password);",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "413932",
+        "hash": "6f0d1fc6",
+        "encoded": "//%20Verify%20home%20page%20is%20loaded",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "413932",
+        "hash": "04aef790",
+        "encoded": "const%20isHomePageLoaded%20=%20await%20homePage.isHomePageLoaded();",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "413932",
+        "hash": "db470bb9",
+        "encoded": "expect(isHomePageLoaded).toBeTruthy();",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "413932",
+        "hash": "c4a7de41",
+        "encoded": "//%20Verify%20welcome%20message",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "413932",
+        "hash": "add4f111",
+        "encoded": "const%20welcomeMessage%20=%20await%20homePage.getWelcomeMessage();",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "413932",
+        "hash": "66acc5b6",
+        "encoded": "expect(welcomeMessage).toContain('Welcome');",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "413932",
+        "hash": "f7309e3f",
+        "encoded": "logger.info('Login%20test%20passed%20successfully');",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "413932",
+        "hash": "03c250ed",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "413932",
+        "hash": "f9404246",
+        "encoded": "test('should%20show%20error%20message%20with%20invalid%20credentials',%20async%20(%7B%20page%20%7D)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "413932",
+        "hash": "cf2379ce",
+        "encoded": "//%20Test:%20Invalid%20user%20login",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "413932",
+        "hash": "4d2f5779",
+        "encoded": "logger.info('Test:%20Login%20with%20invalid%20credentials');",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "413932",
+        "hash": "658b1913",
+        "encoded": "await%20loginPage.login(testUsers.invalidUser.username,%20testUsers.invalidUser.password);",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "413932",
+        "hash": "19ef5624",
+        "encoded": "//%20Verify%20error%20message%20is%20displayed",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "413932",
+        "hash": "12fb5c33",
+        "encoded": "const%20isErrorDisplayed%20=%20await%20loginPage.isErrorMessageDisplayed();",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "413932",
+        "hash": "4783554d",
+        "encoded": "expect(isErrorDisplayed).toBeTruthy();",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "413932",
+        "hash": "ce1b95a7",
+        "encoded": "//%20Verify%20error%20message%20text",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "413932",
+        "hash": "d5cd4071",
+        "encoded": "const%20errorMessage%20=%20await%20loginPage.getErrorMessage();",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "413932",
+        "hash": "82aa67c1",
+        "encoded": "expect(errorMessage).toBe(errorMessages.invalidLogin);",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "413932",
+        "hash": "fc252d5a",
+        "encoded": "logger.info('Invalid%20login%20test%20passed%20successfully');",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "413932",
+        "hash": "4f8dfc51",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "413932",
+        "hash": "5a297dc0",
+        "encoded": "test('should%20login%20with%20remember%20me%20option',%20async%20(%7B%20page%20%7D)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "413932",
+        "hash": "aa93a690",
+        "encoded": "//%20Test:%20Login%20with%20remember%20me",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "413932",
+        "hash": "00712acd",
+        "encoded": "logger.info('Test:%20Login%20with%20remember%20me%20option');",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "413932",
+        "hash": "73b71c03",
+        "encoded": "await%20loginPage.loginWithRememberMe(",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "413932",
+        "hash": "31eec7ce",
+        "encoded": "testUsers.validUser.username,",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "413932",
+        "hash": "8835f6d5",
+        "encoded": "testUsers.validUser.password",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "413932",
+        "hash": "cf2c02e7",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "413932",
+        "hash": "871aefb7",
+        "encoded": "//%20Verify%20home%20page%20is%20loaded",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "413932",
+        "hash": "0ebfd3bc",
+        "encoded": "const%20isHomePageLoaded%20=%20await%20homePage.isHomePageLoaded();",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "413932",
+        "hash": "9c765176",
+        "encoded": "expect(isHomePageLoaded).toBeTruthy();",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "413932",
+        "hash": "c6431f85",
+        "encoded": "logger.info('Remember%20me%20login%20test%20passed%20successfully');",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "413932",
+        "hash": "0815083b",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "413932",
+        "hash": "a6e84b8a",
+        "encoded": "test('should%20navigate%20to%20forgot%20password%20page',%20async%20(%7B%20page%20%7D)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "413932",
+        "hash": "888023a0",
+        "encoded": "//%20Test:%20Forgot%20password%20navigation",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "413932",
+        "hash": "9865e67e",
+        "encoded": "logger.info('Test:%20Forgot%20password%20link');",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "413932",
+        "hash": "97826379",
+        "encoded": "await%20loginPage.clickForgotPassword();",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "413932",
+        "hash": "360e32cf",
+        "encoded": "//%20Verify%20URL%20contains%20'forgot-password'",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "413932",
+        "hash": "16a2bf71",
+        "encoded": "expect(page.url()).toContain('forgot-password');",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "413932",
+        "hash": "9308966b",
+        "encoded": "logger.info('Forgot%20password%20navigation%20test%20passed%20successfully');",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "413932",
+        "hash": "34456457",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "413932",
+        "hash": "811d6c54",
+        "encoded": "test.afterEach(async%20(%7B%20page%20%7D,%20testInfo)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "413932",
+        "hash": "e49d9e5c",
+        "encoded": "//%20Take%20screenshot%20on%20failure",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "413932",
+        "hash": "bffc1cfc",
+        "encoded": "if%20(testInfo.status%20!==%20testInfo.expectedStatus)%20%7B",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "413932",
+        "hash": "561ffc66",
+        "encoded": "await%20page.screenshot(%7B",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "413932",
+        "hash": "56ee4eef",
+        "encoded": "path:%20%60screenshots/failure-$%7BtestInfo.title%7D-$%7BDate.now()%7D.png%60,",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "413932",
+        "hash": "2066f887",
+        "encoded": "fullPage:%20true",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "413932",
+        "hash": "a8fc62b8",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "413932",
+        "hash": "f618c60d",
+        "encoded": "logger.error(%60Test%20failed:%20$%7BtestInfo.title%7D%60);",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "413932",
+        "hash": "db89230b",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "413932",
+        "hash": "98569f06",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "413932",
+        "hash": "904a972c",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+/**
+ * Simple Declarative Jenkins Pipeline
+ * For basic Playwright test execution
+ */
+
+pipeline {
+    agent any
+    
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+        
+        stage('Install Dependencies') {
+            steps {
+                sh 'npm ci'
+                sh 'npx playwright install --with-deps'
+            }
+        }
+        
+        stage('Run Tests') {
+            steps {
+                sh '''
+                    export BASE_URL=https://www.theaa.com
+                    export CI=true
+                    npm test
+                '''
+            }
+        }
+    }
+    
+    post {
+        always {
+            publishHTML([
+                allowMissing: false,
+                alwaysLinkToLastBuild: true,
+                keepAll: true,
+                reportDir: 'playwright-report',
+                reportFiles: 'index.html',
+                reportName: 'Playwright Report'
+            ])
+            junit 'test-results/junit.xml'
+        }
+    }
+}

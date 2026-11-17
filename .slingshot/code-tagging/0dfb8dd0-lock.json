@@ -1,0 +1,29 @@
+{
+  "src\\page-objects\\.gitkeep": {
+    "filename": ".gitkeep",
+    "path": "src\\page-objects\\.gitkeep",
+    "version": "1.2",
+    "contextFile": "0dfb8dd0-context.json",
+    "chunks": {
+      "de107d": {
+        "user": "Rishna K",
+        "model": "gpt-4.1",
+        "timestamp": 1794905414,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "b5407788"
+        },
+        "hash": "00000000",
+        "messageId": "system_2f94cf70-e262-11f1-bc97-c58b44212be4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 2:20:14 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {}
+  }
+}

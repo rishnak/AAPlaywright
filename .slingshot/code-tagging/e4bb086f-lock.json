@@ -1,0 +1,504 @@
+{
+  "playwright.config.ts": {
+    "filename": "playwright.config.ts",
+    "path": "playwright.config.ts",
+    "version": "1.2",
+    "contextFile": "e4bb086f-context.json",
+    "chunks": {
+      "3bc354": {
+        "user": "Rishna K",
+        "model": "gpt-4.1",
+        "timestamp": 1794905414,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "b5407788"
+        },
+        "hash": "00fdc739",
+        "messageId": "system_2f94cf70-e262-11f1-bc97-c58b44212be4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 2:20:14 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      },
+      "48cd16": {
+        "user": "Rishna K",
+        "model": "gpt-4.1",
+        "timestamp": 1794906889,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "chat",
+        "type": "insertCode",
+        "extraContext": {
+          "promptMessage": "3709b4ef"
+        },
+        "hash": "af30a5d3",
+        "messageId": "system_bc0f0ac0-e266-11f1-bc97-c58b44212be4",
+        "codeBlockId": "system_bc0f0ac0-e266-11f1-bc97-c58b44212be4-Codeblock-6",
+        "isActive": false,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 2:44:49 PM\n- **source**: chat\n- **type**: insertCode\n"
+      }
+    },
+    "lines": {
+      "2": {
+        "chunkId": "3bc354",
+        "hash": "de3a3b47",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "3bc354",
+        "hash": "3194a4c3",
+        "encoded": "*%20Playwright%20Configuration%20for%20Page%20Object%20Model%20Framework",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "4": {
+        "chunkId": "3bc354",
+        "hash": "1d95b6f3",
+        "encoded": "*%20@see%20https://playwright.dev/docs/test-configuration",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "5": {
+        "chunkId": "3bc354",
+        "hash": "ed5940e5",
+        "encoded": "*/",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "6": {
+        "chunkId": "3bc354",
+        "hash": "5d167e98",
+        "encoded": "export%20default%20defineConfig(%7B",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "7": {
+        "chunkId": "3bc354",
+        "hash": "88bca80f",
+        "encoded": "//%20Test%20directory",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "3bc354",
+        "hash": "b578f1de",
+        "encoded": "testDir:%20'./tests',",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "10": {
+        "chunkId": "3bc354",
+        "hash": "a6404b7e",
+        "encoded": "//%20Maximum%20time%20one%20test%20can%20run%20for",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "3bc354",
+        "hash": "5f85fbc4",
+        "encoded": "timeout:%2030%20*%201000,",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "13": {
+        "chunkId": "3bc354",
+        "hash": "9e2f864c",
+        "encoded": "//%20Test%20execution%20settings",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "14": {
+        "chunkId": "3bc354",
+        "hash": "a55e1630",
+        "encoded": "fullyParallel:%20true,",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "3bc354",
+        "hash": "7ebaae1d",
+        "encoded": "forbidOnly:%20!!process.env.CI,",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "16": {
+        "chunkId": "3bc354",
+        "hash": "4d766a8d",
+        "encoded": "retries:%20process.env.CI%20?%202%20:%200,",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "17": {
+        "chunkId": "3bc354",
+        "hash": "91cab144",
+        "encoded": "workers:%20process.env.CI%20?%201%20:%20undefined,",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "19": {
+        "chunkId": "3bc354",
+        "hash": "9f8cd327",
+        "encoded": "//%20Reporter%20configuration",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "20": {
+        "chunkId": "3bc354",
+        "hash": "f1fe1cc2",
+        "encoded": "reporter:%20%5B",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "21": {
+        "chunkId": "3bc354",
+        "hash": "590619ba",
+        "encoded": "%5B'html',%20%7B%20outputFolder:%20'playwright-report'%20%7D%5D,",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "22": {
+        "chunkId": "3bc354",
+        "hash": "25bd5d91",
+        "encoded": "%5B'json',%20%7B%20outputFile:%20'test-results/results.json'%20%7D%5D,",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "23": {
+        "chunkId": "3bc354",
+        "hash": "e1ef0a0f",
+        "encoded": "%5B'junit',%20%7B%20outputFile:%20'test-results/junit.xml'%20%7D%5D,",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "24": {
+        "chunkId": "3bc354",
+        "hash": "99d93179",
+        "encoded": "%5B'list'%5D",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "25": {
+        "chunkId": "3bc354",
+        "hash": "91b2a57a",
+        "encoded": "%5D,",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "27": {
+        "chunkId": "3bc354",
+        "hash": "438edddb",
+        "encoded": "//%20Global%20test%20settings",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "28": {
+        "chunkId": "3bc354",
+        "hash": "5da7ed32",
+        "encoded": "use:%20%7B",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "29": {
+        "chunkId": "3bc354",
+        "hash": "cbd2e0b1",
+        "encoded": "//%20Base%20URL%20for%20navigation",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "30": {
+        "chunkId": "3bc354",
+        "hash": "dcddd993",
+        "encoded": "baseURL:%20process.env.BASE_URL%20%7C%7C%20'https://example.com',",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "32": {
+        "chunkId": "3bc354",
+        "hash": "38708115",
+        "encoded": "//%20Browser%20context%20options",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "33": {
+        "chunkId": "3bc354",
+        "hash": "adf165a9",
+        "encoded": "trace:%20'on-first-retry',",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "34": {
+        "chunkId": "3bc354",
+        "hash": "24fad106",
+        "encoded": "screenshot:%20'only-on-failure',",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "35": {
+        "chunkId": "3bc354",
+        "hash": "590d75b5",
+        "encoded": "video:%20'retain-on-failure',",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "37": {
+        "chunkId": "3bc354",
+        "hash": "7aaf4001",
+        "encoded": "//%20Action%20timeout",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "38": {
+        "chunkId": "3bc354",
+        "hash": "f609e341",
+        "encoded": "actionTimeout:%2010%20*%201000,",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "40": {
+        "chunkId": "3bc354",
+        "hash": "9abec34b",
+        "encoded": "//%20Navigation%20timeout",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "41": {
+        "chunkId": "3bc354",
+        "hash": "48c5be15",
+        "encoded": "navigationTimeout:%2015%20*%201000,",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "42": {
+        "chunkId": "3bc354",
+        "hash": "81d4c2f1",
+        "encoded": "%7D,",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "44": {
+        "chunkId": "3bc354",
+        "hash": "83e78811",
+        "encoded": "//%20Browser%20projects%20configuration",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "45": {
+        "chunkId": "3bc354",
+        "hash": "37e3f0c3",
+        "encoded": "projects:%20%5B",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "46": {
+        "chunkId": "3bc354",
+        "hash": "dce7bfad",
+        "encoded": "%7B",
+        "prevChunkIds": [
+          "3bc354"
+        ]
+      },
+      "47": {
+        "chunkId": "3bc354",
+        "hash": "7314031f",
+        "encoded": "name:%20'chromium',",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "3bc354",
+        "hash": "79f80de5",
+        "encoded": "use:%20%7B%20...devices%5B'Desktop%20Chrome'%5D%20%7D,",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "3bc354",
+        "hash": "3171cd21",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "3bc354",
+        "hash": "39b366ef",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "3bc354",
+        "hash": "7ab96f75",
+        "encoded": "name:%20'firefox',",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "3bc354",
+        "hash": "da55a3d6",
+        "encoded": "use:%20%7B%20...devices%5B'Desktop%20Firefox'%5D%20%7D,",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "3bc354",
+        "hash": "0cbb9f72",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "3bc354",
+        "hash": "6b13c1a7",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "3bc354",
+        "hash": "50d53451",
+        "encoded": "name:%20'webkit',",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "3bc354",
+        "hash": "f37ddb7c",
+        "encoded": "use:%20%7B%20...devices%5B'Desktop%20Safari'%5D%20%7D,",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "3bc354",
+        "hash": "a56419ed",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "3bc354",
+        "hash": "e793c470",
+        "encoded": "//%20Mobile%20viewports",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "3bc354",
+        "hash": "29bb9b3e",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "3bc354",
+        "hash": "81de5253",
+        "encoded": "name:%20'Mobile%20Chrome',",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "3bc354",
+        "hash": "b91fc928",
+        "encoded": "use:%20%7B%20...devices%5B'Pixel%205'%5D%20%7D,",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "3bc354",
+        "hash": "a740a3db",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "3bc354",
+        "hash": "140076e8",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "3bc354",
+        "hash": "95f6a7bc",
+        "encoded": "name:%20'Mobile%20Safari',",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "3bc354",
+        "hash": "7a3ce84b",
+        "encoded": "use:%20%7B%20...devices%5B'iPhone%2013'%5D%20%7D,",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "3bc354",
+        "hash": "7b88621a",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "3bc354",
+        "hash": "e30a61ca",
+        "encoded": "%5D,",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "3bc354",
+        "hash": "de1dd9be",
+        "encoded": "//%20Web%20Server%20configuration%20(optional)",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "3bc354",
+        "hash": "eca93a98",
+        "encoded": "//%20webServer:%20%7B",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "3bc354",
+        "hash": "739d8c07",
+        "encoded": "//%20%20%20command:%20'npm%20run%20start',",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "3bc354",
+        "hash": "4cfc441f",
+        "encoded": "//%20%20%20url:%20'http://localhost:3000',",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "3bc354",
+        "hash": "2b4c4d3e",
+        "encoded": "//%20%20%20reuseExistingServer:%20!process.env.CI,",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "3bc354",
+        "hash": "cd31d13c",
+        "encoded": "//%20%7D,",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "3bc354",
+        "hash": "6538520c",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

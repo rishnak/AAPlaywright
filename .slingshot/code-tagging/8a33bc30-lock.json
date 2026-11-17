@@ -1,0 +1,126 @@
+{
+  "Dockerfile": {
+    "filename": "Dockerfile",
+    "path": "Dockerfile",
+    "version": "1.2",
+    "contextFile": "8a33bc30-context.json",
+    "chunks": {
+      "196c52": {
+        "user": "Rishna K",
+        "model": "gpt-4.1",
+        "timestamp": 1794907266,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "9cb306c2"
+        },
+        "hash": "6da95b82",
+        "messageId": "system_c9abe2b0-e267-11f1-bc97-c58b44212be4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 2:51:06 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "196c52",
+        "hash": "d609ed65",
+        "encoded": "#%20Dockerfile%20for%20Playwright%20Test%20Execution",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "196c52",
+        "hash": "da6dc929",
+        "encoded": "#%20Use%20official%20Playwright%20image%20with%20pre-installed%20browsers",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "196c52",
+        "hash": "71a10a5a",
+        "encoded": "FROM%20mcr.microsoft.com/playwright:v1.40.0-jammy",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "196c52",
+        "hash": "28c1f24e",
+        "encoded": "#%20Set%20working%20directory",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "196c52",
+        "hash": "3f75c639",
+        "encoded": "WORKDIR%20/app",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "196c52",
+        "hash": "cd1146ff",
+        "encoded": "#%20Copy%20package%20files",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "196c52",
+        "hash": "8e0e8801",
+        "encoded": "COPY%20package*.json%20./",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "196c52",
+        "hash": "f4deef88",
+        "encoded": "#%20Install%20dependencies",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "196c52",
+        "hash": "21264d95",
+        "encoded": "RUN%20npm%20ci",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "196c52",
+        "hash": "0a92d2c1",
+        "encoded": "#%20Copy%20application%20files",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "196c52",
+        "hash": "f30eba55",
+        "encoded": "COPY%20.%20.",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "196c52",
+        "hash": "1a6d990a",
+        "encoded": "#%20Set%20environment%20variables",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "196c52",
+        "hash": "e1377c6f",
+        "encoded": "ENV%20CI=true",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "196c52",
+        "hash": "72c2f269",
+        "encoded": "ENV%20HEADLESS=true",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "196c52",
+        "hash": "f165738b",
+        "encoded": "#%20Run%20tests%20(can%20be%20overridden)",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "196c52",
+        "hash": "18a45001",
+        "encoded": "CMD%20%5B%22npm%22,%20%22test%22%5D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

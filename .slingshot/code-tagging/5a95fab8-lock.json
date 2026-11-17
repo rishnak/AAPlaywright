@@ -1,0 +1,228 @@
+{
+  "tsconfig.json": {
+    "filename": "tsconfig.json",
+    "path": "tsconfig.json",
+    "version": "1.2",
+    "contextFile": "5a95fab8-context.json",
+    "chunks": {
+      "bd4f4e": {
+        "user": "Rishna K",
+        "model": "gpt-4.1",
+        "timestamp": 1794905413,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "b5407788"
+        },
+        "hash": "d1a916a2",
+        "messageId": "system_2f94cf70-e262-11f1-bc97-c58b44212be4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 2:20:13 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "bd4f4e",
+        "hash": "47009686",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "bd4f4e",
+        "hash": "c1221f13",
+        "encoded": "%22compilerOptions%22:%20%7B",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "bd4f4e",
+        "hash": "9ae59c9a",
+        "encoded": "%22target%22:%20%22ESNext%22,",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "bd4f4e",
+        "hash": "d442bc8b",
+        "encoded": "%22module%22:%20%22commonjs%22,",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "bd4f4e",
+        "hash": "ca4bee48",
+        "encoded": "%22moduleResolution%22:%20%22node%22,",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "bd4f4e",
+        "hash": "46bfb07f",
+        "encoded": "%22lib%22:%20%5B%22ESNext%22,%20%22DOM%22%5D,",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "bd4f4e",
+        "hash": "16e4ee98",
+        "encoded": "%22types%22:%20%5B%22node%22,%20%22@playwright/test%22%5D,",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "bd4f4e",
+        "hash": "bd22dab8",
+        "encoded": "%22strict%22:%20true,",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "bd4f4e",
+        "hash": "115daff6",
+        "encoded": "%22esModuleInterop%22:%20true,",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "bd4f4e",
+        "hash": "04335f2e",
+        "encoded": "%22skipLibCheck%22:%20true,",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "bd4f4e",
+        "hash": "aeaac93e",
+        "encoded": "%22forceConsistentCasingInFileNames%22:%20true,",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "bd4f4e",
+        "hash": "2a79190e",
+        "encoded": "%22resolveJsonModule%22:%20true,",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "bd4f4e",
+        "hash": "b724d784",
+        "encoded": "%22outDir%22:%20%22./dist%22,",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "bd4f4e",
+        "hash": "1747da48",
+        "encoded": "%22rootDir%22:%20%22./%22,",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "bd4f4e",
+        "hash": "1d62e2f4",
+        "encoded": "%22baseUrl%22:%20%22./%22,",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "bd4f4e",
+        "hash": "eaab4c44",
+        "encoded": "%22paths%22:%20%7B",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "bd4f4e",
+        "hash": "fe352ddc",
+        "encoded": "%22@pages/*%22:%20%5B%22src/pages/*%22%5D,",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "bd4f4e",
+        "hash": "0adcff6e",
+        "encoded": "%22@page-objects/*%22:%20%5B%22src/page-objects/*%22%5D,",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "bd4f4e",
+        "hash": "ed2feb10",
+        "encoded": "%22@utilities/*%22:%20%5B%22src/utilities/*%22%5D,",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "bd4f4e",
+        "hash": "c5025cd7",
+        "encoded": "%22@data/*%22:%20%5B%22src/data/*%22%5D,",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "bd4f4e",
+        "hash": "685ae8e8",
+        "encoded": "%22@tests/*%22:%20%5B%22tests/*%22%5D",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "bd4f4e",
+        "hash": "4b5cc20d",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "bd4f4e",
+        "hash": "6d666e52",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "bd4f4e",
+        "hash": "6ee0e010",
+        "encoded": "%22include%22:%20%5B",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "bd4f4e",
+        "hash": "01e4e1af",
+        "encoded": "%22src/**/*%22,",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "bd4f4e",
+        "hash": "804c3d96",
+        "encoded": "%22tests/**/*%22,",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "bd4f4e",
+        "hash": "9cfd3f34",
+        "encoded": "%22playwright.config.ts%22",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "bd4f4e",
+        "hash": "55253103",
+        "encoded": "%5D,",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "bd4f4e",
+        "hash": "01eb38f6",
+        "encoded": "%22exclude%22:%20%5B",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "bd4f4e",
+        "hash": "b8a19178",
+        "encoded": "%22node_modules%22,",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "bd4f4e",
+        "hash": "2287f2e8",
+        "encoded": "%22dist%22",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "bd4f4e",
+        "hash": "e383119d",
+        "encoded": "%5D",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "bd4f4e",
+        "hash": "699fd80f",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}
