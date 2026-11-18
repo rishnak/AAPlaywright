@@ -19,6 +19,14 @@ export const aaUrls = {
   membership: '/join-the-aa'
 };
 
+export const aaFormData = {
+  postcode: 'RG214HG',
+  day: '12',
+  month: '12',
+  year: '1994',
+  vrn:'J44JHS'
+};
+
 /**
  * Expected page titles
  */

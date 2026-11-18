@@ -1,5 +1,6 @@
-import { Page, Locator } from '@playwright/test';
+import { Page, Locator, expect } from '@playwright/test';
 import { BasePage } from '../pages/BasePage';
+import { aaUrls, aaFormData} from '../../src/data/aaTestData';
 
 /**
  * AA Breakdown Cover Page Object
@@ -10,9 +11,14 @@ export class AABreakdownPage extends BasePage {
   // Locators - private readonly
   private readonly pageHeading: Locator;
   private readonly getQuoteButton: Locator;
-  private readonly coverOptions: Locator;
-  private readonly phoneNumber: Locator;
   private readonly chooseYourCoverHeading:Locator;
+  private readonly postcodeTextfield: Locator;
+  private readonly dayTextField: Locator;
+  private readonly monthTextField: Locator;
+  private readonly yearTextField: Locator;
+  private readonly submitButton:Locator;
+
+
 
   constructor(page: Page) {
     super(page); // Call BasePage constructor
@@ -20,9 +26,15 @@ export class AABreakdownPage extends BasePage {
     // Initialize locators
     this.pageHeading = page.locator('h1').first();
     this.getQuoteButton = page.getByRole('link',{name:'Get a breakdown quote'}).first();
-    this.coverOptions = page.locator('[class*="cover"], [class*="option"]');
-    this.phoneNumber = page.locator('a[href*="tel:"]').first();
     this.chooseYourCoverHeading = page.getByRole('heading', {name: 'Choose your cover', level: 1});
+    this.postcodeTextfield = page.locator('#postCode');
+    this.monthTextField = page.locator('#month');
+    this.dayTextField = page.locator('#day');
+    this.yearTextField = page.locator('#year');
+    this.submitButton = page.getByRole('button', {name:' Submit details '}).first();
+
+
+
   }
   
   /**
@@ -67,6 +79,20 @@ export class AABreakdownPage extends BasePage {
   }
 
   async isOnSalesCoverPage(): Promise<void>{
-    this.chooseYourCoverHeading.isVisible();
+    expect(this.chooseYourCoverHeading.isVisible()).toBeTruthy();
+  }
+
+  async enterPostcode(){
+    this.fill(this.postcodeTextfield,aaFormData.postcode);
+  }
+
+  async enterDOB(){
+    this.fill(this.dayTextField,aaFormData.day);
+    this.fill(this.monthTextField,aaFormData.month);
+    this.fill(this.yearTextField,aaFormData.year);
+  }
+
+  async clickOnSubmitButton(): Promise<void>{
+    this.click(this.submitButton);
   }
 }

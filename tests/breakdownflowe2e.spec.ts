@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { AAHomePage } from '../src/page-objects/AAHomePage';
 import { AABreakdownPage } from '../src/page-objects/AABreakdownPage';
-import { aaUrls } from '../src/data/aaTestData';
+import { aaUrls, aaFormData} from '../src/data/aaTestData';
 
 /**
  * AA Breakdown Flow E2E Test
@@ -16,7 +16,7 @@ test.describe('AA Breakdown Flow - E2E Test', () => {
     aaBreakdownPage = new AABreakdownPage(page);
   });
 
-  test('should navigate through breakdown cover flow', async ({ page }) => {
+  test('Navigate through breakdown cover flow', async ({ page }) => {
     // Step 1: Navigate to AA homepage
     await aaHomePage.navigateToAAHome();
 
@@ -39,10 +39,13 @@ test.describe('AA Breakdown Flow - E2E Test', () => {
 
     //Step 7: Click on Get a quote button
     await aaBreakdownPage.clickGetQuote();
+    await aaHomePage.waitForPageLoad();
     await aaBreakdownPage.isOnSalesCoverPage();
 
-
-
+    //Step 8: Enter the postcode and other details
+    aaBreakdownPage.enterPostcode;
+    aaBreakdownPage.enterDOB;
+    await aaBreakdownPage.clickOnSubmitButton();
   });
 
   test.afterEach(async ({ page }, testInfo) => {

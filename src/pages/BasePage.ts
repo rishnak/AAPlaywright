@@ -40,17 +40,7 @@ export class BasePage {
     await locator.fill(text);
   }
   
-  /**
-   * Type text into an input field with delay
-   * @param locator - The input field locator
-   * @param text - The text to type
-   * @param delay - Delay between keystrokes in milliseconds
-   */
-  async type(locator: Locator, text: string, delay: number = 100): Promise<void> {
-    await locator.waitFor({ state: 'visible' });
-    await locator.type(text, { delay });
-  }
-  
+ 
   /**
    * Get text content from an element
    * @param locator - The element locator

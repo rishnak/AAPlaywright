@@ -241,34 +241,22 @@
         "encoded": "%7D",
         "prevChunkIds": []
       },
-      "42": {
-        "chunkId": "e2e7f7",
-        "hash": "6599f70a",
-        "encoded": "/**",
-        "prevChunkIds": []
-      },
-      "43": {
-        "chunkId": "e2e7f7",
-        "hash": "f9f5e6c9",
-        "encoded": "*%20Type%20text%20into%20an%20input%20field%20with%20delay",
-        "prevChunkIds": []
-      },
       "44": {
         "chunkId": "e2e7f7",
-        "hash": "28357820",
-        "encoded": "*%20@param%20locator%20-%20The%20input%20field%20locator",
+        "hash": "a94ac034",
+        "encoded": "*%20Get%20text%20content%20from%20an%20element",
         "prevChunkIds": []
       },
       "45": {
         "chunkId": "e2e7f7",
-        "hash": "ed323dd3",
-        "encoded": "*%20@param%20text%20-%20The%20text%20to%20type",
+        "hash": "a744f5b8",
+        "encoded": "*%20@param%20locator%20-%20The%20element%20locator",
         "prevChunkIds": []
       },
       "46": {
         "chunkId": "e2e7f7",
-        "hash": "1df4a0f1",
-        "encoded": "*%20@param%20delay%20-%20Delay%20between%20keystrokes%20in%20milliseconds",
+        "hash": "230b7457",
+        "encoded": "*%20@returns%20The%20text%20content",
         "prevChunkIds": []
       },
       "47": {
@@ -279,8 +267,8 @@
       },
       "48": {
         "chunkId": "e2e7f7",
-        "hash": "43183683",
-        "encoded": "async%20type(locator:%20Locator,%20text:%20string,%20delay:%20number%20=%20100):%20Promise%3Cvoid%3E%20%7B",
+        "hash": "fec55bbe",
+        "encoded": "async%20getText(locator:%20Locator):%20Promise%3Cstring%3E%20%7B",
         "prevChunkIds": []
       },
       "49": {
@@ -291,8 +279,8 @@
       },
       "50": {
         "chunkId": "e2e7f7",
-        "hash": "ad96c58d",
-        "encoded": "await%20locator.type(text,%20%7B%20delay%20%7D);",
+        "hash": "5315782e",
+        "encoded": "return%20await%20locator.textContent()%20%7C%7C%20'';",
         "prevChunkIds": []
       },
       "51": {
@@ -309,8 +297,8 @@
       },
       "54": {
         "chunkId": "e2e7f7",
-        "hash": "75601a77",
-        "encoded": "*%20Get%20text%20content%20from%20an%20element",
+        "hash": "fdd00411",
+        "encoded": "*%20Wait%20for%20an%20element%20to%20be%20visible",
         "prevChunkIds": []
       },
       "55": {
@@ -321,8 +309,8 @@
       },
       "56": {
         "chunkId": "e2e7f7",
-        "hash": "f7fb5bf8",
-        "encoded": "*%20@returns%20The%20text%20content",
+        "hash": "be3d0cb6",
+        "encoded": "*%20@param%20timeout%20-%20Custom%20timeout%20in%20milliseconds",
         "prevChunkIds": []
       },
       "57": {
@@ -333,194 +321,194 @@
       },
       "58": {
         "chunkId": "e2e7f7",
-        "hash": "1f603532",
-        "encoded": "async%20getText(locator:%20Locator):%20Promise%3Cstring%3E%20%7B",
+        "hash": "bbe191c0",
+        "encoded": "async%20waitForElement(locator:%20Locator,%20timeout?:%20number):%20Promise%3Cvoid%3E%20%7B",
         "prevChunkIds": []
       },
       "59": {
         "chunkId": "e2e7f7",
-        "hash": "e6350af3",
-        "encoded": "await%20locator.waitFor(%7B%20state:%20'visible'%20%7D);",
+        "hash": "f1631907",
+        "encoded": "await%20locator.waitFor(%7B%20state:%20'visible',%20timeout%20%7D);",
         "prevChunkIds": []
       },
       "60": {
         "chunkId": "e2e7f7",
-        "hash": "0c38755f",
-        "encoded": "return%20await%20locator.textContent()%20%7C%7C%20'';",
+        "hash": "42f7c135",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
-      "61": {
+      "62": {
         "chunkId": "e2e7f7",
-        "hash": "92368879",
-        "encoded": "%7D",
+        "hash": "78315c35",
+        "encoded": "/**",
         "prevChunkIds": []
       },
       "63": {
         "chunkId": "e2e7f7",
-        "hash": "199e31ca",
-        "encoded": "/**",
+        "hash": "9c5741ef",
+        "encoded": "*%20Wait%20for%20an%20element%20to%20be%20hidden",
         "prevChunkIds": []
       },
       "64": {
         "chunkId": "e2e7f7",
-        "hash": "c482da35",
-        "encoded": "*%20Wait%20for%20an%20element%20to%20be%20visible",
+        "hash": "91f438b6",
+        "encoded": "*%20@param%20locator%20-%20The%20element%20locator",
         "prevChunkIds": []
       },
       "65": {
         "chunkId": "e2e7f7",
-        "hash": "5d0b1093",
-        "encoded": "*%20@param%20locator%20-%20The%20element%20locator",
+        "hash": "4097f189",
+        "encoded": "*%20@param%20timeout%20-%20Custom%20timeout%20in%20milliseconds",
         "prevChunkIds": []
       },
       "66": {
         "chunkId": "e2e7f7",
-        "hash": "9b3a4ae0",
-        "encoded": "*%20@param%20timeout%20-%20Custom%20timeout%20in%20milliseconds",
+        "hash": "49629ea6",
+        "encoded": "*/",
         "prevChunkIds": []
       },
       "67": {
         "chunkId": "e2e7f7",
-        "hash": "8d2db5fd",
-        "encoded": "*/",
+        "hash": "ce0fe3d3",
+        "encoded": "async%20waitForElementHidden(locator:%20Locator,%20timeout?:%20number):%20Promise%3Cvoid%3E%20%7B",
         "prevChunkIds": []
       },
       "68": {
         "chunkId": "e2e7f7",
-        "hash": "a94a1f65",
-        "encoded": "async%20waitForElement(locator:%20Locator,%20timeout?:%20number):%20Promise%3Cvoid%3E%20%7B",
+        "hash": "9af4cb97",
+        "encoded": "await%20locator.waitFor(%7B%20state:%20'hidden',%20timeout%20%7D);",
         "prevChunkIds": []
       },
       "69": {
         "chunkId": "e2e7f7",
-        "hash": "e6a488e9",
-        "encoded": "await%20locator.waitFor(%7B%20state:%20'visible',%20timeout%20%7D);",
+        "hash": "9b4a30da",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
-      "70": {
+      "71": {
         "chunkId": "e2e7f7",
-        "hash": "352e9b23",
-        "encoded": "%7D",
+        "hash": "c462b373",
+        "encoded": "/**",
         "prevChunkIds": []
       },
       "72": {
         "chunkId": "e2e7f7",
-        "hash": "22bb1daa",
-        "encoded": "/**",
+        "hash": "929d5d54",
+        "encoded": "*%20Check%20if%20an%20element%20is%20visible",
         "prevChunkIds": []
       },
       "73": {
         "chunkId": "e2e7f7",
-        "hash": "a6406c03",
-        "encoded": "*%20Wait%20for%20an%20element%20to%20be%20hidden",
+        "hash": "e24ac4c8",
+        "encoded": "*%20@param%20locator%20-%20The%20element%20locator",
         "prevChunkIds": []
       },
       "74": {
         "chunkId": "e2e7f7",
-        "hash": "10602cf4",
-        "encoded": "*%20@param%20locator%20-%20The%20element%20locator",
+        "hash": "d7a3961e",
+        "encoded": "*%20@returns%20True%20if%20visible,%20false%20otherwise",
         "prevChunkIds": []
       },
       "75": {
         "chunkId": "e2e7f7",
-        "hash": "0aba8517",
-        "encoded": "*%20@param%20timeout%20-%20Custom%20timeout%20in%20milliseconds",
+        "hash": "9cb1108f",
+        "encoded": "*/",
         "prevChunkIds": []
       },
       "76": {
         "chunkId": "e2e7f7",
-        "hash": "7c40ea99",
-        "encoded": "*/",
+        "hash": "52ab35fe",
+        "encoded": "async%20isVisible(locator:%20Locator):%20Promise%3Cboolean%3E%20%7B",
         "prevChunkIds": []
       },
       "77": {
         "chunkId": "e2e7f7",
-        "hash": "4d837f43",
-        "encoded": "async%20waitForElementHidden(locator:%20Locator,%20timeout?:%20number):%20Promise%3Cvoid%3E%20%7B",
+        "hash": "47827729",
+        "encoded": "try%20%7B",
         "prevChunkIds": []
       },
       "78": {
         "chunkId": "e2e7f7",
-        "hash": "efe9d972",
-        "encoded": "await%20locator.waitFor(%7B%20state:%20'hidden',%20timeout%20%7D);",
+        "hash": "58413483",
+        "encoded": "await%20locator.waitFor(%7B%20state:%20'visible',%20timeout:%205000%20%7D);",
         "prevChunkIds": []
       },
       "79": {
         "chunkId": "e2e7f7",
-        "hash": "8aac2494",
-        "encoded": "%7D",
+        "hash": "a354dbb5",
+        "encoded": "return%20true;",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "e2e7f7",
+        "hash": "c9b9c781",
+        "encoded": "%7D%20catch%20%7B",
         "prevChunkIds": []
       },
       "81": {
         "chunkId": "e2e7f7",
-        "hash": "9a94c1ad",
-        "encoded": "/**",
+        "hash": "f2a1db9d",
+        "encoded": "return%20false;",
         "prevChunkIds": []
       },
       "82": {
         "chunkId": "e2e7f7",
-        "hash": "ea60f9e9",
-        "encoded": "*%20Check%20if%20an%20element%20is%20visible",
+        "hash": "74977a35",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "83": {
         "chunkId": "e2e7f7",
-        "hash": "66644194",
-        "encoded": "*%20@param%20locator%20-%20The%20element%20locator",
-        "prevChunkIds": []
-      },
-      "84": {
-        "chunkId": "e2e7f7",
-        "hash": "4088d24a",
-        "encoded": "*%20@returns%20True%20if%20visible,%20false%20otherwise",
+        "hash": "e4b921c6",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "85": {
         "chunkId": "e2e7f7",
-        "hash": "e8909fac",
-        "encoded": "*/",
+        "hash": "a5bc466c",
+        "encoded": "/**",
         "prevChunkIds": []
       },
       "86": {
         "chunkId": "e2e7f7",
-        "hash": "e1a72fc0",
-        "encoded": "async%20isVisible(locator:%20Locator):%20Promise%3Cboolean%3E%20%7B",
+        "hash": "6f0f4cd6",
+        "encoded": "*%20Select%20option%20from%20dropdown",
         "prevChunkIds": []
       },
       "87": {
         "chunkId": "e2e7f7",
-        "hash": "5f42dd46",
-        "encoded": "try%20%7B",
+        "hash": "0d7f71ce",
+        "encoded": "*%20@param%20locator%20-%20The%20dropdown%20locator",
         "prevChunkIds": []
       },
       "88": {
         "chunkId": "e2e7f7",
-        "hash": "48298e5f",
-        "encoded": "await%20locator.waitFor(%7B%20state:%20'visible',%20timeout:%205000%20%7D);",
+        "hash": "04673d1c",
+        "encoded": "*%20@param%20value%20-%20The%20value%20to%20select",
         "prevChunkIds": []
       },
       "89": {
         "chunkId": "e2e7f7",
-        "hash": "8329b810",
-        "encoded": "return%20true;",
+        "hash": "0bf47674",
+        "encoded": "*/",
         "prevChunkIds": []
       },
       "90": {
         "chunkId": "e2e7f7",
-        "hash": "7332af4d",
-        "encoded": "%7D%20catch%20%7B",
+        "hash": "0cc3fa15",
+        "encoded": "async%20selectDropdown(locator:%20Locator,%20value:%20string):%20Promise%3Cvoid%3E%20%7B",
         "prevChunkIds": []
       },
       "91": {
         "chunkId": "e2e7f7",
-        "hash": "44693be3",
-        "encoded": "return%20false;",
+        "hash": "992244ec",
+        "encoded": "await%20locator.waitFor(%7B%20state:%20'visible'%20%7D);",
         "prevChunkIds": []
       },
       "92": {
         "chunkId": "e2e7f7",
-        "hash": "06a855c2",
-        "encoded": "%7D",
+        "hash": "3b5f450d",
+        "encoded": "await%20locator.selectOption(value);",
         "prevChunkIds": []
       },
       "93": {
@@ -537,380 +525,380 @@
       },
       "96": {
         "chunkId": "e2e7f7",
-        "hash": "2d628f7f",
-        "encoded": "*%20Select%20option%20from%20dropdown",
+        "hash": "7d0e5871",
+        "encoded": "*%20Check%20a%20checkbox%20or%20radio%20button",
         "prevChunkIds": []
       },
       "97": {
         "chunkId": "e2e7f7",
-        "hash": "bbddade9",
-        "encoded": "*%20@param%20locator%20-%20The%20dropdown%20locator",
+        "hash": "d7c9e1a8",
+        "encoded": "*%20@param%20locator%20-%20The%20checkbox/radio%20locator",
         "prevChunkIds": []
       },
       "98": {
         "chunkId": "e2e7f7",
-        "hash": "12e26d4c",
-        "encoded": "*%20@param%20value%20-%20The%20value%20to%20select",
+        "hash": "34ec0146",
+        "encoded": "*/",
         "prevChunkIds": []
       },
       "99": {
         "chunkId": "e2e7f7",
-        "hash": "c07fdc3d",
-        "encoded": "*/",
+        "hash": "9633b8d7",
+        "encoded": "async%20check(locator:%20Locator):%20Promise%3Cvoid%3E%20%7B",
         "prevChunkIds": []
       },
       "100": {
         "chunkId": "e2e7f7",
-        "hash": "46c3b377",
-        "encoded": "async%20selectDropdown(locator:%20Locator,%20value:%20string):%20Promise%3Cvoid%3E%20%7B",
+        "hash": "48fb2cb1",
+        "encoded": "await%20locator.waitFor(%7B%20state:%20'visible'%20%7D);",
         "prevChunkIds": []
       },
       "101": {
         "chunkId": "e2e7f7",
-        "hash": "264a0827",
-        "encoded": "await%20locator.waitFor(%7B%20state:%20'visible'%20%7D);",
+        "hash": "71e87afa",
+        "encoded": "await%20locator.check();",
         "prevChunkIds": []
       },
       "102": {
         "chunkId": "e2e7f7",
-        "hash": "1ca893c4",
-        "encoded": "await%20locator.selectOption(value);",
+        "hash": "79409de0",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
-      "103": {
+      "104": {
         "chunkId": "e2e7f7",
-        "hash": "34001782",
-        "encoded": "%7D",
+        "hash": "0eb4d061",
+        "encoded": "/**",
         "prevChunkIds": []
       },
       "105": {
         "chunkId": "e2e7f7",
-        "hash": "a9f1e502",
-        "encoded": "/**",
+        "hash": "8cb3ed84",
+        "encoded": "*%20Uncheck%20a%20checkbox",
         "prevChunkIds": []
       },
       "106": {
         "chunkId": "e2e7f7",
-        "hash": "003dd0cf",
-        "encoded": "*%20Check%20a%20checkbox%20or%20radio%20button",
+        "hash": "c820035c",
+        "encoded": "*%20@param%20locator%20-%20The%20checkbox%20locator",
         "prevChunkIds": []
       },
       "107": {
         "chunkId": "e2e7f7",
-        "hash": "c29ecdba",
-        "encoded": "*%20@param%20locator%20-%20The%20checkbox/radio%20locator",
+        "hash": "e2e38584",
+        "encoded": "*/",
         "prevChunkIds": []
       },
       "108": {
         "chunkId": "e2e7f7",
-        "hash": "63ad5add",
-        "encoded": "*/",
+        "hash": "62615f2c",
+        "encoded": "async%20uncheck(locator:%20Locator):%20Promise%3Cvoid%3E%20%7B",
         "prevChunkIds": []
       },
       "109": {
         "chunkId": "e2e7f7",
-        "hash": "b393b733",
-        "encoded": "async%20check(locator:%20Locator):%20Promise%3Cvoid%3E%20%7B",
+        "hash": "f0a8f06e",
+        "encoded": "await%20locator.waitFor(%7B%20state:%20'visible'%20%7D);",
         "prevChunkIds": []
       },
       "110": {
         "chunkId": "e2e7f7",
-        "hash": "702d8f01",
-        "encoded": "await%20locator.waitFor(%7B%20state:%20'visible'%20%7D);",
+        "hash": "86577856",
+        "encoded": "await%20locator.uncheck();",
         "prevChunkIds": []
       },
       "111": {
         "chunkId": "e2e7f7",
-        "hash": "6795c9a2",
-        "encoded": "await%20locator.check();",
+        "hash": "367981c3",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
-      "112": {
+      "113": {
         "chunkId": "e2e7f7",
-        "hash": "3674f723",
-        "encoded": "%7D",
+        "hash": "60f87e2a",
+        "encoded": "/**",
         "prevChunkIds": []
       },
       "114": {
         "chunkId": "e2e7f7",
-        "hash": "6c9e2774",
-        "encoded": "/**",
+        "hash": "6bda8eaa",
+        "encoded": "*%20Wait%20for%20page%20to%20load%20completely",
         "prevChunkIds": []
       },
       "115": {
         "chunkId": "e2e7f7",
-        "hash": "7d96df9c",
-        "encoded": "*%20Uncheck%20a%20checkbox",
+        "hash": "12ad0cfd",
+        "encoded": "*/",
         "prevChunkIds": []
       },
       "116": {
         "chunkId": "e2e7f7",
-        "hash": "b0d96192",
-        "encoded": "*%20@param%20locator%20-%20The%20checkbox%20locator",
-        "prevChunkIds": []
-      },
-      "117": {
-        "chunkId": "e2e7f7",
-        "hash": "7db054a7",
-        "encoded": "*/",
+        "hash": "85fe3ee9",
+        "encoded": "async%20waitForPageLoad():%20Promise%3Cvoid%3E%20%7B",
         "prevChunkIds": []
       },
       "118": {
         "chunkId": "e2e7f7",
-        "hash": "f2443ef0",
-        "encoded": "async%20uncheck(locator:%20Locator):%20Promise%3Cvoid%3E%20%7B",
-        "prevChunkIds": []
-      },
-      "119": {
-        "chunkId": "e2e7f7",
-        "hash": "707bff99",
-        "encoded": "await%20locator.waitFor(%7B%20state:%20'visible'%20%7D);",
+        "hash": "715028b0",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "120": {
         "chunkId": "e2e7f7",
-        "hash": "bd15238d",
-        "encoded": "await%20locator.uncheck();",
+        "hash": "1dd233db",
+        "encoded": "/**",
         "prevChunkIds": []
       },
       "121": {
         "chunkId": "e2e7f7",
-        "hash": "7b145d98",
-        "encoded": "%7D",
+        "hash": "5ac98a11",
+        "encoded": "*%20Take%20a%20screenshot",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "e2e7f7",
+        "hash": "8e587441",
+        "encoded": "*%20@param%20name%20-%20Screenshot%20name",
         "prevChunkIds": []
       },
       "123": {
         "chunkId": "e2e7f7",
-        "hash": "b5d0264f",
-        "encoded": "/**",
+        "hash": "fd546c17",
+        "encoded": "*/",
         "prevChunkIds": []
       },
       "124": {
         "chunkId": "e2e7f7",
-        "hash": "b0de5bca",
-        "encoded": "*%20Wait%20for%20page%20to%20load%20completely",
+        "hash": "ac0c3a05",
+        "encoded": "async%20takeScreenshot(name:%20string):%20Promise%3Cvoid%3E%20%7B",
         "prevChunkIds": []
       },
       "125": {
         "chunkId": "e2e7f7",
-        "hash": "b5ab79f2",
-        "encoded": "*/",
+        "hash": "67cc18a5",
+        "encoded": "await%20this.page.screenshot(%7B%20path:%20%60screenshots/$%7Bname%7D.png%60,%20fullPage:%20true%20%7D);",
         "prevChunkIds": []
       },
       "126": {
         "chunkId": "e2e7f7",
-        "hash": "8c26252d",
-        "encoded": "async%20waitForPageLoad():%20Promise%3Cvoid%3E%20%7B",
+        "hash": "5513b7ee",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "128": {
         "chunkId": "e2e7f7",
-        "hash": "74f7c40c",
-        "encoded": "%7D",
+        "hash": "8816435a",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "e2e7f7",
+        "hash": "3c9602d3",
+        "encoded": "*%20Get%20current%20page%20title",
         "prevChunkIds": []
       },
       "130": {
         "chunkId": "e2e7f7",
-        "hash": "60ef4735",
-        "encoded": "/**",
+        "hash": "1485f5a7",
+        "encoded": "*%20@returns%20The%20page%20title",
         "prevChunkIds": []
       },
       "131": {
         "chunkId": "e2e7f7",
-        "hash": "66aa8436",
-        "encoded": "*%20Take%20a%20screenshot",
+        "hash": "87d7d6b1",
+        "encoded": "*/",
         "prevChunkIds": []
       },
       "132": {
         "chunkId": "e2e7f7",
-        "hash": "da840de4",
-        "encoded": "*%20@param%20name%20-%20Screenshot%20name",
+        "hash": "6a07d5c7",
+        "encoded": "async%20getTitle():%20Promise%3Cstring%3E%20%7B",
         "prevChunkIds": []
       },
       "133": {
         "chunkId": "e2e7f7",
-        "hash": "56b1b8c4",
-        "encoded": "*/",
+        "hash": "92996425",
+        "encoded": "return%20await%20this.page.title();",
         "prevChunkIds": []
       },
       "134": {
         "chunkId": "e2e7f7",
-        "hash": "2c2934c5",
-        "encoded": "async%20takeScreenshot(name:%20string):%20Promise%3Cvoid%3E%20%7B",
-        "prevChunkIds": []
-      },
-      "135": {
-        "chunkId": "e2e7f7",
-        "hash": "ceb5f662",
-        "encoded": "await%20this.page.screenshot(%7B%20path:%20%60screenshots/$%7Bname%7D.png%60,%20fullPage:%20true%20%7D);",
+        "hash": "59c23335",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "136": {
         "chunkId": "e2e7f7",
-        "hash": "dc65d51e",
-        "encoded": "%7D",
+        "hash": "d0afabef",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "e2e7f7",
+        "hash": "82f3eafe",
+        "encoded": "*%20Get%20current%20URL",
         "prevChunkIds": []
       },
       "138": {
         "chunkId": "e2e7f7",
-        "hash": "ccdd2cd8",
-        "encoded": "/**",
+        "hash": "6d351f70",
+        "encoded": "*%20@returns%20The%20current%20URL",
         "prevChunkIds": []
       },
       "139": {
         "chunkId": "e2e7f7",
-        "hash": "4d90f166",
-        "encoded": "*%20Get%20current%20page%20title",
+        "hash": "ec23f9c5",
+        "encoded": "*/",
         "prevChunkIds": []
       },
       "140": {
         "chunkId": "e2e7f7",
-        "hash": "e44db8b9",
-        "encoded": "*%20@returns%20The%20page%20title",
+        "hash": "a87599ae",
+        "encoded": "async%20getCurrentUrl():%20Promise%3Cstring%3E%20%7B",
         "prevChunkIds": []
       },
       "141": {
         "chunkId": "e2e7f7",
-        "hash": "8cda4f69",
-        "encoded": "*/",
+        "hash": "89147705",
+        "encoded": "return%20this.page.url();",
         "prevChunkIds": []
       },
       "142": {
         "chunkId": "e2e7f7",
-        "hash": "2d1390be",
-        "encoded": "async%20getTitle():%20Promise%3Cstring%3E%20%7B",
-        "prevChunkIds": []
-      },
-      "143": {
-        "chunkId": "e2e7f7",
-        "hash": "bf2f2131",
-        "encoded": "return%20await%20this.page.title();",
+        "hash": "1b2fde43",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "144": {
         "chunkId": "e2e7f7",
-        "hash": "546cf1de",
-        "encoded": "%7D",
+        "hash": "99299884",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "e2e7f7",
+        "hash": "67ccb3f9",
+        "encoded": "*%20Scroll%20to%20an%20element",
         "prevChunkIds": []
       },
       "146": {
         "chunkId": "e2e7f7",
-        "hash": "31c52bf6",
-        "encoded": "/**",
+        "hash": "412f7e3e",
+        "encoded": "*%20@param%20locator%20-%20The%20element%20locator",
         "prevChunkIds": []
       },
       "147": {
         "chunkId": "e2e7f7",
-        "hash": "bb472943",
-        "encoded": "*%20Get%20current%20URL",
+        "hash": "6a0e900a",
+        "encoded": "*/",
         "prevChunkIds": []
       },
       "148": {
         "chunkId": "e2e7f7",
-        "hash": "69a9a08e",
-        "encoded": "*%20@returns%20The%20current%20URL",
+        "hash": "f0b0068c",
+        "encoded": "async%20scrollToElement(locator:%20Locator):%20Promise%3Cvoid%3E%20%7B",
         "prevChunkIds": []
       },
       "149": {
         "chunkId": "e2e7f7",
-        "hash": "4994c36f",
-        "encoded": "*/",
+        "hash": "5f26ca6a",
+        "encoded": "await%20locator.scrollIntoViewIfNeeded();",
         "prevChunkIds": []
       },
       "150": {
         "chunkId": "e2e7f7",
-        "hash": "55e7c076",
-        "encoded": "async%20getCurrentUrl():%20Promise%3Cstring%3E%20%7B",
-        "prevChunkIds": []
-      },
-      "151": {
-        "chunkId": "e2e7f7",
-        "hash": "a4f0ebb5",
-        "encoded": "return%20this.page.url();",
+        "hash": "e584d451",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "152": {
         "chunkId": "e2e7f7",
-        "hash": "bbf48fdf",
-        "encoded": "%7D",
+        "hash": "d8cc1c4b",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "e2e7f7",
+        "hash": "ddfc1cf5",
+        "encoded": "*%20Press%20keyboard%20key",
         "prevChunkIds": []
       },
       "154": {
         "chunkId": "e2e7f7",
-        "hash": "d8f5956c",
-        "encoded": "/**",
+        "hash": "685c67d4",
+        "encoded": "*%20@param%20key%20-%20The%20key%20to%20press",
         "prevChunkIds": []
       },
       "155": {
         "chunkId": "e2e7f7",
-        "hash": "25621563",
-        "encoded": "*%20Scroll%20to%20an%20element",
+        "hash": "eb789ece",
+        "encoded": "*/",
         "prevChunkIds": []
       },
       "156": {
         "chunkId": "e2e7f7",
-        "hash": "bc00cfc1",
-        "encoded": "*%20@param%20locator%20-%20The%20element%20locator",
+        "hash": "f0477186",
+        "encoded": "async%20pressKey(key:%20string):%20Promise%3Cvoid%3E%20%7B",
         "prevChunkIds": []
       },
       "157": {
         "chunkId": "e2e7f7",
-        "hash": "e0a6d8ff",
-        "encoded": "*/",
+        "hash": "5c503c37",
+        "encoded": "await%20this.page.keyboard.press(key);",
         "prevChunkIds": []
       },
       "158": {
         "chunkId": "e2e7f7",
-        "hash": "8e7689ac",
-        "encoded": "async%20scrollToElement(locator:%20Locator):%20Promise%3Cvoid%3E%20%7B",
-        "prevChunkIds": []
-      },
-      "159": {
-        "chunkId": "e2e7f7",
-        "hash": "5b59d4fe",
-        "encoded": "await%20locator.scrollIntoViewIfNeeded();",
+        "hash": "b7a756fe",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "160": {
         "chunkId": "e2e7f7",
-        "hash": "10c4a851",
-        "encoded": "%7D",
+        "hash": "65d61fa4",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "e2e7f7",
+        "hash": "4d61ebd5",
+        "encoded": "*%20Hover%20over%20an%20element",
         "prevChunkIds": []
       },
       "162": {
         "chunkId": "e2e7f7",
-        "hash": "bb035687",
-        "encoded": "/**",
+        "hash": "8c1d6e45",
+        "encoded": "*%20@param%20locator%20-%20The%20element%20locator",
         "prevChunkIds": []
       },
       "163": {
         "chunkId": "e2e7f7",
-        "hash": "65c1d31c",
-        "encoded": "*%20Press%20keyboard%20key",
+        "hash": "f0ce86bc",
+        "encoded": "*/",
         "prevChunkIds": []
       },
       "164": {
         "chunkId": "e2e7f7",
-        "hash": "37a4ae69",
-        "encoded": "*%20@param%20key%20-%20The%20key%20to%20press",
+        "hash": "07c8cb69",
+        "encoded": "async%20hover(locator:%20Locator):%20Promise%3Cvoid%3E%20%7B",
         "prevChunkIds": []
       },
       "165": {
         "chunkId": "e2e7f7",
-        "hash": "905321a6",
-        "encoded": "*/",
+        "hash": "79439042",
+        "encoded": "await%20locator.waitFor(%7B%20state:%20'visible'%20%7D);",
         "prevChunkIds": []
       },
       "166": {
         "chunkId": "e2e7f7",
-        "hash": "f16c687a",
-        "encoded": "async%20pressKey(key:%20string):%20Promise%3Cvoid%3E%20%7B",
+        "hash": "6beff0ed",
+        "encoded": "await%20locator.hover();",
         "prevChunkIds": []
       },
       "167": {
         "chunkId": "e2e7f7",
-        "hash": "31ae853c",
-        "encoded": "await%20this.page.keyboard.press(key);",
+        "hash": "73b8c9b4",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "168": {
@@ -918,62 +906,8 @@
         "hash": "d5691714",
         "encoded": "%7D",
         "prevChunkIds": []
-      },
-      "170": {
-        "chunkId": "e2e7f7",
-        "hash": "51c21b53",
-        "encoded": "/**",
-        "prevChunkIds": []
-      },
-      "171": {
-        "chunkId": "e2e7f7",
-        "hash": "220b9133",
-        "encoded": "*%20Hover%20over%20an%20element",
-        "prevChunkIds": []
-      },
-      "172": {
-        "chunkId": "e2e7f7",
-        "hash": "2add7731",
-        "encoded": "*%20@param%20locator%20-%20The%20element%20locator",
-        "prevChunkIds": []
-      },
-      "173": {
-        "chunkId": "e2e7f7",
-        "hash": "7e705237",
-        "encoded": "*/",
-        "prevChunkIds": []
-      },
-      "174": {
-        "chunkId": "e2e7f7",
-        "hash": "3d30f4bb",
-        "encoded": "async%20hover(locator:%20Locator):%20Promise%3Cvoid%3E%20%7B",
-        "prevChunkIds": []
-      },
-      "175": {
-        "chunkId": "e2e7f7",
-        "hash": "7372e65f",
-        "encoded": "await%20locator.waitFor(%7B%20state:%20'visible'%20%7D);",
-        "prevChunkIds": []
-      },
-      "176": {
-        "chunkId": "e2e7f7",
-        "hash": "a40f22c2",
-        "encoded": "await%20locator.hover();",
-        "prevChunkIds": []
-      },
-      "177": {
-        "chunkId": "e2e7f7",
-        "hash": "5efbcd97",
-        "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "178": {
-        "chunkId": "e2e7f7",
-        "hash": "e0563286",
-        "encoded": "%7D",
-        "prevChunkIds": []
       }
     },
-    "_prevLineCount": 179
+    "_prevLineCount": 169
   }
 }
