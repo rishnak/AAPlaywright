@@ -1,0 +1,368 @@
+{
+  "src\\page-objects\\AABreakdownPage.ts": {
+    "filename": "AABreakdownPage.ts",
+    "path": "src\\page-objects\\AABreakdownPage.ts",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "5a1c09": {
+        "user": "Rishna K",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1794978788,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "f83173bd",
+          "files": "f7510313"
+        },
+        "hash": "b7d28ba0",
+        "messageId": "system_08bc9520-e30e-11f1-8e7f-299f21b14205",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 11/18/2026, 10:43:08 AM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "5a1c09",
+        "hash": "7afb29b2",
+        "encoded": "import%20%7B%20Page,%20Locator%20%7D%20from%20'@playwright/test';",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "5a1c09",
+        "hash": "79eca717",
+        "encoded": "import%20%7B%20BasePage%20%7D%20from%20'../pages/BasePage';",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "5a1c09",
+        "hash": "62512d72",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "5a1c09",
+        "hash": "effb93d0",
+        "encoded": "*%20AA%20Breakdown%20Cover%20Page%20Object",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "5a1c09",
+        "hash": "4630fcb2",
+        "encoded": "*%20Encapsulates%20elements%20and%20actions%20for%20the%20breakdown%20cover%20page",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "5a1c09",
+        "hash": "607ff64b",
+        "encoded": "*%20Demonstrates%20proper%20POM%20pattern%20with%20BasePage%20inheritance",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "5a1c09",
+        "hash": "0ae79b2f",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "5a1c09",
+        "hash": "8a41bfd0",
+        "encoded": "export%20class%20AABreakdownPage%20extends%20BasePage%20%7B",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "5a1c09",
+        "hash": "9d84f9ad",
+        "encoded": "//%20Locators%20-%20private%20readonly",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "5a1c09",
+        "hash": "be5afd8e",
+        "encoded": "private%20readonly%20pageHeading:%20Locator;",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "5a1c09",
+        "hash": "89ed7bd1",
+        "encoded": "private%20readonly%20getQuoteButton:%20Locator;",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "5a1c09",
+        "hash": "c4c94e0c",
+        "encoded": "private%20readonly%20coverOptions:%20Locator;",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "5a1c09",
+        "hash": "2c5c972c",
+        "encoded": "private%20readonly%20phoneNumber:%20Locator;",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "5a1c09",
+        "hash": "d1123ad6",
+        "encoded": "constructor(page:%20Page)%20%7B",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "5a1c09",
+        "hash": "edf94da2",
+        "encoded": "super(page);%20//%20Call%20BasePage%20constructor",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "5a1c09",
+        "hash": "a76dccc9",
+        "encoded": "//%20Initialize%20locators",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "5a1c09",
+        "hash": "0b1e3168",
+        "encoded": "this.pageHeading%20=%20page.locator('h1').first();",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "5a1c09",
+        "hash": "d87f9eae",
+        "encoded": "this.coverOptions%20=%20page.locator('%5Bclass*=%22cover%22%5D,%20%5Bclass*=%22option%22%5D');",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "5a1c09",
+        "hash": "0603f5e7",
+        "encoded": "this.phoneNumber%20=%20page.locator('a%5Bhref*=%22tel:%22%5D').first();",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "5a1c09",
+        "hash": "840004ae",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "5a1c09",
+        "hash": "accdc651",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "5a1c09",
+        "hash": "e15082bf",
+        "encoded": "*%20Verify%20breakdown%20page%20is%20loaded",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "5a1c09",
+        "hash": "9e6ea766",
+        "encoded": "*%20Uses%20BasePage.isVisible()",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "5a1c09",
+        "hash": "53ca030e",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "5a1c09",
+        "hash": "8a544baa",
+        "encoded": "async%20isBreakdownPageLoaded():%20Promise%3Cboolean%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "5a1c09",
+        "hash": "748b2c41",
+        "encoded": "return%20await%20this.isVisible(this.pageHeading);",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "5a1c09",
+        "hash": "0e2c0edc",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "5a1c09",
+        "hash": "bfb1acd4",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "5a1c09",
+        "hash": "03b70dbd",
+        "encoded": "*%20Get%20page%20heading%20text",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "5a1c09",
+        "hash": "81fbb5a0",
+        "encoded": "*%20Uses%20BasePage.getText()",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "5a1c09",
+        "hash": "7736df95",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "5a1c09",
+        "hash": "f2afbec3",
+        "encoded": "async%20getHeading():%20Promise%3Cstring%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "5a1c09",
+        "hash": "1c337598",
+        "encoded": "return%20await%20this.getText(this.pageHeading);",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "5a1c09",
+        "hash": "98f83ab6",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "5a1c09",
+        "hash": "9d43f7fb",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "5a1c09",
+        "hash": "19360eaf",
+        "encoded": "*%20Click%20get%20quote%20button",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "5a1c09",
+        "hash": "2a23c4e8",
+        "encoded": "*%20Uses%20BasePage.click()",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "5a1c09",
+        "hash": "de284ca5",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "5a1c09",
+        "hash": "9fc38af9",
+        "encoded": "async%20clickGetQuote():%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "5a1c09",
+        "hash": "7dc8f109",
+        "encoded": "await%20this.click(this.getQuoteButton);",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "5a1c09",
+        "hash": "0b4804f7",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "5a1c09",
+        "hash": "09dfcb49",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "5a1c09",
+        "hash": "5bb547de",
+        "encoded": "*%20Wait%20for%20page%20to%20load%20completely",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "5a1c09",
+        "hash": "8386cf18",
+        "encoded": "*%20Uses%20BasePage.waitForPageLoad()",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "5a1c09",
+        "hash": "43449f3f",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "5a1c09",
+        "hash": "7bbdeb9e",
+        "encoded": "async%20waitForBreakdownPageLoad():%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "5a1c09",
+        "hash": "75271b12",
+        "encoded": "await%20this.waitForPageLoad();",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "5a1c09",
+        "hash": "17837346",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "5a1c09",
+        "hash": "50ad655d",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "5a1c09",
+        "hash": "d19dc162",
+        "encoded": "*%20Verify%20URL%20contains%20'breakdown'",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "5a1c09",
+        "hash": "d5876dea",
+        "encoded": "*%20Uses%20BasePage.getCurrentUrl()",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "5a1c09",
+        "hash": "006039ec",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "5a1c09",
+        "hash": "fff5d443",
+        "encoded": "async%20isOnBreakdownPage():%20Promise%3Cboolean%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "5a1c09",
+        "hash": "c7ee24a9",
+        "encoded": "const%20url%20=%20await%20this.getCurrentUrl();",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "5a1c09",
+        "hash": "fb18e5e1",
+        "encoded": "return%20url.toLowerCase().includes('breakdown');",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "5a1c09",
+        "hash": "f064f9d6",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    },
+    "_prevLineCount": 73
+  }
+}

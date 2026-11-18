@@ -703,12 +703,6 @@
         "encoded": "async%20waitForPageLoad():%20Promise%3Cvoid%3E%20%7B",
         "prevChunkIds": []
       },
-      "127": {
-        "chunkId": "e2e7f7",
-        "hash": "5f019233",
-        "encoded": "await%20this.page.waitForLoadState('networkidle');",
-        "prevChunkIds": []
-      },
       "128": {
         "chunkId": "e2e7f7",
         "hash": "74f7c40c",
@@ -979,6 +973,7 @@
         "encoded": "%7D",
         "prevChunkIds": []
       }
-    }
+    },
+    "_prevLineCount": 179
   }
 }

@@ -263,9 +263,9 @@ Supported environment variables:
 
 MIT License
 
-## 👥 Authors
+## 👥 Author
 
-Senior Test Engineer
+Rishna K
 
 ---
 

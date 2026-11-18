@@ -1,0 +1,1080 @@
+{
+  "setup-git.sh": {
+    "filename": "setup-git.sh",
+    "path": "setup-git.sh",
+    "version": "1.2",
+    "contextFile": "07ec30d7-context.json",
+    "chunks": {
+      "67bc9a": {
+        "user": "Rishna K",
+        "model": "gpt-4.1",
+        "timestamp": 1794909408,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "d5c921e8"
+        },
+        "hash": "8eb12ec8",
+        "messageId": "system_a0048ea0-e26a-11f1-bc97-c58b44212be4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 3:26:48 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "67bc9a",
+        "hash": "acb0f876",
+        "encoded": "#!/bin/bash",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "67bc9a",
+        "hash": "7d2b8c2b",
+        "encoded": "#%20Git%20Repository%20Setup%20Script%20for%20Mac/Linux%20(Bash)",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "67bc9a",
+        "hash": "d950a5c9",
+        "encoded": "#%20This%20script%20initializes%20Git%20and%20pushes%20the%20Playwright%20framework%20to%20a%20remote%20repository",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "67bc9a",
+        "hash": "03583c49",
+        "encoded": "#%20Colors",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "67bc9a",
+        "hash": "4ab925bf",
+        "encoded": "RED='%5C033%5B0;31m'",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "67bc9a",
+        "hash": "8abcd533",
+        "encoded": "GREEN='%5C033%5B0;32m'",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "67bc9a",
+        "hash": "90ef1c31",
+        "encoded": "YELLOW='%5C033%5B1;33m'",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "67bc9a",
+        "hash": "d513d691",
+        "encoded": "CYAN='%5C033%5B0;36m'",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "67bc9a",
+        "hash": "c1c23a5b",
+        "encoded": "NC='%5C033%5B0m'%20#%20No%20Color",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "67bc9a",
+        "hash": "3459fe5e",
+        "encoded": "echo%20-e%20%22$%7BCYAN%7D%22",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "67bc9a",
+        "hash": "f92087e0",
+        "encoded": "echo%20%22========================================%22",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "67bc9a",
+        "hash": "da8b0207",
+        "encoded": "echo%20%22%20%20Git%20Repository%20Setup%20Wizard%22",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "67bc9a",
+        "hash": "4160bc58",
+        "encoded": "echo%20%22%20%20Playwright%20POM%20Framework%22",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "67bc9a",
+        "hash": "29d4ecb0",
+        "encoded": "echo%20%22========================================%22",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "67bc9a",
+        "hash": "a097dda3",
+        "encoded": "echo%20-e%20%22$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "67bc9a",
+        "hash": "7f51d9a4",
+        "encoded": "#%20Check%20if%20Git%20is%20installed",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "67bc9a",
+        "hash": "7888d15d",
+        "encoded": "echo%20-e%20%22$%7BYELLOW%7D%5B1/8%5D%20Checking%20Git%20installation...$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "67bc9a",
+        "hash": "b3aa2426",
+        "encoded": "if%20command%20-v%20git%20&%3E%20/dev/null;%20then",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "67bc9a",
+        "hash": "4fa07a26",
+        "encoded": "GIT_VERSION=$(git%20--version)",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "67bc9a",
+        "hash": "34c58947",
+        "encoded": "echo%20-e%20%22$%7BGREEN%7D%E2%9C%93%20Git%20installed:%20$GIT_VERSION$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "67bc9a",
+        "hash": "f2653042",
+        "encoded": "else",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "67bc9a",
+        "hash": "e991fce2",
+        "encoded": "echo%20-e%20%22$%7BRED%7D%E2%9C%97%20Git%20is%20not%20installed!$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "67bc9a",
+        "hash": "99530812",
+        "encoded": "echo%20-e%20%22$%7BYELLOW%7DPlease%20install%20Git:$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "67bc9a",
+        "hash": "a6affb5c",
+        "encoded": "echo%20%22%20%20Mac:%20brew%20install%20git%22",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "67bc9a",
+        "hash": "0174ed73",
+        "encoded": "echo%20%22%20%20Ubuntu/Debian:%20sudo%20apt-get%20install%20git%22",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "67bc9a",
+        "hash": "a89bd943",
+        "encoded": "echo%20%22%20%20CentOS/RHEL:%20sudo%20yum%20install%20git%22",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "67bc9a",
+        "hash": "f86ec50b",
+        "encoded": "exit%201",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "67bc9a",
+        "hash": "fd852374",
+        "encoded": "fi",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "67bc9a",
+        "hash": "a6e631fc",
+        "encoded": "#%20Check%20if%20already%20a%20Git%20repository",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "67bc9a",
+        "hash": "460abb1a",
+        "encoded": "if%20%5B%20-d%20.git%20%5D;%20then",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "67bc9a",
+        "hash": "08d56f87",
+        "encoded": "echo%20-e%20%22%5Cn$%7BYELLOW%7D%E2%9A%A0%20This%20directory%20is%20already%20a%20Git%20repository$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "67bc9a",
+        "hash": "771e4965",
+        "encoded": "read%20-p%20%22Do%20you%20want%20to%20reinitialize?%20(yes/no):%20%22%20reinit",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "67bc9a",
+        "hash": "7100dd25",
+        "encoded": "if%20%5B%20%22$reinit%22%20!=%20%22yes%22%20%5D;%20then",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "67bc9a",
+        "hash": "d2022feb",
+        "encoded": "echo%20-e%20%22$%7BYELLOW%7DSetup%20cancelled.$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "67bc9a",
+        "hash": "94adb570",
+        "encoded": "exit%200",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "67bc9a",
+        "hash": "5fc33557",
+        "encoded": "fi",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "67bc9a",
+        "hash": "87f790c3",
+        "encoded": "fi",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "67bc9a",
+        "hash": "e2ed1449",
+        "encoded": "#%20Configure%20Git%20user",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "67bc9a",
+        "hash": "76756f21",
+        "encoded": "echo%20-e%20%22%5Cn$%7BYELLOW%7D%5B2/8%5D%20Configuring%20Git%20user...$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "67bc9a",
+        "hash": "f4d7deea",
+        "encoded": "current_name=$(git%20config%20user.name%202%3E/dev/null)",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "67bc9a",
+        "hash": "a6549919",
+        "encoded": "current_email=$(git%20config%20user.email%202%3E/dev/null)",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "67bc9a",
+        "hash": "ee919f94",
+        "encoded": "if%20%5B%20-n%20%22$current_name%22%20%5D;%20then",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "67bc9a",
+        "hash": "5722feab",
+        "encoded": "echo%20-e%20%22$%7BCYAN%7DCurrent%20name:%20$current_name$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "67bc9a",
+        "hash": "4aed50b3",
+        "encoded": "read%20-p%20%22Use%20this%20name?%20(yes/no):%20%22%20use_current",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "67bc9a",
+        "hash": "5b094205",
+        "encoded": "if%20%5B%20%22$use_current%22%20==%20%22yes%22%20%5D;%20then",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "67bc9a",
+        "hash": "dc9e1fb6",
+        "encoded": "name=%22$current_name%22",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "67bc9a",
+        "hash": "35b82a60",
+        "encoded": "else",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "67bc9a",
+        "hash": "b466794f",
+        "encoded": "read%20-p%20%22Enter%20your%20name:%20%22%20name",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "67bc9a",
+        "hash": "03c9d694",
+        "encoded": "fi",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "67bc9a",
+        "hash": "78a50bc8",
+        "encoded": "else",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "67bc9a",
+        "hash": "0589f68e",
+        "encoded": "read%20-p%20%22Enter%20your%20name:%20%22%20name",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "67bc9a",
+        "hash": "f5fa613e",
+        "encoded": "fi",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "67bc9a",
+        "hash": "76a2fa78",
+        "encoded": "if%20%5B%20-n%20%22$current_email%22%20%5D;%20then",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "67bc9a",
+        "hash": "39999d15",
+        "encoded": "echo%20-e%20%22$%7BCYAN%7DCurrent%20email:%20$current_email$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "67bc9a",
+        "hash": "69875660",
+        "encoded": "read%20-p%20%22Use%20this%20email?%20(yes/no):%20%22%20use_current",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "67bc9a",
+        "hash": "7d4083db",
+        "encoded": "if%20%5B%20%22$use_current%22%20==%20%22yes%22%20%5D;%20then",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "67bc9a",
+        "hash": "946c25c2",
+        "encoded": "email=%22$current_email%22",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "67bc9a",
+        "hash": "59caed0c",
+        "encoded": "else",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "67bc9a",
+        "hash": "93659b96",
+        "encoded": "read%20-p%20%22Enter%20your%20email:%20%22%20email",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "67bc9a",
+        "hash": "e7204492",
+        "encoded": "fi",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "67bc9a",
+        "hash": "f9cb4a56",
+        "encoded": "else",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "67bc9a",
+        "hash": "9731bafa",
+        "encoded": "read%20-p%20%22Enter%20your%20email:%20%22%20email",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "67bc9a",
+        "hash": "d2c40927",
+        "encoded": "fi",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "67bc9a",
+        "hash": "aac25773",
+        "encoded": "git%20config%20user.name%20%22$name%22",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "67bc9a",
+        "hash": "f14a44bc",
+        "encoded": "git%20config%20user.email%20%22$email%22",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "67bc9a",
+        "hash": "85526251",
+        "encoded": "echo%20-e%20%22$%7BGREEN%7D%E2%9C%93%20Git%20user%20configured$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "67bc9a",
+        "hash": "40cd8c14",
+        "encoded": "#%20Initialize%20Git%20repository",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "67bc9a",
+        "hash": "506174ef",
+        "encoded": "echo%20-e%20%22%5Cn$%7BYELLOW%7D%5B3/8%5D%20Initializing%20Git%20repository...$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "67bc9a",
+        "hash": "bf5bbf99",
+        "encoded": "if%20%5B%20-d%20.git%20%5D;%20then",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "67bc9a",
+        "hash": "39434512",
+        "encoded": "echo%20-e%20%22$%7BGREEN%7D%E2%9C%93%20Git%20repository%20already%20initialized$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "67bc9a",
+        "hash": "799a79de",
+        "encoded": "else",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "67bc9a",
+        "hash": "0d68845d",
+        "encoded": "git%20init",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "67bc9a",
+        "hash": "593e08c1",
+        "encoded": "echo%20-e%20%22$%7BGREEN%7D%E2%9C%93%20Git%20repository%20initialized$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "67bc9a",
+        "hash": "32c72044",
+        "encoded": "fi",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "67bc9a",
+        "hash": "80d6ad35",
+        "encoded": "#%20Show%20current%20status",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "67bc9a",
+        "hash": "937071a4",
+        "encoded": "echo%20-e%20%22%5Cn$%7BYELLOW%7D%5B4/8%5D%20Checking%20repository%20status...$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "67bc9a",
+        "hash": "08d59fa2",
+        "encoded": "untracked=$(git%20status%20--porcelain%20%7C%20wc%20-l)",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "67bc9a",
+        "hash": "f596d4c8",
+        "encoded": "echo%20-e%20%22$%7BGREEN%7D%E2%9C%93%20Found%20$untracked%20files%20to%20add$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "67bc9a",
+        "hash": "d07eedf3",
+        "encoded": "#%20Add%20files",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "67bc9a",
+        "hash": "a746312c",
+        "encoded": "echo%20-e%20%22%5Cn$%7BYELLOW%7D%5B5/8%5D%20Adding%20files%20to%20Git...$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "67bc9a",
+        "hash": "0e65b85f",
+        "encoded": "git%20add%20.",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "67bc9a",
+        "hash": "aee46d9c",
+        "encoded": "echo%20-e%20%22$%7BGREEN%7D%E2%9C%93%20All%20files%20added%20to%20staging%20area$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "67bc9a",
+        "hash": "0f6f3212",
+        "encoded": "#%20Commit%20files",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "67bc9a",
+        "hash": "3bbb8c89",
+        "encoded": "echo%20-e%20%22%5Cn$%7BYELLOW%7D%5B6/8%5D%20Committing%20files...$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "67bc9a",
+        "hash": "3732ceb0",
+        "encoded": "read%20-p%20%22Enter%20commit%20message%20(or%20press%20Enter%20for%20default):%20%22%20commit_msg",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "67bc9a",
+        "hash": "73127a69",
+        "encoded": "if%20%5B%20-z%20%22$commit_msg%22%20%5D;%20then",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "67bc9a",
+        "hash": "f13fb907",
+        "encoded": "commit_msg=%22Initial%20commit:%20Playwright%20POM%20framework%20with%20Jenkins%20integration%22",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "67bc9a",
+        "hash": "c794f659",
+        "encoded": "fi",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "67bc9a",
+        "hash": "9ab0a60f",
+        "encoded": "git%20commit%20-m%20%22$commit_msg%22",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "67bc9a",
+        "hash": "50a0a26d",
+        "encoded": "echo%20-e%20%22$%7BGREEN%7D%E2%9C%93%20Files%20committed$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "67bc9a",
+        "hash": "132651b1",
+        "encoded": "#%20Add%20remote%20repository",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "67bc9a",
+        "hash": "2ac62365",
+        "encoded": "echo%20-e%20%22%5Cn$%7BYELLOW%7D%5B7/8%5D%20Adding%20remote%20repository...$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "67bc9a",
+        "hash": "8edfb67a",
+        "encoded": "echo%20-e%20%22%5Cn$%7BCYAN%7DSelect%20your%20Git%20provider:$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "67bc9a",
+        "hash": "3e835291",
+        "encoded": "echo%20%221.%20GitHub%20(https://github.com)%22",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "67bc9a",
+        "hash": "21374c27",
+        "encoded": "echo%20%222.%20GitLab%20(https://gitlab.com)%22",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "67bc9a",
+        "hash": "b10d6d91",
+        "encoded": "echo%20%223.%20Bitbucket%20(https://bitbucket.org)%22",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "67bc9a",
+        "hash": "bbec6ff2",
+        "encoded": "echo%20%224.%20Azure%20DevOps%20(https://dev.azure.com)%22",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "67bc9a",
+        "hash": "7419ff9f",
+        "encoded": "echo%20%225.%20Custom%20URL%22",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "67bc9a",
+        "hash": "99989497",
+        "encoded": "read%20-p%20%22Enter%20choice%20(1-5):%20%22%20provider",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "67bc9a",
+        "hash": "5ce8575e",
+        "encoded": "case%20$provider%20in",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "67bc9a",
+        "hash": "e564a521",
+        "encoded": "1)",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "67bc9a",
+        "hash": "624ed080",
+        "encoded": "read%20-p%20%22Enter%20your%20GitHub%20username:%20%22%20username",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "67bc9a",
+        "hash": "74677ba5",
+        "encoded": "read%20-p%20%22Enter%20repository%20name%20(e.g.,%20playwright-pom-framework):%20%22%20repo_name",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "67bc9a",
+        "hash": "9b32c7c3",
+        "encoded": "repo_url=%22https://github.com/$username/$repo_name.git%22",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "67bc9a",
+        "hash": "a2a25647",
+        "encoded": ";;",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "67bc9a",
+        "hash": "0ac92eaa",
+        "encoded": "2)",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "67bc9a",
+        "hash": "356df7a2",
+        "encoded": "read%20-p%20%22Enter%20your%20GitLab%20username:%20%22%20username",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "67bc9a",
+        "hash": "9758a9ee",
+        "encoded": "read%20-p%20%22Enter%20repository%20name:%20%22%20repo_name",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "67bc9a",
+        "hash": "d12a7e20",
+        "encoded": "repo_url=%22https://gitlab.com/$username/$repo_name.git%22",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "67bc9a",
+        "hash": "dce98f68",
+        "encoded": ";;",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "67bc9a",
+        "hash": "b101a08c",
+        "encoded": "3)",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "67bc9a",
+        "hash": "793b898b",
+        "encoded": "read%20-p%20%22Enter%20your%20Bitbucket%20username:%20%22%20username",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "67bc9a",
+        "hash": "134229c2",
+        "encoded": "read%20-p%20%22Enter%20repository%20name:%20%22%20repo_name",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "67bc9a",
+        "hash": "4e949763",
+        "encoded": "repo_url=%22https://$username@bitbucket.org/$username/$repo_name.git%22",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "67bc9a",
+        "hash": "16bb701c",
+        "encoded": ";;",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "67bc9a",
+        "hash": "7eeda040",
+        "encoded": "4)",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "67bc9a",
+        "hash": "5e835f74",
+        "encoded": "read%20-p%20%22Enter%20your%20Azure%20DevOps%20organization:%20%22%20org",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "67bc9a",
+        "hash": "c6e2fdf5",
+        "encoded": "read%20-p%20%22Enter%20project%20name:%20%22%20project",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "67bc9a",
+        "hash": "dc19b12c",
+        "encoded": "read%20-p%20%22Enter%20repository%20name:%20%22%20repo_name",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "67bc9a",
+        "hash": "7c895417",
+        "encoded": "repo_url=%22https://$org@dev.azure.com/$org/$project/_git/$repo_name%22",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "67bc9a",
+        "hash": "cf001b9c",
+        "encoded": ";;",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "67bc9a",
+        "hash": "6afbb685",
+        "encoded": "5)",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "67bc9a",
+        "hash": "9dcf5eed",
+        "encoded": "read%20-p%20%22Enter%20full%20repository%20URL:%20%22%20repo_url",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "67bc9a",
+        "hash": "124fba69",
+        "encoded": ";;",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "67bc9a",
+        "hash": "dda7b8cb",
+        "encoded": "*)",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "67bc9a",
+        "hash": "4d276cf7",
+        "encoded": "echo%20-e%20%22$%7BRED%7D%E2%9C%97%20Invalid%20choice$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "67bc9a",
+        "hash": "4493c4b9",
+        "encoded": "exit%201",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "67bc9a",
+        "hash": "c4ed51f1",
+        "encoded": ";;",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "67bc9a",
+        "hash": "994f0d74",
+        "encoded": "esac",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "67bc9a",
+        "hash": "ba5866a8",
+        "encoded": "echo%20-e%20%22%5Cn$%7BCYAN%7DRepository%20URL:%20$repo_url$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "67bc9a",
+        "hash": "3c6e171c",
+        "encoded": "read%20-p%20%22Is%20this%20correct?%20(yes/no):%20%22%20confirm",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "67bc9a",
+        "hash": "0fc53d01",
+        "encoded": "if%20%5B%20%22$confirm%22%20!=%20%22yes%22%20%5D;%20then",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "67bc9a",
+        "hash": "6afc8fd3",
+        "encoded": "echo%20-e%20%22$%7BYELLOW%7DSetup%20cancelled.$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "67bc9a",
+        "hash": "fa85df03",
+        "encoded": "exit%200",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "67bc9a",
+        "hash": "a8452975",
+        "encoded": "fi",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "67bc9a",
+        "hash": "793f00ff",
+        "encoded": "#%20Check%20if%20remote%20already%20exists",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "67bc9a",
+        "hash": "9d2785d1",
+        "encoded": "existing_remote=$(git%20remote%20get-url%20origin%202%3E/dev/null)",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "67bc9a",
+        "hash": "b2e77193",
+        "encoded": "if%20%5B%20-n%20%22$existing_remote%22%20%5D;%20then",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "67bc9a",
+        "hash": "7da3d42a",
+        "encoded": "echo%20-e%20%22$%7BYELLOW%7D%E2%9A%A0%20Remote%20'origin'%20already%20exists:%20$existing_remote$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "67bc9a",
+        "hash": "c4bea47a",
+        "encoded": "read%20-p%20%22Overwrite?%20(yes/no):%20%22%20overwrite",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "67bc9a",
+        "hash": "f095dd25",
+        "encoded": "if%20%5B%20%22$overwrite%22%20==%20%22yes%22%20%5D;%20then",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "67bc9a",
+        "hash": "61723111",
+        "encoded": "git%20remote%20set-url%20origin%20$repo_url",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "67bc9a",
+        "hash": "7c5c80d2",
+        "encoded": "echo%20-e%20%22$%7BGREEN%7D%E2%9C%93%20Remote%20updated$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "67bc9a",
+        "hash": "b088daae",
+        "encoded": "fi",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "67bc9a",
+        "hash": "56a2b713",
+        "encoded": "else",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "67bc9a",
+        "hash": "5e9dc7f6",
+        "encoded": "git%20remote%20add%20origin%20$repo_url",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "67bc9a",
+        "hash": "0a15c15d",
+        "encoded": "echo%20-e%20%22$%7BGREEN%7D%E2%9C%93%20Remote%20repository%20added$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "67bc9a",
+        "hash": "65f0671e",
+        "encoded": "fi",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "67bc9a",
+        "hash": "9ecc545c",
+        "encoded": "#%20Push%20to%20remote",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "67bc9a",
+        "hash": "7acb280c",
+        "encoded": "echo%20-e%20%22%5Cn$%7BYELLOW%7D%5B8/8%5D%20Pushing%20to%20remote%20repository...$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "67bc9a",
+        "hash": "83e5978d",
+        "encoded": "echo%20-e%20%22$%7BYELLOW%7D%E2%9A%A0%20You%20may%20be%20prompted%20for%20credentials$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "67bc9a",
+        "hash": "91975399",
+        "encoded": "echo%20-e%20%22$%7BYELLOW%7D%20%20%20Use%20Personal%20Access%20Token%20as%20password%20(not%20your%20account%20password)$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "67bc9a",
+        "hash": "b63f19d2",
+        "encoded": "git%20branch%20-M%20main",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "67bc9a",
+        "hash": "e5f284b9",
+        "encoded": "if%20git%20push%20-u%20origin%20main;%20then",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "67bc9a",
+        "hash": "41a30195",
+        "encoded": "echo%20-e%20%22%5Cn$%7BGREEN%7D========================================$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "67bc9a",
+        "hash": "d7d2d7d0",
+        "encoded": "echo%20-e%20%22$%7BGREEN%7D%20%20%E2%9C%93%20SUCCESS!$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "67bc9a",
+        "hash": "38ae2935",
+        "encoded": "echo%20-e%20%22$%7BGREEN%7D========================================$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "67bc9a",
+        "hash": "d80eb291",
+        "encoded": "echo%20-e%20%22%5Cn$%7BGREEN%7DYour%20repository%20is%20now%20on%20Git!$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "67bc9a",
+        "hash": "f875894c",
+        "encoded": "echo%20-e%20%22$%7BCYAN%7DRepository%20URL:%20$repo_url$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "67bc9a",
+        "hash": "93058bf1",
+        "encoded": "echo%20-e%20%22%5Cn$%7BYELLOW%7DNext%20steps:$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "67bc9a",
+        "hash": "2f392f3c",
+        "encoded": "echo%20%221.%20Visit%20your%20repository%20in%20a%20browser%22",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "67bc9a",
+        "hash": "22265b79",
+        "encoded": "echo%20%222.%20Verify%20all%20files%20are%20uploaded%22",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "67bc9a",
+        "hash": "bb6dd6c2",
+        "encoded": "echo%20%223.%20Set%20up%20Jenkins%20integration%20(see%20JENKINS_SETUP.md)%22",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "67bc9a",
+        "hash": "4f67e63b",
+        "encoded": "else",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "67bc9a",
+        "hash": "61ec205e",
+        "encoded": "echo%20-e%20%22%5Cn$%7BRED%7D========================================$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "67bc9a",
+        "hash": "a2405e0d",
+        "encoded": "echo%20-e%20%22$%7BRED%7D%20%20%E2%9C%97%20PUSH%20FAILED$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "67bc9a",
+        "hash": "565a3516",
+        "encoded": "echo%20-e%20%22$%7BRED%7D========================================$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "67bc9a",
+        "hash": "d6e4f3b1",
+        "encoded": "echo%20-e%20%22%5Cn$%7BYELLOW%7DTroubleshooting:$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "67bc9a",
+        "hash": "a0cd3f86",
+        "encoded": "echo%20%221.%20Make%20sure%20the%20repository%20exists%20on%20the%20remote%20server%22",
+        "prevChunkIds": []
+      },
+      "190": {
+        "chunkId": "67bc9a",
+        "hash": "6f771992",
+        "encoded": "echo%20%222.%20Check%20your%20authentication%20(use%20Personal%20Access%20Token)%22",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "67bc9a",
+        "hash": "122efb5e",
+        "encoded": "echo%20%223.%20Verify%20the%20repository%20URL%20is%20correct%22",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "67bc9a",
+        "hash": "67a5659f",
+        "encoded": "echo%20%224.%20See%20GIT_SETUP.md%20for%20detailed%20help%22",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "67bc9a",
+        "hash": "9b6cb1cc",
+        "encoded": "fi",
+        "prevChunkIds": []
+      },
+      "195": {
+        "chunkId": "67bc9a",
+        "hash": "0b90da60",
+        "encoded": "echo%20%22%22",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "67bc9a",
+        "hash": "84091964",
+        "encoded": "read%20-p%20%22Press%20Enter%20to%20exit...%22",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

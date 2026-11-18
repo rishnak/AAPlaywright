@@ -1,0 +1,308 @@
+{
+  "src\\data\\aaTestData.ts": {
+    "filename": "aaTestData.ts",
+    "path": "src\\data\\aaTestData.ts",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "ce64e9": {
+        "user": "Rishna K",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1794978788,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "f83173bd",
+          "files": "f7510313"
+        },
+        "hash": "22488e16",
+        "messageId": "system_08bc9520-e30e-11f1-8e7f-299f21b14205",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 11/18/2026, 10:43:08 AM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "ce64e9",
+        "hash": "48c76aad",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "ce64e9",
+        "hash": "6ac90ab0",
+        "encoded": "*%20AA%20Website%20Test%20Data",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "ce64e9",
+        "hash": "160af8f0",
+        "encoded": "*%20Centralized%20test%20data%20for%20AA%20website%20tests",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "ce64e9",
+        "hash": "7c9e86a6",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "ce64e9",
+        "hash": "7f12028a",
+        "encoded": "export%20interface%20AAWebsiteData%20%7B",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "ce64e9",
+        "hash": "ec9c36f1",
+        "encoded": "baseUrl:%20string;",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "ce64e9",
+        "hash": "2cff27db",
+        "encoded": "expectedTitle:%20string;",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "ce64e9",
+        "hash": "a330eb6a",
+        "encoded": "searchTerms:%20string%5B%5D;",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "ce64e9",
+        "hash": "2ce165fa",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "ce64e9",
+        "hash": "bf22ba36",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "ce64e9",
+        "hash": "497df3eb",
+        "encoded": "*%20AA%20Website%20URLs%20and%20navigation%20data",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "ce64e9",
+        "hash": "e0d506f1",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "ce64e9",
+        "hash": "b45773d5",
+        "encoded": "export%20const%20aaUrls%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "ce64e9",
+        "hash": "dc86f11a",
+        "encoded": "home:%20'/',",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "ce64e9",
+        "hash": "9cd80b9d",
+        "encoded": "breakdown:%20'/breakdown-cover',",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "ce64e9",
+        "hash": "3eebb7c4",
+        "encoded": "insurance:%20'/insurance',",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "ce64e9",
+        "hash": "3e85fa66",
+        "encoded": "membership:%20'/join-the-aa'",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "ce64e9",
+        "hash": "1c5cd165",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "ce64e9",
+        "hash": "a713c17b",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "ce64e9",
+        "hash": "0451e2f4",
+        "encoded": "*%20Expected%20page%20titles",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "ce64e9",
+        "hash": "93865dfa",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "ce64e9",
+        "hash": "96033cde",
+        "encoded": "export%20const%20aaPageTitles%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "ce64e9",
+        "hash": "aff9084d",
+        "encoded": "homePage:%20'AA',%20%20//%20Should%20contain%20'AA'",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "ce64e9",
+        "hash": "a3b06819",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "ce64e9",
+        "hash": "512a3419",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "ce64e9",
+        "hash": "7444dc6c",
+        "encoded": "*%20Test%20data%20for%20AA%20website",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "ce64e9",
+        "hash": "c26d7e8c",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "ce64e9",
+        "hash": "522a3b48",
+        "encoded": "export%20const%20aaTestData:%20AAWebsiteData%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "ce64e9",
+        "hash": "d0b7a999",
+        "encoded": "baseUrl:%20'https://www.theaa.com',",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "ce64e9",
+        "hash": "66d6244b",
+        "encoded": "expectedTitle:%20'AA',",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "ce64e9",
+        "hash": "9d10ef12",
+        "encoded": "searchTerms:%20%5B'breakdown%20cover',%20'car%20insurance',%20'route%20planner'%5D",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "ce64e9",
+        "hash": "a48ff7d1",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "ce64e9",
+        "hash": "696c804d",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "ce64e9",
+        "hash": "58438b8f",
+        "encoded": "*%20Expected%20content%20on%20pages",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "ce64e9",
+        "hash": "4059174a",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "ce64e9",
+        "hash": "57fc97b8",
+        "encoded": "export%20const%20aaExpectedContent%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "ce64e9",
+        "hash": "cc486a90",
+        "encoded": "homePage:%20%7B",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "ce64e9",
+        "hash": "029ba844",
+        "encoded": "hasNavigation:%20true,",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "ce64e9",
+        "hash": "60d3513e",
+        "encoded": "hasLogo:%20true,",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "ce64e9",
+        "hash": "74e8841d",
+        "encoded": "hasBreakdownLink:%20true",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "ce64e9",
+        "hash": "59282b78",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "ce64e9",
+        "hash": "710a3143",
+        "encoded": "breakdownPage:%20%7B",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "ce64e9",
+        "hash": "d03649d6",
+        "encoded": "hasGetQuoteButton:%20true,",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "ce64e9",
+        "hash": "828fdf5e",
+        "encoded": "hasPhoneNumber:%20true",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "ce64e9",
+        "hash": "6a5bdc1a",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "ce64e9",
+        "hash": "a50e1a88",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      }
+    },
+    "_prevLineCount": 53
+  }
+}

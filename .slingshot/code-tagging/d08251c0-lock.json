@@ -1,0 +1,260 @@
+{
+  "tests\\breakdownflowe2e.spec.ts": {
+    "filename": "breakdownflowe2e.spec.ts",
+    "path": "tests\\breakdownflowe2e.spec.ts",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "4fba24": {
+        "user": "Rishna K",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1794984910,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "499b9939",
+          "files": "b9275175"
+        },
+        "hash": "bbd56c8e",
+        "messageId": "system_c9455670-e31c-11f1-8e7f-299f21b14205",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 11/18/2026, 12:25:10 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "4fba24",
+        "hash": "9b22d4ef",
+        "encoded": "import%20%7B%20test,%20expect%20%7D%20from%20'@playwright/test';",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "4fba24",
+        "hash": "c00de391",
+        "encoded": "import%20%7B%20AAHomePage%20%7D%20from%20'../src/page-objects/AAHomePage';",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "4fba24",
+        "hash": "8781db12",
+        "encoded": "import%20%7B%20AABreakdownPage%20%7D%20from%20'../src/page-objects/AABreakdownPage';",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "4fba24",
+        "hash": "b9fc3b5c",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "4fba24",
+        "hash": "e2153463",
+        "encoded": "*%20AA%20Breakdown%20Flow%20E2E%20Test",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "4fba24",
+        "hash": "41df4a24",
+        "encoded": "*%20Tests%20complete%20user%20journey%20from%20homepage%20to%20breakdown%20cover%20page",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "4fba24",
+        "hash": "11d7e9e0",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "4fba24",
+        "hash": "3843ab81",
+        "encoded": "test.describe('AA%20Breakdown%20Flow%20-%20E2E%20Test',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "4fba24",
+        "hash": "c9298b38",
+        "encoded": "let%20aaHomePage:%20AAHomePage;",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "4fba24",
+        "hash": "da200539",
+        "encoded": "let%20aaBreakdownPage:%20AABreakdownPage;",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "4fba24",
+        "hash": "73bc9335",
+        "encoded": "test.beforeEach(async%20(%7B%20page%20%7D)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "4fba24",
+        "hash": "7640cac6",
+        "encoded": "aaHomePage%20=%20new%20AAHomePage(page);",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "4fba24",
+        "hash": "abc22af1",
+        "encoded": "aaBreakdownPage%20=%20new%20AABreakdownPage(page);",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "4fba24",
+        "hash": "99e8e451",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "4fba24",
+        "hash": "ac6c6a17",
+        "encoded": "test('should%20navigate%20through%20breakdown%20cover%20flow',%20async%20(%7B%20page%20%7D)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "4fba24",
+        "hash": "d9c52a7c",
+        "encoded": "//%20Step%201:%20Navigate%20to%20AA%20homepage",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "4fba24",
+        "hash": "e84a7826",
+        "encoded": "await%20aaHomePage.navigateToAAHome();",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "4fba24",
+        "hash": "1f0bf98e",
+        "encoded": "//%20Step%202:%20Accept%20cookies%20if%20present",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "4fba24",
+        "hash": "dcf8f45b",
+        "encoded": "await%20aaHomePage.acceptCookiesIfPresent();",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "4fba24",
+        "hash": "a7428c85",
+        "encoded": "//%20Step%203:%20Verify%20homepage%20loaded",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "4fba24",
+        "hash": "42ecb469",
+        "encoded": "const%20isHomeLoaded%20=%20await%20aaHomePage.isAAHomePageLoaded();",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "4fba24",
+        "hash": "1294c3f4",
+        "encoded": "expect(isHomeLoaded).toBeTruthy();",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "4fba24",
+        "hash": "1219afba",
+        "encoded": "//%20Step%204:%20Navigate%20to%20Breakdown%20Cover%20page",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "4fba24",
+        "hash": "59f154e0",
+        "encoded": "await%20aaHomePage.navigateToBreakdownCover();",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "4fba24",
+        "hash": "cbecab39",
+        "encoded": "//%20Step%205:%20Wait%20for%20navigation%20to%20complete",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "4fba24",
+        "hash": "f49c05bf",
+        "encoded": "await%20aaBreakdownPage.waitForBreakdownPageLoad();",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "4fba24",
+        "hash": "d82feb02",
+        "encoded": "//%20Step%206:%20Verify%20URL%20contains%20breakdown%20path",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "4fba24",
+        "hash": "66c02171",
+        "encoded": "const%20currenturl%20=%20await%20aaHomePage.getCurrentPageUrl();",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "4fba24",
+        "hash": "55a05910",
+        "encoded": "expect(currenturl).toContain(aaUrls.breakdown);",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "4fba24",
+        "hash": "816d4a12",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "4fba24",
+        "hash": "89f0fa20",
+        "encoded": "test.afterEach(async%20(%7B%20page%20%7D,%20testInfo)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "4fba24",
+        "hash": "4cbcda12",
+        "encoded": "if%20(testInfo.status%20!==%20testInfo.expectedStatus)%20%7B",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "4fba24",
+        "hash": "83eae067",
+        "encoded": "//%20Take%20screenshot%20on%20failure",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "4fba24",
+        "hash": "835be460",
+        "encoded": "const%20timestamp%20=%20Date.now();",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "4fba24",
+        "hash": "d651e19d",
+        "encoded": "await%20aaHomePage.captureHomepage(%60breakdown-failure-$%7Btimestamp%7D%60);",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "4fba24",
+        "hash": "88fadba2",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "4fba24",
+        "hash": "3287ea85",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "4fba24",
+        "hash": "314da981",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      }
+    },
+    "_prevLineCount": 56
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "filename": "breakdownflowe2e.spec.ts",
+  "path": "tests\\breakdownflowe2e.spec.ts",
+  "version": "1.1",
+  "files": {
+    "b9275175": {
+      "value": [
+        {
+          "programming_language": "TypeScript",
+          "fileName": "\\tests\\breakdownflowe2e.spec.ts",
+          "relativeFilePath": "\\tests\\breakdownflowe2e.spec.ts",
+          "startLine": [
+            1
+          ],
+          "endLine": [
+            1
+          ]
+        }
+      ]
+    }
+  },
+  "promptMessage": {
+    "499b9939": {
+      "value": "Get back this file"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

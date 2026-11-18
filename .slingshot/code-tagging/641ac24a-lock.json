@@ -1,0 +1,1140 @@
+{
+  "setup-git.ps1": {
+    "filename": "setup-git.ps1",
+    "path": "setup-git.ps1",
+    "version": "1.2",
+    "contextFile": "641ac24a-context.json",
+    "chunks": {
+      "47b932": {
+        "user": "Rishna K",
+        "model": "gpt-4.1",
+        "timestamp": 1794909408,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "d5c921e8"
+        },
+        "hash": "6429ab42",
+        "messageId": "system_a0048ea0-e26a-11f1-bc97-c58b44212be4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 3:26:48 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "47b932",
+        "hash": "cc0eac1d",
+        "encoded": "#%20Git%20Repository%20Setup%20Script%20for%20Windows%20(PowerShell)",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "47b932",
+        "hash": "79753f30",
+        "encoded": "#%20This%20script%20initializes%20Git%20and%20pushes%20the%20Playwright%20framework%20to%20a%20remote%20repository",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "47b932",
+        "hash": "87720190",
+        "encoded": "Write-Host%20%22",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "47b932",
+        "hash": "54dff6a0",
+        "encoded": "========================================%22%20-ForegroundColor%20Cyan",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "47b932",
+        "hash": "4b14654b",
+        "encoded": "Write-Host%20%22%20%20Git%20Repository%20Setup%20Wizard%22%20-ForegroundColor%20Cyan",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "47b932",
+        "hash": "84ed86b5",
+        "encoded": "Write-Host%20%22%20%20Playwright%20POM%20Framework%22%20-ForegroundColor%20Cyan",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "47b932",
+        "hash": "8ce6b11b",
+        "encoded": "Write-Host%20%22========================================",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "47b932",
+        "hash": "a772a522",
+        "encoded": "%22%20-ForegroundColor%20Cyan",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "47b932",
+        "hash": "cd35f6a0",
+        "encoded": "#%20Check%20if%20Git%20is%20installed",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "47b932",
+        "hash": "3aeddf5f",
+        "encoded": "Write-Host%20%22%5B1/8%5D%20Checking%20Git%20installation...%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "47b932",
+        "hash": "77c073df",
+        "encoded": "try%20%7B",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "47b932",
+        "hash": "35a35626",
+        "encoded": "$gitVersion%20=%20git%20--version",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "47b932",
+        "hash": "3a9e3ce5",
+        "encoded": "Write-Host%20%22%E2%9C%93%20Git%20installed:%20$gitVersion%22%20-ForegroundColor%20Green",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "47b932",
+        "hash": "da20456f",
+        "encoded": "%7D%20catch%20%7B",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "47b932",
+        "hash": "55ceec7e",
+        "encoded": "Write-Host%20%22%E2%9C%97%20Git%20is%20not%20installed!%22%20-ForegroundColor%20Red",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "47b932",
+        "hash": "1aba9ad3",
+        "encoded": "Write-Host%20%22Please%20install%20Git%20from:%20https://git-scm.com/download/win%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "47b932",
+        "hash": "6e9d196d",
+        "encoded": "exit%201",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "47b932",
+        "hash": "ee39c532",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "47b932",
+        "hash": "715ce68c",
+        "encoded": "#%20Check%20if%20already%20a%20Git%20repository",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "47b932",
+        "hash": "3c7c3a75",
+        "encoded": "if%20(Test-Path%20.git)%20%7B",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "47b932",
+        "hash": "682530c5",
+        "encoded": "Write-Host%20%22",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "47b932",
+        "hash": "01d65d78",
+        "encoded": "%E2%9A%A0%20This%20directory%20is%20already%20a%20Git%20repository%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "47b932",
+        "hash": "41294d04",
+        "encoded": "$reinit%20=%20Read-Host%20%22Do%20you%20want%20to%20reinitialize?%20(yes/no)%22",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "47b932",
+        "hash": "9ad30b37",
+        "encoded": "if%20($reinit%20-ne%20%22yes%22)%20%7B",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "47b932",
+        "hash": "d81dda55",
+        "encoded": "Write-Host%20%22Setup%20cancelled.%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "47b932",
+        "hash": "c4c0c1f1",
+        "encoded": "exit%200",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "47b932",
+        "hash": "7721e417",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "47b932",
+        "hash": "cfdac52c",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "47b932",
+        "hash": "e0c1d49e",
+        "encoded": "#%20Configure%20Git%20user",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "47b932",
+        "hash": "394bd43d",
+        "encoded": "Write-Host%20%22",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "47b932",
+        "hash": "70751d36",
+        "encoded": "%5B2/8%5D%20Configuring%20Git%20user...%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "47b932",
+        "hash": "1647574d",
+        "encoded": "$currentName%20=%20git%20config%20user.name%202%3E$null",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "47b932",
+        "hash": "2b19ff81",
+        "encoded": "$currentEmail%20=%20git%20config%20user.email%202%3E$null",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "47b932",
+        "hash": "9d1b5642",
+        "encoded": "if%20($currentName)%20%7B",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "47b932",
+        "hash": "8e922178",
+        "encoded": "Write-Host%20%22Current%20name:%20$currentName%22%20-ForegroundColor%20Cyan",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "47b932",
+        "hash": "ff802399",
+        "encoded": "$useCurrent%20=%20Read-Host%20%22Use%20this%20name?%20(yes/no)%22",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "47b932",
+        "hash": "209171fc",
+        "encoded": "if%20($useCurrent%20-eq%20%22yes%22)%20%7B",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "47b932",
+        "hash": "10efb42d",
+        "encoded": "$name%20=%20$currentName",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "47b932",
+        "hash": "f4964116",
+        "encoded": "%7D%20else%20%7B",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "47b932",
+        "hash": "eefeeb3d",
+        "encoded": "$name%20=%20Read-Host%20%22Enter%20your%20name%22",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "47b932",
+        "hash": "8b687a61",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "47b932",
+        "hash": "e50fc1fb",
+        "encoded": "%7D%20else%20%7B",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "47b932",
+        "hash": "196d697b",
+        "encoded": "$name%20=%20Read-Host%20%22Enter%20your%20name%22",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "47b932",
+        "hash": "d90811a0",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "47b932",
+        "hash": "044b4d2c",
+        "encoded": "if%20($currentEmail)%20%7B",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "47b932",
+        "hash": "d42d7c51",
+        "encoded": "Write-Host%20%22Current%20email:%20$currentEmail%22%20-ForegroundColor%20Cyan",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "47b932",
+        "hash": "6c9d2e42",
+        "encoded": "$useCurrent%20=%20Read-Host%20%22Use%20this%20email?%20(yes/no)%22",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "47b932",
+        "hash": "a5e574f8",
+        "encoded": "if%20($useCurrent%20-eq%20%22yes%22)%20%7B",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "47b932",
+        "hash": "fb18cf0a",
+        "encoded": "$email%20=%20$currentEmail",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "47b932",
+        "hash": "1ad8d335",
+        "encoded": "%7D%20else%20%7B",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "47b932",
+        "hash": "d02126cc",
+        "encoded": "$email%20=%20Read-Host%20%22Enter%20your%20email%22",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "47b932",
+        "hash": "17837346",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "47b932",
+        "hash": "9da34ae9",
+        "encoded": "%7D%20else%20%7B",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "47b932",
+        "hash": "ff15d8e0",
+        "encoded": "$email%20=%20Read-Host%20%22Enter%20your%20email%22",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "47b932",
+        "hash": "42f7c135",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "47b932",
+        "hash": "721f80d0",
+        "encoded": "git%20config%20user.name%20%22$name%22",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "47b932",
+        "hash": "ed34a35f",
+        "encoded": "git%20config%20user.email%20%22$email%22",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "47b932",
+        "hash": "05e70b62",
+        "encoded": "Write-Host%20%22%E2%9C%93%20Git%20user%20configured%22%20-ForegroundColor%20Green",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "47b932",
+        "hash": "747b0726",
+        "encoded": "#%20Initialize%20Git%20repository",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "47b932",
+        "hash": "e8c26476",
+        "encoded": "Write-Host%20%22",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "47b932",
+        "hash": "54a575c4",
+        "encoded": "%5B3/8%5D%20Initializing%20Git%20repository...%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "47b932",
+        "hash": "fe34832d",
+        "encoded": "if%20(Test-Path%20.git)%20%7B",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "47b932",
+        "hash": "65e9d4ce",
+        "encoded": "Write-Host%20%22%E2%9C%93%20Git%20repository%20already%20initialized%22%20-ForegroundColor%20Green",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "47b932",
+        "hash": "bfd87072",
+        "encoded": "%7D%20else%20%7B",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "47b932",
+        "hash": "f36f5127",
+        "encoded": "git%20init",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "47b932",
+        "hash": "5156790f",
+        "encoded": "Write-Host%20%22%E2%9C%93%20Git%20repository%20initialized%22%20-ForegroundColor%20Green",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "47b932",
+        "hash": "6387e751",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "47b932",
+        "hash": "ae66fb48",
+        "encoded": "#%20Show%20current%20status",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "47b932",
+        "hash": "61ab16fe",
+        "encoded": "Write-Host%20%22",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "47b932",
+        "hash": "a9f835bf",
+        "encoded": "%5B4/8%5D%20Checking%20repository%20status...%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "47b932",
+        "hash": "f9fa5047",
+        "encoded": "$untracked%20=%20(git%20status%20--porcelain%20%7C%20Measure-Object).Count",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "47b932",
+        "hash": "e41af47f",
+        "encoded": "Write-Host%20%22%E2%9C%93%20Found%20$untracked%20files%20to%20add%22%20-ForegroundColor%20Green",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "47b932",
+        "hash": "eced43c1",
+        "encoded": "#%20Add%20files",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "47b932",
+        "hash": "b3410cc6",
+        "encoded": "Write-Host%20%22",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "47b932",
+        "hash": "48c55f9d",
+        "encoded": "%5B5/8%5D%20Adding%20files%20to%20Git...%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "47b932",
+        "hash": "62cbbe35",
+        "encoded": "git%20add%20.",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "47b932",
+        "hash": "94b2bf08",
+        "encoded": "Write-Host%20%22%E2%9C%93%20All%20files%20added%20to%20staging%20area%22%20-ForegroundColor%20Green",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "47b932",
+        "hash": "d2c1036a",
+        "encoded": "#%20Commit%20files",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "47b932",
+        "hash": "11304507",
+        "encoded": "Write-Host%20%22",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "47b932",
+        "hash": "0803552c",
+        "encoded": "%5B6/8%5D%20Committing%20files...%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "47b932",
+        "hash": "e6af7f9d",
+        "encoded": "$commitMsg%20=%20Read-Host%20%22Enter%20commit%20message%20(or%20press%20Enter%20for%20default)%22",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "47b932",
+        "hash": "ca89af10",
+        "encoded": "if%20(%5Bstring%5D::IsNullOrWhiteSpace($commitMsg))%20%7B",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "47b932",
+        "hash": "91da2925",
+        "encoded": "$commitMsg%20=%20%22Initial%20commit:%20Playwright%20POM%20framework%20with%20Jenkins%20integration%22",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "47b932",
+        "hash": "db89230b",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "47b932",
+        "hash": "83c030ed",
+        "encoded": "git%20commit%20-m%20%22$commitMsg%22",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "47b932",
+        "hash": "b0deeaa0",
+        "encoded": "Write-Host%20%22%E2%9C%93%20Files%20committed%22%20-ForegroundColor%20Green",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "47b932",
+        "hash": "a416cafd",
+        "encoded": "#%20Add%20remote%20repository",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "47b932",
+        "hash": "824a8ae6",
+        "encoded": "Write-Host%20%22",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "47b932",
+        "hash": "57f5dcb7",
+        "encoded": "%5B7/8%5D%20Adding%20remote%20repository...%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "47b932",
+        "hash": "57b6e9f8",
+        "encoded": "Write-Host%20%22",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "47b932",
+        "hash": "10e65c46",
+        "encoded": "Select%20your%20Git%20provider:%22%20-ForegroundColor%20Cyan",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "47b932",
+        "hash": "ca2f4611",
+        "encoded": "Write-Host%20%221.%20GitHub%20(https://github.com)%22%20-ForegroundColor%20White",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "47b932",
+        "hash": "89d07409",
+        "encoded": "Write-Host%20%222.%20GitLab%20(https://gitlab.com)%22%20-ForegroundColor%20White",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "47b932",
+        "hash": "edb91ec4",
+        "encoded": "Write-Host%20%223.%20Bitbucket%20(https://bitbucket.org)%22%20-ForegroundColor%20White",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "47b932",
+        "hash": "9a1b7646",
+        "encoded": "Write-Host%20%224.%20Azure%20DevOps%20(https://dev.azure.com)%22%20-ForegroundColor%20White",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "47b932",
+        "hash": "51a6e4d6",
+        "encoded": "Write-Host%20%225.%20Custom%20URL%22%20-ForegroundColor%20White",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "47b932",
+        "hash": "66fb5918",
+        "encoded": "$provider%20=%20Read-Host%20%22Enter%20choice%20(1-5)%22",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "47b932",
+        "hash": "a45af303",
+        "encoded": "switch%20($provider)%20%7B",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "47b932",
+        "hash": "854b41a7",
+        "encoded": "%221%22%20%7B",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "47b932",
+        "hash": "197bf14e",
+        "encoded": "$username%20=%20Read-Host%20%22Enter%20your%20GitHub%20username%22",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "47b932",
+        "hash": "a1588e97",
+        "encoded": "$repoName%20=%20Read-Host%20%22Enter%20repository%20name%20(e.g.,%20playwright-pom-framework)%22",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "47b932",
+        "hash": "ca9fb114",
+        "encoded": "$repoUrl%20=%20%22https://github.com/$username/$repoName.git%22",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "47b932",
+        "hash": "2de22ffd",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "47b932",
+        "hash": "747f5dc0",
+        "encoded": "%222%22%20%7B",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "47b932",
+        "hash": "2b989989",
+        "encoded": "$username%20=%20Read-Host%20%22Enter%20your%20GitLab%20username%22",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "47b932",
+        "hash": "b766ba16",
+        "encoded": "$repoName%20=%20Read-Host%20%22Enter%20repository%20name%22",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "47b932",
+        "hash": "78ab8492",
+        "encoded": "$repoUrl%20=%20%22https://gitlab.com/$username/$repoName.git%22",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "47b932",
+        "hash": "7b145d98",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "47b932",
+        "hash": "7719daa2",
+        "encoded": "%223%22%20%7B",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "47b932",
+        "hash": "5c0e6ec0",
+        "encoded": "$username%20=%20Read-Host%20%22Enter%20your%20Bitbucket%20username%22",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "47b932",
+        "hash": "c82965d6",
+        "encoded": "$repoName%20=%20Read-Host%20%22Enter%20repository%20name%22",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "47b932",
+        "hash": "761c94bd",
+        "encoded": "$repoUrl%20=%20%22https://$username@bitbucket.org/$username/$repoName.git%22",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "47b932",
+        "hash": "5513b7ee",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "47b932",
+        "hash": "72e7d5b7",
+        "encoded": "%224%22%20%7B",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "47b932",
+        "hash": "64f844cb",
+        "encoded": "$org%20=%20Read-Host%20%22Enter%20your%20Azure%20DevOps%20organization%22",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "47b932",
+        "hash": "1baa743a",
+        "encoded": "$project%20=%20Read-Host%20%22Enter%20project%20name%22",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "47b932",
+        "hash": "b0095e32",
+        "encoded": "$repoName%20=%20Read-Host%20%22Enter%20repository%20name%22",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "47b932",
+        "hash": "d2e67b08",
+        "encoded": "$repoUrl%20=%20%22https://$org@dev.azure.com/$org/$project/_git/$repoName%22",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "47b932",
+        "hash": "59e86bfa",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "47b932",
+        "hash": "ddd8e8ec",
+        "encoded": "%225%22%20%7B",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "47b932",
+        "hash": "752771f3",
+        "encoded": "$repoUrl%20=%20Read-Host%20%22Enter%20full%20repository%20URL%22",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "47b932",
+        "hash": "a1243e02",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "47b932",
+        "hash": "22477871",
+        "encoded": "default%20%7B",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "47b932",
+        "hash": "344e998b",
+        "encoded": "Write-Host%20%22%E2%9C%97%20Invalid%20choice%22%20-ForegroundColor%20Red",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "47b932",
+        "hash": "a0d267fb",
+        "encoded": "exit%201",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "47b932",
+        "hash": "8e724f24",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "47b932",
+        "hash": "be05556d",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "47b932",
+        "hash": "edf66c29",
+        "encoded": "Write-Host%20%22",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "47b932",
+        "hash": "2e2c19d3",
+        "encoded": "Repository%20URL:%20$repoUrl%22%20-ForegroundColor%20Cyan",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "47b932",
+        "hash": "9486357c",
+        "encoded": "$confirm%20=%20Read-Host%20%22Is%20this%20correct?%20(yes/no)%22",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "47b932",
+        "hash": "7248e296",
+        "encoded": "if%20($confirm%20-ne%20%22yes%22)%20%7B",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "47b932",
+        "hash": "2cd913fb",
+        "encoded": "Write-Host%20%22Setup%20cancelled.%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "47b932",
+        "hash": "91cb32dc",
+        "encoded": "exit%200",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "47b932",
+        "hash": "a6adb000",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "47b932",
+        "hash": "07201e3c",
+        "encoded": "#%20Check%20if%20remote%20already%20exists",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "47b932",
+        "hash": "bf566731",
+        "encoded": "$existingRemote%20=%20git%20remote%20get-url%20origin%202%3E$null",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "47b932",
+        "hash": "e598cd2e",
+        "encoded": "if%20($existingRemote)%20%7B",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "47b932",
+        "hash": "f92a2f88",
+        "encoded": "Write-Host%20%22%E2%9A%A0%20Remote%20'origin'%20already%20exists:%20$existingRemote%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "47b932",
+        "hash": "d77b6aaa",
+        "encoded": "$overwrite%20=%20Read-Host%20%22Overwrite?%20(yes/no)%22",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "47b932",
+        "hash": "5594b980",
+        "encoded": "if%20($overwrite%20-eq%20%22yes%22)%20%7B",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "47b932",
+        "hash": "57393354",
+        "encoded": "git%20remote%20set-url%20origin%20$repoUrl",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "47b932",
+        "hash": "ecbf38bf",
+        "encoded": "Write-Host%20%22%E2%9C%93%20Remote%20updated%22%20-ForegroundColor%20Green",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "47b932",
+        "hash": "b7a756fe",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "47b932",
+        "hash": "9ec5cd0a",
+        "encoded": "%7D%20else%20%7B",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "47b932",
+        "hash": "c6543ac6",
+        "encoded": "git%20remote%20add%20origin%20$repoUrl",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "47b932",
+        "hash": "422eef8b",
+        "encoded": "Write-Host%20%22%E2%9C%93%20Remote%20repository%20added%22%20-ForegroundColor%20Green",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "47b932",
+        "hash": "9f3096f5",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "47b932",
+        "hash": "f94b41ab",
+        "encoded": "#%20Push%20to%20remote",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "47b932",
+        "hash": "4a072660",
+        "encoded": "Write-Host%20%22",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "47b932",
+        "hash": "a8a9539b",
+        "encoded": "%5B8/8%5D%20Pushing%20to%20remote%20repository...%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "47b932",
+        "hash": "3bfc4032",
+        "encoded": "Write-Host%20%22%E2%9A%A0%20You%20may%20be%20prompted%20for%20credentials%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "47b932",
+        "hash": "2640ba74",
+        "encoded": "Write-Host%20%22%20%20%20Use%20Personal%20Access%20Token%20as%20password%20(not%20your%20account%20password)%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "47b932",
+        "hash": "68f6c982",
+        "encoded": "git%20branch%20-M%20main",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "47b932",
+        "hash": "01de45df",
+        "encoded": "try%20%7B",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "47b932",
+        "hash": "8a250276",
+        "encoded": "git%20push%20-u%20origin%20main",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "47b932",
+        "hash": "2fdb53f1",
+        "encoded": "Write-Host%20%22",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "47b932",
+        "hash": "437fd20b",
+        "encoded": "========================================%22%20-ForegroundColor%20Green",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "47b932",
+        "hash": "7eaf0720",
+        "encoded": "Write-Host%20%22%20%20%E2%9C%93%20SUCCESS!%22%20-ForegroundColor%20Green",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "47b932",
+        "hash": "363dba8a",
+        "encoded": "Write-Host%20%22========================================%22%20-ForegroundColor%20Green",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "47b932",
+        "hash": "c6dfa530",
+        "encoded": "Write-Host%20%22",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "47b932",
+        "hash": "3af56a46",
+        "encoded": "Your%20repository%20is%20now%20on%20Git!%22%20-ForegroundColor%20Green",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "47b932",
+        "hash": "4d19bd04",
+        "encoded": "Write-Host%20%22Repository%20URL:%20$repoUrl%22%20-ForegroundColor%20Cyan",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "47b932",
+        "hash": "d0256e4e",
+        "encoded": "Write-Host%20%22",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "47b932",
+        "hash": "d495dd45",
+        "encoded": "Next%20steps:%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "47b932",
+        "hash": "a1035efc",
+        "encoded": "Write-Host%20%221.%20Visit%20your%20repository%20in%20a%20browser%22%20-ForegroundColor%20White",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "47b932",
+        "hash": "466430c3",
+        "encoded": "Write-Host%20%222.%20Verify%20all%20files%20are%20uploaded%22%20-ForegroundColor%20White",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "47b932",
+        "hash": "1f41a8d8",
+        "encoded": "Write-Host%20%223.%20Set%20up%20Jenkins%20integration%20(see%20JENKINS_SETUP.md)%22%20-ForegroundColor%20White",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "47b932",
+        "hash": "45e371b2",
+        "encoded": "%7D%20catch%20%7B",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "47b932",
+        "hash": "bd98e4d3",
+        "encoded": "Write-Host%20%22",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "47b932",
+        "hash": "f4fd94a7",
+        "encoded": "========================================%22%20-ForegroundColor%20Red",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "47b932",
+        "hash": "57dd5d0e",
+        "encoded": "Write-Host%20%22%20%20%E2%9C%97%20PUSH%20FAILED%22%20-ForegroundColor%20Red",
+        "prevChunkIds": []
+      },
+      "190": {
+        "chunkId": "47b932",
+        "hash": "7fd83e78",
+        "encoded": "Write-Host%20%22========================================%22%20-ForegroundColor%20Red",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "47b932",
+        "hash": "b6fdf5ce",
+        "encoded": "Write-Host%20%22",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "47b932",
+        "hash": "6549832b",
+        "encoded": "Troubleshooting:%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "47b932",
+        "hash": "cbbfd55e",
+        "encoded": "Write-Host%20%221.%20Make%20sure%20the%20repository%20exists%20on%20the%20remote%20server%22%20-ForegroundColor%20White",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "47b932",
+        "hash": "144d2c45",
+        "encoded": "Write-Host%20%222.%20Check%20your%20authentication%20(use%20Personal%20Access%20Token)%22%20-ForegroundColor%20White",
+        "prevChunkIds": []
+      },
+      "195": {
+        "chunkId": "47b932",
+        "hash": "0fb7d6da",
+        "encoded": "Write-Host%20%223.%20Verify%20the%20repository%20URL%20is%20correct%22%20-ForegroundColor%20White",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "47b932",
+        "hash": "27b2a98b",
+        "encoded": "Write-Host%20%224.%20See%20GIT_SETUP.md%20for%20detailed%20help%22%20-ForegroundColor%20White",
+        "prevChunkIds": []
+      },
+      "197": {
+        "chunkId": "47b932",
+        "hash": "4ac8fe96",
+        "encoded": "Write-Host%20%22",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "47b932",
+        "hash": "dd6452d3",
+        "encoded": "Error%20details:%22%20-ForegroundColor%20Red",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "47b932",
+        "hash": "a510c59f",
+        "encoded": "Write-Host%20$_.Exception.Message%20-ForegroundColor%20Red",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "47b932",
+        "hash": "5c0d681d",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "202": {
+        "chunkId": "47b932",
+        "hash": "708dd20a",
+        "encoded": "Write-Host%20%22",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "47b932",
+        "hash": "2d2f25b2",
+        "encoded": "Press%20any%20key%20to%20exit...%22",
+        "prevChunkIds": []
+      },
+      "204": {
+        "chunkId": "47b932",
+        "hash": "51697416",
+        "encoded": "$null%20=%20$Host.UI.RawUI.ReadKey(%22NoEcho,IncludeKeyDown%22)",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

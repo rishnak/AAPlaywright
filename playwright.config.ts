@@ -1,4 +1,8 @@
 import { defineConfig, devices } from '@playwright/test';
+import dotenv from 'dotenv';
+
+// Load environment variables from .env file
+dotenv.config();
 
 /**
  * Playwright Configuration for Page Object Model Framework
@@ -27,8 +31,8 @@ export default defineConfig({
   
   // Global test settings
   use: {
-    // Base URL for navigation
-    baseURL: process.env.BASE_URL || 'https://example.com',
+    // Base URL for navigation - loaded from .env file
+    baseURL: process.env.BASE_URL || 'https://www.theaa.com',
     
     // Browser context options
     trace: 'on-first-retry',
@@ -40,6 +44,14 @@ export default defineConfig({
     
     // Navigation timeout
     navigationTimeout: 15 * 1000,
+    
+    // ⭐ HEADED MODE - Set to false to see browser
+    headless: false,  // false = headed (browser visible), true = headless
+    
+    // Optional: Slow down execution to watch actions
+    // launchOptions: {
+    //   slowMo: 1000,  // Wait 1 second between actions
+    // },
   },
   
   // Browser projects configuration

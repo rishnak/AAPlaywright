@@ -1,0 +1,49 @@
+{
+  "filename": "AAHomePage.ts",
+  "path": "src\\page-objects\\AAHomePage.ts",
+  "version": "1.1",
+  "files": {
+    "f7510313": {
+      "value": [
+        {
+          "programming_language": "TypeScript",
+          "fileName": "HomePage.ts",
+          "relativeFilePath": "src/page-objects/HomePage.ts",
+          "startLine": [
+            1
+          ],
+          "endLine": [
+            84
+          ]
+        }
+      ]
+    },
+    "ec427fe3": {
+      "value": [
+        {
+          "programming_language": "TypeScript",
+          "fileName": "AAHomePage.ts",
+          "relativeFilePath": "src/page-objects/AAHomePage.ts",
+          "startLine": [
+            1
+          ],
+          "endLine": [
+            140
+          ]
+        }
+      ]
+    }
+  },
+  "promptMessage": {
+    "f83173bd": {
+      "value": "But you havent used the framework correcttly. Write a test in test folder and create a test using all base page and child page concept used in the framework"
+    },
+    "d52daf06": {
+      "value": "How to run the test in headed mode where to make this chnage"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

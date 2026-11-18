@@ -1,0 +1,15 @@
+{
+  "filename": "setup-git.ps1",
+  "path": "setup-git.ps1",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "d5c921e8": {
+      "value": "How will I add my files from AAPlaywright to  the new reposity created in guthub"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

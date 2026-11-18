@@ -1255,18 +1255,6 @@
         "encoded": "MIT%20License",
         "prevChunkIds": []
       },
-      "265": {
-        "chunkId": "44a807",
-        "hash": "941924f5",
-        "encoded": "##%20%F0%9F%91%A5%20Authors",
-        "prevChunkIds": []
-      },
-      "267": {
-        "chunkId": "44a807",
-        "hash": "f34960f3",
-        "encoded": "Senior%20Test%20Engineer",
-        "prevChunkIds": []
-      },
       "269": {
         "chunkId": "44a807",
         "hash": "e4592859",
@@ -1279,6 +1267,7 @@
         "encoded": "**Happy%20Testing!%20%F0%9F%8E%AD**",
         "prevChunkIds": []
       }
-    }
+    },
+    "_prevLineCount": 272
   }
 }
