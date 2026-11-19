@@ -1,6 +1,5 @@
-import { Page, Locator, LocatorScreenshotOptions } from '@playwright/test';
+import { Page, Locator } from '@playwright/test';
 import { BasePage } from '../pages/BasePage';
-import { title } from 'node:process';
 
 /**
  * AA Home Page Object
@@ -28,7 +27,9 @@ export class AAHomePage extends BasePage {
     this.membershipLink = page.locator('a:has-text("Membership")').first();
     this.searchButton = page.locator('button[aria-label*="search" i], [class*="search"]').first();
     this.cookieAcceptButton = page.locator('button:has-text("Accept"), button:has-text("OK")').first();
-    this.breakdownLink = page.getByRole('button', {name:'Breakdown'}).first();
+    
+    // ✅ FIXED: More specific selector to avoid strict mode violation
+    this.breakdownLink = page.locator('button.responsiveMenu').filter({ hasText: 'Breakdown' });
     this.breakdownCoverLink = page.getByRole('link', { name: 'Breakdown cover' }).first();
   }
   
@@ -38,7 +39,6 @@ export class AAHomePage extends BasePage {
    */
   async navigateToAAHome(): Promise<void> {
     await this.page.goto('/', { waitUntil: 'domcontentloaded' }); // Faster than networkidle
-    // Calls BasePage.navigate() internally
   }
   
   /**
@@ -58,7 +58,7 @@ export class AAHomePage extends BasePage {
    * @returns True if logo is visible
    */
   async isAAHomePageLoaded(): Promise<boolean> {
-    return await this.isVisible(this.mainNavigation); // Changed to navigation for reliability
+    return await this.isVisible(this.mainNavigation);
   }
   
   /**
@@ -67,7 +67,7 @@ export class AAHomePage extends BasePage {
    * @returns The page title
    */
   async getPageTitle(): Promise<string> {
-    return await this.getTitle(); // Calls BasePage.getTitle()
+    return await this.getTitle();
   }
   
   /**
@@ -87,7 +87,6 @@ export class AAHomePage extends BasePage {
     await this.click(this.breakdownLink);
     await this.click(this.breakdownCoverLink);
   }
-  
 
   /**
    * Click on Car Insurance link
@@ -110,9 +109,7 @@ export class AAHomePage extends BasePage {
    * Uses BasePage.scrollToElement() then hover
    */
   async hoverOverBreakdownCover(): Promise<void> {
-    await this.scrollToElement(this.breakdownLink); // Scroll first
-    // Note: Hover may not work if element is hidden in mobile menu
-    // This demonstrates the method even if element isn't hoverable
+    await this.scrollToElement(this.breakdownLink);
   }
   
   /**
@@ -121,7 +118,7 @@ export class AAHomePage extends BasePage {
    * @param name - Screenshot filename
    */
   async captureHomepage(name: string): Promise<void> {
-    await this.takeScreenshot(name); // Calls BasePage.takeScreenshot()
+    await this.takeScreenshot(name);
   }
   
   /**
@@ -130,7 +127,7 @@ export class AAHomePage extends BasePage {
    * @returns Current URL
    */
   async getCurrentPageUrl(): Promise<string> {
-    return await this.getCurrentUrl(); // Calls BasePage.getCurrentUrl()
+    return await this.getCurrentUrl();
   }
   
   /**
@@ -139,8 +136,6 @@ export class AAHomePage extends BasePage {
    */
   async scrollToBottom(): Promise<void> {
     const footer = this.page.locator('footer').first();
-    await this.scrollToElement(footer); // Calls BasePage.scrollToElement()
+    await this.scrollToElement(footer);
   }
-
-  
 }

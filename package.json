@@ -13,7 +13,9 @@
     "test:ui": "playwright test --ui",
     "test:report": "playwright show-report",
     "test:login": "playwright test tests/login.spec.ts",
-    "test:home": "playwright test tests/home.spec.ts"
+    "test:home": "playwright test tests/home.spec.ts",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression"
   },
   "keywords": [
     "playwright",

@@ -1,4 +1,5 @@
 import { Page, Locator, expect } from '@playwright/test';
+import { TIMEOUT } from 'node:dns';
 
 /**
  * Base Page Class
@@ -36,7 +37,6 @@ export class BasePage {
    */
   async fill(locator: Locator, text: string): Promise<void> {
     await locator.waitFor({ state: 'visible' });
-    await locator.clear();
     await locator.fill(text);
   }
   
@@ -115,7 +115,7 @@ export class BasePage {
    * Wait for page to load completely
    */
   async waitForPageLoad(): Promise<void> {
-    await this.page.waitForLoadState('domcontentloaded');
+    await this.page.waitForLoadState('domcontentloaded',{timeout:8000});
   }
   
   /**

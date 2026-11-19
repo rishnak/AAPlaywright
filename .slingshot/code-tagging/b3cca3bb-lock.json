@@ -31,202 +31,196 @@
         "encoded": "import%20%7B%20Page,%20Locator,%20expect%20%7D%20from%20'@playwright/test';",
         "prevChunkIds": []
       },
-      "2": {
-        "chunkId": "e2e7f7",
-        "hash": "de3a3b47",
-        "encoded": "/**",
-        "prevChunkIds": []
-      },
       "3": {
         "chunkId": "e2e7f7",
-        "hash": "31b72751",
-        "encoded": "*%20Base%20Page%20Class",
+        "hash": "62512d72",
+        "encoded": "/**",
         "prevChunkIds": []
       },
       "4": {
         "chunkId": "e2e7f7",
-        "hash": "2baae8c4",
-        "encoded": "*%20Contains%20common%20methods%20and%20functionality%20that%20all%20page%20objects%20will%20inherit",
+        "hash": "f220397d",
+        "encoded": "*%20Base%20Page%20Class",
         "prevChunkIds": []
       },
       "5": {
         "chunkId": "e2e7f7",
-        "hash": "8da90a40",
-        "encoded": "*%20Implements%20reusable%20actions%20to%20follow%20DRY%20principle",
+        "hash": "07a935b7",
+        "encoded": "*%20Contains%20common%20methods%20and%20functionality%20that%20all%20page%20objects%20will%20inherit",
         "prevChunkIds": []
       },
       "6": {
         "chunkId": "e2e7f7",
-        "hash": "f2ad3d4c",
-        "encoded": "*/",
+        "hash": "6458e590",
+        "encoded": "*%20Implements%20reusable%20actions%20to%20follow%20DRY%20principle",
         "prevChunkIds": []
       },
       "7": {
         "chunkId": "e2e7f7",
-        "hash": "6a113702",
-        "encoded": "export%20class%20BasePage%20%7B",
+        "hash": "0ae79b2f",
+        "encoded": "*/",
         "prevChunkIds": []
       },
       "8": {
         "chunkId": "e2e7f7",
-        "hash": "6a7d3f9c",
-        "encoded": "protected%20page:%20Page;",
+        "hash": "dfa900da",
+        "encoded": "export%20class%20BasePage%20%7B",
         "prevChunkIds": []
       },
-      "10": {
+      "9": {
         "chunkId": "e2e7f7",
-        "hash": "058b2e29",
-        "encoded": "constructor(page:%20Page)%20%7B",
+        "hash": "7766f2da",
+        "encoded": "protected%20page:%20Page;",
         "prevChunkIds": []
       },
       "11": {
         "chunkId": "e2e7f7",
-        "hash": "09b44d2c",
-        "encoded": "this.page%20=%20page;",
+        "hash": "d3d723b7",
+        "encoded": "constructor(page:%20Page)%20%7B",
         "prevChunkIds": []
       },
       "12": {
         "chunkId": "e2e7f7",
-        "hash": "6a3f2143",
-        "encoded": "%7D",
+        "hash": "8823ac8f",
+        "encoded": "this.page%20=%20page;",
         "prevChunkIds": []
       },
-      "14": {
+      "13": {
         "chunkId": "e2e7f7",
-        "hash": "f847a38b",
-        "encoded": "/**",
+        "hash": "e683dcf7",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "15": {
         "chunkId": "e2e7f7",
-        "hash": "19add754",
-        "encoded": "*%20Navigate%20to%20a%20specific%20URL",
+        "hash": "014b98f0",
+        "encoded": "/**",
         "prevChunkIds": []
       },
       "16": {
         "chunkId": "e2e7f7",
-        "hash": "5f6ff38a",
-        "encoded": "*%20@param%20url%20-%20The%20URL%20to%20navigate%20to",
+        "hash": "ff57e594",
+        "encoded": "*%20Navigate%20to%20a%20specific%20URL",
         "prevChunkIds": []
       },
       "17": {
         "chunkId": "e2e7f7",
-        "hash": "fc142b2b",
-        "encoded": "*/",
+        "hash": "578ce45d",
+        "encoded": "*%20@param%20url%20-%20The%20URL%20to%20navigate%20to",
         "prevChunkIds": []
       },
       "18": {
         "chunkId": "e2e7f7",
-        "hash": "92cc1997",
-        "encoded": "async%20navigate(url:%20string):%20Promise%3Cvoid%3E%20%7B",
+        "hash": "f12acb0c",
+        "encoded": "*/",
         "prevChunkIds": []
       },
       "19": {
         "chunkId": "e2e7f7",
-        "hash": "6ec7c7d4",
-        "encoded": "await%20this.page.goto(url,%20%7B%20waitUntil:%20'domcontentloaded'%20%7D);",
+        "hash": "4ef9fd6a",
+        "encoded": "async%20navigate(url:%20string):%20Promise%3Cvoid%3E%20%7B",
         "prevChunkIds": []
       },
       "20": {
         "chunkId": "e2e7f7",
-        "hash": "acbf036f",
-        "encoded": "%7D",
+        "hash": "c408cd88",
+        "encoded": "await%20this.page.goto(url,%20%7B%20waitUntil:%20'domcontentloaded'%20%7D);",
         "prevChunkIds": []
       },
-      "22": {
+      "21": {
         "chunkId": "e2e7f7",
-        "hash": "40c95b3f",
-        "encoded": "/**",
+        "hash": "4b5cc20d",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "23": {
         "chunkId": "e2e7f7",
-        "hash": "5a2e84e0",
-        "encoded": "*%20Click%20on%20an%20element",
+        "hash": "aaf43556",
+        "encoded": "/**",
         "prevChunkIds": []
       },
       "24": {
         "chunkId": "e2e7f7",
-        "hash": "322745e8",
-        "encoded": "*%20@param%20locator%20-%20The%20element%20locator",
+        "hash": "63545a50",
+        "encoded": "*%20Click%20on%20an%20element",
         "prevChunkIds": []
       },
       "25": {
         "chunkId": "e2e7f7",
-        "hash": "8b36099b",
-        "encoded": "*/",
+        "hash": "c280ce6c",
+        "encoded": "*%20@param%20locator%20-%20The%20element%20locator",
         "prevChunkIds": []
       },
       "26": {
         "chunkId": "e2e7f7",
-        "hash": "557a2a34",
-        "encoded": "async%20click(locator:%20Locator):%20Promise%3Cvoid%3E%20%7B",
+        "hash": "97550845",
+        "encoded": "*/",
         "prevChunkIds": []
       },
       "27": {
         "chunkId": "e2e7f7",
-        "hash": "2313ce79",
-        "encoded": "await%20locator.waitFor(%7B%20state:%20'visible'%20%7D);",
+        "hash": "571901fb",
+        "encoded": "async%20click(locator:%20Locator):%20Promise%3Cvoid%3E%20%7B",
         "prevChunkIds": []
       },
       "28": {
         "chunkId": "e2e7f7",
-        "hash": "3f7c06d3",
-        "encoded": "await%20locator.click();",
+        "hash": "5fdc4230",
+        "encoded": "await%20locator.waitFor(%7B%20state:%20'visible'%20%7D);",
         "prevChunkIds": []
       },
       "29": {
         "chunkId": "e2e7f7",
-        "hash": "7721e417",
-        "encoded": "%7D",
+        "hash": "993aa7c7",
+        "encoded": "await%20locator.click();",
         "prevChunkIds": []
       },
-      "31": {
+      "30": {
         "chunkId": "e2e7f7",
-        "hash": "367a56c1",
-        "encoded": "/**",
+        "hash": "cfdac52c",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "32": {
         "chunkId": "e2e7f7",
-        "hash": "1a487395",
-        "encoded": "*%20Fill%20input%20field%20with%20text",
+        "hash": "de2fae64",
+        "encoded": "/**",
         "prevChunkIds": []
       },
       "33": {
         "chunkId": "e2e7f7",
-        "hash": "a73150b7",
-        "encoded": "*%20@param%20locator%20-%20The%20input%20field%20locator",
+        "hash": "b020932b",
+        "encoded": "*%20Fill%20input%20field%20with%20text",
         "prevChunkIds": []
       },
       "34": {
         "chunkId": "e2e7f7",
-        "hash": "e49a500e",
-        "encoded": "*%20@param%20text%20-%20The%20text%20to%20fill",
+        "hash": "068aa383",
+        "encoded": "*%20@param%20locator%20-%20The%20input%20field%20locator",
         "prevChunkIds": []
       },
       "35": {
         "chunkId": "e2e7f7",
-        "hash": "75d5d983",
-        "encoded": "*/",
+        "hash": "281ccc31",
+        "encoded": "*%20@param%20text%20-%20The%20text%20to%20fill",
         "prevChunkIds": []
       },
       "36": {
         "chunkId": "e2e7f7",
-        "hash": "f66301dc",
-        "encoded": "async%20fill(locator:%20Locator,%20text:%20string):%20Promise%3Cvoid%3E%20%7B",
+        "hash": "ca9f8ba0",
+        "encoded": "*/",
         "prevChunkIds": []
       },
       "37": {
         "chunkId": "e2e7f7",
-        "hash": "e1d56141",
-        "encoded": "await%20locator.waitFor(%7B%20state:%20'visible'%20%7D);",
+        "hash": "d4b086c7",
+        "encoded": "async%20fill(locator:%20Locator,%20text:%20string):%20Promise%3Cvoid%3E%20%7B",
         "prevChunkIds": []
       },
       "38": {
         "chunkId": "e2e7f7",
-        "hash": "f135f1ce",
-        "encoded": "await%20locator.clear();",
+        "hash": "067a8dcf",
+        "encoded": "await%20locator.waitFor(%7B%20state:%20'visible'%20%7D);",
         "prevChunkIds": []
       },
       "39": {

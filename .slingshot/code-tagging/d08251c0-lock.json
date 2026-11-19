@@ -21,234 +21,824 @@
         "hash": "bbd56c8e",
         "messageId": "system_c9455670-e31c-11f1-8e7f-299f21b14205",
         "codeBlockId": null,
-        "isActive": true,
+        "isActive": false,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 11/18/2026, 12:25:10 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      },
+      "c2bc70": {
+        "user": "Rishna K",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1794992907,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "98724b8f",
+          "files": "89124236"
+        },
+        "hash": "977b03ca",
+        "messageId": "system_d1f51790-e32d-11f1-8e7f-299f21b14205",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 11/18/2026, 2:38:27 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      },
+      "80e181": {
+        "user": "Rishna K",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1795082413,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "cec5c957",
+          "files": "d9027362"
+        },
+        "hash": "f0d7fd08",
+        "messageId": "system_4e75d720-e3fe-11f1-ae12-07b1d317a716",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 11/19/2026, 3:30:13 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
       }
     },
     "lines": {
       "0": {
-        "chunkId": "4fba24",
+        "chunkId": "80e181",
         "hash": "9b22d4ef",
         "encoded": "import%20%7B%20test,%20expect%20%7D%20from%20'@playwright/test';",
         "prevChunkIds": []
       },
       "1": {
-        "chunkId": "4fba24",
+        "chunkId": "80e181",
         "hash": "c00de391",
         "encoded": "import%20%7B%20AAHomePage%20%7D%20from%20'../src/page-objects/AAHomePage';",
         "prevChunkIds": []
       },
       "2": {
-        "chunkId": "4fba24",
+        "chunkId": "80e181",
         "hash": "8781db12",
         "encoded": "import%20%7B%20AABreakdownPage%20%7D%20from%20'../src/page-objects/AABreakdownPage';",
         "prevChunkIds": []
       },
+      "3": {
+        "chunkId": "80e181",
+        "hash": "0f22ae5c",
+        "encoded": "import%20%7B%20AASalesOptionPage%20%7D%20from%20'../src/page-objects/AASalesOptionPage';",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "80e181",
+        "hash": "e0c3632e",
+        "encoded": "import%20%7BAAAddOnsPage%7D%20from%20'../src/page-objects/AAAddOnsPage'",
+        "prevChunkIds": []
+      },
       "5": {
-        "chunkId": "4fba24",
-        "hash": "b9fc3b5c",
-        "encoded": "/**",
+        "chunkId": "80e181",
+        "hash": "26e5756a",
+        "encoded": "import%20%7B%20aaUrls,%20aaFormData%7D%20from%20'../src/data/aaTestData';",
         "prevChunkIds": []
       },
       "6": {
-        "chunkId": "4fba24",
-        "hash": "e2153463",
-        "encoded": "*%20AA%20Breakdown%20Flow%20E2E%20Test",
-        "prevChunkIds": []
-      },
-      "7": {
-        "chunkId": "4fba24",
-        "hash": "41df4a24",
-        "encoded": "*%20Tests%20complete%20user%20journey%20from%20homepage%20to%20breakdown%20cover%20page",
-        "prevChunkIds": []
-      },
-      "8": {
-        "chunkId": "4fba24",
-        "hash": "11d7e9e0",
-        "encoded": "*/",
+        "chunkId": "80e181",
+        "hash": "b569ad88",
+        "encoded": "import%20%7B%20AAYourDetailsPage%20%7D%20from%20'@page-objects/AAYourDetailsPage';",
         "prevChunkIds": []
       },
       "9": {
-        "chunkId": "4fba24",
-        "hash": "3843ab81",
-        "encoded": "test.describe('AA%20Breakdown%20Flow%20-%20E2E%20Test',%20()%20=%3E%20%7B",
+        "chunkId": "80e181",
+        "hash": "1d1b7499",
+        "encoded": "/**",
         "prevChunkIds": []
       },
       "10": {
-        "chunkId": "4fba24",
-        "hash": "c9298b38",
-        "encoded": "let%20aaHomePage:%20AAHomePage;",
+        "chunkId": "80e181",
+        "hash": "45959580",
+        "encoded": "*%20AA%20Breakdown%20Flow%20E2E%20Test",
         "prevChunkIds": []
       },
       "11": {
-        "chunkId": "4fba24",
-        "hash": "da200539",
-        "encoded": "let%20aaBreakdownPage:%20AABreakdownPage;",
+        "chunkId": "80e181",
+        "hash": "f11b388d",
+        "encoded": "*%20Tests%20complete%20user%20journey%20from%20homepage%20to%20breakdown%20cover%20page",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "80e181",
+        "hash": "738e256a",
+        "encoded": "*",
         "prevChunkIds": []
       },
       "13": {
-        "chunkId": "4fba24",
-        "hash": "73bc9335",
-        "encoded": "test.beforeEach(async%20(%7B%20page%20%7D)%20=%3E%20%7B",
+        "chunkId": "80e181",
+        "hash": "089505b5",
+        "encoded": "*%20Tags:%20@regression",
         "prevChunkIds": []
       },
       "14": {
-        "chunkId": "4fba24",
-        "hash": "7640cac6",
-        "encoded": "aaHomePage%20=%20new%20AAHomePage(page);",
+        "chunkId": "80e181",
+        "hash": "8080ad43",
+        "encoded": "*/",
         "prevChunkIds": []
       },
       "15": {
-        "chunkId": "4fba24",
-        "hash": "abc22af1",
-        "encoded": "aaBreakdownPage%20=%20new%20AABreakdownPage(page);",
+        "chunkId": "80e181",
+        "hash": "2887a643",
+        "encoded": "test.describe('AA%20Breakdown%20Flow%20-%20E2E%20Test',%20()%20=%3E%20%7B",
         "prevChunkIds": []
       },
       "16": {
-        "chunkId": "4fba24",
-        "hash": "99e8e451",
-        "encoded": "%7D);",
+        "chunkId": "80e181",
+        "hash": "dabcc982",
+        "encoded": "let%20aaHomePage:%20AAHomePage;",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "80e181",
+        "hash": "9e50108d",
+        "encoded": "let%20aaBreakdownPage:%20AABreakdownPage;",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "80e181",
+        "hash": "d50940ef",
+        "encoded": "let%20aaSalesOptionPage:AASalesOptionPage;",
         "prevChunkIds": []
       },
       "19": {
-        "chunkId": "4fba24",
-        "hash": "d9c52a7c",
-        "encoded": "//%20Step%201:%20Navigate%20to%20AA%20homepage",
+        "chunkId": "80e181",
+        "hash": "2f177202",
+        "encoded": "let%20aaAddOnsPage:AAAddOnsPage;",
         "prevChunkIds": []
       },
       "20": {
-        "chunkId": "4fba24",
-        "hash": "e84a7826",
-        "encoded": "await%20aaHomePage.navigateToAAHome();",
+        "chunkId": "80e181",
+        "hash": "be104785",
+        "encoded": "let%20aaYourDetailsPage:%20AAYourDetailsPage;",
         "prevChunkIds": []
       },
       "22": {
-        "chunkId": "4fba24",
-        "hash": "1f0bf98e",
-        "encoded": "//%20Step%202:%20Accept%20cookies%20if%20present",
+        "chunkId": "80e181",
+        "hash": "d88a7638",
+        "encoded": "test.beforeEach(async%20(%7B%20page%20%7D)%20=%3E%20%7B",
         "prevChunkIds": []
       },
       "23": {
-        "chunkId": "4fba24",
-        "hash": "dcf8f45b",
-        "encoded": "await%20aaHomePage.acceptCookiesIfPresent();",
+        "chunkId": "80e181",
+        "hash": "2322a6f7",
+        "encoded": "aaHomePage%20=%20new%20AAHomePage(page);",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "80e181",
+        "hash": "32a83587",
+        "encoded": "aaBreakdownPage%20=%20new%20AABreakdownPage(page);",
         "prevChunkIds": []
       },
       "25": {
-        "chunkId": "4fba24",
-        "hash": "a7428c85",
-        "encoded": "//%20Step%203:%20Verify%20homepage%20loaded",
+        "chunkId": "80e181",
+        "hash": "58dc8172",
+        "encoded": "aaSalesOptionPage=%20new%20AASalesOptionPage(page);",
         "prevChunkIds": []
       },
       "26": {
-        "chunkId": "4fba24",
-        "hash": "42ecb469",
-        "encoded": "const%20isHomeLoaded%20=%20await%20aaHomePage.isAAHomePageLoaded();",
+        "chunkId": "80e181",
+        "hash": "de71ac65",
+        "encoded": "aaAddOnsPage%20=new%20AAAddOnsPage(page);",
         "prevChunkIds": []
       },
       "27": {
-        "chunkId": "4fba24",
-        "hash": "1294c3f4",
-        "encoded": "expect(isHomeLoaded).toBeTruthy();",
+        "chunkId": "80e181",
+        "hash": "2fd08564",
+        "encoded": "aaYourDetailsPage%20=%20new%20AAYourDetailsPage(page);",
         "prevChunkIds": []
       },
-      "29": {
-        "chunkId": "4fba24",
-        "hash": "1219afba",
-        "encoded": "//%20Step%204:%20Navigate%20to%20Breakdown%20Cover%20page",
+      "28": {
+        "chunkId": "80e181",
+        "hash": "56683f82",
+        "encoded": "%7D);",
         "prevChunkIds": []
       },
       "30": {
-        "chunkId": "4fba24",
-        "hash": "59f154e0",
-        "encoded": "await%20aaHomePage.navigateToBreakdownCover();",
+        "chunkId": "80e181",
+        "hash": "6fe87ad8",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "80e181",
+        "hash": "5623155a",
+        "encoded": "*%20Full%20E2E%20test%20for%20breakdown%20cover%20purchase%20flow",
         "prevChunkIds": []
       },
       "32": {
-        "chunkId": "4fba24",
-        "hash": "cbecab39",
-        "encoded": "//%20Step%205:%20Wait%20for%20navigation%20to%20complete",
+        "chunkId": "80e181",
+        "hash": "3c19898a",
+        "encoded": "*%20Tags:%20@regression",
         "prevChunkIds": []
       },
       "33": {
-        "chunkId": "4fba24",
-        "hash": "f49c05bf",
-        "encoded": "await%20aaBreakdownPage.waitForBreakdownPageLoad();",
+        "chunkId": "80e181",
+        "hash": "25af1a60",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "80e181",
+        "hash": "d367f19d",
+        "encoded": "test('@regression%20Navigate%20through%20breakdown%20cover%20flow',%20async%20(%7B%20page%20%7D)%20=%3E%20%7B",
         "prevChunkIds": []
       },
       "35": {
-        "chunkId": "4fba24",
-        "hash": "d82feb02",
-        "encoded": "//%20Step%206:%20Verify%20URL%20contains%20breakdown%20path",
+        "chunkId": "80e181",
+        "hash": "7538cf25",
+        "encoded": "//%20Step%201:%20Navigate%20to%20AA%20homepage",
         "prevChunkIds": []
       },
       "36": {
-        "chunkId": "4fba24",
-        "hash": "66c02171",
-        "encoded": "const%20currenturl%20=%20await%20aaHomePage.getCurrentPageUrl();",
+        "chunkId": "80e181",
+        "hash": "d6ee92b0",
+        "encoded": "await%20aaHomePage.navigateToAAHome();",
         "prevChunkIds": []
       },
-      "37": {
-        "chunkId": "4fba24",
-        "hash": "55a05910",
-        "encoded": "expect(currenturl).toContain(aaUrls.breakdown);",
+      "38": {
+        "chunkId": "80e181",
+        "hash": "deae7323",
+        "encoded": "//%20Step%202:%20Accept%20cookies%20if%20present",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "80e181",
+        "hash": "46526bbf",
+        "encoded": "await%20aaHomePage.acceptCookiesIfPresent();",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "80e181",
+        "hash": "8f87e0f0",
+        "encoded": "//%20Step%203:%20Verify%20homepage%20loaded",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "80e181",
+        "hash": "1601dd96",
+        "encoded": "const%20isHomeLoaded%20=%20await%20aaHomePage.isAAHomePageLoaded();",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "80e181",
+        "hash": "786e5cdf",
+        "encoded": "expect(isHomeLoaded).toBeTruthy();",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "80e181",
+        "hash": "778ba053",
+        "encoded": "//%20Step%204:%20Navigate%20to%20Breakdown%20Cover%20page",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "80e181",
+        "hash": "2060b12f",
+        "encoded": "await%20aaHomePage.navigateToBreakdownCover();",
         "prevChunkIds": []
       },
       "48": {
-        "chunkId": "4fba24",
-        "hash": "0fc0ec26",
-        "encoded": "%7D);",
+        "chunkId": "80e181",
+        "hash": "8b6b379b",
+        "encoded": "//%20Step%205:%20Wait%20for%20navigation%20to%20complete",
         "prevChunkIds": []
       },
-      "50": {
-        "chunkId": "4fba24",
-        "hash": "6b8055a5",
-        "encoded": "test.afterEach(async%20(%7B%20page%20%7D,%20testInfo)%20=%3E%20%7B",
+      "49": {
+        "chunkId": "80e181",
+        "hash": "858fd4a9",
+        "encoded": "await%20aaBreakdownPage.waitForBreakdownPageLoad();",
         "prevChunkIds": []
       },
       "51": {
-        "chunkId": "4fba24",
-        "hash": "a99fa04f",
-        "encoded": "if%20(testInfo.status%20!==%20testInfo.expectedStatus)%20%7B",
+        "chunkId": "80e181",
+        "hash": "ba37a636",
+        "encoded": "//%20Step%206:%20Verify%20URL%20contains%20breakdown%20path",
         "prevChunkIds": []
       },
       "52": {
-        "chunkId": "4fba24",
-        "hash": "5606e45e",
-        "encoded": "//%20Take%20screenshot%20on%20failure",
+        "chunkId": "80e181",
+        "hash": "3a52e1cc",
+        "encoded": "const%20currenturl%20=%20await%20aaHomePage.getCurrentPageUrl();",
         "prevChunkIds": []
       },
       "53": {
-        "chunkId": "4fba24",
-        "hash": "317188c3",
-        "encoded": "const%20timestamp%20=%20Date.now();",
-        "prevChunkIds": []
-      },
-      "54": {
-        "chunkId": "4fba24",
-        "hash": "61ead0a5",
-        "encoded": "await%20aaHomePage.captureHomepage(%60breakdown-failure-$%7Btimestamp%7D%60);",
+        "chunkId": "80e181",
+        "hash": "e4337659",
+        "encoded": "expect(currenturl).toContain(aaUrls.breakdown);",
         "prevChunkIds": []
       },
       "55": {
-        "chunkId": "4fba24",
-        "hash": "2ef1d392",
-        "encoded": "%7D",
+        "chunkId": "80e181",
+        "hash": "d4b6a497",
+        "encoded": "//%20Step%207:%20Click%20on%20Get%20a%20quote%20button",
         "prevChunkIds": []
       },
       "56": {
-        "chunkId": "4fba24",
-        "hash": "4f8dfc51",
-        "encoded": "%7D);",
+        "chunkId": "80e181",
+        "hash": "f03d26b6",
+        "encoded": "await%20aaBreakdownPage.clickGetQuote();",
         "prevChunkIds": []
       },
       "57": {
-        "chunkId": "4fba24",
-        "hash": "a7e8e737",
+        "chunkId": "80e181",
+        "hash": "b76a9219",
+        "encoded": "await%20aaBreakdownPage.waitForBreakdownPageLoad();",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "80e181",
+        "hash": "1cfd528b",
+        "encoded": "await%20page.waitForTimeout(5000);",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "80e181",
+        "hash": "1fbda4b2",
+        "encoded": "await%20aaBreakdownPage.isOnSalesCoverPage();",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "80e181",
+        "hash": "7c41d7d2",
+        "encoded": "//%20Wait%20for%20form%20to%20be%20ready",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "80e181",
+        "hash": "80b72e1d",
+        "encoded": "//%20Step%208:%20Enter%20the%20postcode%20and%20other%20details",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "80e181",
+        "hash": "55f7d8ff",
+        "encoded": "await%20aaBreakdownPage.enterPostcode();",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "80e181",
+        "hash": "6b545446",
+        "encoded": "await%20aaBreakdownPage.enterDOB();",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "80e181",
+        "hash": "3570be7c",
+        "encoded": "//%20Step%209:%20Submit%20the%20form",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "80e181",
+        "hash": "5abd0500",
+        "encoded": "await%20aaBreakdownPage.clickOnSubmitButton();",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "80e181",
+        "hash": "548264cf",
+        "encoded": "await%20page.waitForTimeout(5000);",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "80e181",
+        "hash": "c3086111",
+        "encoded": "//Step%2010:%20Select%20policy%20and%20vehicle%20Type",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "80e181",
+        "hash": "df053385",
+        "encoded": "await%20aaBreakdownPage.selectThePolicyType('Vehicle');",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "80e181",
+        "hash": "2709ce9d",
+        "encoded": "await%20aaBreakdownPage.selectTheVehicleType('CUV');",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "80e181",
+        "hash": "25b65dbf",
+        "encoded": "await%20aaBreakdownPage.clickOnContinueButton();",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "80e181",
+        "hash": "cfaeaa79",
+        "encoded": "//Step%2011:%20Add%20option",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "80e181",
+        "hash": "3eab043a",
+        "encoded": "await%20aaSalesOptionPage.addOptionalExtras(%5B'At%20Home','Onward%20Travel'%5D);",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "80e181",
+        "hash": "c0164fdc",
+        "encoded": "await%20aaSalesOptionPage.clickOnContinueButton();",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "80e181",
+        "hash": "b816d980",
+        "encoded": "//Step%2012:%20Add%20Addons",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "80e181",
+        "hash": "6cd18bde",
+        "encoded": "await%20aaAddOnsPage.addAddOns(%5B'PGC','Tyre%20Cover'%5D);",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "80e181",
+        "hash": "16e20304",
+        "encoded": "await%20aaAddOnsPage.clickOnContinueButton();",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "80e181",
+        "hash": "f562650e",
+        "encoded": "//Step%2013:%20Fill%20the%20personal%20details",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "80e181",
+        "hash": "5eaef60a",
+        "encoded": "await%20aaYourDetailsPage.selectStartPolicy();",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "80e181",
+        "hash": "7faf5988",
+        "encoded": "await%20aaYourDetailsPage.fillPersonalDetails();",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "80e181",
+        "hash": "2f087dbf",
+        "encoded": "await%20aaYourDetailsPage.fillContactDetails();",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "80e181",
+        "hash": "ac7439d5",
+        "encoded": "await%20aaYourDetailsPage.clickOnContinueButton();",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "80e181",
+        "hash": "fea98643",
         "encoded": "%7D);",
         "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "80e181",
+        "hash": "a8454cb6",
+        "encoded": "test.afterEach(async%20(%7B%20page%20%7D,%20testInfo)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "80e181",
+        "hash": "3b5cc7c9",
+        "encoded": "if%20(testInfo.status%20!==%20testInfo.expectedStatus)%20%7B",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "80e181",
+        "hash": "1d3a6a1c",
+        "encoded": "//%20Take%20screenshot%20on%20failure",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "80e181",
+        "hash": "6ec99727",
+        "encoded": "const%20timestamp%20=%20Date.now();",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "80e181",
+        "hash": "a1a564b5",
+        "encoded": "await%20aaHomePage.captureHomepage(%60breakdown-failure-$%7Btimestamp%7D%60);",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "80e181",
+        "hash": "4cb4c387",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "80e181",
+        "hash": "904a972c",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "80e181",
+        "hash": "e3b88b3c",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "c2bc70",
+        "hash": "67295a13",
+        "encoded": "import%20%7B%20AAHomePage%20%7D%20from%20'../src/page-objects/AAHomePage';",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "100": {
+        "chunkId": "c2bc70",
+        "hash": "cb248b3d",
+        "encoded": "import%20%7B%20AABreakdownPage%20%7D%20from%20'../src/page-objects/AABreakdownPage';",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "107": {
+        "chunkId": "c2bc70",
+        "hash": "86ccacc6",
+        "encoded": "/**",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "108": {
+        "chunkId": "c2bc70",
+        "hash": "1f303f38",
+        "encoded": "*%20AA%20Breakdown%20Flow%20E2E%20Test",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "109": {
+        "chunkId": "c2bc70",
+        "hash": "1663f095",
+        "encoded": "*%20Tests%20complete%20user%20journey%20from%20homepage%20to%20breakdown%20cover%20page",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "110": {
+        "chunkId": "c2bc70",
+        "hash": "02342709",
+        "encoded": "*/",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "114": {
+        "chunkId": "c2bc70",
+        "hash": "6e14b6a0",
+        "encoded": "test.describe('AA%20Breakdown%20Flow%20-%20E2E%20Test',%20()%20=%3E%20%7B",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "115": {
+        "chunkId": "c2bc70",
+        "hash": "c448a253",
+        "encoded": "let%20aaHomePage:%20AAHomePage;",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "116": {
+        "chunkId": "c2bc70",
+        "hash": "ed3e15ef",
+        "encoded": "let%20aaBreakdownPage:%20AABreakdownPage;",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "121": {
+        "chunkId": "c2bc70",
+        "hash": "971004cc",
+        "encoded": "test.beforeEach(async%20(%7B%20page%20%7D)%20=%3E%20%7B",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "122": {
+        "chunkId": "c2bc70",
+        "hash": "8bcdb207",
+        "encoded": "aaHomePage%20=%20new%20AAHomePage(page);",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "123": {
+        "chunkId": "c2bc70",
+        "hash": "afebe137",
+        "encoded": "aaBreakdownPage%20=%20new%20AABreakdownPage(page);",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "127": {
+        "chunkId": "c2bc70",
+        "hash": "7af34aa5",
+        "encoded": "%7D);",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "130": {
+        "chunkId": "c2bc70",
+        "hash": "fc28ef36",
+        "encoded": "//%20Step%201:%20Navigate%20to%20AA%20homepage",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "131": {
+        "chunkId": "c2bc70",
+        "hash": "aa213ee5",
+        "encoded": "await%20aaHomePage.navigateToAAHome();",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "133": {
+        "chunkId": "c2bc70",
+        "hash": "c20c6261",
+        "encoded": "//%20Step%202:%20Accept%20cookies%20if%20present",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "134": {
+        "chunkId": "c2bc70",
+        "hash": "9986aa89",
+        "encoded": "await%20aaHomePage.acceptCookiesIfPresent();",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "136": {
+        "chunkId": "c2bc70",
+        "hash": "a0845703",
+        "encoded": "//%20Step%203:%20Verify%20homepage%20loaded",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "137": {
+        "chunkId": "c2bc70",
+        "hash": "0d65e882",
+        "encoded": "const%20isHomeLoaded%20=%20await%20aaHomePage.isAAHomePageLoaded();",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "138": {
+        "chunkId": "c2bc70",
+        "hash": "d51c43bb",
+        "encoded": "expect(isHomeLoaded).toBeTruthy();",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "140": {
+        "chunkId": "c2bc70",
+        "hash": "da12ef57",
+        "encoded": "//%20Step%204:%20Navigate%20to%20Breakdown%20Cover%20page",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "141": {
+        "chunkId": "c2bc70",
+        "hash": "f6b86f16",
+        "encoded": "await%20aaHomePage.navigateToBreakdownCover();",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "143": {
+        "chunkId": "c2bc70",
+        "hash": "348d5937",
+        "encoded": "//%20Step%205:%20Wait%20for%20navigation%20to%20complete",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "144": {
+        "chunkId": "c2bc70",
+        "hash": "6893b24b",
+        "encoded": "await%20aaBreakdownPage.waitForBreakdownPageLoad();",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "146": {
+        "chunkId": "c2bc70",
+        "hash": "4652a11d",
+        "encoded": "//%20Step%206:%20Verify%20URL%20contains%20breakdown%20path",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "147": {
+        "chunkId": "c2bc70",
+        "hash": "9a5bdeca",
+        "encoded": "const%20currenturl%20=%20await%20aaHomePage.getCurrentPageUrl();",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "148": {
+        "chunkId": "c2bc70",
+        "hash": "a0b9c32a",
+        "encoded": "expect(currenturl).toContain(aaUrls.breakdown);",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "186": {
+        "chunkId": "c2bc70",
+        "hash": "79cbc6d4",
+        "encoded": "%7D);",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "188": {
+        "chunkId": "c2bc70",
+        "hash": "37026764",
+        "encoded": "test.afterEach(async%20(%7B%20page%20%7D,%20testInfo)%20=%3E%20%7B",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "189": {
+        "chunkId": "c2bc70",
+        "hash": "8d0af926",
+        "encoded": "if%20(testInfo.status%20!==%20testInfo.expectedStatus)%20%7B",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "190": {
+        "chunkId": "c2bc70",
+        "hash": "4fc7a3ad",
+        "encoded": "//%20Take%20screenshot%20on%20failure",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "191": {
+        "chunkId": "c2bc70",
+        "hash": "212a6e0a",
+        "encoded": "const%20timestamp%20=%20Date.now();",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "192": {
+        "chunkId": "c2bc70",
+        "hash": "98fb9e43",
+        "encoded": "await%20aaHomePage.captureHomepage(%60breakdown-failure-$%7Btimestamp%7D%60);",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "193": {
+        "chunkId": "c2bc70",
+        "hash": "675a30df",
+        "encoded": "%7D",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "194": {
+        "chunkId": "c2bc70",
+        "hash": "8556aade",
+        "encoded": "%7D);",
+        "prevChunkIds": [
+          "4fba24"
+        ]
+      },
+      "195": {
+        "chunkId": "c2bc70",
+        "hash": "e2d50dfc",
+        "encoded": "%7D);",
+        "prevChunkIds": [
+          "4fba24"
+        ]
       }
     },
-    "_prevLineCount": 59
+    "_prevLineCount": 99
   }
 }

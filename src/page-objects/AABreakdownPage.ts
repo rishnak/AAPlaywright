@@ -17,12 +17,17 @@ export class AABreakdownPage extends BasePage {
   private readonly monthTextField: Locator;
   private readonly yearTextField: Locator;
   private readonly submitButton:Locator;
+  private readonly vehicleCoverRadioButton: Locator;
+  private readonly personalCoverRadioButton: Locator;
+  private readonly CUVYesRadioButton: Locator;
+  private readonly CUVNoRadioButton: Locator;
+  private readonly vehicleRegistrationNumber: Locator;
+  private readonly submitVRNbutton: Locator;
+  private readonly continueButton:Locator;
 
-
-
-  constructor(page: Page) {
-    super(page); // Call BasePage constructor
-    
+    constructor(page: Page) {
+      super(page); // Call BasePage constructor
+      
     // Initialize locators
     this.pageHeading = page.locator('h1').first();
     this.getQuoteButton = page.getByRole('link',{name:'Get a breakdown quote'}).first();
@@ -32,9 +37,15 @@ export class AABreakdownPage extends BasePage {
     this.dayTextField = page.locator('#day');
     this.yearTextField = page.locator('#year');
     this.submitButton = page.getByRole('button', {name:' Submit details '}).first();
-
-
-
+    this.vehicleCoverRadioButton = page.getByRole('radio',{name:'Vehicle cover'});
+    this.personalCoverRadioButton = page.getByRole('radio',{name:'Personal cover'})
+    this.CUVYesRadioButton = page.getByRole('radio',{name:'Yes, for work'});
+    this.CUVNoRadioButton = page.getByRole('radio',{name:'No, only for everyday driving'})
+    this.vehicleRegistrationNumber = page.locator('input[name="numberPlate"]');
+    this.submitVRNbutton = page.getByRole('button',{name:' Add Commercial Use '});
+    this.continueButton = page.getByRole('button',{name:'Continue'})
+  
+  
   }
   
   /**
@@ -83,16 +94,45 @@ export class AABreakdownPage extends BasePage {
   }
 
   async enterPostcode(){
-    this.fill(this.postcodeTextfield,aaFormData.postcode);
+    await this.fill(this.postcodeTextfield,aaFormData.postcode);
+    console.log("postcode is" + aaFormData.postcode )
   }
 
   async enterDOB(){
-    this.fill(this.dayTextField,aaFormData.day);
-    this.fill(this.monthTextField,aaFormData.month);
-    this.fill(this.yearTextField,aaFormData.year);
+    await this.fill(this.dayTextField,aaFormData.day);
+    await  this.fill(this.monthTextField,aaFormData.month);
+    await this.fill(this.yearTextField,aaFormData.year);
   }
 
   async clickOnSubmitButton(): Promise<void>{
     this.click(this.submitButton);
+  }
+
+  async selectThePolicyType(type: string): Promise<void>{
+    if(type === 'Vehicle')
+      await this.vehicleCoverRadioButton.check();
+    else
+      await this.personalCoverRadioButton.check();
+  }
+
+  async selectTheVehicleType(type: string): Promise<void>{
+    if(type === 'CUV'){
+      await this.CUVYesRadioButton.check();
+      await this.fill(this.vehicleRegistrationNumber,aaFormData.vrn);
+      await this.click(this.submitVRNbutton);
+      await this.page.getByRole('button',{name:'Confirm'}).click();
+
+    }
+      
+    else
+      await this.CUVNoRadioButton.check();
+  }
+  
+  // async enterVehicleRegistrationNumber(regNumber: string): Promise<void> {
+      
+  // }
+
+  async clickOnContinueButton(): Promise<void>{
+    await this.click(this.continueButton);
   }
 }

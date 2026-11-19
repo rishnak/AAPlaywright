@@ -2,10 +2,29 @@
   "filename": "package.json",
   "path": "package.json",
   "version": "1.1",
-  "files": {},
+  "files": {
+    "d9027362": {
+      "value": [
+        {
+          "programming_language": "TypeScript",
+          "fileName": "AAAddOnsPage.ts",
+          "relativeFilePath": "src/page-objects/AAAddOnsPage.ts",
+          "startLine": [
+            1
+          ],
+          "endLine": [
+            50
+          ]
+        }
+      ]
+    }
+  },
   "promptMessage": {
     "b5407788": {
       "value": "As a senior test engineer create a playwright framework with page object model. Create a separate folder for the pages, page objects tests data and utilities. "
+    },
+    "cec5c957": {
+      "value": "Analyze my existing Playwright TypeScript automation project and implement a Jenkins CI pipeline for it.\n\nPlease inspect the existing project structure, package.json, playwright.config.ts, test scripts, test tags, environment/config files, and reporting configuration before making changes. Reuse the framework's existing conventions wherever possible.\n\nRequirements:\n\n1. Create a Jenkinsfile in the root of the project using Declarative Jenkins Pipeline syntax.\n\n2. Configure the pipeline with these"
     }
   },
   "localPrompts": {},

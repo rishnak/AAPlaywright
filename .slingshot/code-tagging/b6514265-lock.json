@@ -1,0 +1,2323 @@
+{
+  "JENKINS_IMPLEMENTATION_SUMMARY.md": {
+    "filename": "JENKINS_IMPLEMENTATION_SUMMARY.md",
+    "path": "JENKINS_IMPLEMENTATION_SUMMARY.md",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "a3babf": {
+        "user": "Rishna K",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1795082413,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "cec5c957",
+          "files": "d9027362"
+        },
+        "hash": "ec1e7102",
+        "messageId": "system_4e75d720-e3fe-11f1-ae12-07b1d317a716",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 11/19/2026, 3:30:13 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "a3babf",
+        "hash": "ecb235c2",
+        "encoded": "#%20%F0%9F%9A%80%20Jenkins%20CI/CD%20Pipeline%20-%20Implementation%20Summary",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "a3babf",
+        "hash": "4ef8a020",
+        "encoded": "##%20%F0%9F%93%8A%20Project%20Analysis%20-%20What%20We%20Found",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "a3babf",
+        "hash": "c72ca19f",
+        "encoded": "###%20**Existing%20Configuration:**",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "a3babf",
+        "hash": "fcbdd06d",
+        "encoded": "%E2%9C%85%20**Package.json:**",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "a3babf",
+        "hash": "cb5fd68e",
+        "encoded": "-%20Basic%20test%20scripts%20present",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "a3babf",
+        "hash": "55b8843c",
+        "encoded": "-%20dotenv%20dependency%20already%20installed",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "a3babf",
+        "hash": "c4973b5f",
+        "encoded": "-%20No%20smoke/regression%20scripts%20(now%20added)",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "a3babf",
+        "hash": "eac9b80b",
+        "encoded": "%E2%9C%85%20**Playwright.config.ts:**",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "a3babf",
+        "hash": "ef93d3c2",
+        "encoded": "-%20Already%20using%20dotenv%20for%20environment%20variables",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "a3babf",
+        "hash": "a2b83cb5",
+        "encoded": "-%20BASE_URL%20loading%20from%20.env",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "a3babf",
+        "hash": "c7d64e50",
+        "encoded": "-%20Only%20chromium%20browser%20enabled%20(firefox/webkit%20now%20enabled)",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "a3babf",
+        "hash": "b85da10d",
+        "encoded": "-%20No%20environment-specific%20URL%20mapping%20(now%20added)",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "a3babf",
+        "hash": "7057411b",
+        "encoded": "%E2%9D%8C%20**Test%20Files:**",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "a3babf",
+        "hash": "555fe2ec",
+        "encoded": "-%20NO%20test%20tags%20(@smoke,%20@regression)%20found%20(now%20added)",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "a3babf",
+        "hash": "62db3608",
+        "encoded": "-%202%20test%20files%20with%204%20total%20tests",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "a3babf",
+        "hash": "cd459cd7",
+        "encoded": "-%20Well-structured%20Page%20Object%20Model%20implementation",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "a3babf",
+        "hash": "aa73e0fa",
+        "encoded": "%E2%9C%85%20**Environment:**",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "a3babf",
+        "hash": "41b13bea",
+        "encoded": "-%20Windows%20OS%20detected",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "a3babf",
+        "hash": "a11e07c0",
+        "encoded": "-%20PowerShell/batch%20commands%20required",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "a3babf",
+        "hash": "763e8a21",
+        "encoded": "-%20Existing%20Jenkinsfile%20used%20Linux%20commands%20(%60sh%60)%20-%20now%20updated%20to%20Windows%20(%60bat%60)",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "a3babf",
+        "hash": "1b3147ca",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "a3babf",
+        "hash": "0697c45b",
+        "encoded": "##%20%E2%9C%85%20What%20Was%20Implemented",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "a3babf",
+        "hash": "0a1b36de",
+        "encoded": "###%20**1.%20%F0%9F%93%9D%20Files%20Created**",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "a3babf",
+        "hash": "5ad0b8bb",
+        "encoded": "%7C%20File%20%7C%20Purpose%20%7C",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "a3babf",
+        "hash": "e83c81e0",
+        "encoded": "%7C------%7C----------%7C",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "a3babf",
+        "hash": "d206bb49",
+        "encoded": "%7C%20**Jenkinsfile**%20%7C%20Main%20CI/CD%20pipeline%20with%20QA/UAT/STAGING%20support%20%7C",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "a3babf",
+        "hash": "9979e1d2",
+        "encoded": "%7C%20**JENKINS_CI_SETUP_GUIDE.md**%20%7C%20Complete%20setup%20and%20usage%20documentation%20%7C",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "a3babf",
+        "hash": "1bee0e57",
+        "encoded": "%7C%20**JENKINS_QUICK_REFERENCE.md**%20%7C%20Quick%20reference%20for%20common%20tasks%20%7C",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "a3babf",
+        "hash": "553b1def",
+        "encoded": "%7C%20**JENKINS_IMPLEMENTATION_SUMMARY.md**%20%7C%20This%20file%20-%20implementation%20overview%20%7C",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "a3babf",
+        "hash": "f8815bae",
+        "encoded": "###%20**2.%20%F0%9F%93%9D%20Files%20Modified**",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "a3babf",
+        "hash": "ddc9361b",
+        "encoded": "%7C%20File%20%7C%20Changes%20Made%20%7C",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "a3babf",
+        "hash": "1756472d",
+        "encoded": "%7C------%7C-------------%7C",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "a3babf",
+        "hash": "0f94bb1f",
+        "encoded": "%7C%20**playwright.config.ts**%20%7C%20%E2%80%A2%20Added%20%60getBaseURL()%60%20function%20for%20environment-specific%20URLs%3Cbr%3E%E2%80%A2%20Enabled%20firefox%20and%20webkit%20projects%3Cbr%3E%E2%80%A2%20Added%20environment%20URL%20mapping%20(QA/UAT/STAGING)%20%7C",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "a3babf",
+        "hash": "70834372",
+        "encoded": "%7C%20**package.json**%20%7C%20%E2%80%A2%20Added%20%60test:smoke%60%20script%3Cbr%3E%E2%80%A2%20Added%20%60test:regression%60%20script%20%7C",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "a3babf",
+        "hash": "da657c32",
+        "encoded": "%7C%20**.env.example**%20%7C%20%E2%80%A2%20Added%20%60ENVIRONMENT%60%20variable%3Cbr%3E%E2%80%A2%20Added%20%60QA_BASE_URL%60,%20%60UAT_BASE_URL%60,%20%60STAGING_BASE_URL%60%3Cbr%3E%E2%80%A2%20Added%20placeholder%20URLs%20with%20warnings%20%7C",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "a3babf",
+        "hash": "669f8e51",
+        "encoded": "%7C%20**tests/aa-website-pom.spec.ts**%20%7C%20%E2%80%A2%20Added%20%60@smoke%60%20tag%20to%20test%201%3Cbr%3E%E2%80%A2%20Added%20%60@smoke%20@regression%60%20tags%20to%20test%202%3Cbr%3E%E2%80%A2%20Added%20%60@regression%60%20tag%20to%20test%203%20%7C",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "a3babf",
+        "hash": "1ae48128",
+        "encoded": "%7C%20**tests/breakdownflowe2e.spec.ts**%20%7C%20%E2%80%A2%20Added%20%60@regression%60%20tag%20to%20E2E%20test%20%7C",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "a3babf",
+        "hash": "e253b29f",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "a3babf",
+        "hash": "14edd0eb",
+        "encoded": "##%20%F0%9F%8E%AF%20Jenkins%20Pipeline%20Features",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "a3babf",
+        "hash": "89bee577",
+        "encoded": "###%20**Build%20Parameters:**",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "a3babf",
+        "hash": "acb9bdcd",
+        "encoded": "%60%60%60groovy",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "a3babf",
+        "hash": "624c1269",
+        "encoded": "ENVIRONMENT:%20%20QA%20%7C%20UAT%20%7C%20STAGING",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "a3babf",
+        "hash": "d5e4394d",
+        "encoded": "BROWSER:%20%20%20%20%20%20chromium%20%7C%20firefox%20%7C%20webkit",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "a3babf",
+        "hash": "e256da3a",
+        "encoded": "TEST_TYPE:%20%20%20%20smoke%20%7C%20regression",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "a3babf",
+        "hash": "4b176361",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "a3babf",
+        "hash": "aae89e40",
+        "encoded": "###%20**Pipeline%20Stages:**",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "a3babf",
+        "hash": "db31d684",
+        "encoded": "1.%20**Checkout**%20-%20Get%20code%20from%20Git%20SCM",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "a3babf",
+        "hash": "8ac8115d",
+        "encoded": "2.%20**Verify%20Node.js%20&%20npm**%20-%20Check%20versions",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "a3babf",
+        "hash": "55da4865",
+        "encoded": "3.%20**Install%20Dependencies**%20-%20%60npm%20ci%60%20for%20clean%20install",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "a3babf",
+        "hash": "1d9a7859",
+        "encoded": "4.%20**Install%20Playwright%20Browsers**%20-%20Install%20selected%20browser%20only",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "a3babf",
+        "hash": "ae26326e",
+        "encoded": "5.%20**Execute%20Playwright%20Tests**%20-%20Run%20smoke%20or%20regression%20tests",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "a3babf",
+        "hash": "39c838ec",
+        "encoded": "###%20**Post%20Actions%20(Always%20Executed):**",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "a3babf",
+        "hash": "8b6c2705",
+        "encoded": "-%20Archive%20test%20results%20(%60test-results/**/*%60)",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "a3babf",
+        "hash": "5a33039a",
+        "encoded": "-%20Archive%20HTML%20reports%20(%60playwright-report/**/*%60)",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "a3babf",
+        "hash": "16f7679f",
+        "encoded": "-%20Archive%20screenshots%20(%60screenshots/**/*%60)",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "a3babf",
+        "hash": "45e967fc",
+        "encoded": "-%20Publish%20HTML%20report%20(viewable%20in%20Jenkins)",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "a3babf",
+        "hash": "e3c874a7",
+        "encoded": "-%20Publish%20JUnit%20results%20(test%20trend%20graphs)",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "a3babf",
+        "hash": "19f650dc",
+        "encoded": "###%20**Key%20Features:**",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "a3babf",
+        "hash": "d9b9570b",
+        "encoded": "%E2%9C%85%20**Windows%20Compatible**%20-%20Uses%20%60bat%60%20commands%20instead%20of%20%60sh%60",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "a3babf",
+        "hash": "d304c53b",
+        "encoded": "%E2%9C%85%20**Parameterized%20Builds**%20-%20User%20selects%20environment/browser/test%20type",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "a3babf",
+        "hash": "7b4c8c17",
+        "encoded": "%E2%9C%85%20**Environment-Specific%20URLs**%20-%20Different%20URLs%20for%20QA/UAT/STAGING",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "a3babf",
+        "hash": "e13f838f",
+        "encoded": "%E2%9C%85%20**Multi-Browser%20Support**%20-%20chromium,%20firefox,%20webkit",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "a3babf",
+        "hash": "f30ade7b",
+        "encoded": "%E2%9C%85%20**Test%20Filtering**%20-%20@smoke%20and%20@regression%20tags",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "a3babf",
+        "hash": "1930c712",
+        "encoded": "%E2%9C%85%20**Failure%20Handling**%20-%20Publishes%20reports%20even%20if%20tests%20fail",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "a3babf",
+        "hash": "ee76f3fe",
+        "encoded": "%E2%9C%85%20**Artifact%20Archiving**%20-%20Preserves%20all%20test%20outputs",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "a3babf",
+        "hash": "ff487dd3",
+        "encoded": "%E2%9C%85%20**Report%20Publishing**%20-%20HTML%20and%20JUnit%20reports%20in%20Jenkins%20UI",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "a3babf",
+        "hash": "5078e1c2",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "a3babf",
+        "hash": "01750ddb",
+        "encoded": "##%20%F0%9F%93%8A%20Environment%20Configuration",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "a3babf",
+        "hash": "e615c8ab",
+        "encoded": "###%20**playwright.config.ts%20-%20getBaseURL()%20Function:**",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "a3babf",
+        "hash": "18235831",
+        "encoded": "%60%60%60typescript",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "a3babf",
+        "hash": "5b85cbca",
+        "encoded": "function%20getBaseURL():%20string%20%7B",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "a3babf",
+        "hash": "d0add436",
+        "encoded": "const%20environment%20=%20process.env.ENVIRONMENT;",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "a3babf",
+        "hash": "eab9dc9f",
+        "encoded": "const%20environmentURLs:%20%7B%20%5Bkey:%20string%5D:%20string%20%7D%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "a3babf",
+        "hash": "42f7f476",
+        "encoded": "'QA':%20process.env.QA_BASE_URL%20%7C%7C%20'https://qa.theaa.com',",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "a3babf",
+        "hash": "d0be8622",
+        "encoded": "'UAT':%20process.env.UAT_BASE_URL%20%7C%7C%20'https://uat.theaa.com',",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "a3babf",
+        "hash": "de072560",
+        "encoded": "'STAGING':%20process.env.STAGING_BASE_URL%20%7C%7C%20'https://staging.theaa.com',",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "a3babf",
+        "hash": "98443038",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "a3babf",
+        "hash": "19f2fb5c",
+        "encoded": "if%20(environment%20&&%20environmentURLs%5Benvironment%5D)%20%7B",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "a3babf",
+        "hash": "1099f752",
+        "encoded": "return%20environmentURLs%5Benvironment%5D;",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "a3babf",
+        "hash": "8c67c4cf",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "a3babf",
+        "hash": "dff6bb2e",
+        "encoded": "return%20process.env.BASE_URL%20%7C%7C%20'https://www.theaa.com';",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "a3babf",
+        "hash": "a4ba47af",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "a3babf",
+        "hash": "6c46ab95",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "a3babf",
+        "hash": "3d1c921d",
+        "encoded": "###%20**How%20It%20Works:**",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "a3babf",
+        "hash": "8b0bba18",
+        "encoded": "1.%20Jenkins%20sets%20%60ENVIRONMENT=QA%60%20(or%20UAT/STAGING)",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "a3babf",
+        "hash": "1561b8ae",
+        "encoded": "2.%20%60getBaseURL()%60%20reads%20%60process.env.ENVIRONMENT%60",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "a3babf",
+        "hash": "6a5cd9e1",
+        "encoded": "3.%20Returns%20corresponding%20URL%20from%20mapping",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "a3babf",
+        "hash": "6f5be47a",
+        "encoded": "4.%20Falls%20back%20to%20%60BASE_URL%60%20if%20environment%20not%20set",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "a3babf",
+        "hash": "bd197b79",
+        "encoded": "5.%20Tests%20run%20against%20correct%20environment%20automatically",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "a3babf",
+        "hash": "bc685725",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "a3babf",
+        "hash": "d63fff19",
+        "encoded": "##%20%F0%9F%8F%B7%EF%B8%8F%20Test%20Tags%20Implementation",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "a3babf",
+        "hash": "9c278160",
+        "encoded": "###%20**Tag%20Strategy:**",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "a3babf",
+        "hash": "73e47cd3",
+        "encoded": "%60%60%60typescript",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "a3babf",
+        "hash": "74729a95",
+        "encoded": "//%20Smoke%20test%20-%20quick%20critical%20path%20validation",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "a3babf",
+        "hash": "ae1bd5f6",
+        "encoded": "test('@smoke%20should%20load%20AA%20homepage',%20async%20()%20=%3E%20%7B%20...%20%7D);",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "a3babf",
+        "hash": "96c287a2",
+        "encoded": "//%20Both%20smoke%20and%20regression",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "a3babf",
+        "hash": "4e3c064e",
+        "encoded": "test('@smoke%20@regression%20should%20verify%20navigation',%20async%20()%20=%3E%20%7B%20...%20%7D);",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "a3babf",
+        "hash": "eb136226",
+        "encoded": "//%20Regression%20only%20-%20detailed%20testing",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "a3babf",
+        "hash": "32d498fe",
+        "encoded": "test('@regression%20should%20demonstrate%20scrolling',%20async%20()%20=%3E%20%7B%20...%20%7D);",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "a3babf",
+        "hash": "e4f353ce",
+        "encoded": "//%20E2E%20regression%20test",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "a3babf",
+        "hash": "42c50c17",
+        "encoded": "test('@regression%20Navigate%20through%20breakdown%20cover%20flow',%20async%20()%20=%3E%20%7B%20...%20%7D);",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "a3babf",
+        "hash": "1e477eab",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "a3babf",
+        "hash": "c5bf284a",
+        "encoded": "###%20**Test%20Count:**",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "a3babf",
+        "hash": "a3234c30",
+        "encoded": "%7C%20Tag%20%7C%20Test%20Count%20%7C%20Files%20%7C",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "a3babf",
+        "hash": "1b41f0cf",
+        "encoded": "%7C-----%7C-----------%7C--------%7C",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "a3babf",
+        "hash": "cf02ec41",
+        "encoded": "%7C%20%60@smoke%60%20%7C%202%20tests%20%7C%20aa-website-pom.spec.ts%20%7C",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "a3babf",
+        "hash": "b74a8cd0",
+        "encoded": "%7C%20%60@regression%60%20%7C%204%20tests%20%7C%20aa-website-pom.spec.ts%20(3)%20+%20breakdownflowe2e.spec.ts%20(1)%20%7C",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "a3babf",
+        "hash": "5cb180a0",
+        "encoded": "###%20**NPM%20Scripts:**",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "a3babf",
+        "hash": "d377bbf9",
+        "encoded": "%60%60%60json",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "a3babf",
+        "hash": "94f8453a",
+        "encoded": "%22test:smoke%22:%20%22playwright%20test%20--grep%20@smoke%22",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "a3babf",
+        "hash": "913a7b5a",
+        "encoded": "%22test:regression%22:%20%22playwright%20test%20--grep%20@regression%22",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "a3babf",
+        "hash": "95e4a90e",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "a3babf",
+        "hash": "ba82d885",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "a3babf",
+        "hash": "8f4433c1",
+        "encoded": "##%20%E2%9A%A0%EF%B8%8F%20CRITICAL:%20Placeholder%20URLs",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "a3babf",
+        "hash": "4662f167",
+        "encoded": "###%20**You%20MUST%20Update%20These%20URLs:**",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "a3babf",
+        "hash": "38dec371",
+        "encoded": "**In%20%60playwright.config.ts%60%20(lines%2016-18):**",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "a3babf",
+        "hash": "e3e9f1e1",
+        "encoded": "%60%60%60typescript",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "a3babf",
+        "hash": "fa79ca09",
+        "encoded": "'QA':%20process.env.QA_BASE_URL%20%7C%7C%20'https://qa.theaa.com',%20%20%20%20%20%20%20%20%20//%20%E2%9A%A0%EF%B8%8F%20PLACEHOLDER",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "a3babf",
+        "hash": "cb1afcd5",
+        "encoded": "'UAT':%20process.env.UAT_BASE_URL%20%7C%7C%20'https://uat.theaa.com',%20%20%20%20%20%20//%20%E2%9A%A0%EF%B8%8F%20PLACEHOLDER",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "a3babf",
+        "hash": "03329dc9",
+        "encoded": "'STAGING':%20process.env.STAGING_BASE_URL%20%7C%7C%20'https://staging.theaa.com',%20%20//%20%E2%9A%A0%EF%B8%8F%20PLACEHOLDER",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "a3babf",
+        "hash": "b6f1c8b8",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "a3babf",
+        "hash": "92bb1f66",
+        "encoded": "**In%20%60.env.example%60%20(lines%2011-16):**",
+        "prevChunkIds": []
+      },
+      "171": {
+        "chunkId": "a3babf",
+        "hash": "e813cd51",
+        "encoded": "%60%60%60env",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "a3babf",
+        "hash": "a0474067",
+        "encoded": "QA_BASE_URL=https://qa.theaa.com%20%20%20%20%20%20%20%20%20%20#%20%E2%9A%A0%EF%B8%8F%20PLACEHOLDER",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "a3babf",
+        "hash": "8d772418",
+        "encoded": "UAT_BASE_URL=https://uat.theaa.com%20%20%20%20%20%20%20%20#%20%E2%9A%A0%EF%B8%8F%20PLACEHOLDER",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "a3babf",
+        "hash": "2fafbeec",
+        "encoded": "STAGING_BASE_URL=https://staging.theaa.com%20%20#%20%E2%9A%A0%EF%B8%8F%20PLACEHOLDER",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "a3babf",
+        "hash": "8cf1243a",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "a3babf",
+        "hash": "fa8b7596",
+        "encoded": "###%20**How%20to%20Update:**",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "a3babf",
+        "hash": "e4fc7d3f",
+        "encoded": "**Option%201:%20Direct%20Update%20(Recommended)**",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "a3babf",
+        "hash": "dd82fcbf",
+        "encoded": "%60%60%60typescript",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "a3babf",
+        "hash": "4e22c046",
+        "encoded": "'QA':%20'https://qa-environment.theaa.com',",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "a3babf",
+        "hash": "a1ba6ac0",
+        "encoded": "'UAT':%20'https://uat-environment.theaa.com',",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "a3babf",
+        "hash": "04f2838a",
+        "encoded": "'STAGING':%20'https://staging-environment.theaa.com',",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "a3babf",
+        "hash": "90b49a47",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "a3babf",
+        "hash": "9b5e1152",
+        "encoded": "**Option%202:%20Use%20Jenkins%20Environment%20Variables**",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "a3babf",
+        "hash": "e26e1c96",
+        "encoded": "%60%60%60groovy",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "a3babf",
+        "hash": "e116921a",
+        "encoded": "//%20In%20Jenkinsfile%20environment%20section:",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "a3babf",
+        "hash": "e1691e9e",
+        "encoded": "environment%20%7B",
+        "prevChunkIds": []
+      },
+      "190": {
+        "chunkId": "a3babf",
+        "hash": "3043b0f1",
+        "encoded": "QA_BASE_URL%20=%20'https://actual-qa-url.theaa.com'",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "a3babf",
+        "hash": "0605bb75",
+        "encoded": "UAT_BASE_URL%20=%20'https://actual-uat-url.theaa.com'",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "a3babf",
+        "hash": "1bca3975",
+        "encoded": "STAGING_BASE_URL%20=%20'https://actual-staging-url.theaa.com'",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "a3babf",
+        "hash": "675a30df",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "a3babf",
+        "hash": "cf0ca1be",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "a3babf",
+        "hash": "a52c0ae5",
+        "encoded": "**Option%203:%20Use%20Jenkins%20Credentials**",
+        "prevChunkIds": []
+      },
+      "197": {
+        "chunkId": "a3babf",
+        "hash": "e21076a7",
+        "encoded": "%60%60%60groovy",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "a3babf",
+        "hash": "52b01fc0",
+        "encoded": "environment%20%7B",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "a3babf",
+        "hash": "6defd8ce",
+        "encoded": "QA_BASE_URL%20=%20credentials('QA_BASE_URL_CREDENTIAL_ID')",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "a3babf",
+        "hash": "5c0d681d",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "201": {
+        "chunkId": "a3babf",
+        "hash": "eb317d26",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "a3babf",
+        "hash": "d39a8e31",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "205": {
+        "chunkId": "a3babf",
+        "hash": "0444c655",
+        "encoded": "##%20%F0%9F%94%90%20Jenkins%20Credentials%20(Optional)",
+        "prevChunkIds": []
+      },
+      "207": {
+        "chunkId": "a3babf",
+        "hash": "0610abfa",
+        "encoded": "###%20**If%20You%20Need%20to%20Secure%20Sensitive%20Data:**",
+        "prevChunkIds": []
+      },
+      "209": {
+        "chunkId": "a3babf",
+        "hash": "9a530044",
+        "encoded": "**Manual%20Setup%20Required:**",
+        "prevChunkIds": []
+      },
+      "211": {
+        "chunkId": "a3babf",
+        "hash": "ec390398",
+        "encoded": "1.%20Go%20to%20**Manage%20Jenkins%20%3E%20Manage%20Credentials**",
+        "prevChunkIds": []
+      },
+      "212": {
+        "chunkId": "a3babf",
+        "hash": "94b7ee21",
+        "encoded": "2.%20Add%20these%20credentials:",
+        "prevChunkIds": []
+      },
+      "214": {
+        "chunkId": "a3babf",
+        "hash": "402d9bf1",
+        "encoded": "%7C%20ID%20%7C%20Type%20%7C%20Value%20%7C%20Usage%20%7C",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "a3babf",
+        "hash": "dadf2f0b",
+        "encoded": "%7C----%7C------%7C-------%7C--------%7C",
+        "prevChunkIds": []
+      },
+      "216": {
+        "chunkId": "a3babf",
+        "hash": "44fc37f9",
+        "encoded": "%7C%20%60TEST_PASSWORD%60%20%7C%20Secret%20text%20%7C%20Your%20test%20password%20%7C%20Test%20user%20authentication%20%7C",
+        "prevChunkIds": []
+      },
+      "217": {
+        "chunkId": "a3babf",
+        "hash": "e13bbe0c",
+        "encoded": "%7C%20%60ADMIN_PASSWORD%60%20%7C%20Secret%20text%20%7C%20Your%20admin%20password%20%7C%20Admin%20user%20authentication%20%7C",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "a3babf",
+        "hash": "7242d71e",
+        "encoded": "%7C%20%60QA_BASE_URL%60%20%7C%20Secret%20text%20%7C%20Actual%20QA%20URL%20%7C%20QA%20environment%20(optional)%20%7C",
+        "prevChunkIds": []
+      },
+      "219": {
+        "chunkId": "a3babf",
+        "hash": "3a8ded1c",
+        "encoded": "%7C%20%60UAT_BASE_URL%60%20%7C%20Secret%20text%20%7C%20Actual%20UAT%20URL%20%7C%20UAT%20environment%20(optional)%20%7C",
+        "prevChunkIds": []
+      },
+      "221": {
+        "chunkId": "a3babf",
+        "hash": "e7a8a09b",
+        "encoded": "3.%20Update%20Jenkinsfile%20to%20use%20credentials:",
+        "prevChunkIds": []
+      },
+      "223": {
+        "chunkId": "a3babf",
+        "hash": "dcd6dd59",
+        "encoded": "%60%60%60groovy",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "a3babf",
+        "hash": "0ab1aba9",
+        "encoded": "environment%20%7B",
+        "prevChunkIds": []
+      },
+      "225": {
+        "chunkId": "a3babf",
+        "hash": "76a6fcf6",
+        "encoded": "TEST_PASSWORD%20=%20credentials('TEST_PASSWORD')",
+        "prevChunkIds": []
+      },
+      "226": {
+        "chunkId": "a3babf",
+        "hash": "dcbcecb8",
+        "encoded": "QA_BASE_URL%20=%20credentials('QA_BASE_URL')",
+        "prevChunkIds": []
+      },
+      "227": {
+        "chunkId": "a3babf",
+        "hash": "30e86338",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "a3babf",
+        "hash": "8ca43f90",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "a3babf",
+        "hash": "94193f23",
+        "encoded": "**Note:**%20Currently%20NOT%20used%20in%20Jenkinsfile.%20Add%20if%20needed.",
+        "prevChunkIds": []
+      },
+      "232": {
+        "chunkId": "a3babf",
+        "hash": "f6a11619",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "234": {
+        "chunkId": "a3babf",
+        "hash": "a376c72a",
+        "encoded": "##%20%F0%9F%9B%A0%EF%B8%8F%20Required%20Jenkins%20Configuration",
+        "prevChunkIds": []
+      },
+      "236": {
+        "chunkId": "a3babf",
+        "hash": "510a9b8b",
+        "encoded": "###%20**1.%20Plugins%20to%20Install:**",
+        "prevChunkIds": []
+      },
+      "238": {
+        "chunkId": "a3babf",
+        "hash": "546cd3c4",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "239": {
+        "chunkId": "a3babf",
+        "hash": "e483dd0f",
+        "encoded": "%E2%98%91%EF%B8%8F%20Pipeline",
+        "prevChunkIds": []
+      },
+      "240": {
+        "chunkId": "a3babf",
+        "hash": "d707eb31",
+        "encoded": "%E2%98%91%EF%B8%8F%20Git",
+        "prevChunkIds": []
+      },
+      "241": {
+        "chunkId": "a3babf",
+        "hash": "827e9937",
+        "encoded": "%E2%98%91%EF%B8%8F%20NodeJS%20Plugin",
+        "prevChunkIds": []
+      },
+      "242": {
+        "chunkId": "a3babf",
+        "hash": "3a55c7a2",
+        "encoded": "%E2%98%91%EF%B8%8F%20HTML%20Publisher",
+        "prevChunkIds": []
+      },
+      "243": {
+        "chunkId": "a3babf",
+        "hash": "0f48b689",
+        "encoded": "%E2%98%91%EF%B8%8F%20JUnit",
+        "prevChunkIds": []
+      },
+      "244": {
+        "chunkId": "a3babf",
+        "hash": "a07905f8",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "246": {
+        "chunkId": "a3babf",
+        "hash": "7457e56b",
+        "encoded": "**Installation:**",
+        "prevChunkIds": []
+      },
+      "247": {
+        "chunkId": "a3babf",
+        "hash": "4f560dd2",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "248": {
+        "chunkId": "a3babf",
+        "hash": "c6ece958",
+        "encoded": "Manage%20Jenkins%20%3E%20Manage%20Plugins%20%3E%20Available%20tab",
+        "prevChunkIds": []
+      },
+      "249": {
+        "chunkId": "a3babf",
+        "hash": "5f8c33dd",
+        "encoded": "%E2%86%92%20Search%20for%20each%20plugin",
+        "prevChunkIds": []
+      },
+      "250": {
+        "chunkId": "a3babf",
+        "hash": "f8222678",
+        "encoded": "%E2%86%92%20Install%20without%20restart",
+        "prevChunkIds": []
+      },
+      "251": {
+        "chunkId": "a3babf",
+        "hash": "f235f25a",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "253": {
+        "chunkId": "a3babf",
+        "hash": "5b27adeb",
+        "encoded": "###%20**2.%20NodeJS%20Tool%20Configuration:**",
+        "prevChunkIds": []
+      },
+      "255": {
+        "chunkId": "a3babf",
+        "hash": "8d10b30d",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "256": {
+        "chunkId": "a3babf",
+        "hash": "2a07265b",
+        "encoded": "Manage%20Jenkins%20%3E%20Global%20Tool%20Configuration%20%3E%20NodeJS",
+        "prevChunkIds": []
+      },
+      "257": {
+        "chunkId": "a3babf",
+        "hash": "dcd80c20",
+        "encoded": "%E2%86%92%20Add%20NodeJS",
+        "prevChunkIds": []
+      },
+      "258": {
+        "chunkId": "a3babf",
+        "hash": "1e778cee",
+        "encoded": "%E2%86%92%20Name:%20NodeJS%2018%20%20(MUST%20match%20Jenkinsfile)",
+        "prevChunkIds": []
+      },
+      "259": {
+        "chunkId": "a3babf",
+        "hash": "65baaf44",
+        "encoded": "%E2%86%92%20Version:%2018.x%20or%20higher",
+        "prevChunkIds": []
+      },
+      "260": {
+        "chunkId": "a3babf",
+        "hash": "47ed7a09",
+        "encoded": "%E2%86%92%20Save",
+        "prevChunkIds": []
+      },
+      "261": {
+        "chunkId": "a3babf",
+        "hash": "d17316a1",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "263": {
+        "chunkId": "a3babf",
+        "hash": "e5805bc9",
+        "encoded": "###%20**3.%20Create%20Pipeline%20Job:**",
+        "prevChunkIds": []
+      },
+      "265": {
+        "chunkId": "a3babf",
+        "hash": "ef0a7754",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "266": {
+        "chunkId": "a3babf",
+        "hash": "a65690bf",
+        "encoded": "Jenkins%20Dashboard%20%3E%20New%20Item",
+        "prevChunkIds": []
+      },
+      "267": {
+        "chunkId": "a3babf",
+        "hash": "9ff39932",
+        "encoded": "%E2%86%92%20Name:%20Playwright-AA-Tests",
+        "prevChunkIds": []
+      },
+      "268": {
+        "chunkId": "a3babf",
+        "hash": "97bd878d",
+        "encoded": "%E2%86%92%20Type:%20Pipeline",
+        "prevChunkIds": []
+      },
+      "269": {
+        "chunkId": "a3babf",
+        "hash": "067f7a3a",
+        "encoded": "%E2%86%92%20OK",
+        "prevChunkIds": []
+      },
+      "271": {
+        "chunkId": "a3babf",
+        "hash": "c0900ef2",
+        "encoded": "Pipeline%20Configuration:",
+        "prevChunkIds": []
+      },
+      "272": {
+        "chunkId": "a3babf",
+        "hash": "0ea48d90",
+        "encoded": "%E2%86%92%20Definition:%20Pipeline%20script%20from%20SCM",
+        "prevChunkIds": []
+      },
+      "273": {
+        "chunkId": "a3babf",
+        "hash": "11a1046a",
+        "encoded": "%E2%86%92%20SCM:%20Git",
+        "prevChunkIds": []
+      },
+      "274": {
+        "chunkId": "a3babf",
+        "hash": "c9953196",
+        "encoded": "%E2%86%92%20Repository%20URL:%20%3Cyour-git-repo-url%3E",
+        "prevChunkIds": []
+      },
+      "275": {
+        "chunkId": "a3babf",
+        "hash": "9de18be1",
+        "encoded": "%E2%86%92%20Branch%20Specifier:%20*/main",
+        "prevChunkIds": []
+      },
+      "276": {
+        "chunkId": "a3babf",
+        "hash": "0e81111f",
+        "encoded": "%E2%86%92%20Script%20Path:%20Jenkinsfile",
+        "prevChunkIds": []
+      },
+      "277": {
+        "chunkId": "a3babf",
+        "hash": "89e9880a",
+        "encoded": "%E2%86%92%20Save",
+        "prevChunkIds": []
+      },
+      "278": {
+        "chunkId": "a3babf",
+        "hash": "817b1145",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "280": {
+        "chunkId": "a3babf",
+        "hash": "fdd3114e",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "282": {
+        "chunkId": "a3babf",
+        "hash": "7c7782ba",
+        "encoded": "##%20%F0%9F%9A%80%20Example%20Usage",
+        "prevChunkIds": []
+      },
+      "284": {
+        "chunkId": "a3babf",
+        "hash": "5fe920e7",
+        "encoded": "###%20**Example%201:%20QA%20Smoke%20Tests%20on%20Chrome**",
+        "prevChunkIds": []
+      },
+      "286": {
+        "chunkId": "a3babf",
+        "hash": "3fd509d8",
+        "encoded": "**Jenkins%20Build%20Parameters:**",
+        "prevChunkIds": []
+      },
+      "287": {
+        "chunkId": "a3babf",
+        "hash": "6f3cb00a",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "288": {
+        "chunkId": "a3babf",
+        "hash": "2231f6ad",
+        "encoded": "ENVIRONMENT:%20QA",
+        "prevChunkIds": []
+      },
+      "289": {
+        "chunkId": "a3babf",
+        "hash": "addb79d2",
+        "encoded": "BROWSER:%20chromium",
+        "prevChunkIds": []
+      },
+      "290": {
+        "chunkId": "a3babf",
+        "hash": "04f2b94d",
+        "encoded": "TEST_TYPE:%20smoke",
+        "prevChunkIds": []
+      },
+      "291": {
+        "chunkId": "a3babf",
+        "hash": "b0361828",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "293": {
+        "chunkId": "a3babf",
+        "hash": "67ffa490",
+        "encoded": "**What%20Happens:**",
+        "prevChunkIds": []
+      },
+      "294": {
+        "chunkId": "a3babf",
+        "hash": "30ee7219",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "295": {
+        "chunkId": "a3babf",
+        "hash": "ca231afe",
+        "encoded": "#%20Environment%20variable%20set",
+        "prevChunkIds": []
+      },
+      "296": {
+        "chunkId": "a3babf",
+        "hash": "56c2040b",
+        "encoded": "ENVIRONMENT=QA",
+        "prevChunkIds": []
+      },
+      "298": {
+        "chunkId": "a3babf",
+        "hash": "5a6d4da0",
+        "encoded": "#%20URL%20selected%20by%20getBaseURL()",
+        "prevChunkIds": []
+      },
+      "299": {
+        "chunkId": "a3babf",
+        "hash": "38ba21b1",
+        "encoded": "BaseURL:%20https://qa.theaa.com",
+        "prevChunkIds": []
+      },
+      "301": {
+        "chunkId": "a3babf",
+        "hash": "f7df6e73",
+        "encoded": "#%20Command%20executed",
+        "prevChunkIds": []
+      },
+      "302": {
+        "chunkId": "a3babf",
+        "hash": "9ec4e97f",
+        "encoded": "npm%20run%20test:smoke%20--%20--project=chromium",
+        "prevChunkIds": []
+      },
+      "304": {
+        "chunkId": "a3babf",
+        "hash": "0abfbcda",
+        "encoded": "#%20Tests%20run",
+        "prevChunkIds": []
+      },
+      "305": {
+        "chunkId": "a3babf",
+        "hash": "529aae52",
+        "encoded": "-%20@smoke%20should%20load%20AA%20homepage",
+        "prevChunkIds": []
+      },
+      "306": {
+        "chunkId": "a3babf",
+        "hash": "2e0c4a2b",
+        "encoded": "-%20@smoke%20@regression%20should%20verify%20navigation%20menu",
+        "prevChunkIds": []
+      },
+      "308": {
+        "chunkId": "a3babf",
+        "hash": "eed1117c",
+        "encoded": "#%20Duration",
+        "prevChunkIds": []
+      },
+      "309": {
+        "chunkId": "a3babf",
+        "hash": "4645dd20",
+        "encoded": "~30%20seconds",
+        "prevChunkIds": []
+      },
+      "310": {
+        "chunkId": "a3babf",
+        "hash": "242d232e",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "312": {
+        "chunkId": "a3babf",
+        "hash": "fe854872",
+        "encoded": "###%20**Example%202:%20UAT%20Regression%20Tests%20on%20Firefox**",
+        "prevChunkIds": []
+      },
+      "314": {
+        "chunkId": "a3babf",
+        "hash": "cc59310e",
+        "encoded": "**Jenkins%20Build%20Parameters:**",
+        "prevChunkIds": []
+      },
+      "315": {
+        "chunkId": "a3babf",
+        "hash": "da9d98fc",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "316": {
+        "chunkId": "a3babf",
+        "hash": "c05a6303",
+        "encoded": "ENVIRONMENT:%20UAT",
+        "prevChunkIds": []
+      },
+      "317": {
+        "chunkId": "a3babf",
+        "hash": "75f63174",
+        "encoded": "BROWSER:%20firefox",
+        "prevChunkIds": []
+      },
+      "318": {
+        "chunkId": "a3babf",
+        "hash": "fc303fef",
+        "encoded": "TEST_TYPE:%20regression",
+        "prevChunkIds": []
+      },
+      "319": {
+        "chunkId": "a3babf",
+        "hash": "d82b9d3f",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "321": {
+        "chunkId": "a3babf",
+        "hash": "40a0a239",
+        "encoded": "**What%20Happens:**",
+        "prevChunkIds": []
+      },
+      "322": {
+        "chunkId": "a3babf",
+        "hash": "40e495bc",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "323": {
+        "chunkId": "a3babf",
+        "hash": "c64cd0f7",
+        "encoded": "#%20Environment%20variable%20set",
+        "prevChunkIds": []
+      },
+      "324": {
+        "chunkId": "a3babf",
+        "hash": "d5ddf81f",
+        "encoded": "ENVIRONMENT=UAT",
+        "prevChunkIds": []
+      },
+      "326": {
+        "chunkId": "a3babf",
+        "hash": "002e06aa",
+        "encoded": "#%20URL%20selected%20by%20getBaseURL()",
+        "prevChunkIds": []
+      },
+      "327": {
+        "chunkId": "a3babf",
+        "hash": "302afcdb",
+        "encoded": "BaseURL:%20https://uat.theaa.com",
+        "prevChunkIds": []
+      },
+      "329": {
+        "chunkId": "a3babf",
+        "hash": "0f0e178d",
+        "encoded": "#%20Command%20executed",
+        "prevChunkIds": []
+      },
+      "330": {
+        "chunkId": "a3babf",
+        "hash": "fc6e7684",
+        "encoded": "npm%20run%20test:regression%20--%20--project=firefox",
+        "prevChunkIds": []
+      },
+      "332": {
+        "chunkId": "a3babf",
+        "hash": "ed28703b",
+        "encoded": "#%20Tests%20run",
+        "prevChunkIds": []
+      },
+      "333": {
+        "chunkId": "a3babf",
+        "hash": "0c9317fa",
+        "encoded": "-%20@smoke%20@regression%20should%20verify%20navigation%20menu",
+        "prevChunkIds": []
+      },
+      "334": {
+        "chunkId": "a3babf",
+        "hash": "daecb6d7",
+        "encoded": "-%20@regression%20should%20demonstrate%20scrolling",
+        "prevChunkIds": []
+      },
+      "335": {
+        "chunkId": "a3babf",
+        "hash": "2ad88973",
+        "encoded": "-%20@regression%20Navigate%20through%20breakdown%20cover%20flow",
+        "prevChunkIds": []
+      },
+      "337": {
+        "chunkId": "a3babf",
+        "hash": "e6cf0c4d",
+        "encoded": "#%20Duration",
+        "prevChunkIds": []
+      },
+      "338": {
+        "chunkId": "a3babf",
+        "hash": "0e64d2d6",
+        "encoded": "~2%20minutes",
+        "prevChunkIds": []
+      },
+      "339": {
+        "chunkId": "a3babf",
+        "hash": "82a512ce",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "341": {
+        "chunkId": "a3babf",
+        "hash": "cbee60bc",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "343": {
+        "chunkId": "a3babf",
+        "hash": "118b68f1",
+        "encoded": "##%20%F0%9F%93%8A%20Test%20Execution%20Matrix",
+        "prevChunkIds": []
+      },
+      "345": {
+        "chunkId": "a3babf",
+        "hash": "db597f5c",
+        "encoded": "%7C%20Environment%20%7C%20Browser%20%7C%20Test%20Type%20%7C%20Tests%20%7C%20Duration%20%7C",
+        "prevChunkIds": []
+      },
+      "346": {
+        "chunkId": "a3babf",
+        "hash": "d228e125",
+        "encoded": "%7C-------------%7C---------%7C-----------%7C-------%7C----------%7C",
+        "prevChunkIds": []
+      },
+      "347": {
+        "chunkId": "a3babf",
+        "hash": "14f0e2e9",
+        "encoded": "%7C%20QA%20%7C%20chromium%20%7C%20smoke%20%7C%202%20%7C%20~30s%20%7C",
+        "prevChunkIds": []
+      },
+      "348": {
+        "chunkId": "a3babf",
+        "hash": "67f4f13f",
+        "encoded": "%7C%20QA%20%7C%20firefox%20%7C%20smoke%20%7C%202%20%7C%20~35s%20%7C",
+        "prevChunkIds": []
+      },
+      "349": {
+        "chunkId": "a3babf",
+        "hash": "c2e66f79",
+        "encoded": "%7C%20QA%20%7C%20webkit%20%7C%20smoke%20%7C%202%20%7C%20~40s%20%7C",
+        "prevChunkIds": []
+      },
+      "350": {
+        "chunkId": "a3babf",
+        "hash": "97a3c1f9",
+        "encoded": "%7C%20UAT%20%7C%20chromium%20%7C%20regression%20%7C%204%20%7C%20~2m%20%7C",
+        "prevChunkIds": []
+      },
+      "351": {
+        "chunkId": "a3babf",
+        "hash": "1be9332b",
+        "encoded": "%7C%20UAT%20%7C%20firefox%20%7C%20regression%20%7C%204%20%7C%20~2.5m%20%7C",
+        "prevChunkIds": []
+      },
+      "352": {
+        "chunkId": "a3babf",
+        "hash": "8deda5de",
+        "encoded": "%7C%20UAT%20%7C%20webkit%20%7C%20regression%20%7C%204%20%7C%20~3m%20%7C",
+        "prevChunkIds": []
+      },
+      "353": {
+        "chunkId": "a3babf",
+        "hash": "e4c8aa69",
+        "encoded": "%7C%20STAGING%20%7C%20chromium%20%7C%20smoke%20%7C%202%20%7C%20~30s%20%7C",
+        "prevChunkIds": []
+      },
+      "354": {
+        "chunkId": "a3babf",
+        "hash": "74b2675a",
+        "encoded": "%7C%20STAGING%20%7C%20firefox%20%7C%20regression%20%7C%204%20%7C%20~2.5m%20%7C",
+        "prevChunkIds": []
+      },
+      "356": {
+        "chunkId": "a3babf",
+        "hash": "7904af21",
+        "encoded": "**Total%20possible%20combinations:**%203%20environments%20%C3%97%203%20browsers%20%C3%97%202%20test%20types%20=%20**18%20configurations**",
+        "prevChunkIds": []
+      },
+      "358": {
+        "chunkId": "a3babf",
+        "hash": "d0d67c4c",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "360": {
+        "chunkId": "a3babf",
+        "hash": "99ea9dd1",
+        "encoded": "##%20%F0%9F%93%8A%20Changes%20Made%20to%20Existing%20Code",
+        "prevChunkIds": []
+      },
+      "362": {
+        "chunkId": "a3babf",
+        "hash": "fe0f3fdf",
+        "encoded": "###%20**playwright.config.ts:**",
+        "prevChunkIds": []
+      },
+      "364": {
+        "chunkId": "a3babf",
+        "hash": "ff440158",
+        "encoded": "%60%60%60diff",
+        "prevChunkIds": []
+      },
+      "365": {
+        "chunkId": "a3babf",
+        "hash": "5a0f1061",
+        "encoded": "+%20import%20%7B%20defineConfig,%20devices%20%7D%20from%20'@playwright/test';",
+        "prevChunkIds": []
+      },
+      "366": {
+        "chunkId": "a3babf",
+        "hash": "5501d12b",
+        "encoded": "+%20import%20dotenv%20from%20'dotenv';",
+        "prevChunkIds": []
+      },
+      "367": {
+        "chunkId": "a3babf",
+        "hash": "86330171",
+        "encoded": "+%20dotenv.config();",
+        "prevChunkIds": []
+      },
+      "369": {
+        "chunkId": "a3babf",
+        "hash": "e898f10f",
+        "encoded": "+%20/**",
+        "prevChunkIds": []
+      },
+      "370": {
+        "chunkId": "a3babf",
+        "hash": "0db1be42",
+        "encoded": "+%20%20*%20Get%20environment-specific%20base%20URL",
+        "prevChunkIds": []
+      },
+      "371": {
+        "chunkId": "a3babf",
+        "hash": "c480b3b7",
+        "encoded": "+%20%20*/",
+        "prevChunkIds": []
+      },
+      "372": {
+        "chunkId": "a3babf",
+        "hash": "f6133788",
+        "encoded": "+%20function%20getBaseURL():%20string%20%7B",
+        "prevChunkIds": []
+      },
+      "373": {
+        "chunkId": "a3babf",
+        "hash": "dc949cbb",
+        "encoded": "+%20%20%20const%20environment%20=%20process.env.ENVIRONMENT;",
+        "prevChunkIds": []
+      },
+      "374": {
+        "chunkId": "a3babf",
+        "hash": "3b8f8236",
+        "encoded": "+%20%20%20const%20environmentURLs%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "375": {
+        "chunkId": "a3babf",
+        "hash": "45a66bde",
+        "encoded": "+%20%20%20%20%20'QA':%20process.env.QA_BASE_URL%20%7C%7C%20'https://qa.theaa.com',",
+        "prevChunkIds": []
+      },
+      "376": {
+        "chunkId": "a3babf",
+        "hash": "aa9b2f7e",
+        "encoded": "+%20%20%20%20%20'UAT':%20process.env.UAT_BASE_URL%20%7C%7C%20'https://uat.theaa.com',",
+        "prevChunkIds": []
+      },
+      "377": {
+        "chunkId": "a3babf",
+        "hash": "92b1ec5b",
+        "encoded": "+%20%20%20%20%20'STAGING':%20process.env.STAGING_BASE_URL%20%7C%7C%20'https://staging.theaa.com',",
+        "prevChunkIds": []
+      },
+      "378": {
+        "chunkId": "a3babf",
+        "hash": "6a923ce0",
+        "encoded": "+%20%20%20%7D;",
+        "prevChunkIds": []
+      },
+      "379": {
+        "chunkId": "a3babf",
+        "hash": "e54205dd",
+        "encoded": "+%20%20%20if%20(environment%20&&%20environmentURLs%5Benvironment%5D)%20%7B",
+        "prevChunkIds": []
+      },
+      "380": {
+        "chunkId": "a3babf",
+        "hash": "25338636",
+        "encoded": "+%20%20%20%20%20return%20environmentURLs%5Benvironment%5D;",
+        "prevChunkIds": []
+      },
+      "381": {
+        "chunkId": "a3babf",
+        "hash": "6206a6d7",
+        "encoded": "+%20%20%20%7D",
+        "prevChunkIds": []
+      },
+      "382": {
+        "chunkId": "a3babf",
+        "hash": "ea64ce60",
+        "encoded": "+%20%20%20return%20process.env.BASE_URL%20%7C%7C%20'https://www.theaa.com';",
+        "prevChunkIds": []
+      },
+      "383": {
+        "chunkId": "a3babf",
+        "hash": "8a9d04d5",
+        "encoded": "+%20%7D",
+        "prevChunkIds": []
+      },
+      "385": {
+        "chunkId": "a3babf",
+        "hash": "748296e1",
+        "encoded": "use:%20%7B",
+        "prevChunkIds": []
+      },
+      "386": {
+        "chunkId": "a3babf",
+        "hash": "5c7ccf20",
+        "encoded": "-%20%20%20baseURL:%20process.env.BASE_URL%20%7C%7C%20'https://www.theaa.com',",
+        "prevChunkIds": []
+      },
+      "387": {
+        "chunkId": "a3babf",
+        "hash": "5c51787d",
+        "encoded": "+%20%20%20baseURL:%20getBaseURL(),",
+        "prevChunkIds": []
+      },
+      "388": {
+        "chunkId": "a3babf",
+        "hash": "afa4bbc2",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "390": {
+        "chunkId": "a3babf",
+        "hash": "bb6a0f3a",
+        "encoded": "projects:%20%5B",
+        "prevChunkIds": []
+      },
+      "391": {
+        "chunkId": "a3babf",
+        "hash": "0a7dfea7",
+        "encoded": "%7B%20name:%20'chromium',%20use:%20%7B%20...devices%5B'Desktop%20Chrome'%5D%20%7D%20%7D,",
+        "prevChunkIds": []
+      },
+      "392": {
+        "chunkId": "a3babf",
+        "hash": "9662f7bb",
+        "encoded": "+%20%20%20%7B%20name:%20'firefox',%20use:%20%7B%20...devices%5B'Desktop%20Firefox'%5D%20%7D%20%7D,",
+        "prevChunkIds": []
+      },
+      "393": {
+        "chunkId": "a3babf",
+        "hash": "c68e64ee",
+        "encoded": "+%20%20%20%7B%20name:%20'webkit',%20use:%20%7B%20...devices%5B'Desktop%20Safari'%5D%20%7D%20%7D,",
+        "prevChunkIds": []
+      },
+      "394": {
+        "chunkId": "a3babf",
+        "hash": "0805544d",
+        "encoded": "%5D,",
+        "prevChunkIds": []
+      },
+      "395": {
+        "chunkId": "a3babf",
+        "hash": "089d888a",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "397": {
+        "chunkId": "a3babf",
+        "hash": "a390a3cb",
+        "encoded": "###%20**package.json:**",
+        "prevChunkIds": []
+      },
+      "399": {
+        "chunkId": "a3babf",
+        "hash": "e899af67",
+        "encoded": "%60%60%60diff",
+        "prevChunkIds": []
+      },
+      "400": {
+        "chunkId": "a3babf",
+        "hash": "7387af8c",
+        "encoded": "%22scripts%22:%20%7B",
+        "prevChunkIds": []
+      },
+      "401": {
+        "chunkId": "a3babf",
+        "hash": "8af2f45c",
+        "encoded": "%22test%22:%20%22playwright%20test%22,",
+        "prevChunkIds": []
+      },
+      "402": {
+        "chunkId": "a3babf",
+        "hash": "7c6513d5",
+        "encoded": "%22test:headed%22:%20%22playwright%20test%20--headed%22,",
+        "prevChunkIds": []
+      },
+      "403": {
+        "chunkId": "a3babf",
+        "hash": "2c01a1a9",
+        "encoded": "%22test:chromium%22:%20%22playwright%20test%20--project=chromium%22,",
+        "prevChunkIds": []
+      },
+      "404": {
+        "chunkId": "a3babf",
+        "hash": "7318299b",
+        "encoded": "+%20%20%20%22test:smoke%22:%20%22playwright%20test%20--grep%20@smoke%22,",
+        "prevChunkIds": []
+      },
+      "405": {
+        "chunkId": "a3babf",
+        "hash": "e87ba3c4",
+        "encoded": "+%20%20%20%22test:regression%22:%20%22playwright%20test%20--grep%20@regression%22",
+        "prevChunkIds": []
+      },
+      "406": {
+        "chunkId": "a3babf",
+        "hash": "45e628b1",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "407": {
+        "chunkId": "a3babf",
+        "hash": "7ad8a11e",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "409": {
+        "chunkId": "a3babf",
+        "hash": "ddd61ddf",
+        "encoded": "###%20**Test%20Files:**",
+        "prevChunkIds": []
+      },
+      "411": {
+        "chunkId": "a3babf",
+        "hash": "bb10c36a",
+        "encoded": "%60%60%60diff",
+        "prevChunkIds": []
+      },
+      "412": {
+        "chunkId": "a3babf",
+        "hash": "964a54d2",
+        "encoded": "-%20test('should%20load%20AA%20homepage',%20async%20(%7B%20page%20%7D)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "413": {
+        "chunkId": "a3babf",
+        "hash": "a478e8d1",
+        "encoded": "+%20test('@smoke%20should%20load%20AA%20homepage',%20async%20(%7B%20page%20%7D)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "415": {
+        "chunkId": "a3babf",
+        "hash": "8d9c8617",
+        "encoded": "-%20test('should%20verify%20navigation%20menu',%20async%20(%7B%20page%20%7D)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "416": {
+        "chunkId": "a3babf",
+        "hash": "6214b680",
+        "encoded": "+%20test('@smoke%20@regression%20should%20verify%20navigation%20menu',%20async%20(%7B%20page%20%7D)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "418": {
+        "chunkId": "a3babf",
+        "hash": "66336e43",
+        "encoded": "-%20test('should%20demonstrate%20scrolling',%20async%20(%7B%20page%20%7D)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "419": {
+        "chunkId": "a3babf",
+        "hash": "15cf7c27",
+        "encoded": "+%20test('@regression%20should%20demonstrate%20scrolling',%20async%20(%7B%20page%20%7D)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "421": {
+        "chunkId": "a3babf",
+        "hash": "ffa97a48",
+        "encoded": "-%20test('Navigate%20through%20breakdown%20cover%20flow',%20async%20(%7B%20page%20%7D)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "422": {
+        "chunkId": "a3babf",
+        "hash": "b1857384",
+        "encoded": "+%20test('@regression%20Navigate%20through%20breakdown%20cover%20flow',%20async%20(%7B%20page%20%7D)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "423": {
+        "chunkId": "a3babf",
+        "hash": "0e10142b",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "425": {
+        "chunkId": "a3babf",
+        "hash": "690b09f0",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "427": {
+        "chunkId": "a3babf",
+        "hash": "ece0b2ef",
+        "encoded": "##%20%E2%9C%94%EF%B8%8F%20Implementation%20Checklist",
+        "prevChunkIds": []
+      },
+      "429": {
+        "chunkId": "a3babf",
+        "hash": "84e7110d",
+        "encoded": "###%20**%E2%9C%85%20Completed:**",
+        "prevChunkIds": []
+      },
+      "431": {
+        "chunkId": "a3babf",
+        "hash": "dcf4d23e",
+        "encoded": "-%20%5Bx%5D%20Created%20Jenkinsfile%20with%20declarative%20pipeline%20syntax",
+        "prevChunkIds": []
+      },
+      "432": {
+        "chunkId": "a3babf",
+        "hash": "1fce37c8",
+        "encoded": "-%20%5Bx%5D%20Added%20build%20parameters%20(ENVIRONMENT,%20BROWSER,%20TEST_TYPE)",
+        "prevChunkIds": []
+      },
+      "433": {
+        "chunkId": "a3babf",
+        "hash": "17ff4789",
+        "encoded": "-%20%5Bx%5D%20Configured%20pipeline%20stages%20(Checkout,%20Verify,%20Install,%20Execute)",
+        "prevChunkIds": []
+      },
+      "434": {
+        "chunkId": "a3babf",
+        "hash": "84cc0a88",
+        "encoded": "-%20%5Bx%5D%20Used%20Windows-compatible%20commands%20(%60bat%60)",
+        "prevChunkIds": []
+      },
+      "435": {
+        "chunkId": "a3babf",
+        "hash": "e4326e23",
+        "encoded": "-%20%5Bx%5D%20Added%20environment-specific%20URL%20mapping",
+        "prevChunkIds": []
+      },
+      "436": {
+        "chunkId": "a3babf",
+        "hash": "6fbd9e3b",
+        "encoded": "-%20%5Bx%5D%20Enabled%20firefox%20and%20webkit%20browsers",
+        "prevChunkIds": []
+      },
+      "437": {
+        "chunkId": "a3babf",
+        "hash": "f11ba7ca",
+        "encoded": "-%20%5Bx%5D%20Added%20@smoke%20and%20@regression%20tags%20to%20tests",
+        "prevChunkIds": []
+      },
+      "438": {
+        "chunkId": "a3babf",
+        "hash": "4f405f58",
+        "encoded": "-%20%5Bx%5D%20Created%20npm%20scripts%20for%20smoke/regression",
+        "prevChunkIds": []
+      },
+      "439": {
+        "chunkId": "a3babf",
+        "hash": "12179c1d",
+        "encoded": "-%20%5Bx%5D%20Configured%20report%20publishing%20(HTML%20+%20JUnit)",
+        "prevChunkIds": []
+      },
+      "440": {
+        "chunkId": "a3babf",
+        "hash": "88dc4622",
+        "encoded": "-%20%5Bx%5D%20Added%20artifact%20archiving",
+        "prevChunkIds": []
+      },
+      "441": {
+        "chunkId": "a3babf",
+        "hash": "a7264387",
+        "encoded": "-%20%5Bx%5D%20Implemented%20failure%20handling%20(catchError)",
+        "prevChunkIds": []
+      },
+      "442": {
+        "chunkId": "a3babf",
+        "hash": "e33c579a",
+        "encoded": "-%20%5Bx%5D%20Created%20comprehensive%20documentation",
+        "prevChunkIds": []
+      },
+      "444": {
+        "chunkId": "a3babf",
+        "hash": "fc315edc",
+        "encoded": "###%20**%E2%9A%A0%EF%B8%8F%20Manual%20Steps%20Required:**",
+        "prevChunkIds": []
+      },
+      "446": {
+        "chunkId": "a3babf",
+        "hash": "eaff2413",
+        "encoded": "-%20%5B%20%5D%20Install%20Jenkins%20plugins%20(Pipeline,%20Git,%20NodeJS,%20HTML%20Publisher,%20JUnit)",
+        "prevChunkIds": []
+      },
+      "447": {
+        "chunkId": "a3babf",
+        "hash": "913ef089",
+        "encoded": "-%20%5B%20%5D%20Configure%20NodeJS%2018%20in%20Global%20Tool%20Configuration",
+        "prevChunkIds": []
+      },
+      "448": {
+        "chunkId": "a3babf",
+        "hash": "89e20ceb",
+        "encoded": "-%20%5B%20%5D%20Create%20Jenkins%20pipeline%20job",
+        "prevChunkIds": []
+      },
+      "449": {
+        "chunkId": "a3babf",
+        "hash": "4ca6ab5b",
+        "encoded": "-%20%5B%20%5D%20Update%20placeholder%20URLs%20in%20playwright.config.ts",
+        "prevChunkIds": []
+      },
+      "450": {
+        "chunkId": "a3babf",
+        "hash": "8127a619",
+        "encoded": "-%20%5B%20%5D%20(Optional)%20Create%20Jenkins%20credentials%20for%20sensitive%20data",
+        "prevChunkIds": []
+      },
+      "451": {
+        "chunkId": "a3babf",
+        "hash": "76eb33ea",
+        "encoded": "-%20%5B%20%5D%20Run%20first%20build%20to%20initialize%20parameters",
+        "prevChunkIds": []
+      },
+      "453": {
+        "chunkId": "a3babf",
+        "hash": "dfb48d4e",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "455": {
+        "chunkId": "a3babf",
+        "hash": "2e4089a3",
+        "encoded": "##%20%F0%9F%93%9A%20Documentation%20Files",
+        "prevChunkIds": []
+      },
+      "457": {
+        "chunkId": "a3babf",
+        "hash": "70df022f",
+        "encoded": "%7C%20File%20%7C%20Purpose%20%7C",
+        "prevChunkIds": []
+      },
+      "458": {
+        "chunkId": "a3babf",
+        "hash": "953c687a",
+        "encoded": "%7C------%7C----------%7C",
+        "prevChunkIds": []
+      },
+      "459": {
+        "chunkId": "a3babf",
+        "hash": "ed1bdabe",
+        "encoded": "%7C%20**JENKINS_CI_SETUP_GUIDE.md**%20%7C%20Complete%20setup%20guide%20with%20step-by-step%20instructions%20%7C",
+        "prevChunkIds": []
+      },
+      "460": {
+        "chunkId": "a3babf",
+        "hash": "388c5fc9",
+        "encoded": "%7C%20**JENKINS_QUICK_REFERENCE.md**%20%7C%20Quick%20reference%20for%20common%20tasks%20and%20troubleshooting%20%7C",
+        "prevChunkIds": []
+      },
+      "461": {
+        "chunkId": "a3babf",
+        "hash": "ed49ffb7",
+        "encoded": "%7C%20**JENKINS_IMPLEMENTATION_SUMMARY.md**%20%7C%20This%20file%20-%20overview%20of%20implementation%20%7C",
+        "prevChunkIds": []
+      },
+      "462": {
+        "chunkId": "a3babf",
+        "hash": "6884471a",
+        "encoded": "%7C%20**README.md**%20%7C%20Project%20overview%20(existing)%20%7C",
+        "prevChunkIds": []
+      },
+      "463": {
+        "chunkId": "a3babf",
+        "hash": "21226c7a",
+        "encoded": "%7C%20**FRAMEWORK_STRUCTURE.md**%20%7C%20Framework%20structure%20(existing)%20%7C",
+        "prevChunkIds": []
+      },
+      "465": {
+        "chunkId": "a3babf",
+        "hash": "e42516a8",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "467": {
+        "chunkId": "a3babf",
+        "hash": "45163a79",
+        "encoded": "##%20%F0%9F%9A%80%20Next%20Steps",
+        "prevChunkIds": []
+      },
+      "469": {
+        "chunkId": "a3babf",
+        "hash": "b60f7e4e",
+        "encoded": "1.%20**Install%20Jenkins%20plugins**%20(Pipeline,%20Git,%20NodeJS,%20HTML%20Publisher,%20JUnit)",
+        "prevChunkIds": []
+      },
+      "470": {
+        "chunkId": "a3babf",
+        "hash": "c3187ab8",
+        "encoded": "2.%20**Configure%20NodeJS%2018**%20in%20Global%20Tool%20Configuration",
+        "prevChunkIds": []
+      },
+      "471": {
+        "chunkId": "a3babf",
+        "hash": "c34fed86",
+        "encoded": "3.%20**Update%20placeholder%20URLs**%20in%20%60playwright.config.ts%60",
+        "prevChunkIds": []
+      },
+      "472": {
+        "chunkId": "a3babf",
+        "hash": "bbfdb617",
+        "encoded": "4.%20**Create%20Jenkins%20pipeline%20job**%20using%20%22Pipeline%20script%20from%20SCM%22",
+        "prevChunkIds": []
+      },
+      "473": {
+        "chunkId": "a3babf",
+        "hash": "b5fd3a8d",
+        "encoded": "5.%20**Run%20first%20build**%20to%20initialize%20parameters",
+        "prevChunkIds": []
+      },
+      "474": {
+        "chunkId": "a3babf",
+        "hash": "e2814d10",
+        "encoded": "6.%20**Test%20configurations**%20with%20different%20parameter%20combinations",
+        "prevChunkIds": []
+      },
+      "475": {
+        "chunkId": "a3babf",
+        "hash": "0f70ecfe",
+        "encoded": "7.%20**View%20reports**%20in%20Jenkins%20UI",
+        "prevChunkIds": []
+      },
+      "476": {
+        "chunkId": "a3babf",
+        "hash": "6f36e33f",
+        "encoded": "8.%20**(Optional)%20Set%20up%20email%20notifications**",
+        "prevChunkIds": []
+      },
+      "477": {
+        "chunkId": "a3babf",
+        "hash": "84818da8",
+        "encoded": "9.%20**(Optional)%20Configure%20scheduled%20builds**",
+        "prevChunkIds": []
+      },
+      "478": {
+        "chunkId": "a3babf",
+        "hash": "66449500",
+        "encoded": "10.%20**(Optional)%20Integrate%20with%20Git%20webhooks**%20for%20automatic%20builds",
+        "prevChunkIds": []
+      },
+      "480": {
+        "chunkId": "a3babf",
+        "hash": "9ff6ea80",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "482": {
+        "chunkId": "a3babf",
+        "hash": "0552d529",
+        "encoded": "##%20%F0%9F%8E%89%20Summary",
+        "prevChunkIds": []
+      },
+      "484": {
+        "chunkId": "a3babf",
+        "hash": "338058fa",
+        "encoded": "###%20**What%20You%20Now%20Have:**",
+        "prevChunkIds": []
+      },
+      "486": {
+        "chunkId": "a3babf",
+        "hash": "99c969db",
+        "encoded": "%E2%9C%85%20**Complete%20Jenkins%20CI/CD%20pipeline**%20for%20Playwright%20tests",
+        "prevChunkIds": []
+      },
+      "487": {
+        "chunkId": "a3babf",
+        "hash": "91914441",
+        "encoded": "%E2%9C%85%20**Multi-environment%20support**%20(QA,%20UAT,%20STAGING)",
+        "prevChunkIds": []
+      },
+      "488": {
+        "chunkId": "a3babf",
+        "hash": "0f35a39b",
+        "encoded": "%E2%9C%85%20**Multi-browser%20support**%20(chromium,%20firefox,%20webkit)",
+        "prevChunkIds": []
+      },
+      "489": {
+        "chunkId": "a3babf",
+        "hash": "03c3d11e",
+        "encoded": "%E2%9C%85%20**Test%20type%20filtering**%20(smoke,%20regression)",
+        "prevChunkIds": []
+      },
+      "490": {
+        "chunkId": "a3babf",
+        "hash": "25282450",
+        "encoded": "%E2%9C%85%20**Automated%20report%20publishing**%20(HTML%20+%20JUnit)",
+        "prevChunkIds": []
+      },
+      "491": {
+        "chunkId": "a3babf",
+        "hash": "cae751c7",
+        "encoded": "%E2%9C%85%20**Windows-compatible**%20pipeline",
+        "prevChunkIds": []
+      },
+      "492": {
+        "chunkId": "a3babf",
+        "hash": "b423a776",
+        "encoded": "%E2%9C%85%20**Existing%20POM%20framework%20preserved**%20(no%20refactoring)",
+        "prevChunkIds": []
+      },
+      "493": {
+        "chunkId": "a3babf",
+        "hash": "9517c326",
+        "encoded": "%E2%9C%85%20**Comprehensive%20documentation**",
+        "prevChunkIds": []
+      },
+      "495": {
+        "chunkId": "a3babf",
+        "hash": "7f399073",
+        "encoded": "###%20**Testing%20Capabilities:**",
+        "prevChunkIds": []
+      },
+      "497": {
+        "chunkId": "a3babf",
+        "hash": "b9cbd6c9",
+        "encoded": "-%20Run%20**2%20smoke%20tests**%20for%20quick%20validation",
+        "prevChunkIds": []
+      },
+      "498": {
+        "chunkId": "a3babf",
+        "hash": "09eea5f9",
+        "encoded": "-%20Run%20**4%20regression%20tests**%20for%20comprehensive%20testing",
+        "prevChunkIds": []
+      },
+      "499": {
+        "chunkId": "a3babf",
+        "hash": "53420c59",
+        "encoded": "-%20Test%20on%20**3%20different%20environments**",
+        "prevChunkIds": []
+      },
+      "500": {
+        "chunkId": "a3babf",
+        "hash": "edc6d8b1",
+        "encoded": "-%20Test%20on%20**3%20different%20browsers**",
+        "prevChunkIds": []
+      },
+      "501": {
+        "chunkId": "a3babf",
+        "hash": "7d58933f",
+        "encoded": "-%20**18%20total%20possible%20configurations**",
+        "prevChunkIds": []
+      },
+      "503": {
+        "chunkId": "a3babf",
+        "hash": "46af0f7a",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "505": {
+        "chunkId": "a3babf",
+        "hash": "367d81eb",
+        "encoded": "**%F0%9F%93%9A%20For%20detailed%20setup%20instructions,%20see:%20%60JENKINS_CI_SETUP_GUIDE.md%60**",
+        "prevChunkIds": []
+      },
+      "507": {
+        "chunkId": "a3babf",
+        "hash": "5c8e6b51",
+        "encoded": "**%E2%9A%A1%20For%20quick%20reference,%20see:%20%60JENKINS_QUICK_REFERENCE.md%60**",
+        "prevChunkIds": []
+      },
+      "509": {
+        "chunkId": "a3babf",
+        "hash": "dbebc47d",
+        "encoded": "**%F0%9F%8E%89%20Jenkins%20CI/CD%20Pipeline%20Implementation%20Complete!**",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

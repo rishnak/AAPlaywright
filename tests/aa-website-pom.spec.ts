@@ -12,6 +12,8 @@ import { logger } from '../src/utilities/logger';
  * - AABreakdownPage (child class extending BasePage)
  * - Test Data (centralized data management)
  * - Logger (utility function)
+ * 
+ * Tags: @smoke, @regression
  */
 
 test.describe('AA Website - POM Framework Demo', () => {
@@ -41,8 +43,10 @@ test.describe('AA Website - POM Framework Demo', () => {
    * - Element visibility using BasePage.isVisible()
    * - Title verification using BasePage.getTitle()
    * - URL verification using BasePage.getCurrentUrl()
+   * 
+   * Tags: @smoke
    */
-  test('should load AA homepage and verify using BasePage methods', async ({ page }) => {
+  test('@smoke should load AA homepage and verify using BasePage methods', async ({ page }) => {
     logger.info('\n🧪 TEST 1: Homepage Load Test');
     logger.info('Purpose: Demonstrate BasePage navigation methods');
     
@@ -93,8 +97,10 @@ test.describe('AA Website - POM Framework Demo', () => {
    * Demonstrates:
    * - Element visibility checks using BasePage.isVisible()
    * - Screenshot capture using BasePage.takeScreenshot()
+   * 
+   * Tags: @smoke, @regression
    */
-  test('should verify navigation menu using BasePage methods', async ({ page }) => {
+  test('@smoke @regression should verify navigation menu using BasePage methods', async ({ page }) => {
     logger.info('\n🧪 TEST 2: Navigation Menu Test');
     logger.info('Purpose: Demonstrate BasePage interaction methods');
     
@@ -128,8 +134,10 @@ test.describe('AA Website - POM Framework Demo', () => {
    * Demonstrates:
    * - Scrolling using BasePage.scrollToElement()
    * - Multiple interaction methods
+   * 
+   * Tags: @regression
    */
-  test('should demonstrate scrolling using BasePage methods', async ({ page }) => {
+  test('@regression should demonstrate scrolling using BasePage methods', async ({ page }) => {
     logger.info('\n🧪 TEST 3: Scrolling Test');
     logger.info('Purpose: Demonstrate BasePage utility methods');
     
