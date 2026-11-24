@@ -1,0 +1,15 @@
+{
+  "filename": "playwright.config.js",
+  "path": "playwright.config.js",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "2adc5138": {
+      "value": "Started by user Rishna K\nObtained Jenkinsfile from git https://github.com/rishnak/AAPlaywright.git\n[Pipeline] Start of Pipeline\n[Pipeline] node\nRunning on Jenkins in C:\\Users\\risk\\.jenkins\\workspace\\AAplaywright\n[Pipeline] {\n[Pipeline] stage\n[Pipeline] { (Declarative: Checkout SCM)\n[Pipeline] checkout\nSelected Git installation does not exist. Using Default\nThe recommended git tool is: NONE\nNo credentials specified\n > git.exe rev-parse --resolve-git-dir C:\\Users\\risk\\.jenkins\\workspace\\AAplaywrig"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}
