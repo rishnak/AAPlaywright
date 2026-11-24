@@ -37,7 +37,7 @@ pipeline {
         TEST_TYPE = "${params.TEST_TYPE}"
         
         // Node.js version (configure in Jenkins Global Tool Configuration)
-        NODE_VERSION = 'NodeJS 20'
+        NODE_VERSION = 'NodeJS 24'
         
         // Report directories
         REPORT_DIR = 'playwright-report'
