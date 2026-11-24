@@ -23,13 +23,42 @@ export class AAYourDetailsPage extends BasePage{
         await this.fill(this.page.getByLabel('Last name'),'Steve');
     }
 
-    async fillContactDetails():Promise<void>{
-        await this.click(this.page.getByRole('button',{name:' Find your address '}));
-        await this.page.waitForTimeout(3000);
-        await this.page.getByRole('combobox',{name:'Select an address'}).selectOption(' Automobile Association, Plant, Basing View ');
-        await this.fill(this.page.locator('#contactDetailsPhoneNumber'),'01000000000');
-        await this.fill(this.page.locator('#contactDetailsEmailAddress'),'steve.john@mailinator.com');
-    }
+    // async fillContactDetails():Promise<void>{
+    //     await this.click(this.page.getByRole('button',{name:' Find your address '}));
+    //     await this.page.waitForTimeout(3000);
+    //     await this.page.getByRole('combobox',{name:'Select an address'}).selectOption(' Automobile Association, Plant, Basing View ');
+    //     await this.fill(this.page.locator('#contactDetailsPhoneNumber'),'01000000000');
+    //     await this.fill(this.page.locator('#contactDetailsEmailAddress'),'steve.john@mailinator.com');
+    // }
+
+    async fillContactDetails(): Promise<void> {
+    await this.click(
+        this.page.getByRole('button', { name: 'Find your address' })
+    );
+
+    const addressDropdown = this.page.getByRole('combobox', {
+        name: 'Select an address'
+    });
+
+    await addressDropdown.waitFor({
+        state: 'visible',
+        timeout: 15000
+    });
+
+    await addressDropdown.selectOption({
+        label: 'Automobile Association, Plant, Basing View'
+    });
+
+    await this.fill(
+        this.page.locator('#contactDetailsPhoneNumber'),
+        '01000000000'
+    );
+
+    await this.fill(
+        this.page.locator('#contactDetailsEmailAddress'),
+        'steve.john@mailinator.com'
+    );
+}
 
     async clickOnContinueButton(): Promise<void>{
     await this.click(this.continueButton);
