@@ -5,32 +5,6 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 /**
- * Get environment-specific base URL
- * Supports QA, UAT, and STAGING environments
- */
-function getBaseURL(): string {
-  const environment = process.env.ENVIRONMENT;
-  
-  // Environment-specific URLs
-  const environmentURLs: { [key: string]: string } = {
-    'QA': process.env.QA_BASE_URL || 'https://qa.theaa.com',  // PLACEHOLDER: Replace with actual QA URL
-    'UAT': process.env.UAT_BASE_URL || 'https://uat.theaa.com',  // PLACEHOLDER: Replace with actual UAT URL
-    'STAGING': process.env.STAGING_BASE_URL || 'https://staging.theaa.com',  // PLACEHOLDER: Replace with actual STAGING URL
-  };
-  
-  // Return environment-specific URL or fall back to BASE_URL or default
-  if (environment && environmentURLs[environment]) {
-    console.log(`Using ${environment} environment URL: ${environmentURLs[environment]}`);
-    return environmentURLs[environment];
-  }
-  
-  // Fallback to BASE_URL or default production URL
-  const defaultURL = process.env.BASE_URL || 'https://www.theaa.com';
-  console.log(`Using default URL: ${defaultURL}`);
-  return defaultURL;
-}
-
-/**
  * Playwright Configuration for Page Object Model Framework
  * All values can be configured via .env file
  * @see https://playwright.dev/docs/test-configuration
@@ -62,8 +36,8 @@ export default defineConfig({
   
   // Global test settings
   use: {
-    // Base URL for navigation - environment-specific
-    baseURL: getBaseURL(),
+    // Base URL for navigation - loaded from .env file
+    baseURL: process.env.BASE_URL || 'https://www.theaa.com',
     
     // Browser context options
     trace: 'on-first-retry',

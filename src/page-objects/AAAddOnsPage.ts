@@ -24,14 +24,14 @@ export class AAAddOnsPage extends BasePage {
             switch (addOn) {
                 case 'PGC':
                     await this.PGCCheckbox.check();
-                    await this.fill(this.page.locator('input[name="numberPlate"]'),aaFormData.vrn);
+                    await this.fill(this.page.locator('input[name="numberPlate"]').filter({ visible: true }),aaFormData.vrn);
                     await this.click(this.page.getByRole('button', { name: ' Add Parts and Garage ' }));
                     await this.click(this.page.getByRole('button', { name: 'Confirm' }));
                     break;
 
                 case 'Tyre Cover':
                     await this.TyreCoverCheckbox.check();
-                    await this.fill(this.page.locator('input[name="numberPlate"]'),aaFormData.vrn);
+                    await this.fill(this.page.locator('input[name="numberPlate"]').filter({ visible: true }),aaFormData.vrn);
                     await this.click(this.page.getByRole('button', { name: ' Add Tyre Cover ' }));
                     await this.click(this.page.getByRole('button', { name: 'Confirm' }));
                     break;

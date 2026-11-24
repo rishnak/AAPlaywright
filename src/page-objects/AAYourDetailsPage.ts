@@ -1,5 +1,5 @@
 import { BasePage } from "@pages/BasePage";
-import { Locator, Page } from "@playwright/test";
+import { Locator, Page ,expect} from "@playwright/test";
 
 export class AAYourDetailsPage extends BasePage{
 
@@ -33,5 +33,9 @@ export class AAYourDetailsPage extends BasePage{
 
     async clickOnContinueButton(): Promise<void>{
     await this.click(this.continueButton);
-  }
+     }
+
+     async verifyPaymentDetailsPageDisplayed(): Promise<void>{
+        await expect(this.page.getByRole('heading', { name: 'Payment' })).toBeVisible();
+     }
 }

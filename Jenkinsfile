@@ -1,8 +1,8 @@
 /**
  * Jenkins Declarative Pipeline for Playwright Test Automation
- * Supports: QA, UAT, STAGING environments
- * Browsers: chromium, firefox, webkit
+ * Supports: chromium, firefox, webkit browsers
  * Test Types: smoke, regression
+ * Single Environment Configuration
  * 
  * Compatible with Windows agents
  */
@@ -12,11 +12,6 @@ pipeline {
     
     // Build parameters
     parameters {
-        choice(
-            name: 'ENVIRONMENT',
-            choices: ['QA', 'UAT', 'STAGING'],
-            description: 'Select the test environment'
-        )
         choice(
             name: 'BROWSER',
             choices: ['chromium', 'firefox', 'webkit'],
@@ -33,9 +28,6 @@ pipeline {
     environment {
         // CI flag
         CI = 'true'
-        
-        // Environment parameter
-        ENVIRONMENT = "${params.ENVIRONMENT}"
         
         // Browser settings
         BROWSER = "${params.BROWSER}"
@@ -59,7 +51,6 @@ pipeline {
                 echo "============================================"
                 echo "  CHECKOUT SOURCE CODE"
                 echo "============================================"
-                echo "Environment: ${params.ENVIRONMENT}"
                 echo "Browser: ${params.BROWSER}"
                 echo "Test Type: ${params.TEST_TYPE}"
                 echo "============================================"
@@ -141,7 +132,6 @@ pipeline {
                 script {
                     echo "============================================"
                     echo "  EXECUTING ${params.TEST_TYPE.toUpperCase()} TESTS"
-                    echo "  Environment: ${params.ENVIRONMENT}"
                     echo "  Browser: ${params.BROWSER}"
                     echo "============================================"
                     
@@ -153,7 +143,6 @@ pipeline {
                                 @echo off
                                 echo.
                                 echo Setting environment variables...
-                                set ENVIRONMENT=${params.ENVIRONMENT}
                                 set CI=true
                                 set HEADLESS=true
                                 echo.
@@ -207,7 +196,7 @@ pipeline {
                     reportDir: "${REPORT_DIR}",
                     reportFiles: 'index.html',
                     reportName: 'Playwright Test Report',
-                    reportTitles: "${params.ENVIRONMENT} - ${params.BROWSER} - ${params.TEST_TYPE}"
+                    reportTitles: "${params.BROWSER} - ${params.TEST_TYPE}"
                 ])
                 
                 // Publish JUnit test results

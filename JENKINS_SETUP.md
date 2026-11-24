@@ -1,612 +1,288 @@
-# Jenkins CI/CD Integration Guide
+# 🚀 Jenkins CI/CD Pipeline Setup Guide
 
-Complete guide for running the Playwright Page Object Model framework in Jenkins.
+## 📊 Overview
 
----
-
-## 📋 Table of Contents
-
-1. [Prerequisites](#prerequisites)
-2. [Jenkins Setup](#jenkins-setup)
-3. [Pipeline Configuration](#pipeline-configuration)
-4. [Running Tests](#running-tests)
-5. [Viewing Reports](#viewing-reports)
-6. [Troubleshooting](#troubleshooting)
-7. [Advanced Configuration](#advanced-configuration)
+Simplified Jenkins CI/CD pipeline for Playwright test automation with:
+- ✅ **Multi-browser support** (chromium, firefox, webkit)
+- ✅ **Test type filtering** (smoke, regression)
+- ✅ **Single environment** configuration
+- ✅ **Windows agent** compatible
 
 ---
 
-## 🔧 Prerequisites
+## 🛠️ Prerequisites
 
-### On Jenkins Server
+### **1. Jenkins Plugins Required**
 
-#### 1. **Install Required Plugins**
+Install via **Manage Jenkins** > **Manage Plugins** > **Available**:
 
-Go to **Jenkins Dashboard** → **Manage Jenkins** → **Manage Plugins** → **Available**
+```
+☐ Pipeline
+☐ Git
+☐ NodeJS Plugin
+☐ HTML Publisher
+☐ JUnit
+```
 
-Install these plugins:
-- ✅ **NodeJS Plugin** - For Node.js environment
-- ✅ **Pipeline Plugin** - For pipeline support
-- ✅ **HTML Publisher Plugin** - For HTML reports
-- ✅ **JUnit Plugin** - For test results
-- ✅ **Git Plugin** - For repository integration
-- ✅ **Email Extension Plugin** - For notifications (optional)
+### **2. Configure NodeJS in Jenkins**
 
-#### 2. **Configure Node.js**
-
-Go to **Manage Jenkins** → **Global Tool Configuration** → **NodeJS**
-
-- Click **Add NodeJS**
-- Name: `Node 18` (or your preferred version)
-- Version: Select `18.x` or latest LTS
-- Check **Install automatically**
-- Save
-
-#### 3. **System Requirements**
-
-Ensure Jenkins server has:
-- Node.js 16+ 
-- npm 8+
-- Sufficient disk space (500MB+ for browser downloads)
-- Chrome/Chromium dependencies installed
+1. Go to **Manage Jenkins** > **Global Tool Configuration**
+2. Scroll to **NodeJS** section
+3. Click **Add NodeJS**
+4. Configure:
+   - **Name:** `NodeJS 18` ⚠️ Must match Jenkinsfile
+   - **Version:** 18.x or higher
+5. Click **Save**
 
 ---
 
-## 🚀 Jenkins Setup
+## 📋 Build Parameters
 
-### Method 1: Using Jenkinsfile (Recommended)
+The pipeline supports 2 parameters:
 
-#### **Step 1: Create Jenkins Pipeline Job**
+| Parameter | Options | Description |
+|-----------|---------|-------------|
+| **BROWSER** | chromium, firefox, webkit | Browser to run tests |
+| **TEST_TYPE** | smoke, regression | Type of tests to execute |
 
-1. Go to **Jenkins Dashboard**
+---
+
+## 🏗️ Creating Jenkins Pipeline Job
+
+### **Step 1: Create New Pipeline Job**
+
+1. Go to Jenkins Dashboard
 2. Click **New Item**
-3. Enter name: `Playwright-E2E-Tests`
+3. Enter name: `Playwright-AA-Tests`
 4. Select **Pipeline**
 5. Click **OK**
 
-#### **Step 2: Configure Pipeline**
+### **Step 2: Configure Pipeline**
 
-**General Tab:**
-- ✅ Check **This project is parameterized**
-- Add parameters (optional, Jenkinsfile has them defined):
+**Pipeline Section:**
+- **Definition:** Pipeline script from SCM
+- **SCM:** Git
+- **Repository URL:** `https://github.com/your-username/AAPlaywright.git`
+- **Credentials:** Select or add Git credentials
+- **Branch Specifier:** `*/main` (or your branch)
+- **Script Path:** `Jenkinsfile`
 
-**Build Triggers:**
-- ✅ **Poll SCM**: `H/5 * * * *` (checks every 5 minutes)
-- ✅ **GitHub hook trigger** (for GitHub integration)
-
-**Pipeline Tab:**
-- **Definition**: Pipeline script from SCM
-- **SCM**: Git
-- **Repository URL**: Your Git repository URL
-- **Branch**: `*/main` or your branch
-- **Script Path**: `Jenkinsfile`
-
-#### **Step 3: Save and Build**
+### **Step 3: Save and Build**
 
 1. Click **Save**
-2. Click **Build with Parameters**
-3. Select options:
-   - Environment: `production`
-   - Browser: `chromium`
-   - Test Suite: `all`
-   - Base URL: `https://www.theaa.com`
-4. Click **Build**
+2. Click **Build Now** (parameters will appear after first build)
+3. After first build, use **Build with Parameters**
 
 ---
 
-### Method 2: Simple Pipeline (Quick Start)
+## ▶️ Running Tests
 
-If you want a simpler approach:
+### **Build with Parameters**
 
-1. Create new Pipeline job
-2. In **Pipeline** section, select **Pipeline script**
-3. Copy content from [`Jenkinsfile.declarative`](Jenkinsfile.declarative)
-4. Paste in the script box
-5. Save and Build
+Click **Build with Parameters** and select:
+
+#### **Example 1: Smoke Tests on Chrome**
+```
+BROWSER: chromium
+TEST_TYPE: smoke
+```
+**Result:** Runs 2 smoke tests on Chrome (~30 seconds)
+
+#### **Example 2: Regression Tests on Firefox**
+```
+BROWSER: firefox
+TEST_TYPE: regression
+```
+**Result:** Runs 4 regression tests on Firefox (~2 minutes)
+
+#### **Example 3: Regression Tests on Safari**
+```
+BROWSER: webkit
+TEST_TYPE: regression
+```
+**Result:** Runs 4 regression tests on Safari (~2.5 minutes)
 
 ---
 
-## 📝 Pipeline Configuration Files
+## 📊 Pipeline Stages
 
-### **1. Jenkinsfile (Full-Featured)**
+```
+1. Checkout              → Clone code from Git
+2. Verify Node.js & npm  → Check versions
+3. Install Dependencies  → Run npm ci
+4. Install Browsers      → Install selected browser
+5. Execute Tests         → Run smoke/regression tests
 
-**Location**: [`Jenkinsfile`](Jenkinsfile)
-
-**Features**:
-- ✅ Parameterized builds (environment, browser, test suite)
-- ✅ Multi-browser support
-- ✅ Environment selection (dev/staging/production)
-- ✅ Conditional test execution
-- ✅ HTML report publishing
-- ✅ JUnit test results
-- ✅ Artifact archiving
-- ✅ Email notifications (configurable)
-
-**Parameters**:
-```groovy
-ENVIRONMENT:   dev | staging | production
-BROWSER:       all | chromium | firefox | webkit
-TEST_SUITE:    all | login | home | smoke
-BASE_URL:      https://www.theaa.com (customizable)
-GENERATE_REPORT: true | false
+Post Actions (Always):
+  → Archive test results
+  → Publish HTML report
+  → Publish JUnit results
 ```
 
-### **2. Jenkinsfile.declarative (Simple)**
-
-**Location**: [`Jenkinsfile.declarative`](Jenkinsfile.declarative)
-
-**Features**:
-- ✅ Basic test execution
-- ✅ HTML report publishing
-- ✅ JUnit results
-- ✅ Minimal configuration
-
 ---
 
-## 🏃 Running Tests in Jenkins
-
-### **Option 1: Build with Parameters**
-
-1. Go to your Jenkins job
-2. Click **Build with Parameters**
-3. Configure:
-   ```
-   ENVIRONMENT:     production
-   BROWSER:         chromium
-   TEST_SUITE:      all
-   BASE_URL:        https://www.theaa.com
-   GENERATE_REPORT: ✓ true
-   ```
-4. Click **Build**
-
-### **Option 2: Automatic Trigger**
-
-**On Git Push:**
-```groovy
-triggers {
-    githubPush()
-}
-```
-
-**Scheduled (Nightly):**
-```groovy
-triggers {
-    cron('H 2 * * *')  // Runs at 2 AM daily
-}
-```
-
-**On Merge to Main:**
-Configure in Jenkins job → Build Triggers → Branch filter
-
----
-
-## 📊 Viewing Reports
+## 📄 Test Reports
 
 ### **1. HTML Report**
 
-After build completes:
-1. Go to build page
-2. Click **Playwright Test Report** (left sidebar)
-3. View detailed HTML report with:
-   - Test results
-   - Screenshots on failure
-   - Videos (if enabled)
-   - Traces
-   - Timeline
+- Build page → **Playwright Test Report** (left sidebar)
+- Interactive report with screenshots and videos
 
-### **2. JUnit Test Results**
+### **2. JUnit Report**
 
-1. Go to build page
-2. Click **Test Result** (left sidebar)
-3. View:
-   - Total tests
-   - Pass/Fail counts
-   - Test duration
-   - Failure details
+- Build page → **Test Result Trend** graph
+- Pass/fail statistics over time
 
-### **3. Console Output**
+### **3. Archived Artifacts**
 
-1. Go to build page
-2. Click **Console Output**
-3. View real-time logs
-
-### **4. Artifacts**
-
-1. Go to build page
-2. Click **Build Artifacts**
-3. Download:
-   - Screenshots
-   - Videos
-   - Traces
-   - JSON reports
+- Build page → **Build Artifacts**
+- Download `test-results/`, `playwright-report/`, `screenshots/`
 
 ---
 
-## 🔍 Pipeline Stages Explained
+## 🏷️ Test Tags
 
-### **Stage 1: Checkout**
-```groovy
-stage('Checkout') {
-    steps {
-        checkout scm  // Checks out code from Git
-    }
-}
-```
-Pulls latest code from repository.
+| Test File | Test | Tags |
+|-----------|------|------|
+| aa-website-pom.spec.ts | load AA homepage | `@smoke` |
+| aa-website-pom.spec.ts | verify navigation menu | `@smoke @regression` |
+| aa-website-pom.spec.ts | demonstrate scrolling | `@regression` |
+| breakdownflowe2e.spec.ts | breakdown cover flow | `@regression` |
 
-### **Stage 2: Setup Node.js**
-```groovy
-stage('Setup Node.js') {
-    nodejs(nodeJSInstallationName: "Node 18") {
-        sh 'node --version'
-    }
-}
-```
-Configures Node.js environment.
-
-### **Stage 3: Install Dependencies**
-```groovy
-stage('Install Dependencies') {
-    sh 'npm ci'  // Clean install
-}
-```
-Installs all npm packages from `package-lock.json`.
-
-### **Stage 4: Install Playwright Browsers**
-```groovy
-stage('Install Playwright Browsers') {
-    sh 'npx playwright install --with-deps'
-}
-```
-Downloads Chromium, Firefox, WebKit browsers.
-
-### **Stage 5: Run Tests**
-```groovy
-stage('Run Tests') {
-    sh 'npm test'
-}
-```
-Executes Playwright tests.
-
-### **Stage 6: Generate Report**
-```groovy
-publishHTML([
-    reportDir: 'playwright-report',
-    reportFiles: 'index.html',
-    reportName: 'Playwright Report'
-])
-```
-Publishes HTML report in Jenkins.
+**Test Counts:**
+- **Smoke:** 2 tests
+- **Regression:** 4 tests
 
 ---
 
-## 🛠️ Environment-Specific Configuration
+## 🔧 Commands Executed
 
-### **Multiple Environments**
-
-Create environment-specific files:
-
+### **Smoke Tests:**
 ```bash
-.env.dev
-.env.staging
-.env.production
+npm run test:smoke -- --project=chromium
 ```
 
-**In Jenkinsfile:**
-```groovy
-environment {
-    BASE_URL = getBaseUrl(params.ENVIRONMENT)
-}
-
-def getBaseUrl(env) {
-    switch(env) {
-        case 'dev':
-            return 'https://dev.theaa.com'
-        case 'staging':
-            return 'https://staging.theaa.com'
-        case 'production':
-            return 'https://www.theaa.com'
-        default:
-            return 'https://www.theaa.com'
-    }
-}
+### **Regression Tests:**
+```bash
+npm run test:regression -- --project=firefox
 ```
 
 ---
 
-## 🐛 Troubleshooting
+## 🔐 Credentials (Optional)
 
-### **Issue 1: Browser Installation Fails**
+If you need to use credentials:
 
-**Error**: `browserType.launch: Executable doesn't exist`
-
-**Solution**:
-```groovy
-stage('Install Browsers') {
-    sh 'npx playwright install-deps'  // Install system dependencies
-    sh 'npx playwright install'
-}
-```
-
-### **Issue 2: Tests Timeout**
-
-**Error**: `Test timeout of 30000ms exceeded`
-
-**Solution**: Increase timeout in `playwright.config.ts`:
-```typescript
-timeout: 60 * 1000  // 60 seconds
-```
-
-### **Issue 3: Permission Denied**
-
-**Error**: `EACCES: permission denied`
-
-**Solution**:
-```bash
-sudo chown -R jenkins:jenkins /var/lib/jenkins/workspace
-```
-
-### **Issue 4: Report Not Showing**
-
-**Solution**:
-1. Install **HTML Publisher Plugin**
-2. Configure Content Security Policy:
-   ```
-   Manage Jenkins → Script Console → Run:
-   System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "")
-   ```
-
-### **Issue 5: Out of Memory**
-
-**Solution**: Increase heap size
-```bash
-export NODE_OPTIONS="--max-old-space-size=4096"
-```
-
----
-
-## 🔐 Credentials Management
-
-### **Store Secrets in Jenkins**
-
-1. Go to **Manage Jenkins** → **Manage Credentials**
+1. **Manage Jenkins** > **Manage Credentials**
 2. Add credentials:
-   - ID: `TEST_USERNAME`
-   - Secret: Your username
-3. Repeat for password
+   - ID: `TEST_PASSWORD`
+   - Type: Secret text
+   - Value: Your test password
 
-**In Jenkinsfile:**
+3. Update Jenkinsfile:
 ```groovy
 environment {
-    TEST_CREDENTIALS = credentials('test-user-credentials')
-}
-
-steps {
-    sh '''
-        export TEST_USERNAME=${TEST_CREDENTIALS_USR}
-        export TEST_PASSWORD=${TEST_CREDENTIALS_PSW}
-        npm test
-    '''
+    TEST_PASSWORD = credentials('TEST_PASSWORD')
 }
 ```
 
 ---
 
-## 📧 Email Notifications
+## 🔧 Troubleshooting
 
-### **Configure Email**
+### **Issue: "nodejs: command not found"**
 
-**In Jenkinsfile:**
-```groovy
-post {
-    success {
-        emailext(
-            subject: "✅ Tests Passed: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-            body: """All tests passed successfully.
-            
-            Build URL: ${env.BUILD_URL}
-            Report: ${env.BUILD_URL}Playwright_20Test_20Report/
-            """,
-            to: 'team@example.com'
-        )
-    }
-    
-    failure {
-        emailext(
-            subject: "❌ Tests Failed: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-            body: """Tests failed. Please check the build.
-            
-            Build URL: ${env.BUILD_URL}
-            Console: ${env.BUILD_URL}console
-            """,
-            to: 'team@example.com'
-        )
-    }
-}
-```
+**Solution:**
+- Configure NodeJS in Global Tool Configuration
+- Name must be: `NodeJS 18`
+
+### **Issue: "No tests matched"**
+
+**Solution:**
+- Verify test tags:
+  ```typescript
+  test('@smoke should load', async () => { ... })
+  ```
+
+### **Issue: Browser installation fails**
+
+**Solution:**
+- For Windows: Ensure agent has admin privileges
+- Alternative: Pre-install browsers on agent
 
 ---
 
-## 🎯 Advanced Configuration
+## 📊 Test Execution Matrix
 
-### **1. Parallel Test Execution**
+| Browser | Test Type | Tests | Duration |
+|---------|-----------|-------|----------|
+| chromium | smoke | 2 | ~30s |
+| firefox | smoke | 2 | ~35s |
+| webkit | smoke | 2 | ~40s |
+| chromium | regression | 4 | ~2m |
+| firefox | regression | 4 | ~2.5m |
+| webkit | regression | 4 | ~3m |
 
-```groovy
-stage('Run Tests') {
-    parallel {
-        stage('Chrome Tests') {
-            steps {
-                sh 'npx playwright test --project=chromium'
-            }
-        }
-        stage('Firefox Tests') {
-            steps {
-                sh 'npx playwright test --project=firefox'
-            }
-        }
-        stage('WebKit Tests') {
-            steps {
-                sh 'npx playwright test --project=webkit'
-            }
-        }
-    }
-}
-```
-
-### **2. Docker Integration**
-
-```groovy
-pipeline {
-    agent {
-        docker {
-            image 'mcr.microsoft.com/playwright:v1.40.0'
-        }
-    }
-    
-    stages {
-        stage('Run Tests') {
-            steps {
-                sh 'npm ci'
-                sh 'npm test'
-            }
-        }
-    }
-}
-```
-
-### **3. Slack Notifications**
-
-```groovy
-post {
-    success {
-        slackSend(
-            color: 'good',
-            message: "Tests Passed: ${env.JOB_NAME} #${env.BUILD_NUMBER}"
-        )
-    }
-}
-```
+**Total combinations:** 3 browsers × 2 test types = **6 configurations**
 
 ---
 
-## 📋 Sample Jenkins Job XML
+## 🚀 Local Testing
 
-For manual job creation:
-
-```xml
-<?xml version='1.1' encoding='UTF-8'?>
-<flow-definition plugin="workflow-job@2.40">
-  <actions/>
-  <description>Playwright E2E Test Automation</description>
-  <keepDependencies>false</keepDependencies>
-  <properties>
-    <jenkins.model.BuildDiscarderProperty>
-      <strategy class="hudson.tasks.LogRotator">
-        <daysToKeep>30</daysToKeep>
-        <numToKeep>10</numToKeep>
-      </strategy>
-    </jenkins.model.BuildDiscarderProperty>
-  </properties>
-  <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@2.90">
-    <scm class="hudson.plugins.git.GitSCM" plugin="git@4.7.2">
-      <userRemoteConfigs>
-        <hudson.plugins.git.UserRemoteConfig>
-          <url>https://github.com/your-repo/playwright-tests.git</url>
-        </hudson.plugins.git.UserRemoteConfig>
-      </userRemoteConfigs>
-      <branches>
-        <hudson.plugins.git.BranchSpec>
-          <name>*/main</name>
-        </hudson.plugins.git.BranchSpec>
-      </branches>
-    </scm>
-    <scriptPath>Jenkinsfile</scriptPath>
-  </definition>
-</flow-definition>
-```
-
----
-
-## 📊 Best Practices
-
-### ✅ Do's
-
-- Use `npm ci` instead of `npm install` for consistent installs
-- Cache `node_modules` between builds (if possible)
-- Run tests in headless mode on CI
-- Archive test artifacts (screenshots, videos, traces)
-- Set appropriate timeouts for CI environment
-- Use parameterized builds for flexibility
-- Clean workspace after builds
-- Implement retry logic for flaky tests
-
-### ❌ Don'ts
-
-- Don't hardcode credentials in Jenkinsfile
-- Don't run tests in headed mode on CI
-- Don't ignore test failures
-- Don't skip browser installation
-- Don't use `npm install` (use `npm ci`)
-
----
-
-## 🔗 Quick Reference
-
-### **Jenkins Commands**
+Test before Jenkins:
 
 ```bash
-# Install dependencies
-npm ci
+# Smoke tests (chromium)
+npm run test:smoke -- --project=chromium
 
-# Install browsers
-npx playwright install --with-deps
+# Regression tests (firefox)
+npm run test:regression -- --project=firefox
 
-# Run all tests
-npm test
-
-# Run specific browser
-npx playwright test --project=chromium
-
-# Run specific test file
-npx playwright test tests/login.spec.ts
-
-# Generate report
-npx playwright show-report
-```
-
-### **Environment Variables**
-
-```bash
-BASE_URL=https://www.theaa.com
-CI=true
-HEADLESS=true
-WORKERS=2
-RETRIES=2
+# View report
+npm run test:report
 ```
 
 ---
 
-## 📚 Additional Resources
+## ✅ Checklist
 
-- **Jenkinsfile**: [`Jenkinsfile`](Jenkinsfile) - Full-featured pipeline
-- **Simple Pipeline**: [`Jenkinsfile.declarative`](Jenkinsfile.declarative) - Basic setup
-- **Framework Docs**: [`README.md`](README.md)
-- **Quick Start**: [`QUICK_START.md`](QUICK_START.md)
-- **Jenkins Docs**: https://www.jenkins.io/doc/
-- **Playwright CI Docs**: https://playwright.dev/docs/ci
+Before running pipeline:
 
----
-
-## 🎓 Step-by-Step First Run
-
-1. **Install Jenkins Plugins** (NodeJS, Pipeline, HTML Publisher)
-2. **Configure Node.js** in Global Tool Configuration
-3. **Create Pipeline Job** in Jenkins
-4. **Configure Git Repository** and select `Jenkinsfile`
-5. **Click "Build with Parameters"**
-6. **View Report** after build completes
-7. **Set up automatic triggers** (GitHub webhook, cron)
+- [ ] Jenkins plugins installed
+- [ ] NodeJS 18 configured in Global Tool Configuration
+- [ ] Git repository accessible
+- [ ] Jenkins pipeline job created
+- [ ] First build completed
+- [ ] Parameters visible in "Build with Parameters"
 
 ---
 
-**🎉 Your Playwright framework is now integrated with Jenkins! Happy Testing!**
+## 📚 NPM Scripts
+
+```json
+"test": "playwright test"
+"test:headed": "playwright test --headed"
+"test:chromium": "playwright test --project=chromium"
+"test:firefox": "playwright test --project=firefox"
+"test:webkit": "playwright test --project=webkit"
+"test:smoke": "playwright test --grep @smoke"
+"test:regression": "playwright test --grep @regression"
+"test:report": "playwright show-report"
+```
+
+---
+
+## 📝 Summary
+
+### **What You Can Do:**
+
+✅ Run tests on **3 browsers** (chromium, firefox, webkit)  
+✅ Run **2 test types** (smoke, regression)  
+✅ View **HTML reports** in Jenkins  
+✅ Download **test artifacts**  
+✅ Track **test trends**  
+✅ **6 total test configurations**  
+
+---
+
+**🎉 Jenkins CI Pipeline is ready!**

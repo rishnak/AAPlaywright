@@ -74,11 +74,11 @@ test.describe('AA Breakdown Flow - E2E Test', () => {
     await aaBreakdownPage.clickOnContinueButton();
 
     //Step 11: Add option
-    await aaSalesOptionPage.addOptionalExtras(['At Home','Onward Travel']);
+    await aaSalesOptionPage.addOptionalExtras(['At Home']);
     await aaSalesOptionPage.clickOnContinueButton();
 
     //Step 12: Add Addons
-    await aaAddOnsPage.addAddOns(['PGC','Tyre Cover']);
+    await aaAddOnsPage.addAddOns(['PGC','Key Cover']);
     await aaAddOnsPage.clickOnContinueButton();
 
     //Step 13: Fill the personal details
@@ -86,6 +86,7 @@ test.describe('AA Breakdown Flow - E2E Test', () => {
     await aaYourDetailsPage.fillPersonalDetails();
     await aaYourDetailsPage.fillContactDetails();
     await aaYourDetailsPage.clickOnContinueButton();
+    await aaYourDetailsPage.verifyPaymentDetailsPageDisplayed();
   });
 
   test.afterEach(async ({ page }, testInfo) => {
