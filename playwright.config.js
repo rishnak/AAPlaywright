@@ -1,77 +1,85 @@
 const { defineConfig, devices } = require('@playwright/test');
-const dotenv = require('dotenv');
 
-// Load environment variables from .env file
-dotenv.config();
-
-/**
- * Playwright Configuration for Page Object Model Framework
- * All values can be configured via .env file
- * @see https://playwright.dev/docs/test-configuration
- */
 module.exports = defineConfig({
+
   // Test directory
   testDir: './tests',
-  
-  // Maximum time one test can run for (from .env or default 30s)
-  timeout: Number(process.env.DEFAULT_TIMEOUT) || 60 * 1000,
-  
-  // Test execution settings
+
+  // Maximum time allowed for each test
+  // Increased from Playwright default 30 seconds to 60 seconds
+  timeout: 60 * 1000,
+
+  // Run tests in parallel
   fullyParallel: true,
+
+  // Prevent test.only from accidentally being committed in CI
   forbidOnly: !!process.env.CI,
-  
-  // Retries - from .env or CI check
-  retries: process.env.CI ? 2 : Number(process.env.RETRIES) || 0,
-  
-  // Workers - from .env or CI check
-  workers: process.env.CI ? 1 : Number(process.env.WORKERS) || undefined,
-  
-  // Reporter configuration
+
+  // Retry failed tests in Jenkins/CI
+  retries: process.env.CI ? 2 : 0,
+
+  // Control workers
+  workers: process.env.CI ? 1 : undefined,
+
+  // Reporters
   reporter: [
-    ['html', { outputFolder: 'playwright-report' }],
-    ['json', { outputFile: 'test-results/results.json' }],
-    ['junit', { outputFile: 'test-results/junit.xml' }],
-    ['list']
+    ['list'],
+    [
+      'html',
+      {
+        outputFolder: 'playwright-report',
+        open: 'never',
+      },
+    ],
+    [
+      'junit',
+      {
+        outputFile: 'test-results/junit.xml',
+      },
+    ],
   ],
-  
-  // Global test settings
+
+  // Assertion timeout
+  expect: {
+    timeout: 10 * 1000,
+  },
+
   use: {
-    // Base URL for navigation - loaded from .env file
+    // Base URL
     baseURL: process.env.BASE_URL || 'https://www.theaa.com',
-    
-    // Browser context options
+
+    // Maximum time for actions such as click(), fill(), check()
+    actionTimeout: 15 * 1000,
+
+    // Maximum time for navigation such as page.goto()
+    navigationTimeout: 30 * 1000,
+
+    // Collect useful evidence in Jenkins
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
-    
-    // Action timeout - from .env or default 10s
-    actionTimeout: Number(process.env.ACTION_TIMEOUT) || 10 * 1000,
-    
-    // Navigation timeout - from .env or default 15s
-    navigationTimeout: Number(process.env.NAVIGATION_TIMEOUT) || 15 * 1000,
-    
-    // Headless mode - from .env or default false
-    headless: process.env.HEADLESS === 'true',
-    
-    // Optional: Slow down execution to watch actions
-    launchOptions: {
-      slowMo: Number(process.env.SLOW_MO) || 0,
-    },
   },
-  
-  // Browser projects configuration
+
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: {
+        ...devices['Desktop Chrome'],
+      },
     },
+
     {
       name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
+      use: {
+        ...devices['Desktop Firefox'],
+      },
     },
+
     {
       name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
+      use: {
+        ...devices['Desktop Safari'],
+      },
     },
   ],
 });
