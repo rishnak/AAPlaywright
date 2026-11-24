@@ -21,20 +21,37 @@ module.exports = defineConfig({
   // Control workers
   workers: process.env.CI ? 1 : undefined,
 
-  // Reporters
+  // Reporters - Enhanced for detailed Jenkins reporting
   reporter: [
+    // Console output during test execution
     ['list'],
+    
+    // Detailed HTML report with screenshots, videos, and step-by-step execution
     [
       'html',
       {
         outputFolder: 'playwright-report',
-        open: 'never',
+        open: 'never', // Don't open browser in CI
+        // Show detailed test information
+        attachmentsBaseURL: undefined,
       },
     ],
+    
+    // JUnit XML for Jenkins test result tracking
     [
       'junit',
       {
         outputFile: 'test-results/junit.xml',
+        embedAnnotationsAsProperties: true,
+        embedAttachmentsAsProperty: 'attachments',
+      },
+    ],
+    
+    // JSON report for programmatic access
+    [
+      'json',
+      {
+        outputFile: 'test-results/results.json',
       },
     ],
   ],
@@ -54,10 +71,18 @@ module.exports = defineConfig({
     // Maximum time for navigation such as page.goto()
     navigationTimeout: 30 * 1000,
 
-    // Collect useful evidence in Jenkins
-    trace: 'on-first-retry',
+    // Enhanced evidence collection for detailed reports
+    // Trace includes step-by-step actions, network activity, console logs
+    trace: 'retain-on-failure', // Changed from 'on-first-retry' to capture all failures
+    
+    // Screenshot on every failure
     screenshot: 'only-on-failure',
+    
+    // Video recording for failed tests
     video: 'retain-on-failure',
+    
+    // Enable headless mode in CI
+    headless: process.env.CI ? true : false,
   },
 
   projects: [
