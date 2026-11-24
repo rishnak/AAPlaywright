@@ -28,6 +28,9 @@
     },
     "5d0c73e2": {
       "value": "Setting environment variables...\n\nRunning smoke tests on chromium...\n\n> playwright-pom-framework@1.0.0 test:smoke\n> playwright test --grep @smoke --project=chromium\n◇ injected env (0) from .env\nTypeError: Unknown file extension \".ts\" for C:\\Users\\risk\\.jenkins\\workspace\\AAplaywright\\tests\\aa-website-pom.spec.ts\n    at eval (<anonymous>:1:1)\nTypeError: Unknown file extension \".ts\" for C:\\Users\\risk\\.jenkins\\workspace\\AAplaywright\\tests\\breakdownflowe2e.spec.ts\n    at eval (<anonymous>:1:1)\nError:"
+    },
+    "2adc5138": {
+      "value": "Started by user Rishna K\nObtained Jenkinsfile from git https://github.com/rishnak/AAPlaywright.git\n[Pipeline] Start of Pipeline\n[Pipeline] node\nRunning on Jenkins in C:\\Users\\risk\\.jenkins\\workspace\\AAplaywright\n[Pipeline] {\n[Pipeline] stage\n[Pipeline] { (Declarative: Checkout SCM)\n[Pipeline] checkout\nSelected Git installation does not exist. Using Default\nThe recommended git tool is: NONE\nNo credentials specified\n > git.exe rev-parse --resolve-git-dir C:\\Users\\risk\\.jenkins\\workspace\\AAplaywrig"
     }
   },
   "localPrompts": {},
