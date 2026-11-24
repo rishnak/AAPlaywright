@@ -135,85 +135,17 @@ pipeline {
             }
         }
         
-        stage('Diagnose Playwright TypeScript Setup') {
-            steps {
-                echo "============================================"
-                echo "  DIAGNOSTIC: PLAYWRIGHT TYPESCRIPT SETUP"
-                echo "============================================"
-                
-                script {
-                    nodejs(nodeJSInstallationName: env.NODE_VERSION) {
-                        bat '''
-                            @echo off
-                            echo.
-                            echo ========================================
-                            echo [DIAGNOSTIC] Runtime Versions
-                            echo ========================================
-                            echo Node.js Version:
-                            node --version
-                            echo.
-                            echo npm Version:
-                            npm --version
-                            echo.
-                            echo Playwright Version:
-                            npx playwright --version
-                            echo.
-                            
-                            echo ========================================
-                            echo [DIAGNOSTIC] Installed Dependencies
-                            echo ========================================
-                            npm ls @playwright/test typescript ts-node --depth=0
-                            echo.
-                            
-                            echo ========================================
-                            echo [DIAGNOSTIC] Playwright Test Discovery
-                            echo ========================================
-                            echo Running: npx playwright test --list
-                            echo.
-                            npx playwright test --list
-                            echo.
-                            
-                            echo ========================================
-                            echo [DIAGNOSTIC] Configuration Files Check
-                            echo ========================================
-                            echo Checking playwright.config.js:
-                            if exist playwright.config.js (
-                                echo   FOUND: playwright.config.js
-                            ) else (
-                                echo   MISSING: playwright.config.js
-                            )
-                            
-                            echo Checking playwright.config.ts:
-                            if exist playwright.config.ts (
-                                echo   FOUND: playwright.config.ts
-                            ) else (
-                                echo   MISSING: playwright.config.ts
-                            )
-                            
-                            echo Checking tsconfig.json:
-                            if exist tsconfig.json (
-                                echo   FOUND: tsconfig.json
-                            ) else (
-                                echo   MISSING: tsconfig.json
-                            )
-                            echo.
-                            
-                            echo ========================================
-                            echo [DIAGNOSTIC] Test Files Check
-                            echo ========================================
-                            echo Test files in tests directory:
-                            dir /B tests\\*.spec.ts 2>nul || echo   No .spec.ts files found
-                            echo.
-                            
-                            echo ========================================
-                            echo [DIAGNOSTIC] Complete - Proceeding to Test Execution
-                            echo ========================================
-                            echo.
-                        '''
-                    }
-                }
-            }
+        stage('Diagnose Playwright') {
+    steps {
+        nodejs('NodeJS 20') {
+            bat 'node --version'
+            bat 'npm --version'
+            bat 'npx playwright --version'
+            bat 'npm ls @playwright/test playwright playwright-core typescript ts-node'
+            bat 'npx playwright test --list'
         }
+    }
+}
         
         stage('Execute Playwright Tests') {
             steps {
