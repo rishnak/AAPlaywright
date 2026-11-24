@@ -137,7 +137,7 @@ pipeline {
         
         stage('Diagnose Playwright') {
     steps {
-        nodejs('NodeJS 20') {
+        nodejs('NodeJS 24') {
             bat 'node --version'
             bat 'npm --version'
             bat 'npx playwright --version'
