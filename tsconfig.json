@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ES2022",
     "module": "commonjs",
-    "moduleResolution": "node10",
+    "moduleResolution": "node",
     "lib": ["ES2022"],
     "types": ["node", "@playwright/test"],
     "strict": true,
@@ -13,7 +13,6 @@
     "outDir": "./dist",
     "rootDir": "./",
     "noEmit": true,
-    "ignoreDeprecations": "6.0",
     "baseUrl": "./",
     "paths": {
       "@pages/*": ["src/pages/*"],
@@ -21,11 +20,6 @@
       "@utilities/*": ["src/utilities/*"],
       "@data/*": ["src/data/*"],
       "@tests/*": ["tests/*"]
-    }
-  },
-  "ts-node": {
-    "compilerOptions": {
-      "module": "commonjs"
     }
   },
   "include": [

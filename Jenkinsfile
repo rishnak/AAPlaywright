@@ -57,6 +57,14 @@ pipeline {
                 
                 checkout scm
                 
+                // Create .env file from .env.example if it doesn't exist
+                bat '''
+                    if not exist .env (
+                        echo Creating .env file from .env.example...
+                        copy .env.example .env
+                    )
+                '''
+                
                 // Display build info
                 bat '''
                     echo.
