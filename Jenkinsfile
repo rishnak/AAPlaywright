@@ -202,7 +202,7 @@ pipeline {
                             echo [DIAGNOSTIC] Test Files Check
                             echo ========================================
                             echo Test files in tests directory:
-                            dir /B tests\*.spec.ts 2>nul || echo   No .spec.ts files found
+                            dir /B tests\\*.spec.ts 2>nul || echo   No .spec.ts files found
                             echo.
                             
                             echo ========================================
