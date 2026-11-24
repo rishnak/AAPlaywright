@@ -103,12 +103,6 @@
         "encoded": "//%20Maximum%20time%20one%20test%20can%20run%20for%20(from%20.env%20or%20default%2030s)",
         "prevChunkIds": []
       },
-      "16": {
-        "chunkId": "c4456c",
-        "hash": "36ae4f4c",
-        "encoded": "timeout:%20Number(process.env.DEFAULT_TIMEOUT)%20%7C%7C%2030%20*%201000,",
-        "prevChunkIds": []
-      },
       "18": {
         "chunkId": "c4456c",
         "hash": "0fa83815",
@@ -403,6 +397,7 @@
         "encoded": "%7D);",
         "prevChunkIds": []
       }
-    }
+    },
+    "_prevLineCount": 78
   }
 }

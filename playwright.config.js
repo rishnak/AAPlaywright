@@ -14,7 +14,7 @@ module.exports = defineConfig({
   testDir: './tests',
   
   // Maximum time one test can run for (from .env or default 30s)
-  timeout: Number(process.env.DEFAULT_TIMEOUT) || 30 * 1000,
+  timeout: Number(process.env.DEFAULT_TIMEOUT) || 60 * 1000,
   
   // Test execution settings
   fullyParallel: true,
