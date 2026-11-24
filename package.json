@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Playwright Page Object Model Test Automation Framework",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "playwright test",
     "test:headed": "playwright test --headed",
@@ -31,7 +30,6 @@
   "devDependencies": {
     "@playwright/test": "^1.65.1",
     "@types/node": "^26.6.6",
-    "ts-node": "^10.9.2",
     "typescript": "^7.0.2"
   },
   "dependencies": {
