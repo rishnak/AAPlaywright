@@ -25,6 +25,9 @@
     },
     "cec5c957": {
       "value": "Analyze my existing Playwright TypeScript automation project and implement a Jenkins CI pipeline for it.\n\nPlease inspect the existing project structure, package.json, playwright.config.ts, test scripts, test tags, environment/config files, and reporting configuration before making changes. Reuse the framework's existing conventions wherever possible.\n\nRequirements:\n\n1. Create a Jenkinsfile in the root of the project using Declarative Jenkins Pipeline syntax.\n\n2. Configure the pipeline with these"
+    },
+    "5d0c73e2": {
+      "value": "Setting environment variables...\n\nRunning smoke tests on chromium...\n\n> playwright-pom-framework@1.0.0 test:smoke\n> playwright test --grep @smoke --project=chromium\n◇ injected env (0) from .env\nTypeError: Unknown file extension \".ts\" for C:\\Users\\risk\\.jenkins\\workspace\\AAplaywright\\tests\\aa-website-pom.spec.ts\n    at eval (<anonymous>:1:1)\nTypeError: Unknown file extension \".ts\" for C:\\Users\\risk\\.jenkins\\workspace\\AAplaywright\\tests\\breakdownflowe2e.spec.ts\n    at eval (<anonymous>:1:1)\nError:"
     }
   },
   "localPrompts": {},
