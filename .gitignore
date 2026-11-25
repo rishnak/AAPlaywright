@@ -1,45 +1,284 @@
-# Node modules
+# ============================================
+# Node.js Dependencies
+# ============================================
 node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.npm/
+.yarn/
 
-# Playwright
+# ============================================
+# Playwright Test Results & Reports
+# ============================================
+# Test results directory
 test-results/
+
+# HTML reports
 playwright-report/
-playwright/.cache/
 
-# Screenshots
+# JUnit XML reports
+junit.xml
+
+# JSON reports
+results.json
+
+# Allure reports (if using Allure)
+allure-results/
+allure-report/
+
+# ============================================
+# Playwright Screenshots & Videos
+# ============================================
+# Screenshots taken during tests
 screenshots/
+*.png
+*.jpg
+*.jpeg
 
-# Test artifacts
+# Videos recorded during tests
+videos/
+*.webm
+*.mp4
+
+# ============================================
+# Playwright Traces
+# ============================================
+# Trace files for debugging
+traces/
 *.trace
 *.zip
 
-# TypeScript
-dist/
-*.tsbuildinfo
+# Trace viewer cache
+.trace/
 
-# Environment variables
+# ============================================
+# Playwright Cache & Browsers
+# ============================================
+# Playwright browser binaries cache
+.playwright/
+
+# Browser cache directories
+.cache/
+playwright/.cache/
+
+# Browser profiles
+user-data-dir/
+
+# ============================================
+# Environment Variables & Secrets
+# ============================================
+# Environment files (keep .env.example)
 .env
 .env.local
 .env.*.local
+.env.production
+.env.staging
+.env.development
 
-# IDE
+# Secrets and credentials
+secrets/
+*.key
+*.pem
+*.cert
+
+# ============================================
+# IDE & Editor Files
+# ============================================
+# VS Code
 .vscode/
+*.code-workspace
+
+# JetBrains IDEs (WebStorm, IntelliJ, etc.)
 .idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
 *.swp
 *.swo
 *~
+.vim/
 
-# OS
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ============================================
+# Operating System Files
+# ============================================
+# macOS
 .DS_Store
-Thumbs.db
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
 
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+.nfs*
+
+# ============================================
+# Build Output & Compiled Files
+# ============================================
+# TypeScript compiled output
+dist/
+build/
+out/
+*.js.map
+*.d.ts.map
+
+# Compiled JavaScript (if TypeScript)
+# Uncomment if you don't want to commit compiled files
+# *.js
+# !*.config.js
+# !jest.config.js
+# !playwright.config.js
+
+# ============================================
 # Logs
+# ============================================
 logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Coverage
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# ============================================
+# Testing & Coverage
+# ============================================
+# Coverage reports
 coverage/
+*.lcov
 .nyc_output/
+
+# Jest
+jest-results/
+
+# ============================================
+# Temporary Files
+# ============================================
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# ============================================
+# Misc
+# ============================================
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# dotenv environment variable files
+.env.test
+.env.test.local
+
+# parcel-bundler cache
+.parcel-cache
+
+# Next.js build output
+.next
+out
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Gatsby files
+.cache/
+public
+
+# Storybook build outputs
+storybook-static/
+
+# TypeDoc output
+typedoc/
+
+# ============================================
+# Playwright Specific Additions
+# ============================================
+# Auth state files (if storing browser sessions)
+auth/
+*.auth.json
+storage-state.json
+
+# Playwright screenshots with timestamps
+*-screenshot-*.png
+*-failure-*.png
+
+# Playwright videos with timestamps
+*-video-*.webm
+
+# Playwright generated files
+.playwright-results/
+
+# ============================================
+# Jenkins/CI Related (if applicable)
+# ============================================
+.jenkins/
+
+# ============================================
+# Git Related
+# ============================================
+# Git merge conflicts
+*.orig
+
+# ============================================
+# Custom Project Files (Optional)
+# ============================================
+# Add any project-specific files here
+# temp/
+# scratch/
+# notes.txt

@@ -1,0 +1,31 @@
+{
+  "filename": "AACarsPage.ts",
+  "path": "src\\page-objects\\AACarsPage.ts",
+  "version": "1.1",
+  "files": {
+    "b3f5e664": {
+      "value": [
+        {
+          "programming_language": "TypeScript",
+          "fileName": "AACarsPage.ts",
+          "relativeFilePath": "src/page-objects/AACarsPage.ts",
+          "startLine": [
+            1
+          ],
+          "endLine": [
+            15
+          ]
+        }
+      ]
+    }
+  },
+  "promptMessage": {
+    "42028f67": {
+      "value": "Is it mandatory to define Promise<void> for each method"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

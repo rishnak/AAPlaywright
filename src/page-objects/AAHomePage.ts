@@ -16,6 +16,9 @@ export class AAHomePage extends BasePage {
   private readonly cookieAcceptButton: Locator;
   private readonly breakdownLink: Locator;
   private readonly breakdownCoverLink: Locator;
+  private readonly newAndUsedCarsLink: Locator;
+  private readonly aaCarsLink: Locator;
+
   
   constructor(page: Page) {
     super(page); // Call BasePage constructor
@@ -31,24 +34,33 @@ export class AAHomePage extends BasePage {
     // ✅ FIXED: More specific selector to avoid strict mode violation
     this.breakdownLink = page.locator('button.responsiveMenu').filter({ hasText: 'Breakdown' });
     this.breakdownCoverLink = page.getByRole('link', { name: 'Breakdown cover' }).first();
+    this.newAndUsedCarsLink = page.locator('button.responsiveMenu').filter({ hasText: 'New and used cars' });
+    this.aaCarsLink = page.getByRole('link', { name: 'AA Cars' }).first();
   }
   
   /**
    * Navigate to AA homepage
-   * Uses BasePage.navigate() method - WAIT USES domcontentloaded instead of networkidle
+   * ✅ Uses baseURL from playwright.config.js
    */
   async navigateToAAHome(): Promise<void> {
-    await this.page.goto('/', { waitUntil: 'domcontentloaded' }); // Faster than networkidle
+    await this.page.goto('/', { 
+      waitUntil: 'networkidle',
+      timeout: 30000 
+    });
   }
   
   /**
    * Accept cookie consent if present
-   * Uses BasePage.isVisible() and BasePage.click()
+   * ✅ ENHANCED: Added explicit wait with timeout
    */
   async acceptCookiesIfPresent(): Promise<void> {
-    const cookieVisible = await this.isVisible(this.cookieAcceptButton);
-    if (cookieVisible) {
+    try {
+      await this.cookieAcceptButton.waitFor({ state: 'visible', timeout: 5000 });
       await this.click(this.cookieAcceptButton);
+      // Wait for cookie banner to disappear
+      await this.page.waitForTimeout(500);
+    } catch (error) {
+      console.log('No cookie banner found or already accepted');
     }
   }
   
@@ -81,11 +93,32 @@ export class AAHomePage extends BasePage {
   
   /**
    * Click on Breakdown Cover link
-   * Uses BasePage.click() method
+   * ✅ ENHANCED: Added wait for dropdown to appear
    */
   async navigateToBreakdownCover(): Promise<void> {
+    // Click dropdown button
     await this.click(this.breakdownLink);
+    
+    // Wait for dropdown menu to expand and link to be visible
+    await this.breakdownCoverLink.waitFor({ state: 'visible', timeout: 10000 });
+    
+    // Click the link
     await this.click(this.breakdownCoverLink);
+  }
+
+  /**
+   * Navigate to AA Cars page
+   * ✅ ENHANCED: Added wait for dropdown to appear
+   */
+  async navigateToAACarsPage(): Promise<void> {
+    // Click dropdown button
+    await this.click(this.newAndUsedCarsLink);
+    
+    // Wait for dropdown menu to expand and link to be visible
+    await this.aaCarsLink.waitFor({ state: 'visible', timeout: 10000 });
+    
+    // Click the link
+    await this.click(this.aaCarsLink);
   }
 
   /**

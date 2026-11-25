@@ -21,7 +21,7 @@
         "hash": "2085e98d",
         "messageId": "system_08bc9520-e30e-11f1-8e7f-299f21b14205",
         "codeBlockId": null,
-        "isActive": true,
+        "isActive": false,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 11/18/2026, 10:43:08 AM\n- **source**: agent\n- **type**: agentWriteTool\n"
       },
       "c3f78c": {
@@ -40,7 +40,7 @@
         "hash": "9b58db64",
         "messageId": "system_08bc9520-e30e-11f1-8e7f-299f21b14205",
         "codeBlockId": null,
-        "isActive": true,
+        "isActive": false,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 11/18/2026, 10:43:08 AM\n- **source**: agent\n- **type**: agentWriteTool\n"
       },
       "ba1ca6": {
@@ -61,1408 +61,2574 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Rishna K\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 11/18/2026, 3:17:45 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      },
+      "7f1363": {
+        "user": "You",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1795584246,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "f1a65dac",
+          "files": "b3e44b5d"
+        },
+        "hash": "0c2f7b82",
+        "messageId": "system_3cc4a150-e890-11f1-9fcc-2b6c1b4c5b39",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 11/25/2026, 10:54:06 AM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      },
+      "55bc0d": {
+        "user": "You",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1795584426,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "68d9ed46",
+          "files": "2084b422"
+        },
+        "hash": "256af3a7",
+        "messageId": "system_7d5827a0-e890-11f1-9fcc-2b6c1b4c5b39",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 11/25/2026, 10:57:06 AM\n- **source**: agent\n- **type**: agentWriteTool\n"
       }
     },
     "lines": {
       "0": {
-        "chunkId": "ba1ca6",
+        "chunkId": "55bc0d",
         "hash": "7afb29b2",
         "encoded": "import%20%7B%20Page,%20Locator%20%7D%20from%20'@playwright/test';",
         "prevChunkIds": []
       },
       "1": {
-        "chunkId": "ba1ca6",
+        "chunkId": "55bc0d",
         "hash": "79eca717",
         "encoded": "import%20%7B%20BasePage%20%7D%20from%20'../pages/BasePage';",
         "prevChunkIds": []
       },
       "3": {
-        "chunkId": "ba1ca6",
+        "chunkId": "55bc0d",
         "hash": "62512d72",
         "encoded": "/**",
         "prevChunkIds": []
       },
       "4": {
-        "chunkId": "ba1ca6",
+        "chunkId": "55bc0d",
         "hash": "7262b2fe",
         "encoded": "*%20AA%20Home%20Page%20Object",
         "prevChunkIds": []
       },
       "5": {
-        "chunkId": "ba1ca6",
+        "chunkId": "55bc0d",
         "hash": "a99a9d1d",
         "encoded": "*%20Encapsulates%20all%20elements%20and%20actions%20for%20the%20AA%20homepage",
         "prevChunkIds": []
       },
       "6": {
-        "chunkId": "ba1ca6",
+        "chunkId": "55bc0d",
         "hash": "7803b4f9",
         "encoded": "*%20Extends%20BasePage%20to%20inherit%20common%20methods",
         "prevChunkIds": []
       },
       "7": {
-        "chunkId": "ba1ca6",
+        "chunkId": "55bc0d",
         "hash": "0ae79b2f",
         "encoded": "*/",
         "prevChunkIds": []
       },
       "8": {
-        "chunkId": "ba1ca6",
+        "chunkId": "55bc0d",
         "hash": "dcdbbd8d",
         "encoded": "export%20class%20AAHomePage%20extends%20BasePage%20%7B",
         "prevChunkIds": []
       },
       "9": {
-        "chunkId": "ba1ca6",
+        "chunkId": "55bc0d",
         "hash": "d49e9094",
         "encoded": "//%20Locators%20-%20private%20readonly%20for%20encapsulation",
         "prevChunkIds": []
       },
       "10": {
-        "chunkId": "ba1ca6",
+        "chunkId": "55bc0d",
         "hash": "fe306f07",
         "encoded": "private%20readonly%20mainLogo:%20Locator;",
         "prevChunkIds": []
       },
       "11": {
-        "chunkId": "ba1ca6",
+        "chunkId": "55bc0d",
         "hash": "a0fa435d",
         "encoded": "private%20readonly%20mainNavigation:%20Locator;",
         "prevChunkIds": []
       },
       "12": {
-        "chunkId": "ba1ca6",
+        "chunkId": "55bc0d",
         "hash": "c5cca2c1",
         "encoded": "private%20readonly%20carInsuranceLink:%20Locator;",
         "prevChunkIds": []
       },
       "13": {
-        "chunkId": "ba1ca6",
+        "chunkId": "55bc0d",
         "hash": "24d0e2c3",
         "encoded": "private%20readonly%20membershipLink:%20Locator;",
         "prevChunkIds": []
       },
       "14": {
-        "chunkId": "ba1ca6",
+        "chunkId": "55bc0d",
         "hash": "64f88cab",
         "encoded": "private%20readonly%20searchButton:%20Locator;",
         "prevChunkIds": []
       },
       "15": {
-        "chunkId": "ba1ca6",
+        "chunkId": "55bc0d",
         "hash": "b458e10e",
         "encoded": "private%20readonly%20cookieAcceptButton:%20Locator;",
         "prevChunkIds": []
       },
       "16": {
-        "chunkId": "ba1ca6",
+        "chunkId": "55bc0d",
         "hash": "25939d5e",
         "encoded": "private%20readonly%20breakdownLink:%20Locator;",
         "prevChunkIds": []
       },
       "17": {
-        "chunkId": "ba1ca6",
+        "chunkId": "55bc0d",
         "hash": "0b8972cf",
         "encoded": "private%20readonly%20breakdownCoverLink:%20Locator;",
         "prevChunkIds": []
       },
-      "19": {
-        "chunkId": "ba1ca6",
-        "hash": "bc822702",
-        "encoded": "constructor(page:%20Page)%20%7B",
+      "18": {
+        "chunkId": "55bc0d",
+        "hash": "04461b45",
+        "encoded": "private%20readonly%20newAndUsedCarsLink:%20Locator;",
         "prevChunkIds": []
       },
-      "20": {
-        "chunkId": "ba1ca6",
-        "hash": "23ad1cd4",
-        "encoded": "super(page);%20//%20Call%20BasePage%20constructor",
+      "19": {
+        "chunkId": "55bc0d",
+        "hash": "40df4b6d",
+        "encoded": "private%20readonly%20aaCarsLink:%20Locator;",
         "prevChunkIds": []
       },
       "22": {
-        "chunkId": "ba1ca6",
-        "hash": "b5234fd3",
-        "encoded": "//%20Initialize%20locators%20using%20actual%20AA%20website%20selectors",
+        "chunkId": "55bc0d",
+        "hash": "ac2c8b57",
+        "encoded": "constructor(page:%20Page)%20%7B",
         "prevChunkIds": []
       },
       "23": {
-        "chunkId": "ba1ca6",
-        "hash": "cb33cd83",
-        "encoded": "this.mainLogo%20=%20page.locator('a%5Baria-label*=%22AA%22%20i%5D,%20.logo,%20header%20img').first();",
-        "prevChunkIds": []
-      },
-      "24": {
-        "chunkId": "ba1ca6",
-        "hash": "af4309fc",
-        "encoded": "this.mainNavigation%20=%20page.locator('nav,%20header').first();",
+        "chunkId": "55bc0d",
+        "hash": "e05686a8",
+        "encoded": "super(page);%20//%20Call%20BasePage%20constructor",
         "prevChunkIds": []
       },
       "25": {
-        "chunkId": "ba1ca6",
-        "hash": "62cb3df2",
-        "encoded": "this.carInsuranceLink%20=%20page.locator('a:has-text(%22Insurance%22)').first();",
+        "chunkId": "55bc0d",
+        "hash": "67e42fae",
+        "encoded": "//%20Initialize%20locators%20using%20actual%20AA%20website%20selectors",
         "prevChunkIds": []
       },
       "26": {
-        "chunkId": "ba1ca6",
-        "hash": "4756d8d1",
-        "encoded": "this.membershipLink%20=%20page.locator('a:has-text(%22Membership%22)').first();",
+        "chunkId": "55bc0d",
+        "hash": "9226d773",
+        "encoded": "this.mainLogo%20=%20page.locator('a%5Baria-label*=%22AA%22%20i%5D,%20.logo,%20header%20img').first();",
         "prevChunkIds": []
       },
       "27": {
-        "chunkId": "ba1ca6",
-        "hash": "8084877a",
-        "encoded": "this.searchButton%20=%20page.locator('button%5Baria-label*=%22search%22%20i%5D,%20%5Bclass*=%22search%22%5D').first();",
+        "chunkId": "55bc0d",
+        "hash": "20401418",
+        "encoded": "this.mainNavigation%20=%20page.locator('nav,%20header').first();",
         "prevChunkIds": []
       },
       "28": {
-        "chunkId": "ba1ca6",
-        "hash": "79a81def",
-        "encoded": "this.cookieAcceptButton%20=%20page.locator('button:has-text(%22Accept%22),%20button:has-text(%22OK%22)').first();",
+        "chunkId": "55bc0d",
+        "hash": "14b17b82",
+        "encoded": "this.carInsuranceLink%20=%20page.locator('a:has-text(%22Insurance%22)').first();",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "55bc0d",
+        "hash": "6e77d506",
+        "encoded": "this.membershipLink%20=%20page.locator('a:has-text(%22Membership%22)').first();",
         "prevChunkIds": []
       },
       "30": {
-        "chunkId": "ba1ca6",
-        "hash": "7b4a40ee",
-        "encoded": "//%20%E2%9C%85%20FIXED:%20More%20specific%20selector%20to%20avoid%20strict%20mode%20violation",
+        "chunkId": "55bc0d",
+        "hash": "0e69265e",
+        "encoded": "this.searchButton%20=%20page.locator('button%5Baria-label*=%22search%22%20i%5D,%20%5Bclass*=%22search%22%5D').first();",
         "prevChunkIds": []
       },
       "31": {
-        "chunkId": "ba1ca6",
-        "hash": "36a6f54f",
-        "encoded": "this.breakdownLink%20=%20page.locator('button.responsiveMenu').filter(%7B%20hasText:%20'Breakdown'%20%7D);",
-        "prevChunkIds": []
-      },
-      "32": {
-        "chunkId": "ba1ca6",
-        "hash": "690b6c08",
-        "encoded": "this.breakdownCoverLink%20=%20page.getByRole('link',%20%7B%20name:%20'Breakdown%20cover'%20%7D).first();",
+        "chunkId": "55bc0d",
+        "hash": "e952ca9b",
+        "encoded": "this.cookieAcceptButton%20=%20page.locator('button:has-text(%22Accept%22),%20button:has-text(%22OK%22)').first();",
         "prevChunkIds": []
       },
       "33": {
-        "chunkId": "ba1ca6",
-        "hash": "0e2c0edc",
-        "encoded": "%7D",
+        "chunkId": "55bc0d",
+        "hash": "a21b1672",
+        "encoded": "//%20%E2%9C%85%20FIXED:%20More%20specific%20selector%20to%20avoid%20strict%20mode%20violation",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "55bc0d",
+        "hash": "bbde9279",
+        "encoded": "this.breakdownLink%20=%20page.locator('button.responsiveMenu').filter(%7B%20hasText:%20'Breakdown'%20%7D);",
         "prevChunkIds": []
       },
       "35": {
-        "chunkId": "ba1ca6",
-        "hash": "bfb1acd4",
-        "encoded": "/**",
+        "chunkId": "55bc0d",
+        "hash": "a65fd32e",
+        "encoded": "this.breakdownCoverLink%20=%20page.getByRole('link',%20%7B%20name:%20'Breakdown%20cover'%20%7D).first();",
         "prevChunkIds": []
       },
       "36": {
-        "chunkId": "ba1ca6",
-        "hash": "f50dd47e",
-        "encoded": "*%20Navigate%20to%20AA%20homepage",
+        "chunkId": "55bc0d",
+        "hash": "c894883e",
+        "encoded": "this.newAndUsedCarsLink%20=%20page.locator('button.responsiveMenu').filter(%7B%20hasText:%20'New%20and%20used%20cars'%20%7D);",
         "prevChunkIds": []
       },
       "37": {
-        "chunkId": "ba1ca6",
-        "hash": "34e54386",
-        "encoded": "*%20Uses%20BasePage.navigate()%20method%20-%20WAIT%20USES%20domcontentloaded%20instead%20of%20networkidle",
+        "chunkId": "55bc0d",
+        "hash": "f95f112a",
+        "encoded": "this.aaCarsLink%20=%20page.getByRole('link',%20%7B%20name:%20'AA%20Cars'%20%7D).first();",
         "prevChunkIds": []
       },
       "38": {
-        "chunkId": "ba1ca6",
-        "hash": "7736df95",
-        "encoded": "*/",
-        "prevChunkIds": []
-      },
-      "39": {
-        "chunkId": "ba1ca6",
-        "hash": "2b48dd20",
-        "encoded": "async%20navigateToAAHome():%20Promise%3Cvoid%3E%20%7B",
+        "chunkId": "55bc0d",
+        "hash": "1b754c76",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "40": {
-        "chunkId": "ba1ca6",
-        "hash": "b9a113ff",
-        "encoded": "await%20this.page.goto('/',%20%7B%20waitUntil:%20'domcontentloaded'%20%7D);%20//%20Faster%20than%20networkidle",
+        "chunkId": "55bc0d",
+        "hash": "cf970820",
+        "encoded": "/**",
         "prevChunkIds": []
       },
       "41": {
-        "chunkId": "ba1ca6",
-        "hash": "98f83ab6",
-        "encoded": "%7D",
+        "chunkId": "55bc0d",
+        "hash": "298335f0",
+        "encoded": "*%20Navigate%20to%20AA%20homepage",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "55bc0d",
+        "hash": "8fadfc18",
+        "encoded": "*%20%E2%9C%85%20Uses%20baseURL%20from%20playwright.config.js",
         "prevChunkIds": []
       },
       "43": {
-        "chunkId": "ba1ca6",
-        "hash": "9d43f7fb",
-        "encoded": "/**",
+        "chunkId": "55bc0d",
+        "hash": "7b590782",
+        "encoded": "*/",
         "prevChunkIds": []
       },
       "44": {
-        "chunkId": "ba1ca6",
-        "hash": "552808f2",
-        "encoded": "*%20Accept%20cookie%20consent%20if%20present",
+        "chunkId": "55bc0d",
+        "hash": "068c969f",
+        "encoded": "async%20navigateToAAHome():%20Promise%3Cvoid%3E%20%7B",
         "prevChunkIds": []
       },
       "45": {
-        "chunkId": "ba1ca6",
-        "hash": "e2fb5069",
-        "encoded": "*%20Uses%20BasePage.isVisible()%20and%20BasePage.click()",
+        "chunkId": "55bc0d",
+        "hash": "fafbe6e4",
+        "encoded": "await%20this.page.goto('/',%20%7B",
         "prevChunkIds": []
       },
       "46": {
-        "chunkId": "ba1ca6",
-        "hash": "de284ca5",
-        "encoded": "*/",
+        "chunkId": "55bc0d",
+        "hash": "4a21f784",
+        "encoded": "waitUntil:%20'networkidle',",
         "prevChunkIds": []
       },
       "47": {
-        "chunkId": "ba1ca6",
-        "hash": "efd86640",
-        "encoded": "async%20acceptCookiesIfPresent():%20Promise%3Cvoid%3E%20%7B",
+        "chunkId": "55bc0d",
+        "hash": "1c316ba7",
+        "encoded": "timeout:%2030000",
         "prevChunkIds": []
       },
       "48": {
-        "chunkId": "ba1ca6",
-        "hash": "25e26394",
-        "encoded": "const%20cookieVisible%20=%20await%20this.isVisible(this.cookieAcceptButton);",
+        "chunkId": "55bc0d",
+        "hash": "0fc0ec26",
+        "encoded": "%7D);",
         "prevChunkIds": []
       },
       "49": {
-        "chunkId": "ba1ca6",
-        "hash": "c0434b7a",
-        "encoded": "if%20(cookieVisible)%20%7B",
-        "prevChunkIds": []
-      },
-      "50": {
-        "chunkId": "ba1ca6",
-        "hash": "f0404bba",
-        "encoded": "await%20this.click(this.cookieAcceptButton);",
+        "chunkId": "55bc0d",
+        "hash": "0b4804f7",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "51": {
-        "chunkId": "ba1ca6",
-        "hash": "38b604dc",
-        "encoded": "%7D",
+        "chunkId": "55bc0d",
+        "hash": "09dfcb49",
+        "encoded": "/**",
         "prevChunkIds": []
       },
       "52": {
-        "chunkId": "ba1ca6",
-        "hash": "88fadba2",
-        "encoded": "%7D",
+        "chunkId": "55bc0d",
+        "hash": "43db0872",
+        "encoded": "*%20Accept%20cookie%20consent%20if%20present",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "55bc0d",
+        "hash": "4c179827",
+        "encoded": "*%20%E2%9C%85%20ENHANCED:%20Added%20explicit%20wait%20with%20timeout",
         "prevChunkIds": []
       },
       "54": {
-        "chunkId": "ba1ca6",
-        "hash": "21c3f89a",
-        "encoded": "/**",
+        "chunkId": "55bc0d",
+        "hash": "43449f3f",
+        "encoded": "*/",
         "prevChunkIds": []
       },
       "55": {
-        "chunkId": "ba1ca6",
-        "hash": "168fdd8f",
-        "encoded": "*%20Verify%20homepage%20is%20loaded",
+        "chunkId": "55bc0d",
+        "hash": "f75dc3f8",
+        "encoded": "async%20acceptCookiesIfPresent():%20Promise%3Cvoid%3E%20%7B",
         "prevChunkIds": []
       },
       "56": {
-        "chunkId": "ba1ca6",
-        "hash": "2333f4a2",
-        "encoded": "*%20Uses%20BasePage.isVisible()%20method",
+        "chunkId": "55bc0d",
+        "hash": "5ade0744",
+        "encoded": "try%20%7B",
         "prevChunkIds": []
       },
       "57": {
-        "chunkId": "ba1ca6",
-        "hash": "4ea20dd7",
-        "encoded": "*%20@returns%20True%20if%20logo%20is%20visible",
+        "chunkId": "55bc0d",
+        "hash": "db70dc02",
+        "encoded": "await%20this.cookieAcceptButton.waitFor(%7B%20state:%20'visible',%20timeout:%205000%20%7D);",
         "prevChunkIds": []
       },
       "58": {
-        "chunkId": "ba1ca6",
-        "hash": "ad9f0305",
-        "encoded": "*/",
+        "chunkId": "55bc0d",
+        "hash": "04367d59",
+        "encoded": "await%20this.click(this.cookieAcceptButton);",
         "prevChunkIds": []
       },
       "59": {
-        "chunkId": "ba1ca6",
-        "hash": "8da0931d",
-        "encoded": "async%20isAAHomePageLoaded():%20Promise%3Cboolean%3E%20%7B",
+        "chunkId": "55bc0d",
+        "hash": "20f5bc7c",
+        "encoded": "//%20Wait%20for%20cookie%20banner%20to%20disappear",
         "prevChunkIds": []
       },
       "60": {
-        "chunkId": "ba1ca6",
-        "hash": "f6eb1dcb",
-        "encoded": "return%20await%20this.isVisible(this.mainNavigation);",
+        "chunkId": "55bc0d",
+        "hash": "8b024b18",
+        "encoded": "await%20this.page.waitForTimeout(500);",
         "prevChunkIds": []
       },
       "61": {
-        "chunkId": "ba1ca6",
-        "hash": "92368879",
-        "encoded": "%7D",
+        "chunkId": "55bc0d",
+        "hash": "16523485",
+        "encoded": "%7D%20catch%20(error)%20%7B",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "55bc0d",
+        "hash": "c83c2041",
+        "encoded": "console.log('No%20cookie%20banner%20found%20or%20already%20accepted');",
         "prevChunkIds": []
       },
       "63": {
-        "chunkId": "ba1ca6",
-        "hash": "199e31ca",
-        "encoded": "/**",
+        "chunkId": "55bc0d",
+        "hash": "78db855a",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "64": {
-        "chunkId": "ba1ca6",
-        "hash": "b1fbc049",
-        "encoded": "*%20Get%20page%20title",
-        "prevChunkIds": []
-      },
-      "65": {
-        "chunkId": "ba1ca6",
-        "hash": "86d9f856",
-        "encoded": "*%20Uses%20BasePage.getTitle()%20method",
+        "chunkId": "55bc0d",
+        "hash": "48dc6fe2",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "66": {
-        "chunkId": "ba1ca6",
-        "hash": "bd6c5620",
-        "encoded": "*%20@returns%20The%20page%20title",
+        "chunkId": "55bc0d",
+        "hash": "731c559b",
+        "encoded": "/**",
         "prevChunkIds": []
       },
       "67": {
-        "chunkId": "ba1ca6",
-        "hash": "8d2db5fd",
-        "encoded": "*/",
+        "chunkId": "55bc0d",
+        "hash": "f3b599b7",
+        "encoded": "*%20Verify%20homepage%20is%20loaded",
         "prevChunkIds": []
       },
       "68": {
-        "chunkId": "ba1ca6",
-        "hash": "c74bb2c5",
-        "encoded": "async%20getPageTitle():%20Promise%3Cstring%3E%20%7B",
-        "prevChunkIds": []
-      },
-      "69": {
-        "chunkId": "ba1ca6",
-        "hash": "6775c72b",
-        "encoded": "return%20await%20this.getTitle();",
-        "prevChunkIds": []
-      },
-      "70": {
-        "chunkId": "ba1ca6",
-        "hash": "352e9b23",
-        "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "72": {
-        "chunkId": "ba1ca6",
-        "hash": "22bb1daa",
-        "encoded": "/**",
-        "prevChunkIds": []
-      },
-      "73": {
-        "chunkId": "ba1ca6",
-        "hash": "ab69602b",
-        "encoded": "*%20Verify%20navigation%20menu%20is%20visible",
-        "prevChunkIds": []
-      },
-      "74": {
-        "chunkId": "ba1ca6",
-        "hash": "dcc782c8",
+        "chunkId": "55bc0d",
+        "hash": "1a0f6a15",
         "encoded": "*%20Uses%20BasePage.isVisible()%20method",
         "prevChunkIds": []
       },
-      "75": {
-        "chunkId": "ba1ca6",
-        "hash": "60be1aaf",
-        "encoded": "*%20@returns%20True%20if%20navigation%20is%20visible",
+      "69": {
+        "chunkId": "55bc0d",
+        "hash": "57f03f4c",
+        "encoded": "*%20@returns%20True%20if%20logo%20is%20visible",
         "prevChunkIds": []
       },
-      "76": {
-        "chunkId": "ba1ca6",
-        "hash": "7c40ea99",
+      "70": {
+        "chunkId": "55bc0d",
+        "hash": "72f2e141",
         "encoded": "*/",
         "prevChunkIds": []
       },
-      "77": {
-        "chunkId": "ba1ca6",
-        "hash": "bc0e40ef",
-        "encoded": "async%20isNavigationVisible():%20Promise%3Cboolean%3E%20%7B",
+      "71": {
+        "chunkId": "55bc0d",
+        "hash": "ab1e5ad9",
+        "encoded": "async%20isAAHomePageLoaded():%20Promise%3Cboolean%3E%20%7B",
         "prevChunkIds": []
       },
-      "78": {
-        "chunkId": "ba1ca6",
-        "hash": "1e9348f8",
+      "72": {
+        "chunkId": "55bc0d",
+        "hash": "bdff11de",
         "encoded": "return%20await%20this.isVisible(this.mainNavigation);",
         "prevChunkIds": []
       },
-      "79": {
-        "chunkId": "ba1ca6",
-        "hash": "8aac2494",
+      "73": {
+        "chunkId": "55bc0d",
+        "hash": "3654c6d8",
         "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "55bc0d",
+        "hash": "3646e3b7",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "55bc0d",
+        "hash": "4fb072ab",
+        "encoded": "*%20Get%20page%20title",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "55bc0d",
+        "hash": "ee703fdb",
+        "encoded": "*%20Uses%20BasePage.getTitle()%20method",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "55bc0d",
+        "hash": "5a66943d",
+        "encoded": "*%20@returns%20The%20page%20title",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "55bc0d",
+        "hash": "99a186d4",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "55bc0d",
+        "hash": "5abaf8c0",
+        "encoded": "async%20getPageTitle():%20Promise%3Cstring%3E%20%7B",
         "prevChunkIds": []
       },
       "81": {
-        "chunkId": "ba1ca6",
-        "hash": "9a94c1ad",
-        "encoded": "/**",
+        "chunkId": "55bc0d",
+        "hash": "8133c3d1",
+        "encoded": "return%20await%20this.getTitle();",
         "prevChunkIds": []
       },
       "82": {
-        "chunkId": "ba1ca6",
-        "hash": "64cfd1a6",
-        "encoded": "*%20Click%20on%20Breakdown%20Cover%20link",
-        "prevChunkIds": []
-      },
-      "83": {
-        "chunkId": "ba1ca6",
-        "hash": "7a3a6556",
-        "encoded": "*%20Uses%20BasePage.click()%20method",
+        "chunkId": "55bc0d",
+        "hash": "74977a35",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "84": {
-        "chunkId": "ba1ca6",
-        "hash": "268bf65a",
-        "encoded": "*/",
+        "chunkId": "55bc0d",
+        "hash": "ee0892c9",
+        "encoded": "/**",
         "prevChunkIds": []
       },
       "85": {
-        "chunkId": "ba1ca6",
-        "hash": "4a6198ca",
-        "encoded": "async%20navigateToBreakdownCover():%20Promise%3Cvoid%3E%20%7B",
+        "chunkId": "55bc0d",
+        "hash": "a2613b21",
+        "encoded": "*%20Verify%20navigation%20menu%20is%20visible",
         "prevChunkIds": []
       },
       "86": {
-        "chunkId": "ba1ca6",
-        "hash": "dc849e7c",
-        "encoded": "await%20this.click(this.breakdownLink);",
+        "chunkId": "55bc0d",
+        "hash": "9b920f83",
+        "encoded": "*%20Uses%20BasePage.isVisible()%20method",
         "prevChunkIds": []
       },
       "87": {
-        "chunkId": "ba1ca6",
-        "hash": "20e899c5",
-        "encoded": "await%20this.click(this.breakdownCoverLink);",
+        "chunkId": "55bc0d",
+        "hash": "3a971bea",
+        "encoded": "*%20@returns%20True%20if%20navigation%20is%20visible",
         "prevChunkIds": []
       },
       "88": {
-        "chunkId": "ba1ca6",
-        "hash": "726efa75",
-        "encoded": "%7D",
+        "chunkId": "55bc0d",
+        "hash": "6f88d05c",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "55bc0d",
+        "hash": "a77fc969",
+        "encoded": "async%20isNavigationVisible():%20Promise%3Cboolean%3E%20%7B",
         "prevChunkIds": []
       },
       "90": {
-        "chunkId": "ba1ca6",
-        "hash": "3efab6d4",
-        "encoded": "/**",
+        "chunkId": "55bc0d",
+        "hash": "82d9eb43",
+        "encoded": "return%20await%20this.isVisible(this.mainNavigation);",
         "prevChunkIds": []
       },
       "91": {
-        "chunkId": "ba1ca6",
-        "hash": "e87e883d",
-        "encoded": "*%20Click%20on%20Car%20Insurance%20link",
-        "prevChunkIds": []
-      },
-      "92": {
-        "chunkId": "ba1ca6",
-        "hash": "1519dbac",
-        "encoded": "*%20Uses%20BasePage.click()%20method",
+        "chunkId": "55bc0d",
+        "hash": "70416dc1",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "93": {
-        "chunkId": "ba1ca6",
-        "hash": "804c941f",
-        "encoded": "*/",
+        "chunkId": "55bc0d",
+        "hash": "b7b4eba7",
+        "encoded": "/**",
         "prevChunkIds": []
       },
       "94": {
-        "chunkId": "ba1ca6",
-        "hash": "ec222b13",
-        "encoded": "async%20clickCarInsurance():%20Promise%3Cvoid%3E%20%7B",
+        "chunkId": "55bc0d",
+        "hash": "69afb08d",
+        "encoded": "*%20Click%20on%20Breakdown%20Cover%20link",
         "prevChunkIds": []
       },
       "95": {
-        "chunkId": "ba1ca6",
-        "hash": "dca82f8e",
-        "encoded": "await%20this.click(this.carInsuranceLink);",
+        "chunkId": "55bc0d",
+        "hash": "5a71ce59",
+        "encoded": "*%20%E2%9C%85%20ENHANCED:%20Added%20wait%20for%20dropdown%20to%20appear",
         "prevChunkIds": []
       },
       "96": {
-        "chunkId": "ba1ca6",
-        "hash": "eb084e75",
-        "encoded": "%7D",
+        "chunkId": "55bc0d",
+        "hash": "3e120fb1",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "55bc0d",
+        "hash": "ce27606b",
+        "encoded": "async%20navigateToBreakdownCover():%20Promise%3Cvoid%3E%20%7B",
         "prevChunkIds": []
       },
       "98": {
-        "chunkId": "ba1ca6",
-        "hash": "87f5b5f6",
-        "encoded": "/**",
+        "chunkId": "55bc0d",
+        "hash": "59410d76",
+        "encoded": "//%20Click%20dropdown%20button",
         "prevChunkIds": []
       },
       "99": {
-        "chunkId": "ba1ca6",
-        "hash": "8be64113",
-        "encoded": "*%20Click%20on%20Membership%20link",
-        "prevChunkIds": []
-      },
-      "100": {
-        "chunkId": "ba1ca6",
-        "hash": "ff68fcd3",
-        "encoded": "*%20Uses%20BasePage.click()%20method",
+        "chunkId": "55bc0d",
+        "hash": "61515ca5",
+        "encoded": "await%20this.click(this.breakdownLink);",
         "prevChunkIds": []
       },
       "101": {
-        "chunkId": "ba1ca6",
-        "hash": "90fc923b",
-        "encoded": "*/",
+        "chunkId": "55bc0d",
+        "hash": "4b17ed55",
+        "encoded": "//%20Wait%20for%20dropdown%20menu%20to%20expand%20and%20link%20to%20be%20visible",
         "prevChunkIds": []
       },
       "102": {
-        "chunkId": "ba1ca6",
-        "hash": "b8535358",
-        "encoded": "async%20clickMembership():%20Promise%3Cvoid%3E%20%7B",
-        "prevChunkIds": []
-      },
-      "103": {
-        "chunkId": "ba1ca6",
-        "hash": "ec8b3a70",
-        "encoded": "await%20this.click(this.membershipLink);",
+        "chunkId": "55bc0d",
+        "hash": "11541efe",
+        "encoded": "await%20this.breakdownCoverLink.waitFor(%7B%20state:%20'visible',%20timeout:%2010000%20%7D);",
         "prevChunkIds": []
       },
       "104": {
-        "chunkId": "ba1ca6",
-        "hash": "7a43bd29",
-        "encoded": "%7D",
+        "chunkId": "55bc0d",
+        "hash": "cb9b4930",
+        "encoded": "//%20Click%20the%20link",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "55bc0d",
+        "hash": "b2972f98",
+        "encoded": "await%20this.click(this.breakdownCoverLink);",
         "prevChunkIds": []
       },
       "106": {
-        "chunkId": "ba1ca6",
-        "hash": "09438943",
-        "encoded": "/**",
-        "prevChunkIds": []
-      },
-      "107": {
-        "chunkId": "ba1ca6",
-        "hash": "04b30ab6",
-        "encoded": "*%20Scroll%20to%20view%20breakdown%20link",
-        "prevChunkIds": []
-      },
-      "108": {
-        "chunkId": "ba1ca6",
-        "hash": "ea1daf15",
-        "encoded": "*%20Uses%20BasePage.scrollToElement()%20then%20hover",
-        "prevChunkIds": []
-      },
-      "109": {
-        "chunkId": "ba1ca6",
-        "hash": "f555fe12",
-        "encoded": "*/",
-        "prevChunkIds": []
-      },
-      "110": {
-        "chunkId": "ba1ca6",
-        "hash": "abb3686f",
-        "encoded": "async%20hoverOverBreakdownCover():%20Promise%3Cvoid%3E%20%7B",
-        "prevChunkIds": []
-      },
-      "111": {
-        "chunkId": "ba1ca6",
-        "hash": "c557e31e",
-        "encoded": "await%20this.scrollToElement(this.breakdownLink);",
-        "prevChunkIds": []
-      },
-      "112": {
-        "chunkId": "ba1ca6",
-        "hash": "3674f723",
+        "chunkId": "55bc0d",
+        "hash": "5a59cee7",
         "encoded": "%7D",
         "prevChunkIds": []
       },
-      "114": {
-        "chunkId": "ba1ca6",
-        "hash": "6c9e2774",
+      "108": {
+        "chunkId": "55bc0d",
+        "hash": "fb5deb25",
         "encoded": "/**",
         "prevChunkIds": []
       },
-      "115": {
-        "chunkId": "ba1ca6",
-        "hash": "d3f5d2d0",
-        "encoded": "*%20Take%20screenshot%20of%20homepage",
+      "109": {
+        "chunkId": "55bc0d",
+        "hash": "a35d2972",
+        "encoded": "*%20Navigate%20to%20AA%20Cars%20page",
         "prevChunkIds": []
       },
-      "116": {
-        "chunkId": "ba1ca6",
-        "hash": "4baabbbe",
-        "encoded": "*%20Uses%20BasePage.takeScreenshot()%20method",
+      "110": {
+        "chunkId": "55bc0d",
+        "hash": "d3a26c75",
+        "encoded": "*%20%E2%9C%85%20ENHANCED:%20Added%20wait%20for%20dropdown%20to%20appear",
         "prevChunkIds": []
       },
-      "117": {
-        "chunkId": "ba1ca6",
-        "hash": "462dea46",
-        "encoded": "*%20@param%20name%20-%20Screenshot%20filename",
-        "prevChunkIds": []
-      },
-      "118": {
-        "chunkId": "ba1ca6",
-        "hash": "51181502",
+      "111": {
+        "chunkId": "55bc0d",
+        "hash": "9765472e",
         "encoded": "*/",
         "prevChunkIds": []
       },
+      "112": {
+        "chunkId": "55bc0d",
+        "hash": "1763b706",
+        "encoded": "async%20navigateToAACarsPage():%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "55bc0d",
+        "hash": "49202eea",
+        "encoded": "//%20Click%20dropdown%20button",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "55bc0d",
+        "hash": "d609176d",
+        "encoded": "await%20this.click(this.newAndUsedCarsLink);",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "55bc0d",
+        "hash": "5f60d7f9",
+        "encoded": "//%20Wait%20for%20dropdown%20menu%20to%20expand%20and%20link%20to%20be%20visible",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "55bc0d",
+        "hash": "3d5bb389",
+        "encoded": "await%20this.aaCarsLink.waitFor(%7B%20state:%20'visible',%20timeout:%2010000%20%7D);",
+        "prevChunkIds": []
+      },
       "119": {
-        "chunkId": "ba1ca6",
-        "hash": "667a6d89",
-        "encoded": "async%20captureHomepage(name:%20string):%20Promise%3Cvoid%3E%20%7B",
+        "chunkId": "55bc0d",
+        "hash": "1ef611f4",
+        "encoded": "//%20Click%20the%20link",
         "prevChunkIds": []
       },
       "120": {
-        "chunkId": "ba1ca6",
-        "hash": "c97caa5d",
-        "encoded": "await%20this.takeScreenshot(name);",
+        "chunkId": "55bc0d",
+        "hash": "2f7a2fc3",
+        "encoded": "await%20this.click(this.aaCarsLink);",
         "prevChunkIds": []
       },
       "121": {
-        "chunkId": "ba1ca6",
+        "chunkId": "55bc0d",
         "hash": "7b145d98",
         "encoded": "%7D",
         "prevChunkIds": []
       },
       "123": {
-        "chunkId": "ba1ca6",
+        "chunkId": "55bc0d",
         "hash": "b5d0264f",
         "encoded": "/**",
         "prevChunkIds": []
       },
       "124": {
-        "chunkId": "ba1ca6",
-        "hash": "cbbc5150",
-        "encoded": "*%20Get%20current%20URL",
+        "chunkId": "55bc0d",
+        "hash": "c475a91d",
+        "encoded": "*%20Click%20on%20Car%20Insurance%20link",
         "prevChunkIds": []
       },
       "125": {
-        "chunkId": "ba1ca6",
-        "hash": "7b1c5654",
-        "encoded": "*%20Uses%20BasePage.getCurrentUrl()%20method",
+        "chunkId": "55bc0d",
+        "hash": "45075be8",
+        "encoded": "*%20Uses%20BasePage.click()%20method",
         "prevChunkIds": []
       },
       "126": {
-        "chunkId": "ba1ca6",
-        "hash": "f3713823",
-        "encoded": "*%20@returns%20Current%20URL",
+        "chunkId": "55bc0d",
+        "hash": "50de1008",
+        "encoded": "*/",
         "prevChunkIds": []
       },
       "127": {
-        "chunkId": "ba1ca6",
-        "hash": "e9fb4d6b",
-        "encoded": "*/",
+        "chunkId": "55bc0d",
+        "hash": "fe24ff9d",
+        "encoded": "async%20clickCarInsurance():%20Promise%3Cvoid%3E%20%7B",
         "prevChunkIds": []
       },
       "128": {
-        "chunkId": "ba1ca6",
-        "hash": "877d55fc",
-        "encoded": "async%20getCurrentPageUrl():%20Promise%3Cstring%3E%20%7B",
+        "chunkId": "55bc0d",
+        "hash": "206fc44e",
+        "encoded": "await%20this.click(this.carInsuranceLink);",
         "prevChunkIds": []
       },
       "129": {
-        "chunkId": "ba1ca6",
-        "hash": "27b44732",
-        "encoded": "return%20await%20this.getCurrentUrl();",
+        "chunkId": "55bc0d",
+        "hash": "ff6991dc",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
-      "130": {
-        "chunkId": "ba1ca6",
-        "hash": "14fa0baa",
-        "encoded": "%7D",
+      "131": {
+        "chunkId": "55bc0d",
+        "hash": "62e7f37b",
+        "encoded": "/**",
         "prevChunkIds": []
       },
       "132": {
-        "chunkId": "ba1ca6",
-        "hash": "3d359f71",
-        "encoded": "/**",
+        "chunkId": "55bc0d",
+        "hash": "c57aff4d",
+        "encoded": "*%20Click%20on%20Membership%20link",
         "prevChunkIds": []
       },
       "133": {
-        "chunkId": "ba1ca6",
-        "hash": "9ae986b6",
-        "encoded": "*%20Scroll%20to%20footer",
+        "chunkId": "55bc0d",
+        "hash": "a44db754",
+        "encoded": "*%20Uses%20BasePage.click()%20method",
         "prevChunkIds": []
       },
       "134": {
-        "chunkId": "ba1ca6",
-        "hash": "12e29c80",
-        "encoded": "*%20Uses%20BasePage.scrollToElement()%20method",
+        "chunkId": "55bc0d",
+        "hash": "457779c8",
+        "encoded": "*/",
         "prevChunkIds": []
       },
       "135": {
-        "chunkId": "ba1ca6",
-        "hash": "fcf56963",
-        "encoded": "*/",
+        "chunkId": "55bc0d",
+        "hash": "08c3a8df",
+        "encoded": "async%20clickMembership():%20Promise%3Cvoid%3E%20%7B",
         "prevChunkIds": []
       },
       "136": {
-        "chunkId": "ba1ca6",
-        "hash": "416bc372",
-        "encoded": "async%20scrollToBottom():%20Promise%3Cvoid%3E%20%7B",
+        "chunkId": "55bc0d",
+        "hash": "d93e970f",
+        "encoded": "await%20this.click(this.membershipLink);",
         "prevChunkIds": []
       },
       "137": {
-        "chunkId": "ba1ca6",
-        "hash": "a87a229e",
-        "encoded": "const%20footer%20=%20this.page.locator('footer').first();",
-        "prevChunkIds": []
-      },
-      "138": {
-        "chunkId": "ba1ca6",
-        "hash": "6ed8889b",
-        "encoded": "await%20this.scrollToElement(footer);",
+        "chunkId": "55bc0d",
+        "hash": "1dc2599e",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "139": {
-        "chunkId": "ba1ca6",
-        "hash": "8e724f24",
-        "encoded": "%7D",
+        "chunkId": "55bc0d",
+        "hash": "a638dedc",
+        "encoded": "/**",
         "prevChunkIds": []
       },
       "140": {
-        "chunkId": "ba1ca6",
-        "hash": "be05556d",
-        "encoded": "%7D",
+        "chunkId": "55bc0d",
+        "hash": "80e78121",
+        "encoded": "*%20Scroll%20to%20view%20breakdown%20link",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "55bc0d",
+        "hash": "788093ad",
+        "encoded": "*%20Uses%20BasePage.scrollToElement()%20then%20hover",
         "prevChunkIds": []
       },
       "142": {
-        "chunkId": "c3f78c",
-        "hash": "44a474e0",
-        "encoded": "import%20%7B%20BasePage%20%7D%20from%20'../pages/BasePage';",
+        "chunkId": "55bc0d",
+        "hash": "78e03fb5",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "55bc0d",
+        "hash": "10234926",
+        "encoded": "async%20hoverOverBreakdownCover():%20Promise%3Cvoid%3E%20%7B",
         "prevChunkIds": []
       },
       "144": {
-        "chunkId": "c3f78c",
-        "hash": "99299884",
-        "encoded": "/**",
+        "chunkId": "55bc0d",
+        "hash": "13b0c289",
+        "encoded": "await%20this.scrollToElement(this.breakdownLink);",
         "prevChunkIds": []
       },
       "145": {
-        "chunkId": "c3f78c",
-        "hash": "70bb2b03",
-        "encoded": "*%20AA%20Home%20Page%20Object",
-        "prevChunkIds": []
-      },
-      "146": {
-        "chunkId": "c3f78c",
-        "hash": "073c4f16",
-        "encoded": "*%20Encapsulates%20all%20elements%20and%20actions%20for%20the%20AA%20homepage",
+        "chunkId": "55bc0d",
+        "hash": "48cab207",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "147": {
-        "chunkId": "c3f78c",
-        "hash": "095f20cb",
-        "encoded": "*%20Extends%20BasePage%20to%20inherit%20common%20methods",
+        "chunkId": "55bc0d",
+        "hash": "3c91f321",
+        "encoded": "/**",
         "prevChunkIds": []
       },
       "148": {
-        "chunkId": "c3f78c",
-        "hash": "e97a6751",
-        "encoded": "*/",
+        "chunkId": "55bc0d",
+        "hash": "7f266d75",
+        "encoded": "*%20Take%20screenshot%20of%20homepage",
         "prevChunkIds": []
       },
       "149": {
-        "chunkId": "c3f78c",
-        "hash": "7cc3aeef",
-        "encoded": "export%20class%20AAHomePage%20extends%20BasePage%20%7B",
+        "chunkId": "55bc0d",
+        "hash": "18cc23bd",
+        "encoded": "*%20Uses%20BasePage.takeScreenshot()%20method",
         "prevChunkIds": []
       },
       "150": {
-        "chunkId": "c3f78c",
-        "hash": "4d91e230",
-        "encoded": "//%20Locators%20-%20private%20readonly%20for%20encapsulation",
+        "chunkId": "55bc0d",
+        "hash": "dadde894",
+        "encoded": "*%20@param%20name%20-%20Screenshot%20filename",
         "prevChunkIds": []
       },
       "151": {
-        "chunkId": "c3f78c",
-        "hash": "c4e785c4",
-        "encoded": "private%20readonly%20mainLogo:%20Locator;",
+        "chunkId": "55bc0d",
+        "hash": "55ca4e71",
+        "encoded": "*/",
         "prevChunkIds": []
       },
       "152": {
-        "chunkId": "c3f78c",
-        "hash": "9f51d34b",
-        "encoded": "private%20readonly%20mainNavigation:%20Locator;",
+        "chunkId": "55bc0d",
+        "hash": "b5ef0515",
+        "encoded": "async%20captureHomepage(name:%20string):%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "55bc0d",
+        "hash": "84c3e6d4",
+        "encoded": "await%20this.takeScreenshot(name);",
         "prevChunkIds": []
       },
       "154": {
-        "chunkId": "c3f78c",
-        "hash": "17c80032",
-        "encoded": "private%20readonly%20membershipLink:%20Locator;",
-        "prevChunkIds": []
-      },
-      "155": {
-        "chunkId": "c3f78c",
-        "hash": "c2e5ae99",
-        "encoded": "private%20readonly%20searchButton:%20Locator;",
+        "chunkId": "55bc0d",
+        "hash": "dbb55d46",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "156": {
-        "chunkId": "c3f78c",
-        "hash": "b90c397f",
-        "encoded": "private%20readonly%20cookieAcceptButton:%20Locator;",
+        "chunkId": "55bc0d",
+        "hash": "139c1178",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "55bc0d",
+        "hash": "4214ea32",
+        "encoded": "*%20Get%20current%20URL",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "55bc0d",
+        "hash": "27f8afcc",
+        "encoded": "*%20Uses%20BasePage.getCurrentUrl()%20method",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "55bc0d",
+        "hash": "dd964f12",
+        "encoded": "*%20@returns%20Current%20URL",
         "prevChunkIds": []
       },
       "160": {
-        "chunkId": "c3f78c",
-        "hash": "e8f69449",
-        "encoded": "constructor(page:%20Page)%20%7B",
+        "chunkId": "55bc0d",
+        "hash": "b03d2119",
+        "encoded": "*/",
         "prevChunkIds": []
       },
       "161": {
-        "chunkId": "c3f78c",
-        "hash": "0dc9e185",
-        "encoded": "super(page);%20//%20Call%20BasePage%20constructor",
+        "chunkId": "55bc0d",
+        "hash": "21395b7d",
+        "encoded": "async%20getCurrentPageUrl():%20Promise%3Cstring%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "55bc0d",
+        "hash": "fa7ebdea",
+        "encoded": "return%20await%20this.getCurrentUrl();",
         "prevChunkIds": []
       },
       "163": {
-        "chunkId": "c3f78c",
-        "hash": "3065d344",
-        "encoded": "//%20Initialize%20locators%20using%20actual%20AA%20website%20selectors",
-        "prevChunkIds": []
-      },
-      "164": {
-        "chunkId": "c3f78c",
-        "hash": "d4bd28ec",
-        "encoded": "this.mainLogo%20=%20page.locator('a%5Baria-label*=%22AA%22%20i%5D,%20.logo,%20header%20img').first();",
+        "chunkId": "55bc0d",
+        "hash": "b205e858",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "165": {
-        "chunkId": "c3f78c",
-        "hash": "f9cad11c",
-        "encoded": "this.mainNavigation%20=%20page.locator('nav,%20header').first();",
+        "chunkId": "55bc0d",
+        "hash": "0382488a",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "55bc0d",
+        "hash": "c608322f",
+        "encoded": "*%20Scroll%20to%20footer",
         "prevChunkIds": []
       },
       "167": {
-        "chunkId": "c3f78c",
-        "hash": "fc93c98d",
-        "encoded": "this.membershipLink%20=%20page.locator('a:has-text(%22Membership%22)').first();",
+        "chunkId": "55bc0d",
+        "hash": "75a7ca68",
+        "encoded": "*%20Uses%20BasePage.scrollToElement()%20method",
         "prevChunkIds": []
       },
       "168": {
-        "chunkId": "c3f78c",
-        "hash": "47d73620",
-        "encoded": "this.searchButton%20=%20page.locator('button%5Baria-label*=%22search%22%20i%5D,%20%5Bclass*=%22search%22%5D').first();",
+        "chunkId": "55bc0d",
+        "hash": "3fb59be9",
+        "encoded": "*/",
         "prevChunkIds": []
       },
       "169": {
-        "chunkId": "c3f78c",
-        "hash": "d7c1c3fa",
-        "encoded": "this.cookieAcceptButton%20=%20page.locator('button:has-text(%22Accept%22),%20button:has-text(%22OK%22)').first();",
+        "chunkId": "55bc0d",
+        "hash": "3b6f8366",
+        "encoded": "async%20scrollToBottom():%20Promise%3Cvoid%3E%20%7B",
         "prevChunkIds": []
       },
-      "174": {
-        "chunkId": "c3f78c",
-        "hash": "b117a754",
+      "170": {
+        "chunkId": "55bc0d",
+        "hash": "3fee53a7",
+        "encoded": "const%20footer%20=%20this.page.locator('footer').first();",
+        "prevChunkIds": []
+      },
+      "171": {
+        "chunkId": "55bc0d",
+        "hash": "acb86aaf",
+        "encoded": "await%20this.scrollToElement(footer);",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "55bc0d",
+        "hash": "6577ae4e",
         "encoded": "%7D",
         "prevChunkIds": []
       },
-      "176": {
-        "chunkId": "c3f78c",
-        "hash": "56ef284e",
-        "encoded": "/**",
+      "173": {
+        "chunkId": "55bc0d",
+        "hash": "2107d871",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "7f1363",
+        "hash": "1881afd9",
+        "encoded": "import%20%7B%20BasePage%20%7D%20from%20'../pages/BasePage';",
         "prevChunkIds": []
       },
       "177": {
-        "chunkId": "c3f78c",
-        "hash": "d9eb39f4",
-        "encoded": "*%20Navigate%20to%20AA%20homepage",
+        "chunkId": "7f1363",
+        "hash": "c40554e4",
+        "encoded": "/**",
         "prevChunkIds": []
       },
       "178": {
-        "chunkId": "0ee135",
-        "hash": "3c802967",
-        "encoded": "*%20Uses%20BasePage.navigate()%20method%20-%20WAIT%20USES%20domcontentloaded%20instead%20of%20networkidle",
+        "chunkId": "7f1363",
+        "hash": "ac8799fd",
+        "encoded": "*%20AA%20Home%20Page%20Object",
         "prevChunkIds": []
       },
       "179": {
-        "chunkId": "c3f78c",
-        "hash": "c7de4cc1",
-        "encoded": "*/",
+        "chunkId": "7f1363",
+        "hash": "c2387850",
+        "encoded": "*%20Encapsulates%20all%20elements%20and%20actions%20for%20the%20AA%20homepage",
         "prevChunkIds": []
       },
       "180": {
-        "chunkId": "c3f78c",
-        "hash": "ddc95a81",
-        "encoded": "async%20navigateToAAHome():%20Promise%3Cvoid%3E%20%7B",
+        "chunkId": "7f1363",
+        "hash": "74647ef2",
+        "encoded": "*%20Extends%20BasePage%20to%20inherit%20common%20methods",
         "prevChunkIds": []
       },
       "181": {
-        "chunkId": "0ee135",
-        "hash": "5c16375f",
-        "encoded": "await%20this.page.goto('/',%20%7B%20waitUntil:%20'domcontentloaded'%20%7D);%20//%20Faster%20than%20networkidle",
+        "chunkId": "7f1363",
+        "hash": "68078d53",
+        "encoded": "*/",
         "prevChunkIds": []
       },
       "182": {
-        "chunkId": "c3f78c",
-        "hash": "ad066da5",
-        "encoded": "%7D",
+        "chunkId": "7f1363",
+        "hash": "513cccd4",
+        "encoded": "export%20class%20AAHomePage%20extends%20BasePage%20%7B",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "7f1363",
+        "hash": "6f8ad5d4",
+        "encoded": "//%20Locators%20-%20private%20readonly%20for%20encapsulation",
         "prevChunkIds": []
       },
       "184": {
-        "chunkId": "c3f78c",
-        "hash": "62214b41",
-        "encoded": "/**",
+        "chunkId": "7f1363",
+        "hash": "e8f5d55d",
+        "encoded": "private%20readonly%20mainLogo:%20Locator;",
         "prevChunkIds": []
       },
       "185": {
-        "chunkId": "c3f78c",
-        "hash": "0c162957",
-        "encoded": "*%20Accept%20cookie%20consent%20if%20present",
+        "chunkId": "7f1363",
+        "hash": "d0b5161b",
+        "encoded": "private%20readonly%20mainNavigation:%20Locator;",
         "prevChunkIds": []
       },
       "186": {
-        "chunkId": "c3f78c",
-        "hash": "dabfd408",
-        "encoded": "*%20Uses%20BasePage.isVisible()%20and%20BasePage.click()",
+        "chunkId": "7f1363",
+        "hash": "83ba790d",
+        "encoded": "private%20readonly%20carInsuranceLink:%20Locator;",
         "prevChunkIds": []
       },
       "187": {
-        "chunkId": "c3f78c",
-        "hash": "475770a9",
-        "encoded": "*/",
+        "chunkId": "7f1363",
+        "hash": "e8676741",
+        "encoded": "private%20readonly%20membershipLink:%20Locator;",
         "prevChunkIds": []
       },
       "188": {
-        "chunkId": "c3f78c",
-        "hash": "a2662d72",
-        "encoded": "async%20acceptCookiesIfPresent():%20Promise%3Cvoid%3E%20%7B",
+        "chunkId": "7f1363",
+        "hash": "c8e74e08",
+        "encoded": "private%20readonly%20searchButton:%20Locator;",
         "prevChunkIds": []
       },
       "189": {
-        "chunkId": "c3f78c",
-        "hash": "47eb8190",
-        "encoded": "const%20cookieVisible%20=%20await%20this.isVisible(this.cookieAcceptButton);",
+        "chunkId": "7f1363",
+        "hash": "3916bdcc",
+        "encoded": "private%20readonly%20cookieAcceptButton:%20Locator;",
         "prevChunkIds": []
       },
       "190": {
-        "chunkId": "c3f78c",
-        "hash": "f553db51",
-        "encoded": "if%20(cookieVisible)%20%7B",
+        "chunkId": "7f1363",
+        "hash": "0b7121b9",
+        "encoded": "private%20readonly%20breakdownLink:%20Locator;",
         "prevChunkIds": []
       },
       "191": {
-        "chunkId": "c3f78c",
-        "hash": "01780463",
-        "encoded": "await%20this.click(this.cookieAcceptButton);",
+        "chunkId": "7f1363",
+        "hash": "ba3ccb02",
+        "encoded": "private%20readonly%20breakdownCoverLink:%20Locator;",
         "prevChunkIds": []
       },
       "192": {
-        "chunkId": "c3f78c",
-        "hash": "bd24004b",
-        "encoded": "%7D",
+        "chunkId": "7f1363",
+        "hash": "a796075f",
+        "encoded": "private%20readonly%20newAndUsedCarsLink:%20Locator;",
         "prevChunkIds": []
       },
       "193": {
-        "chunkId": "c3f78c",
-        "hash": "675a30df",
-        "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "195": {
-        "chunkId": "c3f78c",
-        "hash": "7e2ba995",
-        "encoded": "/**",
+        "chunkId": "7f1363",
+        "hash": "71899cab",
+        "encoded": "private%20readonly%20aaCarsLink:%20Locator;",
         "prevChunkIds": []
       },
       "196": {
-        "chunkId": "c3f78c",
-        "hash": "72917162",
-        "encoded": "*%20Verify%20homepage%20is%20loaded",
+        "chunkId": "7f1363",
+        "hash": "b45af4d3",
+        "encoded": "constructor(page:%20Page)%20%7B",
         "prevChunkIds": []
       },
       "197": {
-        "chunkId": "c3f78c",
-        "hash": "2e0ddfbd",
-        "encoded": "*%20Uses%20BasePage.isVisible()%20method",
-        "prevChunkIds": []
-      },
-      "198": {
-        "chunkId": "c3f78c",
-        "hash": "51675edb",
-        "encoded": "*%20@returns%20True%20if%20logo%20is%20visible",
+        "chunkId": "7f1363",
+        "hash": "a803feb1",
+        "encoded": "super(page);%20//%20Call%20BasePage%20constructor",
         "prevChunkIds": []
       },
       "199": {
-        "chunkId": "c3f78c",
-        "hash": "090e7606",
-        "encoded": "*/",
+        "chunkId": "7f1363",
+        "hash": "fe8800b5",
+        "encoded": "//%20Initialize%20locators%20using%20actual%20AA%20website%20selectors",
         "prevChunkIds": []
       },
       "200": {
-        "chunkId": "c3f78c",
-        "hash": "dcd64235",
-        "encoded": "async%20isAAHomePageLoaded():%20Promise%3Cboolean%3E%20%7B",
+        "chunkId": "7f1363",
+        "hash": "a3b50304",
+        "encoded": "this.mainLogo%20=%20page.locator('a%5Baria-label*=%22AA%22%20i%5D,%20.logo,%20header%20img').first();",
+        "prevChunkIds": []
+      },
+      "201": {
+        "chunkId": "7f1363",
+        "hash": "2ecb5780",
+        "encoded": "this.mainNavigation%20=%20page.locator('nav,%20header').first();",
         "prevChunkIds": []
       },
       "202": {
-        "chunkId": "c3f78c",
-        "hash": "67e0f58a",
-        "encoded": "%7D",
+        "chunkId": "7f1363",
+        "hash": "494d2bfb",
+        "encoded": "this.carInsuranceLink%20=%20page.locator('a:has-text(%22Insurance%22)').first();",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "7f1363",
+        "hash": "0986138c",
+        "encoded": "this.membershipLink%20=%20page.locator('a:has-text(%22Membership%22)').first();",
         "prevChunkIds": []
       },
       "204": {
-        "chunkId": "c3f78c",
-        "hash": "317d9166",
-        "encoded": "/**",
+        "chunkId": "7f1363",
+        "hash": "30775a40",
+        "encoded": "this.searchButton%20=%20page.locator('button%5Baria-label*=%22search%22%20i%5D,%20%5Bclass*=%22search%22%5D').first();",
         "prevChunkIds": []
       },
       "205": {
-        "chunkId": "c3f78c",
-        "hash": "40f3ed7d",
-        "encoded": "*%20Get%20page%20title",
-        "prevChunkIds": []
-      },
-      "206": {
-        "chunkId": "c3f78c",
-        "hash": "e5019430",
-        "encoded": "*%20Uses%20BasePage.getTitle()%20method",
+        "chunkId": "7f1363",
+        "hash": "7ea6c0b1",
+        "encoded": "this.cookieAcceptButton%20=%20page.locator('button:has-text(%22Accept%22),%20button:has-text(%22OK%22)').first();",
         "prevChunkIds": []
       },
       "207": {
-        "chunkId": "c3f78c",
-        "hash": "7e847eeb",
-        "encoded": "*%20@returns%20The%20page%20title",
+        "chunkId": "7f1363",
+        "hash": "ce971886",
+        "encoded": "//%20%E2%9C%85%20FIXED:%20More%20specific%20selector%20to%20avoid%20strict%20mode%20violation",
         "prevChunkIds": []
       },
       "208": {
-        "chunkId": "c3f78c",
-        "hash": "694dd66b",
-        "encoded": "*/",
+        "chunkId": "7f1363",
+        "hash": "0c442aae",
+        "encoded": "this.breakdownLink%20=%20page.locator('button.responsiveMenu').filter(%7B%20hasText:%20'Breakdown'%20%7D);",
         "prevChunkIds": []
       },
       "209": {
-        "chunkId": "c3f78c",
-        "hash": "ff05db5e",
-        "encoded": "async%20getPageTitle():%20Promise%3Cstring%3E%20%7B",
+        "chunkId": "7f1363",
+        "hash": "3229ab68",
+        "encoded": "this.breakdownCoverLink%20=%20page.getByRole('link',%20%7B%20name:%20'Breakdown%20cover'%20%7D).first();",
+        "prevChunkIds": []
+      },
+      "210": {
+        "chunkId": "7f1363",
+        "hash": "b7385cf9",
+        "encoded": "this.newAndUsedCarsLink%20=%20page.locator('button.responsiveMenu').filter(%7B%20hasText:%20'New%20and%20used%20cars'%20%7D);",
         "prevChunkIds": []
       },
       "211": {
-        "chunkId": "c3f78c",
-        "hash": "ae0130b5",
+        "chunkId": "7f1363",
+        "hash": "fbb2f5e2",
+        "encoded": "this.aaCarsLink%20=%20page.getByRole('link',%20%7B%20name:%20'AA%20Cars'%20%7D).first();",
+        "prevChunkIds": []
+      },
+      "212": {
+        "chunkId": "7f1363",
+        "hash": "8e01390a",
         "encoded": "%7D",
         "prevChunkIds": []
       },
-      "213": {
-        "chunkId": "c3f78c",
-        "hash": "ab5e2e8a",
+      "214": {
+        "chunkId": "7f1363",
+        "hash": "c46c00ca",
         "encoded": "/**",
         "prevChunkIds": []
       },
-      "214": {
-        "chunkId": "c3f78c",
-        "hash": "d6dba470",
-        "encoded": "*%20Verify%20navigation%20menu%20is%20visible",
-        "prevChunkIds": []
-      },
       "215": {
-        "chunkId": "c3f78c",
-        "hash": "02d986d4",
-        "encoded": "*%20Uses%20BasePage.isVisible()%20method",
+        "chunkId": "7f1363",
+        "hash": "276d3f83",
+        "encoded": "*%20Navigate%20to%20AA%20homepage",
         "prevChunkIds": []
       },
       "216": {
-        "chunkId": "c3f78c",
-        "hash": "5a1dec91",
-        "encoded": "*%20@returns%20True%20if%20navigation%20is%20visible",
+        "chunkId": "7f1363",
+        "hash": "de1ef4c8",
+        "encoded": "*%20%E2%9C%85%20FIXED:%20Use%20full%20URL%20instead%20of%20relative%20path",
         "prevChunkIds": []
       },
       "217": {
-        "chunkId": "c3f78c",
+        "chunkId": "7f1363",
         "hash": "124cd375",
         "encoded": "*/",
         "prevChunkIds": []
       },
       "218": {
-        "chunkId": "c3f78c",
-        "hash": "fb7e69da",
-        "encoded": "async%20isNavigationVisible():%20Promise%3Cboolean%3E%20%7B",
+        "chunkId": "7f1363",
+        "hash": "80cfd065",
+        "encoded": "async%20navigateToAAHome():%20Promise%3Cvoid%3E%20%7B",
         "prevChunkIds": []
       },
       "219": {
-        "chunkId": "c3f78c",
-        "hash": "4ab3ffdb",
-        "encoded": "return%20await%20this.isVisible(this.mainNavigation);",
+        "chunkId": "7f1363",
+        "hash": "43bb9949",
+        "encoded": "await%20this.page.goto('https://www.theaa.com',%20%7B",
         "prevChunkIds": []
       },
       "220": {
-        "chunkId": "c3f78c",
-        "hash": "290931bd",
-        "encoded": "%7D",
+        "chunkId": "7f1363",
+        "hash": "29b364b8",
+        "encoded": "waitUntil:%20'networkidle',",
+        "prevChunkIds": []
+      },
+      "221": {
+        "chunkId": "7f1363",
+        "hash": "17c955fb",
+        "encoded": "timeout:%2030000",
         "prevChunkIds": []
       },
       "222": {
-        "chunkId": "c3f78c",
-        "hash": "39d61182",
-        "encoded": "/**",
+        "chunkId": "7f1363",
+        "hash": "4fac278d",
+        "encoded": "%7D);",
         "prevChunkIds": []
       },
       "223": {
-        "chunkId": "c3f78c",
-        "hash": "267ed13c",
-        "encoded": "*%20Click%20on%20Breakdown%20Cover%20link",
-        "prevChunkIds": []
-      },
-      "224": {
-        "chunkId": "c3f78c",
-        "hash": "f26effd9",
-        "encoded": "*%20Uses%20BasePage.click()%20method",
+        "chunkId": "7f1363",
+        "hash": "75bbcadd",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "225": {
-        "chunkId": "c3f78c",
-        "hash": "7ab6684f",
+        "chunkId": "7f1363",
+        "hash": "ddeaf320",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "226": {
+        "chunkId": "7f1363",
+        "hash": "17290c52",
+        "encoded": "*%20Accept%20cookie%20consent%20if%20present",
+        "prevChunkIds": []
+      },
+      "227": {
+        "chunkId": "7f1363",
+        "hash": "3c56bb85",
+        "encoded": "*%20%E2%9C%85%20ENHANCED:%20Added%20explicit%20wait%20with%20timeout",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "7f1363",
+        "hash": "eb8ee207",
         "encoded": "*/",
         "prevChunkIds": []
       },
       "229": {
-        "chunkId": "c3f78c",
-        "hash": "85a5304b",
-        "encoded": "%7D",
+        "chunkId": "7f1363",
+        "hash": "3edf4394",
+        "encoded": "async%20acceptCookiesIfPresent():%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "7f1363",
+        "hash": "eacfe702",
+        "encoded": "try%20%7B",
         "prevChunkIds": []
       },
       "231": {
-        "chunkId": "c3f78c",
-        "hash": "acbb622b",
-        "encoded": "/**",
+        "chunkId": "7f1363",
+        "hash": "8b513bcc",
+        "encoded": "await%20this.cookieAcceptButton.waitFor(%7B%20state:%20'visible',%20timeout:%205000%20%7D);",
         "prevChunkIds": []
       },
       "232": {
-        "chunkId": "c3f78c",
-        "hash": "5acf9e5c",
-        "encoded": "*%20Click%20on%20Car%20Insurance%20link",
+        "chunkId": "7f1363",
+        "hash": "5d689d85",
+        "encoded": "await%20this.click(this.cookieAcceptButton);",
         "prevChunkIds": []
       },
       "233": {
-        "chunkId": "c3f78c",
-        "hash": "d48c34ef",
-        "encoded": "*%20Uses%20BasePage.click()%20method",
+        "chunkId": "7f1363",
+        "hash": "ec0a3318",
+        "encoded": "//%20Wait%20for%20cookie%20banner%20to%20disappear",
         "prevChunkIds": []
       },
       "234": {
-        "chunkId": "c3f78c",
-        "hash": "2953c051",
-        "encoded": "*/",
+        "chunkId": "7f1363",
+        "hash": "f6a78376",
+        "encoded": "await%20this.page.waitForTimeout(500);",
         "prevChunkIds": []
       },
       "235": {
-        "chunkId": "c3f78c",
-        "hash": "65dbddfb",
-        "encoded": "async%20clickCarInsurance():%20Promise%3Cvoid%3E%20%7B",
+        "chunkId": "7f1363",
+        "hash": "9b52421c",
+        "encoded": "%7D%20catch%20(error)%20%7B",
         "prevChunkIds": []
       },
       "236": {
-        "chunkId": "c3f78c",
-        "hash": "9ca3bbf0",
-        "encoded": "await%20this.click(this.carInsuranceLink);",
+        "chunkId": "7f1363",
+        "hash": "23c8d994",
+        "encoded": "console.log('No%20cookie%20banner%20found%20or%20already%20accepted');",
         "prevChunkIds": []
       },
       "237": {
-        "chunkId": "c3f78c",
+        "chunkId": "7f1363",
         "hash": "58b80ca9",
         "encoded": "%7D",
         "prevChunkIds": []
       },
-      "239": {
-        "chunkId": "c3f78c",
-        "hash": "e918a087",
-        "encoded": "/**",
+      "238": {
+        "chunkId": "7f1363",
+        "hash": "eed3c15e",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "240": {
-        "chunkId": "c3f78c",
-        "hash": "87183b17",
-        "encoded": "*%20Click%20on%20Membership%20link",
+        "chunkId": "7f1363",
+        "hash": "584d6a3b",
+        "encoded": "/**",
         "prevChunkIds": []
       },
       "241": {
-        "chunkId": "c3f78c",
-        "hash": "a10459a5",
-        "encoded": "*%20Uses%20BasePage.click()%20method",
+        "chunkId": "7f1363",
+        "hash": "2f12c787",
+        "encoded": "*%20Verify%20homepage%20is%20loaded",
         "prevChunkIds": []
       },
       "242": {
-        "chunkId": "c3f78c",
-        "hash": "a27d61cb",
-        "encoded": "*/",
+        "chunkId": "7f1363",
+        "hash": "895a3e94",
+        "encoded": "*%20Uses%20BasePage.isVisible()%20method",
         "prevChunkIds": []
       },
       "243": {
-        "chunkId": "c3f78c",
-        "hash": "2b614bb4",
-        "encoded": "async%20clickMembership():%20Promise%3Cvoid%3E%20%7B",
+        "chunkId": "7f1363",
+        "hash": "83276586",
+        "encoded": "*%20@returns%20True%20if%20logo%20is%20visible",
         "prevChunkIds": []
       },
       "244": {
-        "chunkId": "c3f78c",
-        "hash": "b1ab4b01",
-        "encoded": "await%20this.click(this.membershipLink);",
+        "chunkId": "7f1363",
+        "hash": "99a2c485",
+        "encoded": "*/",
         "prevChunkIds": []
       },
       "245": {
-        "chunkId": "c3f78c",
-        "hash": "71b20a14",
-        "encoded": "%7D",
+        "chunkId": "7f1363",
+        "hash": "6a4cbabd",
+        "encoded": "async%20isAAHomePageLoaded():%20Promise%3Cboolean%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "246": {
+        "chunkId": "7f1363",
+        "hash": "8c03d0c2",
+        "encoded": "return%20await%20this.isVisible(this.mainNavigation);",
         "prevChunkIds": []
       },
       "247": {
-        "chunkId": "c3f78c",
-        "hash": "f5e9d70e",
-        "encoded": "/**",
-        "prevChunkIds": []
-      },
-      "248": {
-        "chunkId": "0ee135",
-        "hash": "1c1b928c",
-        "encoded": "*%20Scroll%20to%20view%20breakdown%20link",
+        "chunkId": "7f1363",
+        "hash": "4eea9b81",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "249": {
-        "chunkId": "0ee135",
-        "hash": "9a71886e",
-        "encoded": "*%20Uses%20BasePage.scrollToElement()%20then%20hover",
+        "chunkId": "7f1363",
+        "hash": "744aab49",
+        "encoded": "/**",
         "prevChunkIds": []
       },
       "250": {
-        "chunkId": "c3f78c",
-        "hash": "29c91ca1",
-        "encoded": "*/",
+        "chunkId": "7f1363",
+        "hash": "01963f88",
+        "encoded": "*%20Get%20page%20title",
         "prevChunkIds": []
       },
       "251": {
-        "chunkId": "c3f78c",
-        "hash": "b28179ab",
-        "encoded": "async%20hoverOverBreakdownCover():%20Promise%3Cvoid%3E%20%7B",
+        "chunkId": "7f1363",
+        "hash": "d20807e6",
+        "encoded": "*%20Uses%20BasePage.getTitle()%20method",
+        "prevChunkIds": []
+      },
+      "252": {
+        "chunkId": "7f1363",
+        "hash": "5d401ab0",
+        "encoded": "*%20@returns%20The%20page%20title",
         "prevChunkIds": []
       },
       "253": {
-        "chunkId": "c3f78c",
-        "hash": "c0a12feb",
-        "encoded": "%7D",
+        "chunkId": "7f1363",
+        "hash": "49d62ee4",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "254": {
+        "chunkId": "7f1363",
+        "hash": "ce434fa4",
+        "encoded": "async%20getPageTitle():%20Promise%3Cstring%3E%20%7B",
         "prevChunkIds": []
       },
       "255": {
-        "chunkId": "c3f78c",
-        "hash": "5571adf0",
-        "encoded": "/**",
+        "chunkId": "7f1363",
+        "hash": "bba8c5a2",
+        "encoded": "return%20await%20this.getTitle();",
         "prevChunkIds": []
       },
       "256": {
-        "chunkId": "c3f78c",
-        "hash": "350d730e",
-        "encoded": "*%20Take%20screenshot%20of%20homepage",
-        "prevChunkIds": []
-      },
-      "257": {
-        "chunkId": "c3f78c",
-        "hash": "f484eebd",
-        "encoded": "*%20Uses%20BasePage.takeScreenshot()%20method",
+        "chunkId": "7f1363",
+        "hash": "9cd32fde",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "258": {
-        "chunkId": "c3f78c",
-        "hash": "addc3221",
-        "encoded": "*%20@param%20name%20-%20Screenshot%20filename",
+        "chunkId": "7f1363",
+        "hash": "4b7b9d24",
+        "encoded": "/**",
         "prevChunkIds": []
       },
       "259": {
-        "chunkId": "c3f78c",
-        "hash": "d0b6f95d",
-        "encoded": "*/",
+        "chunkId": "7f1363",
+        "hash": "99493980",
+        "encoded": "*%20Verify%20navigation%20menu%20is%20visible",
         "prevChunkIds": []
       },
       "260": {
-        "chunkId": "c3f78c",
-        "hash": "bbc18a39",
-        "encoded": "async%20captureHomepage(name:%20string):%20Promise%3Cvoid%3E%20%7B",
+        "chunkId": "7f1363",
+        "hash": "c5e722ad",
+        "encoded": "*%20Uses%20BasePage.isVisible()%20method",
+        "prevChunkIds": []
+      },
+      "261": {
+        "chunkId": "7f1363",
+        "hash": "1e446e8e",
+        "encoded": "*%20@returns%20True%20if%20navigation%20is%20visible",
         "prevChunkIds": []
       },
       "262": {
-        "chunkId": "c3f78c",
-        "hash": "9ab1d225",
-        "encoded": "%7D",
+        "chunkId": "7f1363",
+        "hash": "e6e4f0ff",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "263": {
+        "chunkId": "7f1363",
+        "hash": "3605d45f",
+        "encoded": "async%20isNavigationVisible():%20Promise%3Cboolean%3E%20%7B",
         "prevChunkIds": []
       },
       "264": {
-        "chunkId": "c3f78c",
-        "hash": "722efdcc",
-        "encoded": "/**",
+        "chunkId": "7f1363",
+        "hash": "d58d0221",
+        "encoded": "return%20await%20this.isVisible(this.mainNavigation);",
         "prevChunkIds": []
       },
       "265": {
-        "chunkId": "c3f78c",
-        "hash": "ca8d47af",
-        "encoded": "*%20Get%20current%20URL",
-        "prevChunkIds": []
-      },
-      "266": {
-        "chunkId": "c3f78c",
-        "hash": "0f7a1871",
-        "encoded": "*%20Uses%20BasePage.getCurrentUrl()%20method",
-        "prevChunkIds": []
-      },
-      "267": {
-        "chunkId": "c3f78c",
-        "hash": "c8441548",
-        "encoded": "*%20@returns%20Current%20URL",
-        "prevChunkIds": []
-      },
-      "268": {
-        "chunkId": "c3f78c",
-        "hash": "052dcd15",
-        "encoded": "*/",
-        "prevChunkIds": []
-      },
-      "269": {
-        "chunkId": "c3f78c",
-        "hash": "d37d669e",
-        "encoded": "async%20getCurrentPageUrl():%20Promise%3Cstring%3E%20%7B",
-        "prevChunkIds": []
-      },
-      "271": {
-        "chunkId": "c3f78c",
-        "hash": "d63e4bb6",
+        "chunkId": "7f1363",
+        "hash": "2b3722a1",
         "encoded": "%7D",
         "prevChunkIds": []
       },
-      "273": {
-        "chunkId": "c3f78c",
-        "hash": "bdac8d01",
+      "267": {
+        "chunkId": "7f1363",
+        "hash": "be22240b",
         "encoded": "/**",
         "prevChunkIds": []
       },
-      "274": {
-        "chunkId": "c3f78c",
-        "hash": "1df8e26d",
-        "encoded": "*%20Scroll%20to%20footer",
+      "268": {
+        "chunkId": "7f1363",
+        "hash": "3d1e3466",
+        "encoded": "*%20Click%20on%20Breakdown%20Cover%20link",
         "prevChunkIds": []
       },
-      "275": {
-        "chunkId": "c3f78c",
-        "hash": "c215a1aa",
-        "encoded": "*%20Uses%20BasePage.scrollToElement()%20method",
+      "269": {
+        "chunkId": "7f1363",
+        "hash": "a06efd50",
+        "encoded": "*%20%E2%9C%85%20ENHANCED:%20Added%20wait%20for%20dropdown%20to%20appear",
         "prevChunkIds": []
       },
-      "276": {
-        "chunkId": "c3f78c",
-        "hash": "834ad1a1",
+      "270": {
+        "chunkId": "7f1363",
+        "hash": "d94008c8",
         "encoded": "*/",
         "prevChunkIds": []
       },
-      "277": {
-        "chunkId": "c3f78c",
-        "hash": "4744c4cd",
-        "encoded": "async%20scrollToBottom():%20Promise%3Cvoid%3E%20%7B",
+      "271": {
+        "chunkId": "7f1363",
+        "hash": "7cf2a53a",
+        "encoded": "async%20navigateToBreakdownCover():%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "272": {
+        "chunkId": "7f1363",
+        "hash": "9a8d028b",
+        "encoded": "//%20Click%20dropdown%20button",
+        "prevChunkIds": []
+      },
+      "273": {
+        "chunkId": "7f1363",
+        "hash": "c7835e6b",
+        "encoded": "await%20this.click(this.breakdownLink);",
+        "prevChunkIds": []
+      },
+      "275": {
+        "chunkId": "7f1363",
+        "hash": "09d57e44",
+        "encoded": "//%20Wait%20for%20dropdown%20menu%20to%20expand%20and%20link%20to%20be%20visible",
+        "prevChunkIds": []
+      },
+      "276": {
+        "chunkId": "7f1363",
+        "hash": "e7288e49",
+        "encoded": "await%20this.breakdownCoverLink.waitFor(%7B%20state:%20'visible',%20timeout:%2010000%20%7D);",
         "prevChunkIds": []
       },
       "278": {
-        "chunkId": "c3f78c",
-        "hash": "ea291916",
-        "encoded": "const%20footer%20=%20this.page.locator('footer').first();",
+        "chunkId": "7f1363",
+        "hash": "02b4be34",
+        "encoded": "//%20Click%20the%20link",
+        "prevChunkIds": []
+      },
+      "279": {
+        "chunkId": "7f1363",
+        "hash": "7fc552d7",
+        "encoded": "await%20this.click(this.breakdownCoverLink);",
         "prevChunkIds": []
       },
       "280": {
-        "chunkId": "c3f78c",
+        "chunkId": "7f1363",
         "hash": "bdab287c",
         "encoded": "%7D",
         "prevChunkIds": []
       },
-      "281": {
-        "chunkId": "c3f78c",
-        "hash": "64187a91",
+      "282": {
+        "chunkId": "7f1363",
+        "hash": "b707ad6a",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "283": {
+        "chunkId": "7f1363",
+        "hash": "825e588b",
+        "encoded": "*%20Navigate%20to%20AA%20Cars%20page",
+        "prevChunkIds": []
+      },
+      "284": {
+        "chunkId": "7f1363",
+        "hash": "9ca0cbcf",
+        "encoded": "*%20%E2%9C%85%20ENHANCED:%20Added%20wait%20for%20dropdown%20to%20appear",
+        "prevChunkIds": []
+      },
+      "285": {
+        "chunkId": "7f1363",
+        "hash": "f128a4c6",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "286": {
+        "chunkId": "7f1363",
+        "hash": "1d77df97",
+        "encoded": "async%20navigateToAACarsPage():%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "287": {
+        "chunkId": "7f1363",
+        "hash": "5c7c2756",
+        "encoded": "//%20Click%20dropdown%20button",
+        "prevChunkIds": []
+      },
+      "288": {
+        "chunkId": "7f1363",
+        "hash": "b8145eb1",
+        "encoded": "await%20this.click(this.newAndUsedCarsLink);",
+        "prevChunkIds": []
+      },
+      "290": {
+        "chunkId": "7f1363",
+        "hash": "64271282",
+        "encoded": "//%20Wait%20for%20dropdown%20menu%20to%20expand%20and%20link%20to%20be%20visible",
+        "prevChunkIds": []
+      },
+      "291": {
+        "chunkId": "7f1363",
+        "hash": "61d20440",
+        "encoded": "await%20this.aaCarsLink.waitFor(%7B%20state:%20'visible',%20timeout:%2010000%20%7D);",
+        "prevChunkIds": []
+      },
+      "293": {
+        "chunkId": "7f1363",
+        "hash": "2e258b4b",
+        "encoded": "//%20Click%20the%20link",
+        "prevChunkIds": []
+      },
+      "294": {
+        "chunkId": "7f1363",
+        "hash": "b4e257c4",
+        "encoded": "await%20this.click(this.aaCarsLink);",
+        "prevChunkIds": []
+      },
+      "295": {
+        "chunkId": "7f1363",
+        "hash": "522d2419",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "297": {
+        "chunkId": "7f1363",
+        "hash": "1bf39f0b",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "298": {
+        "chunkId": "7f1363",
+        "hash": "482ace0a",
+        "encoded": "*%20Click%20on%20Car%20Insurance%20link",
+        "prevChunkIds": []
+      },
+      "299": {
+        "chunkId": "7f1363",
+        "hash": "73779676",
+        "encoded": "*%20Uses%20BasePage.click()%20method",
+        "prevChunkIds": []
+      },
+      "300": {
+        "chunkId": "7f1363",
+        "hash": "8a2110a8",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "301": {
+        "chunkId": "7f1363",
+        "hash": "c43897cd",
+        "encoded": "async%20clickCarInsurance():%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "302": {
+        "chunkId": "7f1363",
+        "hash": "986f5126",
+        "encoded": "await%20this.click(this.carInsuranceLink);",
+        "prevChunkIds": []
+      },
+      "303": {
+        "chunkId": "7f1363",
+        "hash": "ca7d8d23",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "305": {
+        "chunkId": "7f1363",
+        "hash": "9c27d726",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "306": {
+        "chunkId": "7f1363",
+        "hash": "42335994",
+        "encoded": "*%20Click%20on%20Membership%20link",
+        "prevChunkIds": []
+      },
+      "307": {
+        "chunkId": "7f1363",
+        "hash": "8e4e7983",
+        "encoded": "*%20Uses%20BasePage.click()%20method",
+        "prevChunkIds": []
+      },
+      "308": {
+        "chunkId": "7f1363",
+        "hash": "36edd010",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "309": {
+        "chunkId": "7f1363",
+        "hash": "ec7e9552",
+        "encoded": "async%20clickMembership():%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "310": {
+        "chunkId": "7f1363",
+        "hash": "22cb4511",
+        "encoded": "await%20this.click(this.membershipLink);",
+        "prevChunkIds": []
+      },
+      "311": {
+        "chunkId": "7f1363",
+        "hash": "972a0b71",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "313": {
+        "chunkId": "7f1363",
+        "hash": "acacf00c",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "314": {
+        "chunkId": "7f1363",
+        "hash": "a1a54940",
+        "encoded": "*%20Scroll%20to%20view%20breakdown%20link",
+        "prevChunkIds": []
+      },
+      "315": {
+        "chunkId": "7f1363",
+        "hash": "f26919e7",
+        "encoded": "*%20Uses%20BasePage.scrollToElement()%20then%20hover",
+        "prevChunkIds": []
+      },
+      "316": {
+        "chunkId": "7f1363",
+        "hash": "fe85c201",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "317": {
+        "chunkId": "7f1363",
+        "hash": "41e53344",
+        "encoded": "async%20hoverOverBreakdownCover():%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "318": {
+        "chunkId": "7f1363",
+        "hash": "065de41f",
+        "encoded": "await%20this.scrollToElement(this.breakdownLink);",
+        "prevChunkIds": []
+      },
+      "319": {
+        "chunkId": "7f1363",
+        "hash": "9fadf0fc",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "321": {
+        "chunkId": "7f1363",
+        "hash": "d5636197",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "322": {
+        "chunkId": "7f1363",
+        "hash": "4ae7737d",
+        "encoded": "*%20Take%20screenshot%20of%20homepage",
+        "prevChunkIds": []
+      },
+      "323": {
+        "chunkId": "7f1363",
+        "hash": "81a83be9",
+        "encoded": "*%20Uses%20BasePage.takeScreenshot()%20method",
+        "prevChunkIds": []
+      },
+      "324": {
+        "chunkId": "7f1363",
+        "hash": "80f36c83",
+        "encoded": "*%20@param%20name%20-%20Screenshot%20filename",
+        "prevChunkIds": []
+      },
+      "325": {
+        "chunkId": "7f1363",
+        "hash": "e0e9a38c",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "326": {
+        "chunkId": "7f1363",
+        "hash": "0937d03b",
+        "encoded": "async%20captureHomepage(name:%20string):%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "327": {
+        "chunkId": "7f1363",
+        "hash": "d080b3d2",
+        "encoded": "await%20this.takeScreenshot(name);",
+        "prevChunkIds": []
+      },
+      "328": {
+        "chunkId": "7f1363",
+        "hash": "869f71d8",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "330": {
+        "chunkId": "7f1363",
+        "hash": "e382646c",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "331": {
+        "chunkId": "7f1363",
+        "hash": "0b8b2f54",
+        "encoded": "*%20Get%20current%20URL",
+        "prevChunkIds": []
+      },
+      "332": {
+        "chunkId": "7f1363",
+        "hash": "fc54771c",
+        "encoded": "*%20Uses%20BasePage.getCurrentUrl()%20method",
+        "prevChunkIds": []
+      },
+      "333": {
+        "chunkId": "7f1363",
+        "hash": "c426b7c1",
+        "encoded": "*%20@returns%20Current%20URL",
+        "prevChunkIds": []
+      },
+      "334": {
+        "chunkId": "7f1363",
+        "hash": "7a7087de",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "335": {
+        "chunkId": "7f1363",
+        "hash": "d4a1be09",
+        "encoded": "async%20getCurrentPageUrl():%20Promise%3Cstring%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "336": {
+        "chunkId": "7f1363",
+        "hash": "ee400fa0",
+        "encoded": "return%20await%20this.getCurrentUrl();",
+        "prevChunkIds": []
+      },
+      "337": {
+        "chunkId": "7f1363",
+        "hash": "3ce50952",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "339": {
+        "chunkId": "7f1363",
+        "hash": "080b27f5",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "340": {
+        "chunkId": "7f1363",
+        "hash": "0294767b",
+        "encoded": "*%20Scroll%20to%20footer",
+        "prevChunkIds": []
+      },
+      "341": {
+        "chunkId": "7f1363",
+        "hash": "f7ec872c",
+        "encoded": "*%20Uses%20BasePage.scrollToElement()%20method",
+        "prevChunkIds": []
+      },
+      "342": {
+        "chunkId": "7f1363",
+        "hash": "415bcb3c",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "343": {
+        "chunkId": "7f1363",
+        "hash": "af919a41",
+        "encoded": "async%20scrollToBottom():%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "344": {
+        "chunkId": "7f1363",
+        "hash": "5a146244",
+        "encoded": "const%20footer%20=%20this.page.locator('footer').first();",
+        "prevChunkIds": []
+      },
+      "345": {
+        "chunkId": "7f1363",
+        "hash": "1fc93877",
+        "encoded": "await%20this.scrollToElement(footer);",
+        "prevChunkIds": []
+      },
+      "346": {
+        "chunkId": "7f1363",
+        "hash": "b0d56384",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "347": {
+        "chunkId": "7f1363",
+        "hash": "15bfe668",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "349": {
+        "chunkId": "ba1ca6",
+        "hash": "4097f151",
+        "encoded": "import%20%7B%20BasePage%20%7D%20from%20'../pages/BasePage';",
+        "prevChunkIds": []
+      },
+      "351": {
+        "chunkId": "ba1ca6",
+        "hash": "47ea001e",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "352": {
+        "chunkId": "ba1ca6",
+        "hash": "ecbc597c",
+        "encoded": "*%20AA%20Home%20Page%20Object",
+        "prevChunkIds": []
+      },
+      "353": {
+        "chunkId": "ba1ca6",
+        "hash": "85b144f0",
+        "encoded": "*%20Encapsulates%20all%20elements%20and%20actions%20for%20the%20AA%20homepage",
+        "prevChunkIds": []
+      },
+      "354": {
+        "chunkId": "ba1ca6",
+        "hash": "676eb8c6",
+        "encoded": "*%20Extends%20BasePage%20to%20inherit%20common%20methods",
+        "prevChunkIds": []
+      },
+      "355": {
+        "chunkId": "ba1ca6",
+        "hash": "1884fe58",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "356": {
+        "chunkId": "ba1ca6",
+        "hash": "1a11cac5",
+        "encoded": "export%20class%20AAHomePage%20extends%20BasePage%20%7B",
+        "prevChunkIds": []
+      },
+      "357": {
+        "chunkId": "ba1ca6",
+        "hash": "704db23d",
+        "encoded": "//%20Locators%20-%20private%20readonly%20for%20encapsulation",
+        "prevChunkIds": []
+      },
+      "358": {
+        "chunkId": "ba1ca6",
+        "hash": "69531ab3",
+        "encoded": "private%20readonly%20mainLogo:%20Locator;",
+        "prevChunkIds": []
+      },
+      "359": {
+        "chunkId": "ba1ca6",
+        "hash": "e14c6baf",
+        "encoded": "private%20readonly%20mainNavigation:%20Locator;",
+        "prevChunkIds": []
+      },
+      "360": {
+        "chunkId": "ba1ca6",
+        "hash": "ff30f2d8",
+        "encoded": "private%20readonly%20carInsuranceLink:%20Locator;",
+        "prevChunkIds": []
+      },
+      "361": {
+        "chunkId": "ba1ca6",
+        "hash": "1265ffda",
+        "encoded": "private%20readonly%20membershipLink:%20Locator;",
+        "prevChunkIds": []
+      },
+      "362": {
+        "chunkId": "ba1ca6",
+        "hash": "ef11237a",
+        "encoded": "private%20readonly%20searchButton:%20Locator;",
+        "prevChunkIds": []
+      },
+      "363": {
+        "chunkId": "ba1ca6",
+        "hash": "cf1791b6",
+        "encoded": "private%20readonly%20cookieAcceptButton:%20Locator;",
+        "prevChunkIds": []
+      },
+      "364": {
+        "chunkId": "ba1ca6",
+        "hash": "c1be461f",
+        "encoded": "private%20readonly%20breakdownLink:%20Locator;",
+        "prevChunkIds": []
+      },
+      "365": {
+        "chunkId": "ba1ca6",
+        "hash": "863683fd",
+        "encoded": "private%20readonly%20breakdownCoverLink:%20Locator;",
+        "prevChunkIds": []
+      },
+      "370": {
+        "chunkId": "ba1ca6",
+        "hash": "34e8b9ce",
+        "encoded": "constructor(page:%20Page)%20%7B",
+        "prevChunkIds": []
+      },
+      "371": {
+        "chunkId": "ba1ca6",
+        "hash": "cd7d1aa6",
+        "encoded": "super(page);%20//%20Call%20BasePage%20constructor",
+        "prevChunkIds": []
+      },
+      "373": {
+        "chunkId": "ba1ca6",
+        "hash": "f03468fa",
+        "encoded": "//%20Initialize%20locators%20using%20actual%20AA%20website%20selectors",
+        "prevChunkIds": []
+      },
+      "374": {
+        "chunkId": "ba1ca6",
+        "hash": "8aade6e9",
+        "encoded": "this.mainLogo%20=%20page.locator('a%5Baria-label*=%22AA%22%20i%5D,%20.logo,%20header%20img').first();",
+        "prevChunkIds": []
+      },
+      "375": {
+        "chunkId": "ba1ca6",
+        "hash": "05829127",
+        "encoded": "this.mainNavigation%20=%20page.locator('nav,%20header').first();",
+        "prevChunkIds": []
+      },
+      "376": {
+        "chunkId": "ba1ca6",
+        "hash": "62fb558d",
+        "encoded": "this.carInsuranceLink%20=%20page.locator('a:has-text(%22Insurance%22)').first();",
+        "prevChunkIds": []
+      },
+      "377": {
+        "chunkId": "ba1ca6",
+        "hash": "b9df1fb2",
+        "encoded": "this.membershipLink%20=%20page.locator('a:has-text(%22Membership%22)').first();",
+        "prevChunkIds": []
+      },
+      "378": {
+        "chunkId": "ba1ca6",
+        "hash": "2ac2d142",
+        "encoded": "this.searchButton%20=%20page.locator('button%5Baria-label*=%22search%22%20i%5D,%20%5Bclass*=%22search%22%5D').first();",
+        "prevChunkIds": []
+      },
+      "379": {
+        "chunkId": "ba1ca6",
+        "hash": "44d96f11",
+        "encoded": "this.cookieAcceptButton%20=%20page.locator('button:has-text(%22Accept%22),%20button:has-text(%22OK%22)').first();",
+        "prevChunkIds": []
+      },
+      "381": {
+        "chunkId": "ba1ca6",
+        "hash": "adeb503a",
+        "encoded": "//%20%E2%9C%85%20FIXED:%20More%20specific%20selector%20to%20avoid%20strict%20mode%20violation",
+        "prevChunkIds": []
+      },
+      "382": {
+        "chunkId": "ba1ca6",
+        "hash": "ac33d824",
+        "encoded": "this.breakdownLink%20=%20page.locator('button.responsiveMenu').filter(%7B%20hasText:%20'Breakdown'%20%7D);",
+        "prevChunkIds": []
+      },
+      "383": {
+        "chunkId": "ba1ca6",
+        "hash": "1cb63bd8",
+        "encoded": "this.breakdownCoverLink%20=%20page.getByRole('link',%20%7B%20name:%20'Breakdown%20cover'%20%7D).first();",
+        "prevChunkIds": []
+      },
+      "386": {
+        "chunkId": "ba1ca6",
+        "hash": "e90535c0",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "388": {
+        "chunkId": "ba1ca6",
+        "hash": "e1aeac78",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "389": {
+        "chunkId": "ba1ca6",
+        "hash": "e183cf1d",
+        "encoded": "*%20Navigate%20to%20AA%20homepage",
+        "prevChunkIds": []
+      },
+      "391": {
+        "chunkId": "ba1ca6",
+        "hash": "b473052d",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "392": {
+        "chunkId": "ba1ca6",
+        "hash": "e38aaf37",
+        "encoded": "async%20navigateToAAHome():%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "397": {
+        "chunkId": "ba1ca6",
+        "hash": "d4e48de9",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "399": {
+        "chunkId": "ba1ca6",
+        "hash": "dbf1b3a4",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "400": {
+        "chunkId": "ba1ca6",
+        "hash": "1ec220e9",
+        "encoded": "*%20Accept%20cookie%20consent%20if%20present",
+        "prevChunkIds": []
+      },
+      "402": {
+        "chunkId": "ba1ca6",
+        "hash": "2b9ed739",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "403": {
+        "chunkId": "ba1ca6",
+        "hash": "f88c8e68",
+        "encoded": "async%20acceptCookiesIfPresent():%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "406": {
+        "chunkId": "ba1ca6",
+        "hash": "92e719f2",
+        "encoded": "await%20this.click(this.cookieAcceptButton);",
+        "prevChunkIds": []
+      },
+      "411": {
+        "chunkId": "ba1ca6",
+        "hash": "c239ce6e",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "412": {
+        "chunkId": "ba1ca6",
+        "hash": "73772182",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "414": {
+        "chunkId": "ba1ca6",
+        "hash": "a7ad1584",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "415": {
+        "chunkId": "ba1ca6",
+        "hash": "202d6c1e",
+        "encoded": "*%20Verify%20homepage%20is%20loaded",
+        "prevChunkIds": []
+      },
+      "416": {
+        "chunkId": "ba1ca6",
+        "hash": "3cacbd77",
+        "encoded": "*%20Uses%20BasePage.isVisible()%20method",
+        "prevChunkIds": []
+      },
+      "417": {
+        "chunkId": "ba1ca6",
+        "hash": "4573723c",
+        "encoded": "*%20@returns%20True%20if%20logo%20is%20visible",
+        "prevChunkIds": []
+      },
+      "418": {
+        "chunkId": "ba1ca6",
+        "hash": "0c626072",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "419": {
+        "chunkId": "ba1ca6",
+        "hash": "a2c4cca9",
+        "encoded": "async%20isAAHomePageLoaded():%20Promise%3Cboolean%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "420": {
+        "chunkId": "ba1ca6",
+        "hash": "1cb3c11f",
+        "encoded": "return%20await%20this.isVisible(this.mainNavigation);",
+        "prevChunkIds": []
+      },
+      "421": {
+        "chunkId": "ba1ca6",
+        "hash": "1d8f750f",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "423": {
+        "chunkId": "ba1ca6",
+        "hash": "178d7234",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "424": {
+        "chunkId": "ba1ca6",
+        "hash": "03756224",
+        "encoded": "*%20Get%20page%20title",
+        "prevChunkIds": []
+      },
+      "425": {
+        "chunkId": "ba1ca6",
+        "hash": "f4bfaf2b",
+        "encoded": "*%20Uses%20BasePage.getTitle()%20method",
+        "prevChunkIds": []
+      },
+      "426": {
+        "chunkId": "ba1ca6",
+        "hash": "847ee724",
+        "encoded": "*%20@returns%20The%20page%20title",
+        "prevChunkIds": []
+      },
+      "427": {
+        "chunkId": "ba1ca6",
+        "hash": "d61200f0",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "428": {
+        "chunkId": "ba1ca6",
+        "hash": "f3428ea9",
+        "encoded": "async%20getPageTitle():%20Promise%3Cstring%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "429": {
+        "chunkId": "ba1ca6",
+        "hash": "4c153b02",
+        "encoded": "return%20await%20this.getTitle();",
+        "prevChunkIds": []
+      },
+      "430": {
+        "chunkId": "ba1ca6",
+        "hash": "e6b71ac1",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "432": {
+        "chunkId": "ba1ca6",
+        "hash": "b14b4ce5",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "433": {
+        "chunkId": "ba1ca6",
+        "hash": "1604c56c",
+        "encoded": "*%20Verify%20navigation%20menu%20is%20visible",
+        "prevChunkIds": []
+      },
+      "434": {
+        "chunkId": "ba1ca6",
+        "hash": "a99a8304",
+        "encoded": "*%20Uses%20BasePage.isVisible()%20method",
+        "prevChunkIds": []
+      },
+      "435": {
+        "chunkId": "ba1ca6",
+        "hash": "9f855b68",
+        "encoded": "*%20@returns%20True%20if%20navigation%20is%20visible",
+        "prevChunkIds": []
+      },
+      "436": {
+        "chunkId": "ba1ca6",
+        "hash": "590a0cbd",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "437": {
+        "chunkId": "ba1ca6",
+        "hash": "ac783a15",
+        "encoded": "async%20isNavigationVisible():%20Promise%3Cboolean%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "438": {
+        "chunkId": "ba1ca6",
+        "hash": "e9276f43",
+        "encoded": "return%20await%20this.isVisible(this.mainNavigation);",
+        "prevChunkIds": []
+      },
+      "439": {
+        "chunkId": "ba1ca6",
+        "hash": "07d47671",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "441": {
+        "chunkId": "ba1ca6",
+        "hash": "a909fad8",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "442": {
+        "chunkId": "ba1ca6",
+        "hash": "f94f0c1e",
+        "encoded": "*%20Click%20on%20Breakdown%20Cover%20link",
+        "prevChunkIds": []
+      },
+      "444": {
+        "chunkId": "ba1ca6",
+        "hash": "6a26fa49",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "445": {
+        "chunkId": "ba1ca6",
+        "hash": "79c7b763",
+        "encoded": "async%20navigateToBreakdownCover():%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "447": {
+        "chunkId": "ba1ca6",
+        "hash": "57693770",
+        "encoded": "await%20this.click(this.breakdownLink);",
+        "prevChunkIds": []
+      },
+      "453": {
+        "chunkId": "ba1ca6",
+        "hash": "12a09ad7",
+        "encoded": "await%20this.click(this.breakdownCoverLink);",
+        "prevChunkIds": []
+      },
+      "454": {
+        "chunkId": "ba1ca6",
+        "hash": "8e7a08bb",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "471": {
+        "chunkId": "ba1ca6",
+        "hash": "235c4ca3",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "472": {
+        "chunkId": "ba1ca6",
+        "hash": "18bc9705",
+        "encoded": "*%20Click%20on%20Car%20Insurance%20link",
+        "prevChunkIds": []
+      },
+      "473": {
+        "chunkId": "ba1ca6",
+        "hash": "b6b02e69",
+        "encoded": "*%20Uses%20BasePage.click()%20method",
+        "prevChunkIds": []
+      },
+      "474": {
+        "chunkId": "ba1ca6",
+        "hash": "dad62da5",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "475": {
+        "chunkId": "ba1ca6",
+        "hash": "a6933514",
+        "encoded": "async%20clickCarInsurance():%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "476": {
+        "chunkId": "ba1ca6",
+        "hash": "e8a3e59f",
+        "encoded": "await%20this.click(this.carInsuranceLink);",
+        "prevChunkIds": []
+      },
+      "477": {
+        "chunkId": "ba1ca6",
+        "hash": "e71539f9",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "479": {
+        "chunkId": "ba1ca6",
+        "hash": "61a684db",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "480": {
+        "chunkId": "ba1ca6",
+        "hash": "4af21a32",
+        "encoded": "*%20Click%20on%20Membership%20link",
+        "prevChunkIds": []
+      },
+      "481": {
+        "chunkId": "ba1ca6",
+        "hash": "d06b6537",
+        "encoded": "*%20Uses%20BasePage.click()%20method",
+        "prevChunkIds": []
+      },
+      "482": {
+        "chunkId": "ba1ca6",
+        "hash": "b9be2e23",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "483": {
+        "chunkId": "ba1ca6",
+        "hash": "0e575a46",
+        "encoded": "async%20clickMembership():%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "484": {
+        "chunkId": "ba1ca6",
+        "hash": "d7ca7d50",
+        "encoded": "await%20this.click(this.membershipLink);",
+        "prevChunkIds": []
+      },
+      "485": {
+        "chunkId": "ba1ca6",
+        "hash": "2c6d7b7c",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "487": {
+        "chunkId": "ba1ca6",
+        "hash": "bd927158",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "488": {
+        "chunkId": "ba1ca6",
+        "hash": "dc963b48",
+        "encoded": "*%20Scroll%20to%20view%20breakdown%20link",
+        "prevChunkIds": []
+      },
+      "489": {
+        "chunkId": "ba1ca6",
+        "hash": "7086562e",
+        "encoded": "*%20Uses%20BasePage.scrollToElement()%20then%20hover",
+        "prevChunkIds": []
+      },
+      "490": {
+        "chunkId": "ba1ca6",
+        "hash": "7f254975",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "491": {
+        "chunkId": "ba1ca6",
+        "hash": "d2afc9ba",
+        "encoded": "async%20hoverOverBreakdownCover():%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "492": {
+        "chunkId": "ba1ca6",
+        "hash": "24bcb8af",
+        "encoded": "await%20this.scrollToElement(this.breakdownLink);",
+        "prevChunkIds": []
+      },
+      "493": {
+        "chunkId": "ba1ca6",
+        "hash": "1fc92fde",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "495": {
+        "chunkId": "ba1ca6",
+        "hash": "20de5d05",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "496": {
+        "chunkId": "ba1ca6",
+        "hash": "618a8d01",
+        "encoded": "*%20Take%20screenshot%20of%20homepage",
+        "prevChunkIds": []
+      },
+      "497": {
+        "chunkId": "ba1ca6",
+        "hash": "fa7da089",
+        "encoded": "*%20Uses%20BasePage.takeScreenshot()%20method",
+        "prevChunkIds": []
+      },
+      "498": {
+        "chunkId": "ba1ca6",
+        "hash": "a8d6defd",
+        "encoded": "*%20@param%20name%20-%20Screenshot%20filename",
+        "prevChunkIds": []
+      },
+      "499": {
+        "chunkId": "ba1ca6",
+        "hash": "ec953cb1",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "500": {
+        "chunkId": "ba1ca6",
+        "hash": "499c7f6b",
+        "encoded": "async%20captureHomepage(name:%20string):%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "501": {
+        "chunkId": "ba1ca6",
+        "hash": "0141f01a",
+        "encoded": "await%20this.takeScreenshot(name);",
+        "prevChunkIds": []
+      },
+      "502": {
+        "chunkId": "ba1ca6",
+        "hash": "82e604b4",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "504": {
+        "chunkId": "ba1ca6",
+        "hash": "80355369",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "505": {
+        "chunkId": "ba1ca6",
+        "hash": "16a0ee6e",
+        "encoded": "*%20Get%20current%20URL",
+        "prevChunkIds": []
+      },
+      "506": {
+        "chunkId": "ba1ca6",
+        "hash": "4077350b",
+        "encoded": "*%20Uses%20BasePage.getCurrentUrl()%20method",
+        "prevChunkIds": []
+      },
+      "507": {
+        "chunkId": "ba1ca6",
+        "hash": "77488cfa",
+        "encoded": "*%20@returns%20Current%20URL",
+        "prevChunkIds": []
+      },
+      "508": {
+        "chunkId": "ba1ca6",
+        "hash": "ee0b8fd6",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "509": {
+        "chunkId": "ba1ca6",
+        "hash": "8b426a24",
+        "encoded": "async%20getCurrentPageUrl():%20Promise%3Cstring%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "510": {
+        "chunkId": "ba1ca6",
+        "hash": "96946706",
+        "encoded": "return%20await%20this.getCurrentUrl();",
+        "prevChunkIds": []
+      },
+      "511": {
+        "chunkId": "ba1ca6",
+        "hash": "5f180033",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "513": {
+        "chunkId": "ba1ca6",
+        "hash": "d626c94d",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "514": {
+        "chunkId": "ba1ca6",
+        "hash": "022c70cc",
+        "encoded": "*%20Scroll%20to%20footer",
+        "prevChunkIds": []
+      },
+      "515": {
+        "chunkId": "ba1ca6",
+        "hash": "95259fa6",
+        "encoded": "*%20Uses%20BasePage.scrollToElement()%20method",
+        "prevChunkIds": []
+      },
+      "516": {
+        "chunkId": "ba1ca6",
+        "hash": "271b3720",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "517": {
+        "chunkId": "ba1ca6",
+        "hash": "404aed94",
+        "encoded": "async%20scrollToBottom():%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "518": {
+        "chunkId": "ba1ca6",
+        "hash": "3f7e01a9",
+        "encoded": "const%20footer%20=%20this.page.locator('footer').first();",
+        "prevChunkIds": []
+      },
+      "519": {
+        "chunkId": "ba1ca6",
+        "hash": "3cdeb8b2",
+        "encoded": "await%20this.scrollToElement(footer);",
+        "prevChunkIds": []
+      },
+      "520": {
+        "chunkId": "ba1ca6",
+        "hash": "358d44a9",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "521": {
+        "chunkId": "ba1ca6",
+        "hash": "ec2cc3b4",
         "encoded": "%7D",
         "prevChunkIds": []
       }
     },
-    "_prevLineCount": 142
+    "_prevLineCount": 175
   }
 }

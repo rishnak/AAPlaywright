@@ -1,0 +1,31 @@
+{
+  "src\\page-objects\\AACarsPage.ts": {
+    "filename": "AACarsPage.ts",
+    "path": "src\\page-objects\\AACarsPage.ts",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "a5d10f": {
+        "user": "You",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1795583530,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.7.0",
+        "source": "chat",
+        "type": "copyCode",
+        "extraContext": {
+          "promptMessage": "42028f67",
+          "files": "b3f5e664"
+        },
+        "hash": "48095041",
+        "messageId": "system_a676f550-e88e-11f1-9fcc-2b6c1b4c5b39",
+        "codeBlockId": "system_a676f550-e88e-11f1-9fcc-2b6c1b4c5b39-Codeblock-1",
+        "isActive": false,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 11/25/2026, 10:42:10 AM\n- **source**: chat\n- **type**: copyCode\n"
+      }
+    },
+    "lines": {},
+    "_prevLineCount": 15
+  }
+}

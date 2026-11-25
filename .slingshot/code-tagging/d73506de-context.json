@@ -47,6 +47,36 @@
           ]
         }
       ]
+    },
+    "b3e44b5d": {
+      "value": [
+        {
+          "programming_language": "TypeScript",
+          "fileName": "AAHomePage.ts",
+          "relativeFilePath": "src/page-objects/AAHomePage.ts",
+          "startLine": [
+            1
+          ],
+          "endLine": [
+            153
+          ]
+        }
+      ]
+    },
+    "2084b422": {
+      "value": [
+        {
+          "programming_language": "TypeScript",
+          "fileName": "AAHomePage.ts",
+          "relativeFilePath": "src/page-objects/AAHomePage.ts",
+          "startLine": [
+            1
+          ],
+          "endLine": [
+            175
+          ]
+        }
+      ]
     }
   },
   "promptMessage": {
@@ -58,6 +88,12 @@
     },
     "8fa7afe4": {
       "value": "Error: locator.waitFor: Error: strict mode violation: getByRole('button', { name: 'Breakdown' }) resolved to 4 elements:\n    1) <button class=\"responsiveMenu py-[4px] px-[8px] text-[18px] leading-[1.33] tracking-[0.15px] focus:!rounded-[4px] focus:!no-underline focus:!shadow-[inset_0_0_0_2px_#58595b]\">Breakdown</button> aka getByRole('button', { name: 'Breakdown', exact: true })\n    2) <button type=\"button\" aria-label=\"Activate Breakdown cover\" class=\"absolute inset-0 z-10 focus:outline-none foc"
+    },
+    "f1a65dac": {
+      "value": "Error: page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL\n    Call log:\n      - navigating to \"/\", waiting until \"domcontentloaded\"\n\n\n       at src\\page-objects\\AAHomePage.ts:47\n\n      45 |    */\n      46 |   async navigateToAAHome(): Promise<void> {\n    > 47 |     await this.page.goto('/', { waitUntil: 'domcontentloaded' }); // Faster than networkidle\n         |                     ^\n      48 |   }\n      49 |   \n      50 |   /**\n        at AAHomePage.navigateToAAHome (C:\\"
+    },
+    "68d9ed46": {
+      "value": "add the missing files"
     }
   },
   "localPrompts": {},

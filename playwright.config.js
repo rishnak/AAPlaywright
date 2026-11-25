@@ -1,12 +1,10 @@
 const { defineConfig, devices } = require('@playwright/test');
 
 module.exports = defineConfig({
-
   // Test directory
   testDir: './tests',
 
   // Maximum time allowed for each test
-  // Increased from Playwright default 30 seconds to 60 seconds
   timeout: 60 * 1000,
 
   // Run tests in parallel
@@ -32,8 +30,6 @@ module.exports = defineConfig({
       {
         outputFolder: 'playwright-report',
         open: 'never', // Don't open browser in CI
-        // Show detailed test information
-        attachmentsBaseURL: undefined,
       },
     ],
     
@@ -62,7 +58,7 @@ module.exports = defineConfig({
   },
 
   use: {
-    // Base URL
+    // Base URL - Critical for relative path navigation
     baseURL: process.env.BASE_URL || 'https://www.theaa.com',
 
     // Maximum time for actions such as click(), fill(), check()
@@ -72,19 +68,15 @@ module.exports = defineConfig({
     navigationTimeout: 30 * 1000,
 
     // Enhanced evidence collection for detailed reports
-    // Trace includes step-by-step actions, network activity, console logs
-    trace: 'retain-on-failure', // Changed from 'on-first-retry' to capture all failures
-    
-    // Screenshot on every failure
+    trace: 'retain-on-failure',
     screenshot: 'only-on-failure',
-    
-    // Video recording for failed tests
     video: 'retain-on-failure',
     
     // Enable headless mode in CI
     headless: process.env.CI ? true : false,
   },
 
+  // Browser projects configuration
   projects: [
     {
       name: 'chromium',
